@@ -1,0 +1,12 @@
+{
+  "name": "gh600-agentic-ai-study-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Certified Agentic AI Developer GH-600 study site with learning documents, quizzes, and progress tracking.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "check": "node --check assets/app.js"
+  },
+  "keywords": ["GH-600", "GitHub", "Copilot", "Agentic AI", "certification"],
+  "license": "MIT"
+}

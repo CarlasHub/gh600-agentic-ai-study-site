@@ -1,0 +1,302 @@
+{
+  "domain-1": [
+    {
+      "q": "An agent is asked to refactor a payment module and immediately starts editing files without producing a plan. What is the main governance failure?",
+      "options": ["The agent used the wrong model", "Planning and execution were not separated", "The PR title was too short", "The task was not assigned to enough agents"],
+      "answer": 1,
+      "explanation": "High-risk work should have a structured plan, reviewable boundaries, and approval before execution."
+    },
+    {
+      "q": "Which artifact best proves that an agent task had clear success criteria before work began?",
+      "options": ["A screenshot of the final page", "A task contract or issue template with inputs, outputs, and acceptance criteria", "A chat message saying done", "A branch name"],
+      "answer": 1,
+      "explanation": "The issue or task contract is the control point for scope, success criteria, and evidence."
+    },
+    {
+      "q": "Which is the best use of GitHub as the control plane?",
+      "options": ["Let the agent push directly to main", "Keep all agent reasoning only in chat", "Use issues, branches, PRs, checks, reviews, and artifacts as the evidence trail", "Disable branch protection while the agent works"],
+      "answer": 2,
+      "explanation": "GitHub control surfaces provide traceability and enforce review."
+    },
+    {
+      "q": "A good agent plan should include which combination?",
+      "options": ["Goal, scope, likely files, tests, risks, rollback", "Only a final answer", "Only a list of commands", "Only the model name"],
+      "answer": 0,
+      "explanation": "Plans must be inspectable and actionable."
+    },
+    {
+      "q": "Which repository feature helps route sensitive changes to the right human reviewers?",
+      "options": ["CODEOWNERS", "A longer branch name", "A hidden chat transcript", "A disabled test suite"],
+      "answer": 0,
+      "explanation": "CODEOWNERS can require review from owners of sensitive paths."
+    },
+    {
+      "q": "Which request is best framed for an agent?",
+      "options": ["Make auth better", "Fix whatever looks wrong", "Update login validation for empty and invalid email, do not change back-end auth, run tests, open a PR with evidence", "Rewrite the application"],
+      "answer": 2,
+      "explanation": "A good task is specific, scoped, testable, and explicit about forbidden changes."
+    },
+    {
+      "q": "When should an agent normally stop after planning and wait?",
+      "options": ["When the work touches production, secrets, authentication, payments, or destructive actions", "When it reads a README", "When it formats markdown", "When it summarises an issue"],
+      "answer": 0,
+      "explanation": "High-risk actions require human judgement before execution."
+    },
+    {
+      "q": "What is repository readiness for agentic work?",
+      "options": ["Having only a nice logo", "Clear setup docs, test commands, instructions, templates, checks, and review rules", "Removing all branch protections", "Letting the agent discover every rule by trial and error"],
+      "answer": 1,
+      "explanation": "Agents need reliable instructions, environment setup, and validation paths."
+    }
+  ],
+  "domain-2": [
+    {
+      "q": "What is the safest default approach when enabling MCP tools for an agent?",
+      "options": ["Enable all tools with wildcard access", "Allowlist only the specific tools needed", "Give organisation owner permissions", "Disable logging"],
+      "answer": 1,
+      "explanation": "Allowlisting reduces blast radius, especially because tools may be used autonomously."
+    },
+    {
+      "q": "An agent needs to inspect issues and comment on a PR. What permission model is best?",
+      "options": ["Admin access to the organisation", "Read access to issues and write access only where comments are required", "Production deployment access", "Secret read access"],
+      "answer": 1,
+      "explanation": "Least privilege gives only the access needed for the task."
+    },
+    {
+      "q": "What should happen after repeated tool failures?",
+      "options": ["Keep retrying indefinitely", "Delete the workflow", "Escalate or stop according to a defined failure policy", "Merge anyway"],
+      "answer": 2,
+      "explanation": "Retries need limits and escalation paths."
+    },
+    {
+      "q": "Which boundary is most appropriate for agent implementation work?",
+      "options": ["Direct default branch writes", "A scoped feature branch with PR review", "Shared production shell", "Untracked local edits"],
+      "answer": 1,
+      "explanation": "Branch and PR boundaries support review and rollback."
+    },
+    {
+      "q": "What is the purpose of `.github/workflows/copilot-setup-steps.yml`?",
+      "options": ["To publish production releases automatically", "To prepare a reproducible environment for the coding agent", "To store secrets in plain text", "To replace all tests"],
+      "answer": 1,
+      "explanation": "Setup steps help the agent install dependencies and validate work consistently."
+    },
+    {
+      "q": "In MCP, what is a tool?",
+      "options": ["A style guide only", "An action exposed by a server that the agent can call", "A final exam score", "A branch protection rule"],
+      "answer": 1,
+      "explanation": "MCP tools let agents take actions through connected servers."
+    },
+    {
+      "q": "In MCP, what is a resource?",
+      "options": ["Information exposed for the client or agent to read", "A mandatory production deployment", "A secret value that must be copied into chat", "A disabled workflow"],
+      "answer": 0,
+      "explanation": "Resources are data or context made available through MCP."
+    },
+    {
+      "q": "Why should tool choice start from the task?",
+      "options": ["Because every enabled tool expands what the agent can do", "Because all agents need every tool", "Because permissions never matter", "Because logs are unnecessary"],
+      "answer": 0,
+      "explanation": "Tool access should match the task and risk."
+    }
+  ],
+  "domain-3": [
+    {
+      "q": "What is the safest durable memory for agent decisions?",
+      "options": ["Unrecorded chat memory", "A decision log, issue, PR comment, or artifact", "A secret variable", "A temporary browser tab"],
+      "answer": 1,
+      "explanation": "Durable external artifacts preserve auditability."
+    },
+    {
+      "q": "Context drift means:",
+      "options": ["The agent stays exactly on scope", "The agent gradually moves away from the original goal or relies on stale context", "The build passes", "The PR has a reviewer"],
+      "answer": 1,
+      "explanation": "Drift is a scope, memory, or intent failure."
+    },
+    {
+      "q": "What should memory expiration rules prevent?",
+      "options": ["Current task tracking", "Stale assumptions influencing later work", "PR comments", "Test execution"],
+      "answer": 1,
+      "explanation": "Old or irrelevant context should be pruned."
+    },
+    {
+      "q": "What must never be stored in agent memory?",
+      "options": ["Stable coding standards", "Secrets and credentials", "Branch naming rules", "Test commands"],
+      "answer": 1,
+      "explanation": "Secrets must be kept out of agent memory, prompts, and logs."
+    },
+    {
+      "q": "Which best describes task state?",
+      "options": ["The current progress, files changed, checks run, failures, and next action", "A public certification page", "The agent's brand name", "A random old chat"],
+      "answer": 0,
+      "explanation": "State tracks where the current work stands."
+    },
+    {
+      "q": "Which is good context engineering?",
+      "options": ["Give the agent every file and every past conversation", "Provide the task, relevant files, instructions, constraints, and test commands", "Hide acceptance criteria", "Mix unrelated project history into the prompt"],
+      "answer": 1,
+      "explanation": "Good context is relevant, current, and scoped."
+    },
+    {
+      "q": "What is a sign of context drift?",
+      "options": ["The agent rechecks the task contract", "The agent changes files outside approved scope", "The agent records a decision", "The agent runs required tests"],
+      "answer": 1,
+      "explanation": "Unapproved scope expansion is a common drift signal."
+    },
+    {
+      "q": "Why are external artifacts useful for memory?",
+      "options": ["They are visible and auditable by the team", "They are impossible to update", "They should contain raw secrets", "They replace all review"],
+      "answer": 0,
+      "explanation": "External artifacts help humans inspect and resume work."
+    }
+  ],
+  "domain-4": [
+    {
+      "q": "Which is the strongest evidence that an agent task succeeded?",
+      "options": ["The agent said it completed the task", "Tests, scans, logs, PR diff, and acceptance criteria all support the outcome", "The response was confident", "The branch name looked correct"],
+      "answer": 1,
+      "explanation": "Claims need evidence."
+    },
+    {
+      "q": "A command failed because a dependency was missing in CI. What failure class is most likely?",
+      "options": ["Environment issue", "Reasoning error only", "Responsible AI policy exception", "No failure"],
+      "answer": 0,
+      "explanation": "Dependencies and runtime conditions are environment factors."
+    },
+    {
+      "q": "What is a bad tuning response?",
+      "options": ["Clarifying instructions", "Restricting tools", "Removing a valid failing check to make the workflow pass", "Adding stop conditions"],
+      "answer": 2,
+      "explanation": "Do not hide real defects."
+    },
+    {
+      "q": "Which signals are useful for evaluation?",
+      "options": ["Only subjective confidence", "Tests, scans, logs, artifacts, and qualitative review", "Only token count", "Only speed"],
+      "answer": 1,
+      "explanation": "Evaluation should combine measurable and judgement-based evidence."
+    },
+    {
+      "q": "A PR summary says tests passed, but no logs or checks are attached. What should a reviewer do?",
+      "options": ["Accept the claim", "Ask for or inspect objective evidence", "Merge because the summary is concise", "Disable CI"],
+      "answer": 1,
+      "explanation": "Reviewers should verify claims with evidence."
+    },
+    {
+      "q": "Which is a governance failure?",
+      "options": ["A unit test fails", "The agent bypasses required review for a sensitive change", "A dependency is missing", "A prompt has a typo"],
+      "answer": 1,
+      "explanation": "Missing or bypassed control points are governance failures."
+    },
+    {
+      "q": "What should root cause analysis produce?",
+      "options": ["A blame note only", "Observed failure, evidence, cause class, corrective action, and prevention rule", "A hidden chat transcript", "A removed test"],
+      "answer": 1,
+      "explanation": "Root cause analysis should improve future workflow reliability."
+    },
+    {
+      "q": "When can AI PR summaries help?",
+      "options": ["To replace human review for high-risk code", "To improve reviewer context and explain changes", "To bypass branch protection", "To hide risks"],
+      "answer": 1,
+      "explanation": "Summaries support humans; they do not replace accountability."
+    }
+  ],
+  "domain-5": [
+    {
+      "q": "Two agents modify the same file in different branches with conflicting approaches. What should happen?",
+      "options": ["Merge both without review", "Detect conflict, pause or coordinate resolution, and preserve evidence", "Delete the repository", "Ignore one agent silently"],
+      "answer": 1,
+      "explanation": "Multi-agent conflicts require visible resolution and auditability."
+    },
+    {
+      "q": "Which pattern reduces collisions in parallel agent work?",
+      "options": ["All agents edit main", "Branch, file, or task isolation", "No logs", "One shared untracked workspace"],
+      "answer": 1,
+      "explanation": "Isolation keeps work separable and reviewable."
+    },
+    {
+      "q": "What should each handoff include?",
+      "options": ["Only a cheerful message", "Decisions, outputs, evidence, risks, and next required action", "Only a screenshot", "Nothing if the agent passed"],
+      "answer": 1,
+      "explanation": "Handoffs are part of the audit trail."
+    },
+    {
+      "q": "A stalled agent has not produced artifacts and keeps retrying. What is the correct response?",
+      "options": ["Let it run forever", "Stop or escalate according to recovery rules", "Grant more permissions automatically", "Merge partial output"],
+      "answer": 1,
+      "explanation": "Stalled execution needs controlled recovery."
+    },
+    {
+      "q": "When is one agent often better than many?",
+      "options": ["When the task is small, linear, and low risk", "When every file needs a different owner", "When specialist review is required", "When work must happen in isolated parallel branches"],
+      "answer": 0,
+      "explanation": "Multi-agent orchestration adds complexity and should earn its place."
+    },
+    {
+      "q": "Which agent role should usually avoid editing files?",
+      "options": ["Builder", "Reviewer gate", "Implementer", "Formatter assigned to docs"],
+      "answer": 1,
+      "explanation": "Reviewer agents should usually inspect and report rather than alter the work they review."
+    },
+    {
+      "q": "What is the best response to contradictory outputs from two agents?",
+      "options": ["Choose the newest output automatically", "Preserve evidence and use a defined arbitration or human review process", "Delete both logs", "Merge both outputs"],
+      "answer": 1,
+      "explanation": "Contradictions need visible resolution."
+    },
+    {
+      "q": "What is a good use for an agent skill in multi-agent work?",
+      "options": ["Detailed task-specific procedure such as security review", "A replacement for all branch protection", "A place to store secrets", "A way to let every agent edit everything"],
+      "answer": 0,
+      "explanation": "Skills are useful for repeatable detailed procedures loaded when relevant."
+    }
+  ],
+  "domain-6": [
+    {
+      "q": "Which action should require explicit human authorisation?",
+      "options": ["Reading a README", "Summarising an issue", "Production deployment or destructive data change", "Drafting a plan"],
+      "answer": 2,
+      "explanation": "Irreversible, production, compliance, and destructive actions need human authorisation."
+    },
+    {
+      "q": "What is the purpose of an autonomy matrix?",
+      "options": ["To remove all human review", "To match risk level with permitted agent actions and required approvals", "To choose an AI model by price", "To replace tests"],
+      "answer": 1,
+      "explanation": "Autonomy should be proportional to risk."
+    },
+    {
+      "q": "Which guardrail best protects a default branch?",
+      "options": ["Direct agent push access", "Branch protection, required checks, and PR review", "No CI", "Hidden local changes"],
+      "answer": 1,
+      "explanation": "Protected branches and required checks enforce reviewable change control."
+    },
+    {
+      "q": "Which approval should be removed?",
+      "options": ["Approval for production deployment", "Approval for access to secrets", "Approval that does not materially reduce risk", "Approval for destructive action"],
+      "answer": 2,
+      "explanation": "Guardrails should protect real risk without slowing harmless work."
+    },
+    {
+      "q": "Which Microsoft Responsible AI principle maps most directly to keeping secrets out of prompts and logs?",
+      "options": ["Privacy and security", "Inclusiveness", "Fairness", "Aesthetics"],
+      "answer": 0,
+      "explanation": "Secrets and personal data are privacy and security concerns."
+    },
+    {
+      "q": "What does transparency mean in an agentic PR workflow?",
+      "options": ["Hide the plan", "Make plans, actions, evidence, and limitations visible", "Avoid comments", "Disable logs"],
+      "answer": 1,
+      "explanation": "Transparent workflows make agent behaviour inspectable."
+    },
+    {
+      "q": "Which action should be blocked or require strong approval?",
+      "options": ["Summarising a public issue", "Reading documentation", "Weakening security scans to pass a PR", "Drafting release notes"],
+      "answer": 2,
+      "explanation": "Weakening controls changes the risk posture and needs scrutiny."
+    },
+    {
+      "q": "What evidence supports accountability?",
+      "options": ["Issue, plan, permissions, diffs, checks, reviews, approvals, and rollback notes", "Only a final chat message", "A deleted log", "A local untracked file"],
+      "answer": 0,
+      "explanation": "Accountability requires a visible audit trail."
+    }
+  ]
+}

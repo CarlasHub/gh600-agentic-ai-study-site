@@ -1,0 +1,210 @@
+{
+  "exam": {
+    "code": "GH-600",
+    "title": "GitHub Certified: Agentic AI Developer",
+    "status": "Beta",
+    "durationMinutes": 120,
+    "lastChecked": "2026-05-15",
+    "passScore": "Microsoft certification exams usually require 700 or greater. Confirm on the official page before sitting the exam."
+  },
+  "domains": [
+    {
+      "id": "domain-1",
+      "weight": "15-20%",
+      "title": "Prepare agent architecture and SDLC processes",
+      "summary": "Design where agents fit in the SDLC, define boundaries, and make work inspectable before execution.",
+      "doc": "docs/domain-1-architecture-sdlc.md",
+      "topics": [
+        "Map agent responsibilities to SDLC stages",
+        "Identify which steps agents should perform",
+        "Recognise and mitigate common agent anti-patterns",
+        "Define inputs, outputs, success criteria, and done criteria",
+        "Separate planning, reasoning, and execution",
+        "Require structured plans before action",
+        "Validate plans before letting agents act",
+        "Prevent unapproved execution",
+        "Set autonomy levels and intervention points",
+        "Produce inspectable artifacts inside standard development tools",
+        "Use pull requests, checks, CODEOWNERS, rulesets, and environment gates as control points"
+      ],
+      "practice": [
+        "Create a GitHub issue template for an agent task with inputs, outputs, risks, acceptance criteria, and rollback plan.",
+        "Write a repository custom instruction that forces plan first, no execution until approval.",
+        "Design a PR governance flow for an agent-created feature."
+      ]
+    },
+    {
+      "id": "domain-2",
+      "weight": "20-25%",
+      "title": "Implement tool use and environment interaction",
+      "summary": "Configure tools, MCP servers, permissions, execution contexts, CI invocation, safe error handling, and traceability.",
+      "doc": "docs/domain-2-tool-use-environments.md",
+      "topics": [
+        "Identify required tools for an agent task",
+        "Configure agent tools and permissions",
+        "Use least privilege for tool access",
+        "Configure MCP servers as tools",
+        "Configure GitHub remote MCP server concepts",
+        "Understand MCP registries and allow lists",
+        "Evaluate execution context",
+        "Scope agents to a repository, branch, environment, or workflow",
+        "Invoke agents from CI workflows",
+        "Allow autonomous branch and pull request creation safely",
+        "Handle environment-specific constraints",
+        "Implement retries, rollbacks, escalation paths, and traceability"
+      ],
+      "practice": [
+        "Create a sample MCP configuration with only read-only tools allowlisted.",
+        "Create a CI workflow that runs validation before an agent PR can merge.",
+        "Write an error handling policy for failed tool calls."
+      ]
+    },
+    {
+      "id": "domain-3",
+      "weight": "10-15%",
+      "title": "Manage memory, state, and execution",
+      "summary": "Keep task context useful, current, scoped, and recoverable across long-running agent work.",
+      "doc": "docs/domain-3-memory-state.md",
+      "topics": [
+        "Choose short-term, long-term, and external memory strategies",
+        "Scope memory to task-relevant information",
+        "Define memory expiration, pruning, and reset rules",
+        "Persist decisions and task progress as durable artifacts",
+        "Resume work without repeating steps",
+        "Detect and correct context drift",
+        "Share agent state without conflict",
+        "Prevent stale or conflicting context across tools and environments"
+      ],
+      "practice": [
+        "Create a DECISIONS.md log template for agent projects.",
+        "Create a context reset checklist.",
+        "Write rules for what memory should never contain, including secrets and personal data."
+      ]
+    },
+    {
+      "id": "domain-4",
+      "weight": "15-20%",
+      "title": "Perform evaluation, error analysis, and tuning",
+      "summary": "Judge agent outputs using measurable signals, artefacts, scans, traces, and root cause analysis.",
+      "doc": "docs/domain-4-evaluation-tuning.md",
+      "topics": [
+        "Define expected outcomes and operational constraints",
+        "Identify qualitative and quantitative evaluation signals",
+        "Align evaluation with developer intent",
+        "Use automated scans as evaluation signals",
+        "Inspect logs, plans, traces, outputs, and workflow artifacts",
+        "Classify reasoning errors, tool misuse, context errors, and environment errors",
+        "Revise instructions, workflows, constraints, memory use, and tool access",
+        "Avoid tuning that hides real defects"
+      ],
+      "practice": [
+        "Create an agent QA scorecard with pass, risk, and fail categories.",
+        "Analyse a failed agent PR and classify the root cause.",
+        "Rewrite a vague prompt into an evaluable task contract."
+      ]
+    },
+    {
+      "id": "domain-5",
+      "weight": "15-20%",
+      "title": "Orchestrate multi-agent coordination",
+      "summary": "Coordinate multiple agents without duplicated effort, conflicting changes, hidden handoffs, or unsafe parallel execution.",
+      "doc": "docs/domain-5-multi-agent.md",
+      "topics": [
+        "Apply orchestration patterns",
+        "Configure isolation for parallel execution",
+        "Detect overlapping code changes and duplicated effort",
+        "Resolve contradictory outputs",
+        "Produce reviewable artifacts for multi-agent workflows",
+        "Document decisions, handoffs, and outcomes",
+        "Perform post-hoc analysis of multi-agent behaviour",
+        "Identify failed, partial, stalled, or degraded executions",
+        "Implement rollback and human-in-the-loop recovery",
+        "Add, update, replace, and retire agents while preserving auditability"
+      ],
+      "practice": [
+        "Design planner, builder, reviewer, and release-gate agents for one feature.",
+        "Create a conflict resolution matrix for agent PRs.",
+        "Write a retirement checklist for a deprecated agent profile."
+      ]
+    },
+    {
+      "id": "domain-6",
+      "weight": "10-15%",
+      "title": "Implement guardrails and accountability",
+      "summary": "Classify risk, apply explicit authorisation where needed, enforce least privilege, and preserve speed without pretending risky work is safe.",
+      "doc": "docs/domain-6-guardrails-accountability.md",
+      "topics": [
+        "Classify actions by operational, security, and compliance risk",
+        "Assign autonomy levels",
+        "Identify actions requiring human judgement",
+        "Block actions violating security, compliance, or Responsible AI policy",
+        "Scope permissions and execution contexts",
+        "Require explicit authorisation for irreversible or sensitive changes",
+        "Minimise approvals that do not materially reduce risk",
+        "Preserve accountability through logs, PRs, approvals, artifacts, and decision records"
+      ],
+      "practice": [
+        "Create an autonomy matrix from low-risk read-only work to high-risk production changes.",
+        "Write a policy for secrets, credentials, production data, and destructive commands.",
+        "Design a human approval checkpoint that does not block harmless automation."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Official GH-600 study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600",
+      "type": "Official exam guide"
+    },
+    {
+      "title": "GitHub Certified: Agentic AI Developer page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+      "type": "Official certification page"
+    },
+    {
+      "title": "Foundations of Agentic AI in GitHub",
+      "url": "https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/",
+      "type": "Microsoft Learn module"
+    },
+    {
+      "title": "Designing Agent Architecture and SDLC Integration",
+      "url": "https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/",
+      "type": "Microsoft Learn module"
+    },
+    {
+      "title": "Tooling, MCP, and Agent Execution Environments",
+      "url": "https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/",
+      "type": "Microsoft Learn module"
+    },
+    {
+      "title": "GitHub Copilot cloud agent documentation",
+      "url": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent",
+      "type": "GitHub Docs"
+    },
+    {
+      "title": "Connect agents to external tools with MCP",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/extend-cloud-agent-with-mcp",
+      "type": "GitHub Docs"
+    },
+    {
+      "title": "Repository custom instructions",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions",
+      "type": "GitHub Docs"
+    },
+    {
+      "title": "Custom agents configuration",
+      "url": "https://docs.github.com/en/copilot/reference/custom-agents-configuration",
+      "type": "GitHub Docs"
+    },
+    {
+      "title": "Agent skills",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills",
+      "type": "GitHub Docs"
+    },
+    {
+      "title": "Responsible AI with GitHub Copilot",
+      "url": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/",
+      "type": "Microsoft Learn module"
+    }
+  ]
+}

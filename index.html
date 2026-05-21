@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GH-600 Agentic AI Developer Study Hub</title>
+  <meta name="description" content="Study dashboard, checklists, quizzes, and resources for GH-600 Agentic AI Developer.">
+  <link rel="stylesheet" href="assets/styles.css?v=20260515d">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">GH</span>
+      <div>
+        <p class="eyebrow">GitHub Certified</p>
+        <h1>Agentic AI Developer GH-600 Study Hub</h1>
+      </div>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#course-reader">Course</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="dashboard">
+      <div class="hero-copy">
+        <p class="eyebrow">Beta exam preparation</p>
+        <h2>Turn the GH-600 exam guide into a proper learning system.</h2>
+        <p>This site turns the six GH-600 domains into a guided course with plain-language lessons, practical labs, quizzes, templates, and revision resources.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#course-reader" id="startCourse">Start course</a>
+          <a class="button secondary" href="#curriculum">Browse modules</a>
+          <a class="button secondary" href="#course-reader" data-open-doc="docs/study-plan.md">Open study plan</a>
+        </div>
+      </div>
+      <aside class="exam-card" aria-label="Exam summary">
+        <div class="status-pill">GH-600 beta</div>
+        <dl>
+          <div><dt>Duration</dt><dd>120 minutes</dd></div>
+          <div><dt>Domains</dt><dd>6</dd></div>
+          <div><dt>Focus</dt><dd>Agents in production SDLC workflows</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="progress-panel" aria-labelledby="progress-title">
+      <div>
+        <p class="eyebrow">Your progress</p>
+        <h2 id="progress-title">Completion tracker</h2>
+      </div>
+      <div class="progress-ring" aria-live="polite">
+        <strong id="progressPercent">0%</strong>
+        <span>topics complete</span>
+      </div>
+      <button class="button secondary" id="resetProgress" type="button">Reset progress</button>
+    </section>
+
+    <section class="course-reader" id="course-reader" aria-labelledby="reader-title">
+      <div class="section-heading">
+        <p class="eyebrow">Guided course</p>
+        <h2 id="reader-title">Read the learning materials here</h2>
+        <p>Start with the course overview, then move through the six domains. Use the checklist below each domain to track progress, and use the quiz section after each lesson.</p>
+      </div>
+      <div class="access-guide" aria-labelledby="access-title">
+        <h3 id="access-title">How to access the content</h3>
+        <ol>
+          <li>Select a lesson or individual topic from the course menu.</li>
+          <li>Read the lesson in the reader on this page.</li>
+          <li>Open the matching domain in the curriculum checklist, use Study topic for individual explanations, and tick topics as you learn them.</li>
+          <li>Take the domain quiz and review every explanation.</li>
+          <li>Use Resources for official references and Templates for practical artifacts.</li>
+        </ol>
+      </div>
+      <div class="reader-layout">
+        <aside class="reader-menu" aria-label="Learning material menu">
+          <div id="courseNav" class="course-nav"></div>
+        </aside>
+        <article class="lesson-document" id="courseDocument" tabindex="-1" aria-live="polite">
+          <p>Loading course material...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout" id="curriculum">
+      <aside class="sidebar" aria-labelledby="course-title">
+        <p class="eyebrow">Course content</p>
+        <h2 id="course-title">Six-domain route</h2>
+        <div id="domainNav" class="domain-nav"></div>
+      </aside>
+      <section class="course-area" aria-live="polite">
+        <div id="domainDetail"></div>
+      </section>
+    </section>
+
+    <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-heading">
+        <p class="eyebrow">Practice</p>
+        <h2 id="quiz-title">Domain quiz</h2>
+        <p>Answer questions, check explanations, then revisit weak domains.</p>
+      </div>
+      <div class="quiz-controls">
+        <label for="quizDomain">Choose domain</label>
+        <select id="quizDomain"></select>
+        <button class="button primary" id="startQuiz" type="button">Start quiz</button>
+      </div>
+      <div id="quizBox" class="quiz-box"></div>
+    </section>
+
+    <section class="resources" id="resources" aria-labelledby="resources-title">
+      <div class="section-heading">
+        <p class="eyebrow">References</p>
+        <h2 id="resources-title">Official sources and study materials</h2>
+      </div>
+      <div id="resourceGrid" class="resource-grid"></div>
+    </section>
+
+    <section class="downloads" aria-labelledby="downloads-title">
+      <div class="section-heading">
+        <p class="eyebrow">Practical work</p>
+        <h2 id="downloads-title">Templates and prompts</h2>
+      </div>
+      <div class="template-grid">
+        <a href="#course-reader" data-open-doc="templates/agent-task-contract.md">Agent task contract</a>
+        <a href="#course-reader" data-open-doc="templates/autonomy-matrix.md">Autonomy matrix</a>
+        <a href="#course-reader" data-open-doc="templates/failure-analysis.md">Failure analysis</a>
+        <a href="#course-reader" data-open-doc="prompts/plan-first-agent.md">Plan-first agent prompt</a>
+        <a href="#course-reader" data-open-doc="prompts/qa-release-gate-agent.md">QA release-gate prompt</a>
+        <a href="#course-reader" data-open-doc="prompts/multi-agent-orchestration.md">Multi-agent orchestration prompt</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>This is an unofficial study aid. Re-check the official Microsoft Learn GH-600 study guide before the exam.</p>
+  </footer>
+
+  <script src="assets/app.js?v=20260515d"></script>
+</body>
+</html>
