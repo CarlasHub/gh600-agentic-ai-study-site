@@ -117,3 +117,67 @@ td{overflow-wrap:anywhere}
 .mock-body{padding:.85rem}
 .mock-badges{gap:.35rem}
 }
+
+/* Low-stimulation accessibility pass: reduce glare, remove bright dividers, and use structure over color. */
+:root{--bg:#121518;--surface:#191d21;--surface-2:#20252a;--surface-3:#15191d;--text:#d7dde4;--muted:#aeb7c0;--line:#343b43;--line-soft:#2a3036;--brand:#d9bf7a;--accent-green:#8ba891;--accent-coral:#b8948e;--accent-violet:#9d96b8;--accent-sky:#8fa6b7;--danger:#c79a96;--success:#8ba891;--warn:#d9bf7a}
+body{background:#121518;color:var(--text)}
+h1,h2,h3{color:#d8d3c7;font-weight:560}
+h1{font-size:clamp(1.5rem,1.85vw,2rem)}
+h2{font-size:clamp(1.06rem,1.2vw,1.22rem)}
+h3{color:#c4ccd4;font-weight:560}
+.page-title p:not(.eyebrow),.lesson-row p,.domain-card p,.card p,.panel p,.muted{color:#aeb7c0}
+.eyebrow{color:#bca66e}
+.panel,.card,.question,.source-panel,.scenario-card,.domain-card,.lesson-row,.flash,.guide-card,.must-know,.lesson-tracker{background:#191d21;border-color:#343b43}
+.guide-card,.must-know,.scenario-card,.question,.library-list .card,.glossary-list .card,.table-wrap{border-left:1px solid #343b43}
+.guide-card,.must-know,.scenario-card{background:#191d21}
+.score{background:#1a1d23;border-color:#343b43;border-left:1px solid #343b43;color:#d7dde4}
+.badge,.domain-card span{background:#222017;color:#d9bf7a;border:1px solid #3d3928}
+.domain-card:nth-child(n),.stat:nth-child(n){border-left-color:#343b43;border-top-color:#343b43}
+.domain-card:hover,.lesson-row:hover,.card:hover{border-color:#454d55;background:#1d2227}
+.lesson-row:hover,.lesson-row:focus-within{border-left-color:#4a5159;background:#1d2227}
+.button,.flash .actions button{background:#20252a;border-color:#3b444d;color:#d9bf7a}
+.button.primary{background:#26352b;border-color:#465849;color:#dce7dd}
+.button:hover,.option:hover,.flash .actions button:hover{background:#252b31;border-color:#535c66}
+.question{background:#191d21;border-left:1px solid #343b43}
+.question-counter{background:#222017;border-color:#3d3928;color:#d9bf7a}
+.option,button.option{background:#20252a;border-color:#39424a;color:#dbe1e7}
+.option-prefix{background:#171a1e;border-color:#3a4148;color:#c7cfd7}
+.option.correct{background:#1b271f;color:#dce8df;border-color:#4b5e50}
+.option.wrong{background:#2a2020;color:#ead6d4;border-color:#604b49}
+.search,select,input{background:#171b1f;border-color:#3b444d;color:#d7dde4}
+.footer-links a{background:#191d21;border-color:#3b444d;color:#d9bf7a}
+.sources-inline a,a{color:#d9bf7a}
+a:hover{color:#ead79f}
+.walkthrough .mock-screen{background:#171b1f;border-color:#343b43}
+.mock-top{background:#20252a}
+.mock-badges span{background:#222017;color:#d9bf7a;border:1px solid #3d3928}
+.lab-card{border-left:0;padding:1.15rem 1.2rem}
+.lab-card h2{max-width:70ch;margin-top:.45rem}
+.lab-objective{font-size:1rem;color:#cdd4db}
+.lab-section{margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--line-soft)}
+.lab-section h3{margin-bottom:.35rem}
+.lab-section ul,.lab-section ol{margin-top:.35rem}
+.lab-section li{margin:.42rem 0}
+.lab-notes{display:grid;gap:.65rem;margin:1rem 0 0}
+.lab-notes div{padding:.75rem .8rem;background:#171b1f;border:1px solid var(--line-soft);border-radius:7px}
+.lab-notes dt{color:#bca66e;font-size:.82rem;font-weight:600}
+.lab-notes dd{margin:.2rem 0 0;color:#cdd4db}
+@media(max-width:760px){
+h1{font-size:1.42rem}
+h2{font-size:1.08rem}
+.lab-card{padding:1rem}
+.badge,.domain-card span{white-space:normal;line-height:1.35}
+}
+
+/* Tone down headings further so hierarchy is clear without glare. */
+h1{color:#cfc7b8;font-weight:520}
+h2{color:#cbc5b8;font-weight:520}
+h3{color:#b9c1c9;font-weight:540}
+.card h2,.panel h2,.lab-card h2,.question h2{color:#d0cac0;font-weight:540}
+.page-title p:not(.eyebrow){color:#aab3bc}
+.badge,.domain-card span,.mock-badges span{background:#1f1e19;color:#cdb26e;border-color:#342f22}
+.lab-card{background:#181c20;border-color:#30373f}
+.lab-section{border-top-color:#2b3138}
+.lab-notes div{background:#161a1e;border-color:#2b3138}
+.lab-notes dt{color:#c2aa6d}
+.lab-notes dd,.lab-objective{color:#c4ccd4}
