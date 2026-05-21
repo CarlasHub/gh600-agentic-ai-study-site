@@ -21,7 +21,7 @@ const DATA = { blueprint, lessons, quizzes, labs, mockExams, flashcards, glossar
 const socialLinks = [
   ['Website','https://carlashub.com',Globe2],
   ['GitHub','https://github.com/CarlasHub',ExternalLink],
-  ['LinkedIn','https://www.linkedin.com/in/carlashub/',BriefcaseBusiness]
+  ['LinkedIn','https://www.linkedin.com/in/carla-goncalves-9a01a5164/',BriefcaseBusiness]
 ];
 const navItems = [
   ['home','Home',Trophy], ['blueprint','Blueprint',Layers], ['domains','Domains',BookOpen], ['lessons','Lessons',FileText], ['walkthroughs','Walkthroughs',Search], ['labs','Labs',FlaskConical], ['quiz','Quiz',ClipboardList], ['mock','Mock exam',Timer], ['flashcards','Flashcards',Brain], ['glossary','Glossary',Library], ['readiness','Readiness',ShieldCheck], ['study-plan','Study plan',ListChecks], ['cram','Cram guide',GraduationCap]
