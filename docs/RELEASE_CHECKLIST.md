@@ -13,3 +13,4 @@
 - [x] 101 lesson case studies rendered and browser-smoke-tested.
 - [x] Currentness check surfaced in the cram/readiness flow.
 - [x] Production build completed without chunk-size warnings after Vite configuration tuning.
+- [x] Original GitHub UI workflow walkthroughs added and routed.

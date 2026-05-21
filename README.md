@@ -12,6 +12,7 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 3 mock exams
 - 303 flashcards
 - 24 hands-on labs
+- 12 GitHub UI workflow walkthroughs
 - 60 scenarios
 - 40 glossary terms
 - 65 official skill coverage rows
@@ -77,7 +78,7 @@ public/              static assets
 
 GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide on 2026-05-21, but learners should re-check the official Microsoft study guide before sitting the exam.
 
-The current content is broad and source-mapped. Each lesson now includes a domain-specific case study. Future improvements could add screenshots from live GitHub UI flows and periodic source-diff automation.
+The current content is broad and source-mapped. Each lesson now includes a domain-specific case study, and the app includes original GitHub UI workflow walkthroughs for the main control-plane flows. Future improvements could add periodic source-diff automation.
 
 ## Copyright Note
 

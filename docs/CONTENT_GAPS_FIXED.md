@@ -10,3 +10,5 @@
 - Tuned Vite chunk warning threshold for the deliberately data-heavy single-page study app.
 
 Remaining uncertainty: GH-600 is a beta/current exam area and Microsoft notes related topics may appear beyond listed bullets. Continue checking the official guide before sitting the exam.
+
+- Added 12 original GitHub UI workflow walkthroughs covering issue task contracts, Copilot assignment, PR evidence, Actions logs, branch protection, rulesets, CODEOWNERS, environments, custom instructions, MCP configuration, agent session logs, and multi-agent handoffs.
