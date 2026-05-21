@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BookOpen, Brain, CheckCircle2, ClipboardList, FileText, FlaskConical, GraduationCap, Layers, Library, ListChecks, Search, ShieldCheck, Timer, Trophy } from 'lucide-react';
+import { BookOpen, Brain, BriefcaseBusiness, CheckCircle2, ClipboardList, ExternalLink, FileText, FlaskConical, Globe2, GraduationCap, Layers, Library, ListChecks, Search, ShieldCheck, Timer, Trophy } from 'lucide-react';
 import './styles/main.css';
 import blueprint from './data/examBlueprint.json';
 import lessons from './data/lessons.json';
@@ -18,6 +18,11 @@ import readinessData from './data/readiness.json';
 import uiWalkthroughs from './data/uiWalkthroughs.json';
 
 const DATA = { blueprint, lessons, quizzes, labs, mockExams, flashcards, glossary, sources, coverageMatrix, scenarios, studyPlans, cramGuide, readinessData, uiWalkthroughs };
+const socialLinks = [
+  ['Website','https://carlashub.com',Globe2],
+  ['GitHub','https://github.com/CarlasHub',ExternalLink],
+  ['LinkedIn','https://www.linkedin.com/in/carlashub/',BriefcaseBusiness]
+];
 const navItems = [
   ['home','Home',Trophy], ['blueprint','Blueprint',Layers], ['domains','Domains',BookOpen], ['lessons','Lessons',FileText], ['walkthroughs','Walkthroughs',Search], ['labs','Labs',FlaskConical], ['quiz','Quiz',ClipboardList], ['mock','Mock exam',Timer], ['flashcards','Flashcards',Brain], ['glossary','Glossary',Library], ['readiness','Readiness',ShieldCheck], ['study-plan','Study plan',ListChecks], ['cram','Cram guide',GraduationCap]
 ];
@@ -64,7 +69,7 @@ function getFollowSteps(lesson){
 function NotFound({type,id,backHref}){return <section><PageTitle eyebrow="Missing content" title={type+' not found'} text={'I could not find '+id+'. Use the button below to return to the related library.'}/><a className="button primary" href={backHref}>Open library</a></section>}
 function Layout({children,progress}){
  const done=Object.values(progress.lessons||{}).filter(Boolean).length;
- return <><header className="topbar"><a className="brand" href="#home"><span>GH</span><strong>GH-600 Study Platform</strong></a><nav aria-label="Primary navigation">{navItems.map(([id,label,Icon])=><a key={id} href={'#'+id}><Icon size={16} aria-hidden="true" />{label}</a>)}</nav></header><main id="main" className="shell">{children}</main><footer><p>Unofficial GH-600 study resource. Always verify current exam objectives with Microsoft Learn before sitting the exam.</p><p>{done}/{lessons.length} lessons marked studied ({pct(done,lessons.length)}%).</p></footer></>;
+ return <><header className="topbar"><a className="brand" href="#home"><span>GH</span><strong>GH-600 Study Platform</strong></a><nav aria-label="Primary navigation">{navItems.map(([id,label,Icon])=><a key={id} href={'#'+id}><Icon size={16} aria-hidden="true" />{label}</a>)}</nav></header><main id="main" className="shell">{children}</main><footer><div className="footer-inner"><div><strong>CarlaHub</strong><p>Unofficial GH-600 study resource. Always verify current exam objectives with Microsoft Learn before sitting the exam.</p><p>{done}/{lessons.length} lessons marked studied ({pct(done,lessons.length)}%).</p></div><nav className="footer-links" aria-label="CarlaHub links">{socialLinks.map(([label,url,Icon])=><a key={label} href={url} target="_blank" rel="noreferrer"><Icon size={16} aria-hidden="true"/>{label}</a>)}</nav></div></footer></>;
 }
 function Stat({label,value,icon:Icon}){return <div className="stat"><Icon aria-hidden="true"/><strong>{value}</strong><span>{label}</span></div>}
 function ProgressBar({value,label}){return <div className="progress"><div><span>{label}</span><strong>{value}%</strong></div><meter min="0" max="100" value={value}>{value}%</meter></div>}
