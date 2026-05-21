@@ -26,6 +26,8 @@ Primary source of truth: [Microsoft GH-600 study guide](https://learn.microsoft.
 
 Research log: [docs/SOURCE_RESEARCH_LOG.md](docs/SOURCE_RESEARCH_LOG.md).
 
+Currentness review workflow: [docs/CURRENTNESS_REVIEW.md](docs/CURRENTNESS_REVIEW.md).
+
 ## Install
 
 ```bash
@@ -75,7 +77,7 @@ public/              static assets
 
 GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide on 2026-05-21, but learners should re-check the official Microsoft study guide before sitting the exam.
 
-The current content is broad and source-mapped. Future improvements could add hand-authored case studies for each individual lesson and screenshots from live GitHub UI flows.
+The current content is broad and source-mapped. Each lesson now includes a domain-specific case study. Future improvements could add screenshots from live GitHub UI flows and periodic source-diff automation.
 
 ## Copyright Note
 
