@@ -1,0 +1,3638 @@
+[
+  {
+    "id": "fc-1",
+    "front": "Identify steps for agents to perform",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-2",
+    "front": "Exam trap for Identify steps for agents to perform",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-3",
+    "front": "Evidence for Identify steps for agents to perform",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-4",
+    "front": "Identify and mitigate common anti-patterns in agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-5",
+    "front": "Exam trap for Identify and mitigate common anti-patterns in agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-6",
+    "front": "Evidence for Identify and mitigate common anti-patterns in agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-7",
+    "front": "Define inputs, outputs, and success criteria for agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-8",
+    "front": "Exam trap for Define inputs, outputs, and success criteria for agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-9",
+    "front": "Evidence for Define inputs, outputs, and success criteria for agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g1-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-10",
+    "front": "Configure agent planning to be distinct from agent execution",
+    "back": "In GH-600 terms: GH-600 tests whether you can turning intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-11",
+    "front": "Exam trap for Configure agent planning to be distinct from agent execution",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-12",
+    "front": "Evidence for Configure agent planning to be distinct from agent execution",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-13",
+    "front": "Configure an agent to output a structured plan",
+    "back": "In GH-600 terms: GH-600 tests whether you can turning intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-14",
+    "front": "Exam trap for Configure an agent to output a structured plan",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-15",
+    "front": "Evidence for Configure an agent to output a structured plan",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-16",
+    "front": "Validate agent plans",
+    "back": "In GH-600 terms: GH-600 tests whether you can turning intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-17",
+    "front": "Exam trap for Validate agent plans",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-18",
+    "front": "Evidence for Validate agent plans",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-19",
+    "front": "Prevent agent action until the agent checked and approved",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-20",
+    "front": "Exam trap for Prevent agent action until the agent checked and approved",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-21",
+    "front": "Evidence for Prevent agent action until the agent checked and approved",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g2-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-22",
+    "front": "Plan and implement the degree of agent autonomy, including guardrails",
+    "back": "In GH-600 terms: GH-600 tests whether you can turning intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-23",
+    "front": "Exam trap for Plan and implement the degree of agent autonomy, including guardrails",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-24",
+    "front": "Evidence for Plan and implement the degree of agent autonomy, including guardrails",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-25",
+    "front": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-26",
+    "front": "Exam trap for Configure agent to produce inspectable artifacts within standard development tooling",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-27",
+    "front": "Evidence for Configure agent to produce inspectable artifacts within standard development tooling",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-28",
+    "front": "Configure human intervention for autonomous agents without slowing delivery",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-29",
+    "front": "Exam trap for Configure human intervention for autonomous agents without slowing delivery",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-30",
+    "front": "Evidence for Configure human intervention for autonomous agents without slowing delivery",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "d1-g3-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-31",
+    "front": "Agentic workflows versus ordinary automation",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-32",
+    "front": "Exam trap for Agentic workflows versus ordinary automation",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-33",
+    "front": "Evidence for Agentic workflows versus ordinary automation",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-34",
+    "front": "Agent task decomposition and task boundaries",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agent-task-decomposition-and-task-boundaries",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-35",
+    "front": "Exam trap for Agent task decomposition and task boundaries",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agent-task-decomposition-and-task-boundaries",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-36",
+    "front": "Evidence for Agent task decomposition and task boundaries",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-agent-task-decomposition-and-task-boundaries",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-37",
+    "front": "GitHub Issues as task contracts",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-github-issues-as-task-contracts",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-38",
+    "front": "Exam trap for GitHub Issues as task contracts",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-github-issues-as-task-contracts",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-39",
+    "front": "Evidence for GitHub Issues as task contracts",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-github-issues-as-task-contracts",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-40",
+    "front": "Pull requests as evidence objects",
+    "back": "In GH-600 terms: GH-600 tests whether you can using GitHub branches and pull requests as boundaries for safe agent work inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-pull-requests-as-evidence-objects",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-41",
+    "front": "Exam trap for Pull requests as evidence objects",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-pull-requests-as-evidence-objects",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-42",
+    "front": "Evidence for Pull requests as evidence objects",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-pull-requests-as-evidence-objects",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-43",
+    "front": "Repository custom instructions as governance",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-repository-custom-instructions-as-governance",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-44",
+    "front": "Exam trap for Repository custom instructions as governance",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-repository-custom-instructions-as-governance",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-45",
+    "front": "Evidence for Repository custom instructions as governance",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-repository-custom-instructions-as-governance",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-46",
+    "front": "When not to use agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-when-not-to-use-agents",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-47",
+    "front": "Exam trap for When not to use agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-when-not-to-use-agents",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-48",
+    "front": "Evidence for When not to use agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-1",
+    "skillId": "domain-1-ext-when-not-to-use-agents",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-49",
+    "front": "Identify required tools",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-50",
+    "front": "Exam trap for Identify required tools",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-51",
+    "front": "Evidence for Identify required tools",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-52",
+    "front": "Configure agent tools",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-53",
+    "front": "Exam trap for Configure agent tools",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-54",
+    "front": "Evidence for Configure agent tools",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-55",
+    "front": "Configure agent tool permissions",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-56",
+    "front": "Exam trap for Configure agent tool permissions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-57",
+    "front": "Evidence for Configure agent tool permissions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g1-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-58",
+    "front": "Add an MCP server as a tool to an agent",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-59",
+    "front": "Exam trap for Add an MCP server as a tool to an agent",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-60",
+    "front": "Evidence for Add an MCP server as a tool to an agent",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-61",
+    "front": "Configure a GitHub remote MCP server",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-62",
+    "front": "Exam trap for Configure a GitHub remote MCP server",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-63",
+    "front": "Evidence for Configure a GitHub remote MCP server",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-64",
+    "front": "Configure the MCP registries",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-65",
+    "front": "Exam trap for Configure the MCP registries",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-66",
+    "front": "Evidence for Configure the MCP registries",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-67",
+    "front": "Configure MCP allow lists",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-68",
+    "front": "Exam trap for Configure MCP allow lists",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-69",
+    "front": "Evidence for Configure MCP allow lists",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g2-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-70",
+    "front": "Evaluate the execution context for an agent",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-71",
+    "front": "Exam trap for Evaluate the execution context for an agent",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-72",
+    "front": "Evidence for Evaluate the execution context for an agent",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-73",
+    "front": "Configure an agent's scope to a specific repository",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-74",
+    "front": "Exam trap for Configure an agent's scope to a specific repository",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-75",
+    "front": "Evidence for Configure an agent's scope to a specific repository",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-76",
+    "front": "Configure an agent to be invoked in a CI workflow",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-77",
+    "front": "Exam trap for Configure an agent to be invoked in a CI workflow",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-78",
+    "front": "Evidence for Configure an agent to be invoked in a CI workflow",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-79",
+    "front": "Configure an agent to use branch-based scope",
+    "back": "In GH-600 terms: GH-600 tests whether you can using GitHub branches and pull requests as boundaries for safe agent work inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-80",
+    "front": "Exam trap for Configure an agent to use branch-based scope",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-81",
+    "front": "Evidence for Configure an agent to use branch-based scope",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-82",
+    "front": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "back": "In GH-600 terms: GH-600 tests whether you can using GitHub branches and pull requests as boundaries for safe agent work inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s5",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-83",
+    "front": "Exam trap for Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s5",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-84",
+    "front": "Evidence for Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s5",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-85",
+    "front": "Configure an agent to handle environment-specific constraints",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s6",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-86",
+    "front": "Exam trap for Configure an agent to handle environment-specific constraints",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s6",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-87",
+    "front": "Evidence for Configure an agent to handle environment-specific constraints",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g3-s6",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-88",
+    "front": "Implement error handling",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-89",
+    "front": "Exam trap for Implement error handling",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-90",
+    "front": "Evidence for Implement error handling",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-91",
+    "front": "Implement retries",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-92",
+    "front": "Exam trap for Implement retries",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-93",
+    "front": "Evidence for Implement retries",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-94",
+    "front": "Implement rollbacks",
+    "back": "In GH-600 terms: GH-600 tests whether you can designing a recovery path before automation fails inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-95",
+    "front": "Exam trap for Implement rollbacks",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s3",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-96",
+    "front": "Evidence for Implement rollbacks",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-97",
+    "front": "Implement escalation paths",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-98",
+    "front": "Exam trap for Implement escalation paths",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-99",
+    "front": "Evidence for Implement escalation paths",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-100",
+    "front": "Implement traceability and accountability for agent actions",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s5",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-101",
+    "front": "Exam trap for Implement traceability and accountability for agent actions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s5",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-102",
+    "front": "Evidence for Implement traceability and accountability for agent actions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "d2-g4-s5",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-103",
+    "front": "Read-only versus write-capable tool design",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-read-only-versus-write-capable-tool-design",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-104",
+    "front": "Exam trap for Read-only versus write-capable tool design",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-read-only-versus-write-capable-tool-design",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-105",
+    "front": "Evidence for Read-only versus write-capable tool design",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-read-only-versus-write-capable-tool-design",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-106",
+    "front": "Tool risk classification",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-tool-risk-classification",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-107",
+    "front": "Exam trap for Tool risk classification",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-tool-risk-classification",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-108",
+    "front": "Evidence for Tool risk classification",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-tool-risk-classification",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-109",
+    "front": "GitHub MCP server default toolsets",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-github-mcp-server-default-toolsets",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-110",
+    "front": "Exam trap for GitHub MCP server default toolsets",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-github-mcp-server-default-toolsets",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-111",
+    "front": "Evidence for GitHub MCP server default toolsets",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-github-mcp-server-default-toolsets",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-112",
+    "front": "Remote MCP server versus local MCP server",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-remote-mcp-server-versus-local-mcp-server",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-113",
+    "front": "Exam trap for Remote MCP server versus local MCP server",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-remote-mcp-server-versus-local-mcp-server",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-114",
+    "front": "Evidence for Remote MCP server versus local MCP server",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-remote-mcp-server-versus-local-mcp-server",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-115",
+    "front": "Playwright MCP in agent validation",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-playwright-mcp-in-agent-validation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-116",
+    "front": "Exam trap for Playwright MCP in agent validation",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-playwright-mcp-in-agent-validation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-117",
+    "front": "Evidence for Playwright MCP in agent validation",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-playwright-mcp-in-agent-validation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-118",
+    "front": "Repository-level MCP configuration",
+    "back": "In GH-600 terms: GH-600 tests whether you can treating MCP as a permissioned capability layer, not just extra context inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-repository-level-mcp-configuration",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-119",
+    "front": "Exam trap for Repository-level MCP configuration",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-repository-level-mcp-configuration",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-120",
+    "front": "Evidence for Repository-level MCP configuration",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-repository-level-mcp-configuration",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-121",
+    "front": "Branch-based tool scope",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-branch-based-tool-scope",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-122",
+    "front": "Exam trap for Branch-based tool scope",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-branch-based-tool-scope",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-123",
+    "front": "Evidence for Branch-based tool scope",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-branch-based-tool-scope",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-124",
+    "front": "Safe autonomous PR creation",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-safe-autonomous-pr-creation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-125",
+    "front": "Exam trap for Safe autonomous PR creation",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-safe-autonomous-pr-creation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-126",
+    "front": "Evidence for Safe autonomous PR creation",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-safe-autonomous-pr-creation",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-127",
+    "front": "Environment-specific constraints",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-environment-specific-constraints",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-128",
+    "front": "Exam trap for Environment-specific constraints",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-environment-specific-constraints",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-129",
+    "front": "Evidence for Environment-specific constraints",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-environment-specific-constraints",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-130",
+    "front": "Traceability through session logs and audit evidence",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-131",
+    "front": "Exam trap for Traceability through session logs and audit evidence",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-132",
+    "front": "Evidence for Traceability through session logs and audit evidence",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-2",
+    "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-133",
+    "front": "Choose between short-term, long-term, and external memory",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-134",
+    "front": "Exam trap for Choose between short-term, long-term, and external memory",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-135",
+    "front": "Evidence for Choose between short-term, long-term, and external memory",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-136",
+    "front": "Scope agent memory to task-relevant information",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-137",
+    "front": "Exam trap for Scope agent memory to task-relevant information",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-138",
+    "front": "Evidence for Scope agent memory to task-relevant information",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-139",
+    "front": "Define memory expiration, pruning, and reset rules",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-140",
+    "front": "Exam trap for Define memory expiration, pruning, and reset rules",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-141",
+    "front": "Evidence for Define memory expiration, pruning, and reset rules",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g1-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-142",
+    "front": "Capture task progress and decisions as durable artifacts",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-143",
+    "front": "Exam trap for Capture task progress and decisions as durable artifacts",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-144",
+    "front": "Evidence for Capture task progress and decisions as durable artifacts",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-145",
+    "front": "Resume agent work without repeating steps or diverging from prior decisions",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-146",
+    "front": "Exam trap for Resume agent work without repeating steps or diverging from prior decisions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-147",
+    "front": "Evidence for Resume agent work without repeating steps or diverging from prior decisions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-148",
+    "front": "Detect and correct drift during extended agent execution",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-149",
+    "front": "Exam trap for Detect and correct drift during extended agent execution",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-150",
+    "front": "Evidence for Detect and correct drift during extended agent execution",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-151",
+    "front": "Share agent state",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-152",
+    "front": "Exam trap for Share agent state",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-153",
+    "front": "Evidence for Share agent state",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-154",
+    "front": "Prevent conflicting context",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-155",
+    "front": "Exam trap for Prevent conflicting context",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-156",
+    "front": "Evidence for Prevent conflicting context",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-157",
+    "front": "Prevent stale context",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-158",
+    "front": "Exam trap for Prevent stale context",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-159",
+    "front": "Evidence for Prevent stale context",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "d3-g3-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-160",
+    "front": "Repository artifacts as durable state",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-repository-artifacts-as-durable-state",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-161",
+    "front": "Exam trap for Repository artifacts as durable state",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-repository-artifacts-as-durable-state",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-162",
+    "front": "Evidence for Repository artifacts as durable state",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-repository-artifacts-as-durable-state",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-163",
+    "front": "Issues and pull requests as state carriers",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-issues-and-pull-requests-as-state-carriers",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-164",
+    "front": "Exam trap for Issues and pull requests as state carriers",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-issues-and-pull-requests-as-state-carriers",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-165",
+    "front": "Evidence for Issues and pull requests as state carriers",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-issues-and-pull-requests-as-state-carriers",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-166",
+    "front": "Workflow artifacts as state checkpoints",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-workflow-artifacts-as-state-checkpoints",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-167",
+    "front": "Exam trap for Workflow artifacts as state checkpoints",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-workflow-artifacts-as-state-checkpoints",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-168",
+    "front": "Evidence for Workflow artifacts as state checkpoints",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-workflow-artifacts-as-state-checkpoints",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-169",
+    "front": "Memory reset and expiry decisions",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-170",
+    "front": "Exam trap for Memory reset and expiry decisions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-171",
+    "front": "Evidence for Memory reset and expiry decisions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-172",
+    "front": "Shared multi-agent state contracts",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-shared-multi-agent-state-contracts",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-173",
+    "front": "Exam trap for Shared multi-agent state contracts",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-shared-multi-agent-state-contracts",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-174",
+    "front": "Evidence for Shared multi-agent state contracts",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-3",
+    "skillId": "domain-3-ext-shared-multi-agent-state-contracts",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "fc-175",
+    "front": "Specify expected outcomes and operational constraints for agent tasks",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-176",
+    "front": "Exam trap for Specify expected outcomes and operational constraints for agent tasks",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-177",
+    "front": "Evidence for Specify expected outcomes and operational constraints for agent tasks",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-178",
+    "front": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-179",
+    "front": "Exam trap for Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-180",
+    "front": "Evidence for Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-181",
+    "front": "Align evaluation criteria with development intent",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-182",
+    "front": "Exam trap for Align evaluation criteria with development intent",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-183",
+    "front": "Evidence for Align evaluation criteria with development intent",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-184",
+    "front": "Generate evaluation signals by using automated scanning tools",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-185",
+    "front": "Exam trap for Generate evaluation signals by using automated scanning tools",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s4",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-186",
+    "front": "Evidence for Generate evaluation signals by using automated scanning tools",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g1-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-187",
+    "front": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-188",
+    "front": "Exam trap for Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-189",
+    "front": "Evidence for Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-190",
+    "front": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-191",
+    "front": "Exam trap for Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s2",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-192",
+    "front": "Evidence for Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-193",
+    "front": "Revise instructions, workflows, or constraints",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-194",
+    "front": "Exam trap for Revise instructions, workflows, or constraints",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-195",
+    "front": "Evidence for Revise instructions, workflows, or constraints",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-196",
+    "front": "Refine memory usage",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-197",
+    "front": "Exam trap for Refine memory usage",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-198",
+    "front": "Evidence for Refine memory usage",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-199",
+    "front": "Refine tool usage and tool access",
+    "back": "In GH-600 terms: GH-600 tests whether you can choosing and constraining tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-200",
+    "front": "Exam trap for Refine tool usage and tool access",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-201",
+    "front": "Evidence for Refine tool usage and tool access",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "d4-g3-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-202",
+    "front": "Static analysis, CodeQL, secret scanning, dependency checks",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-203",
+    "front": "Exam trap for Static analysis, CodeQL, secret scanning, dependency checks",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-204",
+    "front": "Evidence for Static analysis, CodeQL, secret scanning, dependency checks",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-205",
+    "front": "Accessibility scans as evaluation signals",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-206",
+    "front": "Exam trap for Accessibility scans as evaluation signals",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-207",
+    "front": "Evidence for Accessibility scans as evaluation signals",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-208",
+    "front": "Prompt and instruction failure classification",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-prompt-and-instruction-failure-classification",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-209",
+    "front": "Exam trap for Prompt and instruction failure classification",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-prompt-and-instruction-failure-classification",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-210",
+    "front": "Evidence for Prompt and instruction failure classification",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-prompt-and-instruction-failure-classification",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-211",
+    "front": "Avoiding overfitting after tuning",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-avoiding-overfitting-after-tuning",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-212",
+    "front": "Exam trap for Avoiding overfitting after tuning",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-avoiding-overfitting-after-tuning",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-213",
+    "front": "Evidence for Avoiding overfitting after tuning",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-avoiding-overfitting-after-tuning",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-214",
+    "front": "Regression checks after tuning",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-regression-checks-after-tuning",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-215",
+    "front": "Exam trap for Regression checks after tuning",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-regression-checks-after-tuning",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-216",
+    "front": "Evidence for Regression checks after tuning",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-4",
+    "skillId": "domain-4-ext-regression-checks-after-tuning",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "fc-217",
+    "front": "Apply an orchestration pattern to coordinate multiple agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-218",
+    "front": "Exam trap for Apply an orchestration pattern to coordinate multiple agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-219",
+    "front": "Evidence for Apply an orchestration pattern to coordinate multiple agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-220",
+    "front": "Configure agent isolation for parallel execution",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-221",
+    "front": "Exam trap for Configure agent isolation for parallel execution",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-222",
+    "front": "Evidence for Configure agent isolation for parallel execution",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-223",
+    "front": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-224",
+    "front": "Exam trap for Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-225",
+    "front": "Evidence for Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g1-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-226",
+    "front": "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-227",
+    "front": "Exam trap for Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-228",
+    "front": "Evidence for Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-229",
+    "front": "Document key decisions, handoffs, and outcomes across agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-230",
+    "front": "Exam trap for Document key decisions, handoffs, and outcomes across agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-231",
+    "front": "Evidence for Document key decisions, handoffs, and outcomes across agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-232",
+    "front": "Perform post-hoc analysis of multi-agent behavior",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-233",
+    "front": "Exam trap for Perform post-hoc analysis of multi-agent behavior",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-234",
+    "front": "Evidence for Perform post-hoc analysis of multi-agent behavior",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-235",
+    "front": "Identify failed, partial, or stalled agent executions",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-236",
+    "front": "Exam trap for Identify failed, partial, or stalled agent executions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-237",
+    "front": "Evidence for Identify failed, partial, or stalled agent executions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-238",
+    "front": "Respond to degraded behavior or coordination across agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-239",
+    "front": "Exam trap for Respond to degraded behavior or coordination across agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-240",
+    "front": "Evidence for Respond to degraded behavior or coordination across agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-241",
+    "front": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "back": "In GH-600 terms: GH-600 tests whether you can designing a recovery path before automation fails inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-242",
+    "front": "Exam trap for Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-243",
+    "front": "Evidence for Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g3-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-244",
+    "front": "Add agents to existing multi-agent workflows",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-245",
+    "front": "Exam trap for Add agents to existing multi-agent workflows",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-246",
+    "front": "Evidence for Add agents to existing multi-agent workflows",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-247",
+    "front": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-248",
+    "front": "Exam trap for Update, reconfigure, or replace agents without disrupting active workflows",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-249",
+    "front": "Evidence for Update, reconfigure, or replace agents without disrupting active workflows",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-250",
+    "front": "Retire agents while preserving auditability and workflow continuity",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-251",
+    "front": "Exam trap for Retire agents while preserving auditability and workflow continuity",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s3",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-252",
+    "front": "Evidence for Retire agents while preserving auditability and workflow continuity",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "d5-g4-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-253",
+    "front": "Planner, builder, reviewer, security, test, and docs agent roles",
+    "back": "In GH-600 terms: GH-600 tests whether you can turning intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-planner-builder-reviewer-security-test-and-docs-agent-roles",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-254",
+    "front": "Exam trap for Planner, builder, reviewer, security, test, and docs agent roles",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-planner-builder-reviewer-security-test-and-docs-agent-roles",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-255",
+    "front": "Evidence for Planner, builder, reviewer, security, test, and docs agent roles",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-planner-builder-reviewer-security-test-and-docs-agent-roles",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-256",
+    "front": "Parallel branch strategy",
+    "back": "In GH-600 terms: GH-600 tests whether you can using GitHub branches and pull requests as boundaries for safe agent work inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-parallel-branch-strategy",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-257",
+    "front": "Exam trap for Parallel branch strategy",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-parallel-branch-strategy",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-258",
+    "front": "Evidence for Parallel branch strategy",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-parallel-branch-strategy",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-259",
+    "front": "Duplicate effort detection",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-duplicate-effort-detection",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-260",
+    "front": "Exam trap for Duplicate effort detection",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-duplicate-effort-detection",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-261",
+    "front": "Evidence for Duplicate effort detection",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-duplicate-effort-detection",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-262",
+    "front": "Contradictory output arbitration",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-contradictory-output-arbitration",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-263",
+    "front": "Exam trap for Contradictory output arbitration",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-contradictory-output-arbitration",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-264",
+    "front": "Evidence for Contradictory output arbitration",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-contradictory-output-arbitration",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-265",
+    "front": "Agent replacement and retirement checklist",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-agent-replacement-and-retirement-checklist",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-266",
+    "front": "Exam trap for Agent replacement and retirement checklist",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-agent-replacement-and-retirement-checklist",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-267",
+    "front": "Evidence for Agent replacement and retirement checklist",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-5",
+    "skillId": "domain-5-ext-agent-replacement-and-retirement-checklist",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config"
+    ]
+  },
+  {
+    "id": "fc-268",
+    "front": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-269",
+    "front": "Exam trap for Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s1",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-270",
+    "front": "Evidence for Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-271",
+    "front": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-272",
+    "front": "Exam trap for Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-273",
+    "front": "Evidence for Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g1-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-274",
+    "front": "Identify the subset of actions that require human judgment",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s1",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-275",
+    "front": "Exam trap for Identify the subset of actions that require human judgment",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s1",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-276",
+    "front": "Evidence for Identify the subset of actions that require human judgment",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s1",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-277",
+    "front": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s2",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-278",
+    "front": "Exam trap for Block actions that violate defined security, compliance, or Responsible AI policies",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s2",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-279",
+    "front": "Evidence for Block actions that violate defined security, compliance, or Responsible AI policies",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s2",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-280",
+    "front": "Scope permissions and execution contexts to enforce least-privilege access",
+    "back": "In GH-600 terms: GH-600 tests whether you can keeping context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-281",
+    "front": "Exam trap for Scope permissions and execution contexts to enforce least-privilege access",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-282",
+    "front": "Evidence for Scope permissions and execution contexts to enforce least-privilege access",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s3",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-283",
+    "front": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s4",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-284",
+    "front": "Exam trap for Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s4",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-285",
+    "front": "Evidence for Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s4",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-286",
+    "front": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s5",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-287",
+    "front": "Exam trap for Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s5",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-288",
+    "front": "Evidence for Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "d6-g2-s5",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-289",
+    "front": "Operational, security, and compliance risk examples",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-operational-security-and-compliance-risk-examples",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-290",
+    "front": "Exam trap for Operational, security, and compliance risk examples",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-operational-security-and-compliance-risk-examples",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-291",
+    "front": "Evidence for Operational, security, and compliance risk examples",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-operational-security-and-compliance-risk-examples",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-292",
+    "front": "Sensitive and irreversible action controls",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-sensitive-and-irreversible-action-controls",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-293",
+    "front": "Exam trap for Sensitive and irreversible action controls",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-sensitive-and-irreversible-action-controls",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-294",
+    "front": "Evidence for Sensitive and irreversible action controls",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-sensitive-and-irreversible-action-controls",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-295",
+    "front": "Avoiding unnecessary approval friction",
+    "back": "In GH-600 terms: GH-600 tests whether you can placing human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-avoiding-unnecessary-approval-friction",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-296",
+    "front": "Exam trap for Avoiding unnecessary approval friction",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-avoiding-unnecessary-approval-friction",
+    "difficulty": "Foundation",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-297",
+    "front": "Evidence for Avoiding unnecessary approval friction",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-avoiding-unnecessary-approval-friction",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-298",
+    "front": "Responsible AI controls for developer agents",
+    "back": "In GH-600 terms: GH-600 tests whether you can applying the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-responsible-ai-controls-for-developer-agents",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-299",
+    "front": "Exam trap for Responsible AI controls for developer agents",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-responsible-ai-controls-for-developer-agents",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-300",
+    "front": "Evidence for Responsible AI controls for developer agents",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-responsible-ai-controls-for-developer-agents",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-301",
+    "front": "Audit logs and review trails",
+    "back": "In GH-600 terms: GH-600 tests whether you can making agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-audit-logs-and-review-trails",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-302",
+    "front": "Exam trap for Audit logs and review trails",
+    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-audit-logs-and-review-trails",
+    "difficulty": "Advanced",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "fc-303",
+    "front": "Evidence for Audit logs and review trails",
+    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "domainId": "domain-6",
+    "skillId": "domain-6-ext-audit-logs-and-review-trails",
+    "difficulty": "Applied",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles"
+    ]
+  }
+]

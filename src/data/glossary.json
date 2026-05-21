@@ -1,0 +1,642 @@
+[
+  {
+    "id": "gloss-agent",
+    "term": "Agent",
+    "definition": "Agent is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-agentic-sdlc",
+    "term": "Agentic SDLC",
+    "definition": "Agentic SDLC is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-autonomy-level",
+    "term": "Autonomy level",
+    "definition": "Autonomy level is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents",
+      "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-branch-protection",
+    "term": "Branch protection",
+    "definition": "Branch protection is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution",
+      "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-codeowners",
+    "term": "CODEOWNERS",
+    "definition": "CODEOWNERS is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan",
+      "domain-1-lesson-06-validate-agent-plans"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-copilot-cloud-agent",
+    "term": "Copilot cloud agent",
+    "definition": "Copilot cloud agent is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-06-validate-agent-plans",
+      "domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-custom-agent",
+    "term": "Custom agent",
+    "definition": "Custom agent is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved",
+      "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-custom-instructions",
+    "term": "Custom instructions",
+    "definition": "Custom instructions is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails",
+      "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-deployment-environment",
+    "term": "Deployment environment",
+    "definition": "Deployment environment is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too",
+      "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-deployment-protection-rule",
+    "term": "Deployment protection rule",
+    "definition": "Deployment protection rule is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery",
+      "domain-1-lesson-11-agentic-workflows-versus-ordinary-automation"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-evaluation-signal",
+    "term": "Evaluation signal",
+    "definition": "Evaluation signal is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-11-agentic-workflows-versus-ordinary-automation",
+      "domain-1-lesson-12-agent-task-decomposition-and-task-boundaries"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-external-memory",
+    "term": "External memory",
+    "definition": "External memory is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-12-agent-task-decomposition-and-task-boundaries",
+      "domain-1-lesson-13-github-issues-as-task-contracts"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-github-actions-workflow",
+    "term": "GitHub Actions workflow",
+    "definition": "GitHub Actions workflow is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-13-github-issues-as-task-contracts",
+      "domain-1-lesson-14-pull-requests-as-evidence-objects"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-github-mcp-server",
+    "term": "GitHub MCP server",
+    "definition": "GitHub MCP server is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-14-pull-requests-as-evidence-objects",
+      "domain-1-lesson-15-repository-custom-instructions-as-governance"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-guardrail",
+    "term": "Guardrail",
+    "definition": "Guardrail is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-15-repository-custom-instructions-as-governance",
+      "domain-1-lesson-16-when-not-to-use-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-human-in-the-loop",
+    "term": "Human-in-the-loop",
+    "definition": "Human-in-the-loop is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-16-when-not-to-use-agents",
+      "domain-2-lesson-01-identify-required-tools"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-least-privilege",
+    "term": "Least privilege",
+    "definition": "Least privilege is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-01-identify-required-tools",
+      "domain-2-lesson-02-configure-agent-tools"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-mcp-allow-list",
+    "term": "MCP allow list",
+    "definition": "MCP allow list is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-02-configure-agent-tools",
+      "domain-2-lesson-03-configure-agent-tool-permissions"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-mcp-registry",
+    "term": "MCP registry",
+    "definition": "MCP registry is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-03-configure-agent-tool-permissions",
+      "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-mcp-server",
+    "term": "MCP server",
+    "definition": "MCP server is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent",
+      "domain-2-lesson-05-configure-a-github-remote-mcp-server"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-mcp-toolset",
+    "term": "MCP toolset",
+    "definition": "MCP toolset is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-05-configure-a-github-remote-mcp-server",
+      "domain-2-lesson-06-configure-the-mcp-registries"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-memory-pruning",
+    "term": "Memory pruning",
+    "definition": "Memory pruning is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-06-configure-the-mcp-registries",
+      "domain-2-lesson-07-configure-mcp-allow-lists"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-multi-agent-handoff",
+    "term": "Multi-agent handoff",
+    "definition": "Multi-agent handoff is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-07-configure-mcp-allow-lists",
+      "domain-2-lesson-08-evaluate-the-execution-context-for-an-agent"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-pull-request-evidence",
+    "term": "Pull request evidence",
+    "definition": "Pull request evidence is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-08-evaluate-the-execution-context-for-an-agent",
+      "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-repository-ruleset",
+    "term": "Repository ruleset",
+    "definition": "Repository ruleset is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository",
+      "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-rollback",
+    "term": "Rollback",
+    "definition": "Rollback is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow",
+      "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-session-log",
+    "term": "Session log",
+    "definition": "Session log is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope",
+      "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-state-checkpoint",
+    "term": "State checkpoint",
+    "definition": "State checkpoint is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu",
+      "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-tool-permission",
+    "term": "Tool permission",
+    "definition": "Tool permission is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints",
+      "domain-2-lesson-14-implement-error-handling"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-traceability",
+    "term": "Traceability",
+    "definition": "Traceability is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-14-implement-error-handling",
+      "domain-2-lesson-15-implement-retries"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-workflow-artifact",
+    "term": "Workflow artifact",
+    "definition": "Workflow artifact is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-15-implement-retries",
+      "domain-2-lesson-16-implement-rollbacks"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-required-status-check",
+    "term": "Required status check",
+    "definition": "Required status check is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-16-implement-rollbacks",
+      "domain-2-lesson-17-implement-escalation-paths"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-prompt-injection",
+    "term": "Prompt injection",
+    "definition": "Prompt injection is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-17-implement-escalation-paths",
+      "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-responsible-ai",
+    "term": "Responsible AI",
+    "definition": "Responsible AI is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions",
+      "domain-2-lesson-19-read-only-versus-write-capable-tool-design"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-risk-classification",
+    "term": "Risk classification",
+    "definition": "Risk classification is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-19-read-only-versus-write-capable-tool-design",
+      "domain-2-lesson-20-tool-risk-classification"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-context-drift",
+    "term": "Context drift",
+    "definition": "Context drift is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-20-tool-risk-classification",
+      "domain-2-lesson-21-github-mcp-server-default-toolsets"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-stale-context",
+    "term": "Stale context",
+    "definition": "Stale context is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-21-github-mcp-server-default-toolsets",
+      "domain-2-lesson-22-remote-mcp-server-versus-local-mcp-server"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-reasoning-failure",
+    "term": "Reasoning failure",
+    "definition": "Reasoning failure is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-3",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-22-remote-mcp-server-versus-local-mcp-server",
+      "domain-2-lesson-23-playwright-mcp-in-agent-validation"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-tool-misuse",
+    "term": "Tool misuse",
+    "definition": "Tool misuse is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-2",
+      "domain-5"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-23-playwright-mcp-in-agent-validation",
+      "domain-2-lesson-24-repository-level-mcp-configuration"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-environment-failure",
+    "term": "Environment failure",
+    "definition": "Environment failure is a GH-600 concept used to make agentic development work safer, more reviewable, and more accountable in GitHub workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-4"
+    ],
+    "relatedLessons": [
+      "domain-2-lesson-24-repository-level-mcp-configuration",
+      "domain-2-lesson-25-branch-based-tool-scope"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  }
+]

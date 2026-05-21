@@ -1,0 +1,962 @@
+[
+  {
+    "id": "lab-01-agent-task-contract-domain-1",
+    "title": "Build an agent task contract for Prepare agent architecture and SDLC processes",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g1-s1",
+      "d1-g1-s2",
+      "d1-g1-s3"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify steps for agents to perform; Identify and mitigate common anti-patterns in agents; Define inputs, outputs, and success criteria for agents.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Prepare agent architecture and SDLC processes.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "ms-agent-architecture-sdlc"
+    ]
+  },
+  {
+    "id": "lab-02-custom-instructions-domain-1",
+    "title": "Write safe Copilot instructions for Prepare agent architecture and SDLC processes",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g1-s2",
+      "d1-g1-s3",
+      "d1-g2-s1"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify and mitigate common anti-patterns in agents; Define inputs, outputs, and success criteria for agents; Configure agent planning to be distinct from agent execution.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Prepare agent architecture and SDLC processes.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "ms-agent-architecture-sdlc"
+    ]
+  },
+  {
+    "id": "lab-03-mcp-policy-domain-1",
+    "title": "Design an MCP allow-list for Prepare agent architecture and SDLC processes",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g1-s3",
+      "d1-g2-s1",
+      "d1-g2-s2"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Define inputs, outputs, and success criteria for agents; Configure agent planning to be distinct from agent execution; Configure an agent to output a structured plan.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Prepare agent architecture and SDLC processes.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "ms-agent-architecture-sdlc"
+    ]
+  },
+  {
+    "id": "lab-04-branch-rules-domain-1",
+    "title": "Protect branches and reviews for Prepare agent architecture and SDLC processes",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g1-s1",
+      "d1-g1-s2",
+      "d1-g1-s3"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify steps for agents to perform; Identify and mitigate common anti-patterns in agents; Define inputs, outputs, and success criteria for agents.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Prepare agent architecture and SDLC processes.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "ms-agent-architecture-sdlc"
+    ]
+  },
+  {
+    "id": "lab-05-agent-task-contract-domain-2",
+    "title": "Build an agent task contract for Implement tool use and environment interaction",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g1-s2",
+      "d2-g1-s3",
+      "d2-g2-s1"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Configure agent tools; Configure agent tool permissions; Add an MCP server as a tool to an agent.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Implement tool use and environment interaction.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 20-25% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows",
+      "gh-deploy-envs",
+      "gh-cloud-agent-risks",
+      "ms-tooling-mcp-envs"
+    ]
+  },
+  {
+    "id": "lab-06-custom-instructions-domain-2",
+    "title": "Write safe Copilot instructions for Implement tool use and environment interaction",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g1-s3",
+      "d2-g2-s1",
+      "d2-g2-s2"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Configure agent tool permissions; Add an MCP server as a tool to an agent; Configure a GitHub remote MCP server.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Implement tool use and environment interaction.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 20-25% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows",
+      "gh-deploy-envs",
+      "gh-cloud-agent-risks",
+      "ms-tooling-mcp-envs"
+    ]
+  },
+  {
+    "id": "lab-07-mcp-policy-domain-2",
+    "title": "Design an MCP allow-list for Implement tool use and environment interaction",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g1-s1",
+      "d2-g1-s2",
+      "d2-g1-s3"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify required tools; Configure agent tools; Configure agent tool permissions.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Implement tool use and environment interaction.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 20-25% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows",
+      "gh-deploy-envs",
+      "gh-cloud-agent-risks",
+      "ms-tooling-mcp-envs"
+    ]
+  },
+  {
+    "id": "lab-08-branch-rules-domain-2",
+    "title": "Protect branches and reviews for Implement tool use and environment interaction",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g1-s2",
+      "d2-g1-s3",
+      "d2-g2-s1"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Configure agent tools; Configure agent tool permissions; Add an MCP server as a tool to an agent.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Implement tool use and environment interaction.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 20-25% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows",
+      "gh-deploy-envs",
+      "gh-cloud-agent-risks",
+      "ms-tooling-mcp-envs"
+    ]
+  },
+  {
+    "id": "lab-09-agent-task-contract-domain-3",
+    "title": "Build an agent task contract for Manage memory, state, and execution",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g1-s3",
+      "d3-g2-s1",
+      "d3-g2-s2"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Define memory expiration, pruning, and reset rules; Capture task progress and decisions as durable artifacts; Resume agent work without repeating steps or diverging from prior decisions.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Manage memory, state, and execution.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-10-custom-instructions-domain-3",
+    "title": "Write safe Copilot instructions for Manage memory, state, and execution",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g1-s1",
+      "d3-g1-s2",
+      "d3-g1-s3"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Choose between short-term, long-term, and external memory; Scope agent memory to task-relevant information; Define memory expiration, pruning, and reset rules.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Manage memory, state, and execution.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-11-mcp-policy-domain-3",
+    "title": "Design an MCP allow-list for Manage memory, state, and execution",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g1-s2",
+      "d3-g1-s3",
+      "d3-g2-s1"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Scope agent memory to task-relevant information; Define memory expiration, pruning, and reset rules; Capture task progress and decisions as durable artifacts.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Manage memory, state, and execution.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-12-branch-rules-domain-3",
+    "title": "Protect branches and reviews for Manage memory, state, and execution",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g1-s3",
+      "d3-g2-s1",
+      "d3-g2-s2"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Define memory expiration, pruning, and reset rules; Capture task progress and decisions as durable artifacts; Resume agent work without repeating steps or diverging from prior decisions.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Manage memory, state, and execution.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-13-agent-task-contract-domain-4",
+    "title": "Build an agent task contract for Perform evaluation, error analysis, and tuning",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s1",
+      "d4-g1-s2",
+      "d4-g1-s3"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Specify expected outcomes and operational constraints for agent tasks; Identify qualitative and quantitative evaluation signals to evaluate agents; Align evaluation criteria with development intent.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Perform evaluation, error analysis, and tuning.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ]
+  },
+  {
+    "id": "lab-14-custom-instructions-domain-4",
+    "title": "Write safe Copilot instructions for Perform evaluation, error analysis, and tuning",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s2",
+      "d4-g1-s3",
+      "d4-g1-s4"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify qualitative and quantitative evaluation signals to evaluate agents; Align evaluation criteria with development intent; Generate evaluation signals by using automated scanning tools.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Perform evaluation, error analysis, and tuning.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ]
+  },
+  {
+    "id": "lab-15-mcp-policy-domain-4",
+    "title": "Design an MCP allow-list for Perform evaluation, error analysis, and tuning",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s3",
+      "d4-g1-s4",
+      "d4-g2-s1"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Align evaluation criteria with development intent; Generate evaluation signals by using automated scanning tools; Identify failures by using logs, plans, traces, outputs, and workflow artifacts.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Perform evaluation, error analysis, and tuning.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ]
+  },
+  {
+    "id": "lab-16-branch-rules-domain-4",
+    "title": "Protect branches and reviews for Perform evaluation, error analysis, and tuning",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s1",
+      "d4-g1-s2",
+      "d4-g1-s3"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Specify expected outcomes and operational constraints for agent tasks; Identify qualitative and quantitative evaluation signals to evaluate agents; Align evaluation criteria with development intent.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Perform evaluation, error analysis, and tuning.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ]
+  },
+  {
+    "id": "lab-17-agent-task-contract-domain-5",
+    "title": "Build an agent task contract for Orchestrate multi-agent coordination",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g1-s2",
+      "d5-g1-s3",
+      "d5-g2-s1"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Configure agent isolation for parallel execution; Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs; Configure multi-agent workflows to produce artifacts suitable for review and audit.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Orchestrate multi-agent coordination.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  },
+  {
+    "id": "lab-18-custom-instructions-domain-5",
+    "title": "Write safe Copilot instructions for Orchestrate multi-agent coordination",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g1-s3",
+      "d5-g2-s1",
+      "d5-g2-s2"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs; Configure multi-agent workflows to produce artifacts suitable for review and audit; Document key decisions, handoffs, and outcomes across agents.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Orchestrate multi-agent coordination.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  },
+  {
+    "id": "lab-19-mcp-policy-domain-5",
+    "title": "Design an MCP allow-list for Orchestrate multi-agent coordination",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g1-s1",
+      "d5-g1-s2",
+      "d5-g1-s3"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Apply an orchestration pattern to coordinate multiple agents; Configure agent isolation for parallel execution; Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Orchestrate multi-agent coordination.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  },
+  {
+    "id": "lab-20-branch-rules-domain-5",
+    "title": "Protect branches and reviews for Orchestrate multi-agent coordination",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g1-s2",
+      "d5-g1-s3",
+      "d5-g2-s1"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Configure agent isolation for parallel execution; Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs; Configure multi-agent workflows to produce artifacts suitable for review and audit.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Orchestrate multi-agent coordination.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 15-20% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  },
+  {
+    "id": "lab-21-agent-task-contract-domain-6",
+    "title": "Build an agent task contract for Implement guardrails and accountability",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g2-s1",
+      "d6-g2-s2",
+      "d6-g2-s3"
+    ],
+    "objective": "Write an issue template that defines goal, scope, forbidden actions, acceptance criteria, evidence, and rollback.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/agent-task-contract and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify the subset of actions that require human judgment; Block actions that violate defined security, compliance, or Responsible AI policies; Scope permissions and execution contexts to enforce least-privilege access.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates build an agent task contract for Implement guardrails and accountability.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-deploy-envs",
+      "gh-review-deployments"
+    ]
+  },
+  {
+    "id": "lab-22-custom-instructions-domain-6",
+    "title": "Write safe Copilot instructions for Implement guardrails and accountability",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g1-s1",
+      "d6-g1-s2",
+      "d6-g2-s1"
+    ],
+    "objective": "Create repository and path-specific instructions that guide Copilot without hiding risks or storing secrets.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/custom-instructions and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Classify agent actions by operational, security, and compliance risk to right-size human interventions; Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards; Identify the subset of actions that require human judgment.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates write safe copilot instructions for Implement guardrails and accountability.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-deploy-envs",
+      "gh-review-deployments"
+    ]
+  },
+  {
+    "id": "lab-23-mcp-policy-domain-6",
+    "title": "Design an MCP allow-list for Implement guardrails and accountability",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g1-s2",
+      "d6-g2-s1",
+      "d6-g2-s2"
+    ],
+    "objective": "Choose tools, toolsets, read/write access, and approval rules for a GitHub MCP-enabled agent.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/mcp-policy and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards; Identify the subset of actions that require human judgment; Block actions that violate defined security, compliance, or Responsible AI policies.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates design an mcp allow-list for Implement guardrails and accountability.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-deploy-envs",
+      "gh-review-deployments"
+    ]
+  },
+  {
+    "id": "lab-24-branch-rules-domain-6",
+    "title": "Protect branches and reviews for Implement guardrails and accountability",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g2-s1",
+      "d6-g2-s2",
+      "d6-g2-s3"
+    ],
+    "objective": "Map branch protection, rulesets, required checks, and CODEOWNERS to an agent PR flow.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue or pull request template",
+      "GitHub Actions or checks where relevant",
+      "A text editor"
+    ],
+    "setup": "Use a sample repository or this study repository. Create a branch named lab/branch-rules and keep all artifacts reviewable.",
+    "steps": [
+      "Read the related lesson(s): Identify the subset of actions that require human judgment; Block actions that violate defined security, compliance, or Responsible AI policies; Scope permissions and execution contexts to enforce least-privilege access.",
+      "Write the artifact requested by the lab objective.",
+      "Map each decision to a GitHub control point.",
+      "Add validation evidence: checks, review notes, logs, or a decision table.",
+      "Write a recovery note for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact that demonstrates protect branches and reviews for Implement guardrails and accountability.",
+    "validation": "Another learner should be able to inspect the artifact and answer: what was allowed, what was blocked, what evidence was produced, and who approves risk.",
+    "commonFailure": "The artifact grants broad access, lacks evidence, or relies on the agent saying it is done.",
+    "recovery": "Reduce scope, add explicit evidence requirements, and add a human checkpoint for sensitive actions.",
+    "examRelevance": "This lab rehearses scenario judgement for 10-15% of the exam.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-deploy-envs",
+      "gh-review-deployments"
+    ]
+  }
+]

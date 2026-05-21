@@ -1,0 +1,2477 @@
+[
+  {
+    "id": "d1-g1-s1",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g1",
+    "group": "Integrate agents into the software development lifecycle (SDLC)",
+    "skill": "Identify steps for agents to perform",
+    "lessonIds": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-01-identify-steps-for-agents-to-perform-1",
+      "q-domain-1-lesson-01-identify-steps-for-agents-to-perform-2",
+      "q-domain-1-lesson-01-identify-steps-for-agents-to-perform-3",
+      "q-domain-1-lesson-01-identify-steps-for-agents-to-perform-4",
+      "q-domain-1-lesson-01-identify-steps-for-agents-to-perform-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-1",
+      "fc-2",
+      "fc-3"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Identify steps for agents to perform\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g1-s2",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g1",
+    "group": "Integrate agents into the software development lifecycle (SDLC)",
+    "skill": "Identify and mitigate common anti-patterns in agents",
+    "lessonIds": [
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents-1",
+      "q-domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents-2",
+      "q-domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents-3",
+      "q-domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents-4",
+      "q-domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-4",
+      "fc-5",
+      "fc-6"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Identify and mitigate common anti-patterns in agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g1-s3",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g1",
+    "group": "Integrate agents into the software development lifecycle (SDLC)",
+    "skill": "Define inputs, outputs, and success criteria for agents",
+    "lessonIds": [
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents-1",
+      "q-domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents-2",
+      "q-domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents-3",
+      "q-domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents-4",
+      "q-domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-7",
+      "fc-8",
+      "fc-9"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Define inputs, outputs, and success criteria for agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g2-s1",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g2",
+    "group": "Define boundaries between planning, reasoning, and action",
+    "skill": "Configure agent planning to be distinct from agent execution",
+    "lessonIds": [
+      "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution-1",
+      "q-domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution-2",
+      "q-domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution-3",
+      "q-domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution-4",
+      "q-domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution-5"
+    ],
+    "labIds": [
+      "lab-02-custom-instructions-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-10",
+      "fc-11",
+      "fc-12"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Configure agent planning to be distinct from agent execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g2-s2",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g2",
+    "group": "Define boundaries between planning, reasoning, and action",
+    "skill": "Configure an agent to output a structured plan",
+    "lessonIds": [
+      "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan-1",
+      "q-domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan-2",
+      "q-domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan-3",
+      "q-domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan-4",
+      "q-domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan-5"
+    ],
+    "labIds": [
+      "lab-03-mcp-policy-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-13",
+      "fc-14",
+      "fc-15"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Configure an agent to output a structured plan\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g2-s3",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g2",
+    "group": "Define boundaries between planning, reasoning, and action",
+    "skill": "Validate agent plans",
+    "lessonIds": [
+      "domain-1-lesson-06-validate-agent-plans"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-06-validate-agent-plans-1",
+      "q-domain-1-lesson-06-validate-agent-plans-2",
+      "q-domain-1-lesson-06-validate-agent-plans-3",
+      "q-domain-1-lesson-06-validate-agent-plans-4",
+      "q-domain-1-lesson-06-validate-agent-plans-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-16",
+      "fc-17",
+      "fc-18"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Validate agent plans\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g2-s4",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g2",
+    "group": "Define boundaries between planning, reasoning, and action",
+    "skill": "Prevent agent action until the agent checked and approved",
+    "lessonIds": [
+      "domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved-1",
+      "q-domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved-2",
+      "q-domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved-3",
+      "q-domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved-4",
+      "q-domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-19",
+      "fc-20",
+      "fc-21"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Prevent agent action until the agent checked and approved\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g3-s1",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g3",
+    "group": "Configure observability and control for autonomous agents",
+    "skill": "Plan and implement the degree of agent autonomy, including guardrails",
+    "lessonIds": [
+      "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails-1",
+      "q-domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails-2",
+      "q-domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails-3",
+      "q-domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails-4",
+      "q-domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-22",
+      "fc-23",
+      "fc-24"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Plan and implement the degree of agent autonomy, including guardrails\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g3-s2",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g3",
+    "group": "Configure observability and control for autonomous agents",
+    "skill": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "lessonIds": [
+      "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too-1",
+      "q-domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too-2",
+      "q-domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too-3",
+      "q-domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too-4",
+      "q-domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-25",
+      "fc-26",
+      "fc-27"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Configure agent to produce inspectable artifacts within standard development tooling\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d1-g3-s3",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "weight": "15-20%",
+    "groupId": "d1-g3",
+    "group": "Configure observability and control for autonomous agents",
+    "skill": "Configure human intervention for autonomous agents without slowing delivery",
+    "lessonIds": [
+      "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery"
+    ],
+    "quizQuestionIds": [
+      "q-domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery-1",
+      "q-domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery-2",
+      "q-domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery-3",
+      "q-domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery-4",
+      "q-domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery-5"
+    ],
+    "labIds": [
+      "lab-01-agent-task-contract-domain-1"
+    ],
+    "flashcardIds": [
+      "fc-28",
+      "fc-29",
+      "fc-30"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets"
+    ],
+    "revisionNote": "Be able to apply \"Configure human intervention for autonomous agents without slowing delivery\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g1-s1",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g1",
+    "group": "Select and configure agent tools",
+    "skill": "Identify required tools",
+    "lessonIds": [
+      "domain-2-lesson-01-identify-required-tools"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-01-identify-required-tools-1",
+      "q-domain-2-lesson-01-identify-required-tools-2",
+      "q-domain-2-lesson-01-identify-required-tools-3",
+      "q-domain-2-lesson-01-identify-required-tools-4",
+      "q-domain-2-lesson-01-identify-required-tools-5"
+    ],
+    "labIds": [
+      "lab-07-mcp-policy-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-49",
+      "fc-50",
+      "fc-51"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Identify required tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g1-s2",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g1",
+    "group": "Select and configure agent tools",
+    "skill": "Configure agent tools",
+    "lessonIds": [
+      "domain-2-lesson-02-configure-agent-tools"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-02-configure-agent-tools-1",
+      "q-domain-2-lesson-02-configure-agent-tools-2",
+      "q-domain-2-lesson-02-configure-agent-tools-3",
+      "q-domain-2-lesson-02-configure-agent-tools-4",
+      "q-domain-2-lesson-02-configure-agent-tools-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-52",
+      "fc-53",
+      "fc-54"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure agent tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g1-s3",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g1",
+    "group": "Select and configure agent tools",
+    "skill": "Configure agent tool permissions",
+    "lessonIds": [
+      "domain-2-lesson-03-configure-agent-tool-permissions"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-03-configure-agent-tool-permissions-1",
+      "q-domain-2-lesson-03-configure-agent-tool-permissions-2",
+      "q-domain-2-lesson-03-configure-agent-tool-permissions-3",
+      "q-domain-2-lesson-03-configure-agent-tool-permissions-4",
+      "q-domain-2-lesson-03-configure-agent-tool-permissions-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-55",
+      "fc-56",
+      "fc-57"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure agent tool permissions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g2-s1",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g2",
+    "group": "Configure MCP servers",
+    "skill": "Add an MCP server as a tool to an agent",
+    "lessonIds": [
+      "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent-1",
+      "q-domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent-2",
+      "q-domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent-3",
+      "q-domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent-4",
+      "q-domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-58",
+      "fc-59",
+      "fc-60"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Add an MCP server as a tool to an agent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g2-s2",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g2",
+    "group": "Configure MCP servers",
+    "skill": "Configure a GitHub remote MCP server",
+    "lessonIds": [
+      "domain-2-lesson-05-configure-a-github-remote-mcp-server"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-05-configure-a-github-remote-mcp-server-1",
+      "q-domain-2-lesson-05-configure-a-github-remote-mcp-server-2",
+      "q-domain-2-lesson-05-configure-a-github-remote-mcp-server-3",
+      "q-domain-2-lesson-05-configure-a-github-remote-mcp-server-4",
+      "q-domain-2-lesson-05-configure-a-github-remote-mcp-server-5"
+    ],
+    "labIds": [
+      "lab-06-custom-instructions-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-61",
+      "fc-62",
+      "fc-63"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure a GitHub remote MCP server\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g2-s3",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g2",
+    "group": "Configure MCP servers",
+    "skill": "Configure the MCP registries",
+    "lessonIds": [
+      "domain-2-lesson-06-configure-the-mcp-registries"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-06-configure-the-mcp-registries-1",
+      "q-domain-2-lesson-06-configure-the-mcp-registries-2",
+      "q-domain-2-lesson-06-configure-the-mcp-registries-3",
+      "q-domain-2-lesson-06-configure-the-mcp-registries-4",
+      "q-domain-2-lesson-06-configure-the-mcp-registries-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-64",
+      "fc-65",
+      "fc-66"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure the MCP registries\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g2-s4",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g2",
+    "group": "Configure MCP servers",
+    "skill": "Configure MCP allow lists",
+    "lessonIds": [
+      "domain-2-lesson-07-configure-mcp-allow-lists"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-07-configure-mcp-allow-lists-1",
+      "q-domain-2-lesson-07-configure-mcp-allow-lists-2",
+      "q-domain-2-lesson-07-configure-mcp-allow-lists-3",
+      "q-domain-2-lesson-07-configure-mcp-allow-lists-4",
+      "q-domain-2-lesson-07-configure-mcp-allow-lists-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-67",
+      "fc-68",
+      "fc-69"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure MCP allow lists\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s1",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Evaluate the execution context for an agent",
+    "lessonIds": [
+      "domain-2-lesson-08-evaluate-the-execution-context-for-an-agent"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-08-evaluate-the-execution-context-for-an-agent-1",
+      "q-domain-2-lesson-08-evaluate-the-execution-context-for-an-agent-2",
+      "q-domain-2-lesson-08-evaluate-the-execution-context-for-an-agent-3",
+      "q-domain-2-lesson-08-evaluate-the-execution-context-for-an-agent-4",
+      "q-domain-2-lesson-08-evaluate-the-execution-context-for-an-agent-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-70",
+      "fc-71",
+      "fc-72"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Evaluate the execution context for an agent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s2",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Configure an agent's scope to a specific repository",
+    "lessonIds": [
+      "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository-1",
+      "q-domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository-2",
+      "q-domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository-3",
+      "q-domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository-4",
+      "q-domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-73",
+      "fc-74",
+      "fc-75"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure an agent's scope to a specific repository\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s3",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Configure an agent to be invoked in a CI workflow",
+    "lessonIds": [
+      "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow-1",
+      "q-domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow-2",
+      "q-domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow-3",
+      "q-domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow-4",
+      "q-domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-76",
+      "fc-77",
+      "fc-78"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure an agent to be invoked in a CI workflow\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s4",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Configure an agent to use branch-based scope",
+    "lessonIds": [
+      "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope-1",
+      "q-domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope-2",
+      "q-domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope-3",
+      "q-domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope-4",
+      "q-domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-79",
+      "fc-80",
+      "fc-81"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure an agent to use branch-based scope\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s5",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "lessonIds": [
+      "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu-1",
+      "q-domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu-2",
+      "q-domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu-3",
+      "q-domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu-4",
+      "q-domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-82",
+      "fc-83",
+      "fc-84"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Enable an agent to perform autonomous actions, including creating branches and pull requests\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g3-s6",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g3",
+    "group": "Integrate agents within development environments",
+    "skill": "Configure an agent to handle environment-specific constraints",
+    "lessonIds": [
+      "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints-1",
+      "q-domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints-2",
+      "q-domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints-3",
+      "q-domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints-4",
+      "q-domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-85",
+      "fc-86",
+      "fc-87"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Configure an agent to handle environment-specific constraints\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g4-s1",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g4",
+    "group": "Operate agents with safe execution paths and robust error handling",
+    "skill": "Implement error handling",
+    "lessonIds": [
+      "domain-2-lesson-14-implement-error-handling"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-14-implement-error-handling-1",
+      "q-domain-2-lesson-14-implement-error-handling-2",
+      "q-domain-2-lesson-14-implement-error-handling-3",
+      "q-domain-2-lesson-14-implement-error-handling-4",
+      "q-domain-2-lesson-14-implement-error-handling-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-88",
+      "fc-89",
+      "fc-90"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Implement error handling\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g4-s2",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g4",
+    "group": "Operate agents with safe execution paths and robust error handling",
+    "skill": "Implement retries",
+    "lessonIds": [
+      "domain-2-lesson-15-implement-retries"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-15-implement-retries-1",
+      "q-domain-2-lesson-15-implement-retries-2",
+      "q-domain-2-lesson-15-implement-retries-3",
+      "q-domain-2-lesson-15-implement-retries-4",
+      "q-domain-2-lesson-15-implement-retries-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-91",
+      "fc-92",
+      "fc-93"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Implement retries\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g4-s3",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g4",
+    "group": "Operate agents with safe execution paths and robust error handling",
+    "skill": "Implement rollbacks",
+    "lessonIds": [
+      "domain-2-lesson-16-implement-rollbacks"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-16-implement-rollbacks-1",
+      "q-domain-2-lesson-16-implement-rollbacks-2",
+      "q-domain-2-lesson-16-implement-rollbacks-3",
+      "q-domain-2-lesson-16-implement-rollbacks-4",
+      "q-domain-2-lesson-16-implement-rollbacks-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-94",
+      "fc-95",
+      "fc-96"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Implement rollbacks\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g4-s4",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g4",
+    "group": "Operate agents with safe execution paths and robust error handling",
+    "skill": "Implement escalation paths",
+    "lessonIds": [
+      "domain-2-lesson-17-implement-escalation-paths"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-17-implement-escalation-paths-1",
+      "q-domain-2-lesson-17-implement-escalation-paths-2",
+      "q-domain-2-lesson-17-implement-escalation-paths-3",
+      "q-domain-2-lesson-17-implement-escalation-paths-4",
+      "q-domain-2-lesson-17-implement-escalation-paths-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-97",
+      "fc-98",
+      "fc-99"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Implement escalation paths\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d2-g4-s5",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "weight": "20-25%",
+    "groupId": "d2-g4",
+    "group": "Operate agents with safe execution paths and robust error handling",
+    "skill": "Implement traceability and accountability for agent actions",
+    "lessonIds": [
+      "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions"
+    ],
+    "quizQuestionIds": [
+      "q-domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions-1",
+      "q-domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions-2",
+      "q-domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions-3",
+      "q-domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions-4",
+      "q-domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions-5"
+    ],
+    "labIds": [
+      "lab-05-agent-task-contract-domain-2"
+    ],
+    "flashcardIds": [
+      "fc-100",
+      "fc-101",
+      "fc-102"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "revisionNote": "Be able to apply \"Implement traceability and accountability for agent actions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g1-s1",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g1",
+    "group": "Implement agent memory strategies",
+    "skill": "Choose between short-term, long-term, and external memory",
+    "lessonIds": [
+      "domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory-1",
+      "q-domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory-2",
+      "q-domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory-3",
+      "q-domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory-4",
+      "q-domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory-5"
+    ],
+    "labIds": [
+      "lab-10-custom-instructions-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-133",
+      "fc-134",
+      "fc-135"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Choose between short-term, long-term, and external memory\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g1-s2",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g1",
+    "group": "Implement agent memory strategies",
+    "skill": "Scope agent memory to task-relevant information",
+    "lessonIds": [
+      "domain-3-lesson-02-scope-agent-memory-to-task-relevant-information"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-02-scope-agent-memory-to-task-relevant-information-1",
+      "q-domain-3-lesson-02-scope-agent-memory-to-task-relevant-information-2",
+      "q-domain-3-lesson-02-scope-agent-memory-to-task-relevant-information-3",
+      "q-domain-3-lesson-02-scope-agent-memory-to-task-relevant-information-4",
+      "q-domain-3-lesson-02-scope-agent-memory-to-task-relevant-information-5"
+    ],
+    "labIds": [
+      "lab-10-custom-instructions-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-136",
+      "fc-137",
+      "fc-138"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Scope agent memory to task-relevant information\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g1-s3",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g1",
+    "group": "Implement agent memory strategies",
+    "skill": "Define memory expiration, pruning, and reset rules",
+    "lessonIds": [
+      "domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules-1",
+      "q-domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules-2",
+      "q-domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules-3",
+      "q-domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules-4",
+      "q-domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-139",
+      "fc-140",
+      "fc-141"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Define memory expiration, pruning, and reset rules\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g2-s1",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g2",
+    "group": "Persist agent state and manage context drift",
+    "skill": "Capture task progress and decisions as durable artifacts",
+    "lessonIds": [
+      "domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts-1",
+      "q-domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts-2",
+      "q-domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts-3",
+      "q-domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts-4",
+      "q-domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-142",
+      "fc-143",
+      "fc-144"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Capture task progress and decisions as durable artifacts\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g2-s2",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g2",
+    "group": "Persist agent state and manage context drift",
+    "skill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "lessonIds": [
+      "domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions-1",
+      "q-domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions-2",
+      "q-domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions-3",
+      "q-domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions-4",
+      "q-domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-145",
+      "fc-146",
+      "fc-147"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Resume agent work without repeating steps or diverging from prior decisions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g2-s3",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g2",
+    "group": "Persist agent state and manage context drift",
+    "skill": "Detect and correct drift during extended agent execution",
+    "lessonIds": [
+      "domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution-1",
+      "q-domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution-2",
+      "q-domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution-3",
+      "q-domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution-4",
+      "q-domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-148",
+      "fc-149",
+      "fc-150"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Detect and correct drift during extended agent execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g3-s1",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g3",
+    "group": "Ensure continuity of agent memory and state across tools and environments",
+    "skill": "Share agent state",
+    "lessonIds": [
+      "domain-3-lesson-07-share-agent-state"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-07-share-agent-state-1",
+      "q-domain-3-lesson-07-share-agent-state-2",
+      "q-domain-3-lesson-07-share-agent-state-3",
+      "q-domain-3-lesson-07-share-agent-state-4",
+      "q-domain-3-lesson-07-share-agent-state-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-151",
+      "fc-152",
+      "fc-153"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Share agent state\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g3-s2",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g3",
+    "group": "Ensure continuity of agent memory and state across tools and environments",
+    "skill": "Prevent conflicting context",
+    "lessonIds": [
+      "domain-3-lesson-08-prevent-conflicting-context"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-08-prevent-conflicting-context-1",
+      "q-domain-3-lesson-08-prevent-conflicting-context-2",
+      "q-domain-3-lesson-08-prevent-conflicting-context-3",
+      "q-domain-3-lesson-08-prevent-conflicting-context-4",
+      "q-domain-3-lesson-08-prevent-conflicting-context-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-154",
+      "fc-155",
+      "fc-156"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Prevent conflicting context\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d3-g3-s3",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "weight": "10-15%",
+    "groupId": "d3-g3",
+    "group": "Ensure continuity of agent memory and state across tools and environments",
+    "skill": "Prevent stale context",
+    "lessonIds": [
+      "domain-3-lesson-09-prevent-stale-context"
+    ],
+    "quizQuestionIds": [
+      "q-domain-3-lesson-09-prevent-stale-context-1",
+      "q-domain-3-lesson-09-prevent-stale-context-2",
+      "q-domain-3-lesson-09-prevent-stale-context-3",
+      "q-domain-3-lesson-09-prevent-stale-context-4",
+      "q-domain-3-lesson-09-prevent-stale-context-5"
+    ],
+    "labIds": [
+      "lab-09-agent-task-contract-domain-3"
+    ],
+    "flashcardIds": [
+      "fc-157",
+      "fc-158",
+      "fc-159"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ],
+    "revisionNote": "Be able to apply \"Prevent stale context\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g1-s1",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g1",
+    "group": "Define success criteria and evaluation signals for agent tasks",
+    "skill": "Specify expected outcomes and operational constraints for agent tasks",
+    "lessonIds": [
+      "domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks-1",
+      "q-domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks-2",
+      "q-domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks-3",
+      "q-domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks-4",
+      "q-domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-175",
+      "fc-176",
+      "fc-177"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Specify expected outcomes and operational constraints for agent tasks\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g1-s2",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g1",
+    "group": "Define success criteria and evaluation signals for agent tasks",
+    "skill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "lessonIds": [
+      "domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents-1",
+      "q-domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents-2",
+      "q-domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents-3",
+      "q-domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents-4",
+      "q-domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-178",
+      "fc-179",
+      "fc-180"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Identify qualitative and quantitative evaluation signals to evaluate agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g1-s3",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g1",
+    "group": "Define success criteria and evaluation signals for agent tasks",
+    "skill": "Align evaluation criteria with development intent",
+    "lessonIds": [
+      "domain-4-lesson-03-align-evaluation-criteria-with-development-intent"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-03-align-evaluation-criteria-with-development-intent-1",
+      "q-domain-4-lesson-03-align-evaluation-criteria-with-development-intent-2",
+      "q-domain-4-lesson-03-align-evaluation-criteria-with-development-intent-3",
+      "q-domain-4-lesson-03-align-evaluation-criteria-with-development-intent-4",
+      "q-domain-4-lesson-03-align-evaluation-criteria-with-development-intent-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-181",
+      "fc-182",
+      "fc-183"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Align evaluation criteria with development intent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g1-s4",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g1",
+    "group": "Define success criteria and evaluation signals for agent tasks",
+    "skill": "Generate evaluation signals by using automated scanning tools",
+    "lessonIds": [
+      "domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools-1",
+      "q-domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools-2",
+      "q-domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools-3",
+      "q-domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools-4",
+      "q-domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools-5"
+    ],
+    "labIds": [
+      "lab-14-custom-instructions-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-184",
+      "fc-185",
+      "fc-186"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Generate evaluation signals by using automated scanning tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g2-s1",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g2",
+    "group": "Analyze agent failures and identify root causes",
+    "skill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "lessonIds": [
+      "domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts-1",
+      "q-domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts-2",
+      "q-domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts-3",
+      "q-domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts-4",
+      "q-domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts-5"
+    ],
+    "labIds": [
+      "lab-15-mcp-policy-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-187",
+      "fc-188",
+      "fc-189"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g2-s2",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g2",
+    "group": "Analyze agent failures and identify root causes",
+    "skill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "lessonIds": [
+      "domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir-1",
+      "q-domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir-2",
+      "q-domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir-3",
+      "q-domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir-4",
+      "q-domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-190",
+      "fc-191",
+      "fc-192"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g3-s1",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g3",
+    "group": "Tune agent behavior based on evaluation results",
+    "skill": "Revise instructions, workflows, or constraints",
+    "lessonIds": [
+      "domain-4-lesson-07-revise-instructions-workflows-or-constraints"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-07-revise-instructions-workflows-or-constraints-1",
+      "q-domain-4-lesson-07-revise-instructions-workflows-or-constraints-2",
+      "q-domain-4-lesson-07-revise-instructions-workflows-or-constraints-3",
+      "q-domain-4-lesson-07-revise-instructions-workflows-or-constraints-4",
+      "q-domain-4-lesson-07-revise-instructions-workflows-or-constraints-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-193",
+      "fc-194",
+      "fc-195"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Revise instructions, workflows, or constraints\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g3-s2",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g3",
+    "group": "Tune agent behavior based on evaluation results",
+    "skill": "Refine memory usage",
+    "lessonIds": [
+      "domain-4-lesson-08-refine-memory-usage"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-08-refine-memory-usage-1",
+      "q-domain-4-lesson-08-refine-memory-usage-2",
+      "q-domain-4-lesson-08-refine-memory-usage-3",
+      "q-domain-4-lesson-08-refine-memory-usage-4",
+      "q-domain-4-lesson-08-refine-memory-usage-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-196",
+      "fc-197",
+      "fc-198"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Refine memory usage\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d4-g3-s3",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "weight": "15-20%",
+    "groupId": "d4-g3",
+    "group": "Tune agent behavior based on evaluation results",
+    "skill": "Refine tool usage and tool access",
+    "lessonIds": [
+      "domain-4-lesson-09-refine-tool-usage-and-tool-access"
+    ],
+    "quizQuestionIds": [
+      "q-domain-4-lesson-09-refine-tool-usage-and-tool-access-1",
+      "q-domain-4-lesson-09-refine-tool-usage-and-tool-access-2",
+      "q-domain-4-lesson-09-refine-tool-usage-and-tool-access-3",
+      "q-domain-4-lesson-09-refine-tool-usage-and-tool-access-4",
+      "q-domain-4-lesson-09-refine-tool-usage-and-tool-access-5"
+    ],
+    "labIds": [
+      "lab-13-agent-task-contract-domain-4"
+    ],
+    "flashcardIds": [
+      "fc-199",
+      "fc-200",
+      "fc-201"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai",
+      "gh-deploy-envs"
+    ],
+    "revisionNote": "Be able to apply \"Refine tool usage and tool access\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g1-s1",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g1",
+    "group": "Operate and manage multi-agent workflows",
+    "skill": "Apply an orchestration pattern to coordinate multiple agents",
+    "lessonIds": [
+      "domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents-1",
+      "q-domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents-2",
+      "q-domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents-3",
+      "q-domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents-4",
+      "q-domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents-5"
+    ],
+    "labIds": [
+      "lab-19-mcp-policy-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-217",
+      "fc-218",
+      "fc-219"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Apply an orchestration pattern to coordinate multiple agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g1-s2",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g1",
+    "group": "Operate and manage multi-agent workflows",
+    "skill": "Configure agent isolation for parallel execution",
+    "lessonIds": [
+      "domain-5-lesson-02-configure-agent-isolation-for-parallel-execution"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-02-configure-agent-isolation-for-parallel-execution-1",
+      "q-domain-5-lesson-02-configure-agent-isolation-for-parallel-execution-2",
+      "q-domain-5-lesson-02-configure-agent-isolation-for-parallel-execution-3",
+      "q-domain-5-lesson-02-configure-agent-isolation-for-parallel-execution-4",
+      "q-domain-5-lesson-02-configure-agent-isolation-for-parallel-execution-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-220",
+      "fc-221",
+      "fc-222"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Configure agent isolation for parallel execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g1-s3",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g1",
+    "group": "Operate and manage multi-agent workflows",
+    "skill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "lessonIds": [
+      "domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated-1",
+      "q-domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated-2",
+      "q-domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated-3",
+      "q-domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated-4",
+      "q-domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-223",
+      "fc-224",
+      "fc-225"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g2-s1",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g2",
+    "group": "Configure observability for multi-agent behavior by using logs, artifacts, and operational signals",
+    "skill": "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "lessonIds": [
+      "domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud-1",
+      "q-domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud-2",
+      "q-domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud-3",
+      "q-domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud-4",
+      "q-domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-226",
+      "fc-227",
+      "fc-228"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Configure multi-agent workflows to produce artifacts suitable for review and audit\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g2-s2",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g2",
+    "group": "Configure observability for multi-agent behavior by using logs, artifacts, and operational signals",
+    "skill": "Document key decisions, handoffs, and outcomes across agents",
+    "lessonIds": [
+      "domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents-1",
+      "q-domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents-2",
+      "q-domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents-3",
+      "q-domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents-4",
+      "q-domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents-5"
+    ],
+    "labIds": [
+      "lab-18-custom-instructions-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-229",
+      "fc-230",
+      "fc-231"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Document key decisions, handoffs, and outcomes across agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g2-s3",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g2",
+    "group": "Configure observability for multi-agent behavior by using logs, artifacts, and operational signals",
+    "skill": "Perform post-hoc analysis of multi-agent behavior",
+    "lessonIds": [
+      "domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior-1",
+      "q-domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior-2",
+      "q-domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior-3",
+      "q-domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior-4",
+      "q-domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-232",
+      "fc-233",
+      "fc-234"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Perform post-hoc analysis of multi-agent behavior\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g3-s1",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g3",
+    "group": "Detect and respond to multi-agent failures and degraded behavior",
+    "skill": "Identify failed, partial, or stalled agent executions",
+    "lessonIds": [
+      "domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions-1",
+      "q-domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions-2",
+      "q-domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions-3",
+      "q-domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions-4",
+      "q-domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-235",
+      "fc-236",
+      "fc-237"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Identify failed, partial, or stalled agent executions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g3-s2",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g3",
+    "group": "Detect and respond to multi-agent failures and degraded behavior",
+    "skill": "Respond to degraded behavior or coordination across agents",
+    "lessonIds": [
+      "domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents-1",
+      "q-domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents-2",
+      "q-domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents-3",
+      "q-domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents-4",
+      "q-domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-238",
+      "fc-239",
+      "fc-240"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Respond to degraded behavior or coordination across agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g3-s3",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g3",
+    "group": "Detect and respond to multi-agent failures and degraded behavior",
+    "skill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "lessonIds": [
+      "domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop-1",
+      "q-domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop-2",
+      "q-domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop-3",
+      "q-domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop-4",
+      "q-domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-241",
+      "fc-242",
+      "fc-243"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g4-s1",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g4",
+    "group": "Manage the lifecycle of agents within multi-agent workflows",
+    "skill": "Add agents to existing multi-agent workflows",
+    "lessonIds": [
+      "domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows-1",
+      "q-domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows-2",
+      "q-domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows-3",
+      "q-domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows-4",
+      "q-domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-244",
+      "fc-245",
+      "fc-246"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Add agents to existing multi-agent workflows\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g4-s2",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g4",
+    "group": "Manage the lifecycle of agents within multi-agent workflows",
+    "skill": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "lessonIds": [
+      "domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows-1",
+      "q-domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows-2",
+      "q-domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows-3",
+      "q-domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows-4",
+      "q-domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-247",
+      "fc-248",
+      "fc-249"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Update, reconfigure, or replace agents without disrupting active workflows\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d5-g4-s3",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "weight": "15-20%",
+    "groupId": "d5-g4",
+    "group": "Manage the lifecycle of agents within multi-agent workflows",
+    "skill": "Retire agents while preserving auditability and workflow continuity",
+    "lessonIds": [
+      "domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity"
+    ],
+    "quizQuestionIds": [
+      "q-domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity-1",
+      "q-domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity-2",
+      "q-domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity-3",
+      "q-domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity-4",
+      "q-domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity-5"
+    ],
+    "labIds": [
+      "lab-17-agent-task-contract-domain-5"
+    ],
+    "flashcardIds": [
+      "fc-250",
+      "fc-251",
+      "fc-252"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "revisionNote": "Be able to apply \"Retire agents while preserving auditability and workflow continuity\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g1-s1",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g1",
+    "group": "Define autonomy levels",
+    "skill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "lessonIds": [
+      "domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size-1",
+      "q-domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size-2",
+      "q-domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size-3",
+      "q-domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size-4",
+      "q-domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size-5"
+    ],
+    "labIds": [
+      "lab-22-custom-instructions-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-268",
+      "fc-269",
+      "fc-270"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g1-s2",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g1",
+    "group": "Define autonomy levels",
+    "skill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "lessonIds": [
+      "domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with-1",
+      "q-domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with-2",
+      "q-domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with-3",
+      "q-domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with-4",
+      "q-domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with-5"
+    ],
+    "labIds": [
+      "lab-22-custom-instructions-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-271",
+      "fc-272",
+      "fc-273"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g2-s1",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g2",
+    "group": "Implement guardrails and human-in-the-loop workflows",
+    "skill": "Identify the subset of actions that require human judgment",
+    "lessonIds": [
+      "domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment-1",
+      "q-domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment-2",
+      "q-domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment-3",
+      "q-domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment-4",
+      "q-domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment-5"
+    ],
+    "labIds": [
+      "lab-21-agent-task-contract-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-274",
+      "fc-275",
+      "fc-276"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Identify the subset of actions that require human judgment\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g2-s2",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g2",
+    "group": "Implement guardrails and human-in-the-loop workflows",
+    "skill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "lessonIds": [
+      "domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie-1",
+      "q-domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie-2",
+      "q-domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie-3",
+      "q-domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie-4",
+      "q-domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie-5"
+    ],
+    "labIds": [
+      "lab-21-agent-task-contract-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-277",
+      "fc-278",
+      "fc-279"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Block actions that violate defined security, compliance, or Responsible AI policies\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g2-s3",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g2",
+    "group": "Implement guardrails and human-in-the-loop workflows",
+    "skill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "lessonIds": [
+      "domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access-1",
+      "q-domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access-2",
+      "q-domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access-3",
+      "q-domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access-4",
+      "q-domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access-5"
+    ],
+    "labIds": [
+      "lab-21-agent-task-contract-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-280",
+      "fc-281",
+      "fc-282"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Scope permissions and execution contexts to enforce least-privilege access\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g2-s4",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g2",
+    "group": "Implement guardrails and human-in-the-loop workflows",
+    "skill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "lessonIds": [
+      "domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc-1",
+      "q-domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc-2",
+      "q-domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc-3",
+      "q-domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc-4",
+      "q-domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc-5"
+    ],
+    "labIds": [
+      "lab-21-agent-task-contract-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-283",
+      "fc-284",
+      "fc-285"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  },
+  {
+    "id": "d6-g2-s5",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "weight": "10-15%",
+    "groupId": "d6-g2",
+    "group": "Implement guardrails and human-in-the-loop workflows",
+    "skill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "lessonIds": [
+      "domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc"
+    ],
+    "quizQuestionIds": [
+      "q-domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc-1",
+      "q-domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc-2",
+      "q-domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc-3",
+      "q-domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc-4",
+      "q-domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc-5"
+    ],
+    "labIds": [
+      "lab-21-agent-task-contract-domain-6"
+    ],
+    "flashcardIds": [
+      "fc-286",
+      "fc-287",
+      "fc-288"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
+    ],
+    "revisionNote": "Be able to apply \"Preserve execution velocity by minimizing approvals that do not materially reduce risk\" to an issue-to-PR agent workflow with evidence and right-sized autonomy.",
+    "practicalExample": "A team asks Copilot cloud agent to improve login validation. For this skill, the safe design is to define the exact files in scope, select the minimum tools, require tests or scans, and make the agent report evidence in the pull request before a human reviewer decides next steps.",
+    "coverageStatus": "Covered"
+  }
+]

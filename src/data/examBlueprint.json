@@ -1,0 +1,244 @@
+{
+  "exam": {
+    "code": "GH-600",
+    "title": "Developing in Agentic AI Systems",
+    "audience": "Practitioners operating, integrating, supervising, and governing AI agents inside production-grade SDLC workflows using GitHub as control plane.",
+    "lastResearched": "2026-05-21",
+    "passScore": "Microsoft certification exams generally require 700 or greater; confirm on the official exam page before sitting."
+  },
+  "domains": [
+    {
+      "id": "domain-1",
+      "number": 1,
+      "title": "Prepare agent architecture and SDLC processes",
+      "weight": "15-20%",
+      "whatExamTests": "Whether you can design safe agentic SDLC workflows before the agent acts, using GitHub as the control plane for scope, evidence, review, and delivery speed.",
+      "groups": [
+        {
+          "id": "d1-g1",
+          "title": "Integrate agents into the software development lifecycle (SDLC)",
+          "skills": [
+            "Identify steps for agents to perform",
+            "Identify and mitigate common anti-patterns in agents",
+            "Define inputs, outputs, and success criteria for agents"
+          ]
+        },
+        {
+          "id": "d1-g2",
+          "title": "Define boundaries between planning, reasoning, and action",
+          "skills": [
+            "Configure agent planning to be distinct from agent execution",
+            "Configure an agent to output a structured plan",
+            "Validate agent plans",
+            "Prevent agent action until the agent checked and approved"
+          ]
+        },
+        {
+          "id": "d1-g3",
+          "title": "Configure observability and control for autonomous agents",
+          "skills": [
+            "Plan and implement the degree of agent autonomy, including guardrails",
+            "Configure agent to produce inspectable artifacts within standard development tooling",
+            "Configure human intervention for autonomous agents without slowing delivery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-2",
+      "number": 2,
+      "title": "Implement tool use and environment interaction",
+      "weight": "20-25%",
+      "whatExamTests": "Whether you can connect agents to tools and environments without over-permissioning them, and can design safe execution paths with traceable failure handling.",
+      "groups": [
+        {
+          "id": "d2-g1",
+          "title": "Select and configure agent tools",
+          "skills": [
+            "Identify required tools",
+            "Configure agent tools",
+            "Configure agent tool permissions"
+          ]
+        },
+        {
+          "id": "d2-g2",
+          "title": "Configure MCP servers",
+          "skills": [
+            "Add an MCP server as a tool to an agent",
+            "Configure a GitHub remote MCP server",
+            "Configure the MCP registries",
+            "Configure MCP allow lists"
+          ]
+        },
+        {
+          "id": "d2-g3",
+          "title": "Integrate agents within development environments",
+          "skills": [
+            "Evaluate the execution context for an agent",
+            "Configure an agent's scope to a specific repository",
+            "Configure an agent to be invoked in a CI workflow",
+            "Configure an agent to use branch-based scope",
+            "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+            "Configure an agent to handle environment-specific constraints"
+          ]
+        },
+        {
+          "id": "d2-g4",
+          "title": "Operate agents with safe execution paths and robust error handling",
+          "skills": [
+            "Implement error handling",
+            "Implement retries",
+            "Implement rollbacks",
+            "Implement escalation paths",
+            "Implement traceability and accountability for agent actions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-3",
+      "number": 3,
+      "title": "Manage memory, state, and execution",
+      "weight": "10-15%",
+      "whatExamTests": "Whether you can keep agent context useful, current, auditable, scoped, and portable across interruptions, tools, and multi-agent work.",
+      "groups": [
+        {
+          "id": "d3-g1",
+          "title": "Implement agent memory strategies",
+          "skills": [
+            "Choose between short-term, long-term, and external memory",
+            "Scope agent memory to task-relevant information",
+            "Define memory expiration, pruning, and reset rules"
+          ]
+        },
+        {
+          "id": "d3-g2",
+          "title": "Persist agent state and manage context drift",
+          "skills": [
+            "Capture task progress and decisions as durable artifacts",
+            "Resume agent work without repeating steps or diverging from prior decisions",
+            "Detect and correct drift during extended agent execution"
+          ]
+        },
+        {
+          "id": "d3-g3",
+          "title": "Ensure continuity of agent memory and state across tools and environments",
+          "skills": [
+            "Share agent state",
+            "Prevent conflicting context",
+            "Prevent stale context"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-4",
+      "number": 4,
+      "title": "Perform evaluation, error analysis, and tuning",
+      "weight": "15-20%",
+      "whatExamTests": "Whether you can evaluate agent work through evidence, classify failure causes, and tune instructions, memory, tools, and workflows without hiding defects.",
+      "groups": [
+        {
+          "id": "d4-g1",
+          "title": "Define success criteria and evaluation signals for agent tasks",
+          "skills": [
+            "Specify expected outcomes and operational constraints for agent tasks",
+            "Identify qualitative and quantitative evaluation signals to evaluate agents",
+            "Align evaluation criteria with development intent",
+            "Generate evaluation signals by using automated scanning tools"
+          ]
+        },
+        {
+          "id": "d4-g2",
+          "title": "Analyze agent failures and identify root causes",
+          "skills": [
+            "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+            "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+          ]
+        },
+        {
+          "id": "d4-g3",
+          "title": "Tune agent behavior based on evaluation results",
+          "skills": [
+            "Revise instructions, workflows, or constraints",
+            "Refine memory usage",
+            "Refine tool usage and tool access"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-5",
+      "number": 5,
+      "title": "Orchestrate multi-agent coordination",
+      "weight": "15-20%",
+      "whatExamTests": "Whether you can coordinate multiple agents safely, isolate parallel work, capture handoffs, detect conflicts, and manage agent lifecycle changes without losing auditability.",
+      "groups": [
+        {
+          "id": "d5-g1",
+          "title": "Operate and manage multi-agent workflows",
+          "skills": [
+            "Apply an orchestration pattern to coordinate multiple agents",
+            "Configure agent isolation for parallel execution",
+            "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+          ]
+        },
+        {
+          "id": "d5-g2",
+          "title": "Configure observability for multi-agent behavior by using logs, artifacts, and operational signals",
+          "skills": [
+            "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+            "Document key decisions, handoffs, and outcomes across agents",
+            "Perform post-hoc analysis of multi-agent behavior"
+          ]
+        },
+        {
+          "id": "d5-g3",
+          "title": "Detect and respond to multi-agent failures and degraded behavior",
+          "skills": [
+            "Identify failed, partial, or stalled agent executions",
+            "Respond to degraded behavior or coordination across agents",
+            "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+          ]
+        },
+        {
+          "id": "d5-g4",
+          "title": "Manage the lifecycle of agents within multi-agent workflows",
+          "skills": [
+            "Add agents to existing multi-agent workflows",
+            "Update, reconfigure, or replace agents without disrupting active workflows",
+            "Retire agents while preserving auditability and workflow continuity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain-6",
+      "number": 6,
+      "title": "Implement guardrails and accountability",
+      "weight": "10-15%",
+      "whatExamTests": "Whether you can right-size autonomy, enforce least privilege, block unsafe actions, keep humans accountable, and preserve evidence without creating approval theatre.",
+      "groups": [
+        {
+          "id": "d6-g1",
+          "title": "Define autonomy levels",
+          "skills": [
+            "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+            "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
+          ]
+        },
+        {
+          "id": "d6-g2",
+          "title": "Implement guardrails and human-in-the-loop workflows",
+          "skills": [
+            "Identify the subset of actions that require human judgment",
+            "Block actions that violate defined security, compliance, or Responsible AI policies",
+            "Scope permissions and execution contexts to enforce least-privilege access",
+            "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+            "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "highYield": [
+    "GitHub is the control plane and system of record.",
+    "Least privilege applies to tools, branches, repositories, environments, and MCP servers.",
+    "Agent confidence is not evidence; checks, logs, artifacts, and PR review are evidence.",
+    "Human approval belongs at sensitive, irreversible, production, security, or compliance-relevant points.",
+    "MCP expands capability and therefore risk.",
+    "Multi-agent work needs isolation, handoffs, conflict detection, and auditability."
+  ],
+  "decisionTables": [
+    {
+      "title": "Autonomy decision",
+      "rows": [
+        [
+          "Low risk",
+          "Read, summarize, plan",
+          "Agent may proceed with evidence"
+        ],
+        [
+          "Medium risk",
+          "Branch edits and PR",
+          "Required checks and review"
+        ],
+        [
+          "High risk",
+          "Auth, secrets, security, personal data",
+          "Specialist human approval"
+        ],
+        [
+          "Critical",
+          "Production or destructive change",
+          "Explicit authorization and controlled path"
+        ]
+      ]
+    }
+  ],
+  "cheatsheets": [
+    "MCP: server exposes tools; allow list controls availability; remote GitHub MCP is hosted by GitHub; Playwright MCP supports web interaction in agent environment.",
+    "GitHub controls: issues scope work, branches isolate, PRs expose evidence, checks validate, CODEOWNERS routes review, environments gate deployment."
+  ]
+}
