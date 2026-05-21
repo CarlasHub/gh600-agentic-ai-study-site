@@ -69,3 +69,51 @@ a{color:#ffd783}
 a:hover{color:#ffe8b5}
 .footer-links a{color:#ffe2a3;background:#181c21;border-color:#4b5561}
 @media(max-width:760px){body{font-size:16px;line-height:1.68}.shell{width:min(100% - 1rem,1040px)}.topbar{position:sticky;display:block;padding:.65rem .75rem .55rem}.brand{margin-bottom:.55rem}.brand-logo{width:2rem;height:2rem}nav{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:.35rem;padding-bottom:.25rem;scrollbar-width:thin;-webkit-overflow-scrolling:touch}nav a{flex:0 0 auto;font-size:.86rem;padding:.48rem .62rem}nav a svg{display:none}.page-title{padding:1rem 0 .75rem}h1{font-size:1.55rem}h2{font-size:1.13rem}.hero,.grid.two,.lesson-page{display:block}.stats,.domain-grid,.cards,.flash-grid,.domain-strip{grid-template-columns:1fr;gap:.7rem}.question,.panel,.card,.source-panel,.guide-card,.must-know{padding:1rem}.question{border-left-width:3px}.option,button.option{padding:.78rem .75rem;gap:.55rem}.option-prefix{min-width:1.75rem;height:1.75rem}.score{padding:.9rem}.footer-inner{display:block}.footer-links{justify-content:flex-start;margin-top:.8rem}}
+/* Whole-site material polish: route-aware navigation, calmer libraries, and safer small screens. */
+.skip-link{background:#27210f;color:#ffe3a1;border:1px solid #5a4720}
+.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:980px}
+.content-stack{display:block;max-width:820px}
+.library-list{display:block}
+.library-list .card,.glossary-list .card{margin-bottom:.85rem}
+.library-list .card{border-left:4px solid var(--accent-green)}
+.library-list .card:nth-child(3n+2){border-left-color:var(--accent-coral)}
+.library-list .card:nth-child(3n){border-left-color:var(--accent-violet)}
+.library-list .card h2,.glossary-list .card h2{font-size:1.08rem}
+.library-list .card ul,.library-list .card ol{margin-top:.55rem}
+.glossary-list{display:block;columns:2 320px;column-gap:1rem}
+.glossary-list .card{break-inside:avoid;border-left:4px solid var(--accent-sky)}
+.recall-list{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.flash{overflow:hidden}
+.flash button:first-child{min-height:150px;background:#1b1824;border-bottom:1px solid #51456f}
+.flash button:first-child span{color:#d8b45f;font-weight:650}
+.flash button:first-child strong{font-size:1rem;line-height:1.45;font-weight:560}
+.flash .actions{display:flex;gap:.5rem}
+.flash .actions button{flex:1;min-height:2.65rem}
+.table-wrap{background:#181c21;border-left:4px solid var(--accent-violet)}
+td a{overflow-wrap:anywhere}
+.lesson-list{gap:.6rem}
+.lesson-row{border-left:4px solid transparent}
+.lesson-row:hover,.lesson-row:focus-within{border-left-color:var(--brand);background:#1d232a}
+.lesson-row input{accent-color:#f2c86b;min-width:1.25rem}
+.sources-inline{line-height:1.55}
+.sources-inline a{margin:.2rem .45rem .2rem 0}
+.check input{accent-color:#7bd88f;min-width:1.2rem}
+.walkthrough .mock-screen{background:#12161b;border-color:#444d58;border-radius:8px}
+.mock-top{background:#20262d}
+.mock-badges span{background:#2b2414;color:#ffe2a3}
+meter{accent-color:#f2c86b}
+@media(max-width:760px){
+.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:none}
+.toolbar,.actions{display:grid;grid-template-columns:1fr;gap:.55rem}
+.button,.button.small,button.option{width:100%}
+.lesson-row{grid-template-columns:auto minmax(0,1fr);align-items:start}
+.lesson-row .badge{grid-column:2;width:max-content}
+.glossary-list{columns:1}
+.recall-list{grid-template-columns:1fr}
+.flash button:first-child{min-height:130px}
+.table-wrap{padding:.65rem;overflow:visible}
+table,tbody,tr,td,th{width:100%}
+td{overflow-wrap:anywhere}
+.mock-body{padding:.85rem}
+.mock-badges{gap:.35rem}
+}
