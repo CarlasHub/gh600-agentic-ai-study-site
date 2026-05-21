@@ -1,37 +1,85 @@
-# GH-600 Agentic AI Developer Study Site
+# GH-600 Agentic AI Study Platform
 
-A static GitHub Pages study site for the GitHub Certified: Agentic AI Developer GH-600 beta exam.
+A source-grounded exam-preparation learning platform for **Microsoft/GitHub GH-600: Developing in Agentic AI Systems**.
 
-## What is included
+This project teaches agentic SDLC workflows using GitHub as the system of record and control plane. It covers Copilot cloud agent, custom instructions, custom agents, MCP, GitHub Actions, branch protection, rulesets, CODEOWNERS, environments, evaluation, multi-agent coordination, Responsible AI, guardrails, and accountability.
 
-- Coursera-style learning dashboard
-- Six exam domain pages
-- Topic checklist with local progress tracking
-- LocalStorage completion tracking
-- Quizzes by domain
-- Final mock exam
-- Flashcards
-- Study plan
-- Agent governance templates and prompts
-- GitHub Pages workflow
+## Coverage Summary
 
-## Run locally
+- 6 exam domains
+- 101 lessons
+- 505 quiz questions
+- 3 mock exams
+- 303 flashcards
+- 24 hands-on labs
+- 12 GitHub UI workflow walkthroughs
+- 60 scenarios
+- 40 glossary terms
+- 65 official skill coverage rows
+
+The machine-readable coverage matrix is in `src/data/coverageMatrix.json`. The readable version is in `docs/COVERAGE_MATRIX.md`.
+
+## Source Policy
+
+This is original educational content based on official Microsoft and GitHub sources. It does not copy Microsoft, GitHub, or third-party documentation verbatim. Every lesson, quiz, lab, flashcard, and coverage row carries source references.
+
+Primary source of truth: [Microsoft GH-600 study guide](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600).
+
+Research log: [docs/SOURCE_RESEARCH_LOG.md](docs/SOURCE_RESEARCH_LOG.md).
+
+Currentness review workflow: [docs/CURRENTNESS_REVIEW.md](docs/CURRENTNESS_REVIEW.md).
+
+## Install
 
 ```bash
-npm run check
-npm run start
+npm install
 ```
 
-Open `http://localhost:8080`.
+## Run Locally
+
+```bash
+npm run dev
+```
+
+Open the URL Vite prints, usually `http://localhost:5173`.
+
+## Build
+
+```bash
+npm run build
+```
+
+The production build is written to `dist/`.
+
+## Preview Build
+
+```bash
+npm run preview
+```
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repository.
-2. Push this folder to the repository.
-3. Go to Settings > Pages.
-4. Select GitHub Actions as the source.
-5. Push to `main`. The workflow in `.github/workflows/pages.yml` will publish the site.
+The workflow in `.github/workflows/pages.yml` installs dependencies, builds the Vite app, uploads `dist/`, and deploys through GitHub Pages. Push a branch or merge to `main` after enabling Pages with GitHub Actions as the source.
 
-## Important exam note
+## Repository Structure
 
-This is a study aid, not an official Microsoft or GitHub resource. Use the official GH-600 study guide as the source of truth and check it again before the exam because the beta objectives can change.
+```text
+src/
+  data/              exam blueprint, lessons, quizzes, labs, mock exams, flashcards, glossary, sources, coverage
+  pages/             route-equivalent page modules
+  components/        component placeholders and extension points
+  styles/main.css    accessible responsive styling
+content/             domain content index files
+docs/                research log, coverage matrix, strategy, release checklist
+public/              static assets
+```
+
+## Remaining Gaps and Uncertainty
+
+GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide on 2026-05-21, but learners should re-check the official Microsoft study guide before sitting the exam.
+
+The current content is broad and source-mapped. Each lesson now includes a domain-specific case study, and the app includes original GitHub UI workflow walkthroughs for the main control-plane flows. Future improvements could add periodic source-diff automation.
+
+## Copyright Note
+
+Microsoft, GitHub, and product names are trademarks of their respective owners. This is an unofficial study aid. Use official Microsoft and GitHub documentation as the source of truth.

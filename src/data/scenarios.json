@@ -1,0 +1,842 @@
+[
+  {
+    "id": "scenario-01",
+    "title": "Decision scenario: Identify steps for agents to perform",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+    "prompt": "An engineering team wants to use Copilot cloud agent for identify steps for agents to perform. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-02",
+    "title": "Decision scenario: Identify and mitigate common anti-patterns in agents",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+    "prompt": "An engineering team wants to use Copilot cloud agent for identify and mitigate common anti-patterns in agents. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-03",
+    "title": "Decision scenario: Define inputs, outputs, and success criteria for agents",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents",
+    "prompt": "An engineering team wants to use Copilot cloud agent for define inputs, outputs, and success criteria for agents. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-04",
+    "title": "Decision scenario: Configure agent planning to be distinct from agent execution",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure agent planning to be distinct from agent execution. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-05",
+    "title": "Decision scenario: Configure an agent to output a structured plan",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure an agent to output a structured plan. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-06",
+    "title": "Decision scenario: Validate agent plans",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-06-validate-agent-plans",
+    "prompt": "An engineering team wants to use Copilot cloud agent for validate agent plans. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-07",
+    "title": "Decision scenario: Prevent agent action until the agent checked and approved",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved",
+    "prompt": "An engineering team wants to use Copilot cloud agent for prevent agent action until the agent checked and approved. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-08",
+    "title": "Decision scenario: Plan and implement the degree of agent autonomy, including guardrails",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails",
+    "prompt": "An engineering team wants to use Copilot cloud agent for plan and implement the degree of agent autonomy, including guardrails. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-09",
+    "title": "Decision scenario: Configure agent to produce inspectable artifacts within standard development tooling",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure agent to produce inspectable artifacts within standard development tooling. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-10",
+    "title": "Decision scenario: Configure human intervention for autonomous agents without slowing delivery",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure human intervention for autonomous agents without slowing delivery. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-11",
+    "title": "Decision scenario: Agentic workflows versus ordinary automation",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-11-agentic-workflows-versus-ordinary-automation",
+    "prompt": "An engineering team wants to use Copilot cloud agent for agentic workflows versus ordinary automation. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-12",
+    "title": "Decision scenario: Agent task decomposition and task boundaries",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-12-agent-task-decomposition-and-task-boundaries",
+    "prompt": "An engineering team wants to use Copilot cloud agent for agent task decomposition and task boundaries. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-13",
+    "title": "Decision scenario: GitHub Issues as task contracts",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-13-github-issues-as-task-contracts",
+    "prompt": "An engineering team wants to use Copilot cloud agent for github issues as task contracts. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-14",
+    "title": "Decision scenario: Pull requests as evidence objects",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-14-pull-requests-as-evidence-objects",
+    "prompt": "An engineering team wants to use Copilot cloud agent for pull requests as evidence objects. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-15",
+    "title": "Decision scenario: Repository custom instructions as governance",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-15-repository-custom-instructions-as-governance",
+    "prompt": "An engineering team wants to use Copilot cloud agent for repository custom instructions as governance. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-16",
+    "title": "Decision scenario: When not to use agents",
+    "domainId": "domain-1",
+    "lessonId": "domain-1-lesson-16-when-not-to-use-agents",
+    "prompt": "An engineering team wants to use Copilot cloud agent for when not to use agents. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions"
+    ]
+  },
+  {
+    "id": "scenario-17",
+    "title": "Decision scenario: Identify required tools",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-01-identify-required-tools",
+    "prompt": "An engineering team wants to use Copilot cloud agent for identify required tools. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-18",
+    "title": "Decision scenario: Configure agent tools",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-02-configure-agent-tools",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure agent tools. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-19",
+    "title": "Decision scenario: Configure agent tool permissions",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-03-configure-agent-tool-permissions",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure agent tool permissions. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-20",
+    "title": "Decision scenario: Add an MCP server as a tool to an agent",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent",
+    "prompt": "An engineering team wants to use Copilot cloud agent for add an mcp server as a tool to an agent. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-21",
+    "title": "Decision scenario: Configure a GitHub remote MCP server",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-05-configure-a-github-remote-mcp-server",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure a github remote mcp server. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-22",
+    "title": "Decision scenario: Configure the MCP registries",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-06-configure-the-mcp-registries",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure the mcp registries. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-23",
+    "title": "Decision scenario: Configure MCP allow lists",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-07-configure-mcp-allow-lists",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure mcp allow lists. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-24",
+    "title": "Decision scenario: Evaluate the execution context for an agent",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-08-evaluate-the-execution-context-for-an-agent",
+    "prompt": "An engineering team wants to use Copilot cloud agent for evaluate the execution context for an agent. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-25",
+    "title": "Decision scenario: Configure an agent's scope to a specific repository",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure an agent's scope to a specific repository. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-26",
+    "title": "Decision scenario: Configure an agent to be invoked in a CI workflow",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure an agent to be invoked in a ci workflow. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-27",
+    "title": "Decision scenario: Configure an agent to use branch-based scope",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure an agent to use branch-based scope. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-28",
+    "title": "Decision scenario: Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu",
+    "prompt": "An engineering team wants to use Copilot cloud agent for enable an agent to perform autonomous actions, including creating branches and pull requests. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-29",
+    "title": "Decision scenario: Configure an agent to handle environment-specific constraints",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints",
+    "prompt": "An engineering team wants to use Copilot cloud agent for configure an agent to handle environment-specific constraints. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-30",
+    "title": "Decision scenario: Implement error handling",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-14-implement-error-handling",
+    "prompt": "An engineering team wants to use Copilot cloud agent for implement error handling. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-31",
+    "title": "Decision scenario: Implement retries",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-15-implement-retries",
+    "prompt": "An engineering team wants to use Copilot cloud agent for implement retries. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-32",
+    "title": "Decision scenario: Implement rollbacks",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-16-implement-rollbacks",
+    "prompt": "An engineering team wants to use Copilot cloud agent for implement rollbacks. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-33",
+    "title": "Decision scenario: Implement escalation paths",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-17-implement-escalation-paths",
+    "prompt": "An engineering team wants to use Copilot cloud agent for implement escalation paths. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-34",
+    "title": "Decision scenario: Implement traceability and accountability for agent actions",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions",
+    "prompt": "An engineering team wants to use Copilot cloud agent for implement traceability and accountability for agent actions. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-35",
+    "title": "Decision scenario: Read-only versus write-capable tool design",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-19-read-only-versus-write-capable-tool-design",
+    "prompt": "An engineering team wants to use Copilot cloud agent for read-only versus write-capable tool design. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-36",
+    "title": "Decision scenario: Tool risk classification",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-20-tool-risk-classification",
+    "prompt": "An engineering team wants to use Copilot cloud agent for tool risk classification. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-37",
+    "title": "Decision scenario: GitHub MCP server default toolsets",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-21-github-mcp-server-default-toolsets",
+    "prompt": "An engineering team wants to use Copilot cloud agent for github mcp server default toolsets. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-38",
+    "title": "Decision scenario: Remote MCP server versus local MCP server",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-22-remote-mcp-server-versus-local-mcp-server",
+    "prompt": "An engineering team wants to use Copilot cloud agent for remote mcp server versus local mcp server. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-39",
+    "title": "Decision scenario: Playwright MCP in agent validation",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-23-playwright-mcp-in-agent-validation",
+    "prompt": "An engineering team wants to use Copilot cloud agent for playwright mcp in agent validation. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-40",
+    "title": "Decision scenario: Repository-level MCP configuration",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-24-repository-level-mcp-configuration",
+    "prompt": "An engineering team wants to use Copilot cloud agent for repository-level mcp configuration. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-41",
+    "title": "Decision scenario: Branch-based tool scope",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-25-branch-based-tool-scope",
+    "prompt": "An engineering team wants to use Copilot cloud agent for branch-based tool scope. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-42",
+    "title": "Decision scenario: Safe autonomous PR creation",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-26-safe-autonomous-pr-creation",
+    "prompt": "An engineering team wants to use Copilot cloud agent for safe autonomous pr creation. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-43",
+    "title": "Decision scenario: Environment-specific constraints",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-27-environment-specific-constraints",
+    "prompt": "An engineering team wants to use Copilot cloud agent for environment-specific constraints. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-44",
+    "title": "Decision scenario: Traceability through session logs and audit evidence",
+    "domainId": "domain-2",
+    "lessonId": "domain-2-lesson-28-traceability-through-session-logs-and-audit-evidence",
+    "prompt": "An engineering team wants to use Copilot cloud agent for traceability through session logs and audit evidence. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup"
+    ]
+  },
+  {
+    "id": "scenario-45",
+    "title": "Decision scenario: Choose between short-term, long-term, and external memory",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory",
+    "prompt": "An engineering team wants to use Copilot cloud agent for choose between short-term, long-term, and external memory. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-46",
+    "title": "Decision scenario: Scope agent memory to task-relevant information",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-02-scope-agent-memory-to-task-relevant-information",
+    "prompt": "An engineering team wants to use Copilot cloud agent for scope agent memory to task-relevant information. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-47",
+    "title": "Decision scenario: Define memory expiration, pruning, and reset rules",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules",
+    "prompt": "An engineering team wants to use Copilot cloud agent for define memory expiration, pruning, and reset rules. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-48",
+    "title": "Decision scenario: Capture task progress and decisions as durable artifacts",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts",
+    "prompt": "An engineering team wants to use Copilot cloud agent for capture task progress and decisions as durable artifacts. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-49",
+    "title": "Decision scenario: Resume agent work without repeating steps or diverging from prior decisions",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions",
+    "prompt": "An engineering team wants to use Copilot cloud agent for resume agent work without repeating steps or diverging from prior decisions. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-50",
+    "title": "Decision scenario: Detect and correct drift during extended agent execution",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution",
+    "prompt": "An engineering team wants to use Copilot cloud agent for detect and correct drift during extended agent execution. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-51",
+    "title": "Decision scenario: Share agent state",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-07-share-agent-state",
+    "prompt": "An engineering team wants to use Copilot cloud agent for share agent state. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-52",
+    "title": "Decision scenario: Prevent conflicting context",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-08-prevent-conflicting-context",
+    "prompt": "An engineering team wants to use Copilot cloud agent for prevent conflicting context. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-53",
+    "title": "Decision scenario: Prevent stale context",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-09-prevent-stale-context",
+    "prompt": "An engineering team wants to use Copilot cloud agent for prevent stale context. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-54",
+    "title": "Decision scenario: Repository artifacts as durable state",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-10-repository-artifacts-as-durable-state",
+    "prompt": "An engineering team wants to use Copilot cloud agent for repository artifacts as durable state. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-55",
+    "title": "Decision scenario: Issues and pull requests as state carriers",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-11-issues-and-pull-requests-as-state-carriers",
+    "prompt": "An engineering team wants to use Copilot cloud agent for issues and pull requests as state carriers. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-56",
+    "title": "Decision scenario: Workflow artifacts as state checkpoints",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-12-workflow-artifacts-as-state-checkpoints",
+    "prompt": "An engineering team wants to use Copilot cloud agent for workflow artifacts as state checkpoints. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-57",
+    "title": "Decision scenario: Memory reset and expiry decisions",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-13-memory-reset-and-expiry-decisions",
+    "prompt": "An engineering team wants to use Copilot cloud agent for memory reset and expiry decisions. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-58",
+    "title": "Decision scenario: Shared multi-agent state contracts",
+    "domainId": "domain-3",
+    "lessonId": "domain-3-lesson-14-shared-multi-agent-state-contracts",
+    "prompt": "An engineering team wants to use Copilot cloud agent for shared multi-agent state contracts. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-custom-instructions-support"
+    ]
+  },
+  {
+    "id": "scenario-59",
+    "title": "Decision scenario: Specify expected outcomes and operational constraints for agent tasks",
+    "domainId": "domain-4",
+    "lessonId": "domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks",
+    "prompt": "An engineering team wants to use Copilot cloud agent for specify expected outcomes and operational constraints for agent tasks. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  },
+  {
+    "id": "scenario-60",
+    "title": "Decision scenario: Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "domainId": "domain-4",
+    "lessonId": "domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents",
+    "prompt": "An engineering team wants to use Copilot cloud agent for identify qualitative and quantitative evaluation signals to evaluate agents. The repository has protected branches, required CI, and a sensitive production area. Decide the agent scope, tools, evidence, and human approval point.",
+    "goodAnswer": "Use the smallest useful access, require a plan or artifact, keep work in a branch/PR, validate with checks, and pause for sensitive or irreversible actions.",
+    "trap": "Letting the agent bypass GitHub controls because the requested outcome sounds urgent.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ]
+  }
+]

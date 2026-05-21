@@ -1,0 +1,299 @@
+[
+  {
+    "id": "ms-gh600-guide",
+    "title": "Study guide for Exam GH-600: Developing in Agentic AI Systems",
+    "url": "https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-3",
+      "domain-4",
+      "domain-5",
+      "domain-6"
+    ],
+    "why": "Primary exam blueprint, audience profile, domain weights, and official skill bullets."
+  },
+  {
+    "id": "gh-copilot-cloud-agent",
+    "title": "About GitHub Copilot cloud agent",
+    "url": "https://docs.github.com/copilot/concepts/about-copilot-coding-agent",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-4",
+      "domain-6"
+    ],
+    "why": "Explains Copilot cloud agent as the agentic coding workflow inside GitHub."
+  },
+  {
+    "id": "gh-cloud-agent-risks",
+    "title": "Risks and mitigations for GitHub Copilot cloud agent",
+    "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/risks-and-mitigations",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2",
+      "domain-4",
+      "domain-6"
+    ],
+    "why": "Documents key risks, mitigations, branch limits, human review, workflow controls, session logs, and auditability."
+  },
+  {
+    "id": "gh-mcp-cloud-agent",
+    "title": "Model Context Protocol (MCP) and GitHub Copilot cloud agent",
+    "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/mcp-and-coding-agent/",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2",
+      "domain-5",
+      "domain-6"
+    ],
+    "why": "Explains MCP support in Copilot cloud agent, default GitHub and Playwright MCP servers, and limitations."
+  },
+  {
+    "id": "gh-custom-agents-config",
+    "title": "Custom agents configuration",
+    "url": "https://docs.github.com/en/copilot/reference/custom-agents-configuration",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-5"
+    ],
+    "why": "Defines custom agent profile structure, tools, MCP server configuration, and capability modelling."
+  },
+  {
+    "id": "gh-custom-instructions-support",
+    "title": "Support for different types of custom instructions",
+    "url": "https://docs.github.com/en/copilot/reference/custom-instructions-support",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Maps instruction types to Copilot Chat, cloud agent, code review, IDEs, and CLI."
+  },
+  {
+    "id": "gh-repository-instructions",
+    "title": "Adding repository custom instructions for GitHub Copilot",
+    "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Explains repository-wide, path-specific, and agent instruction behaviour and precedence considerations."
+  },
+  {
+    "id": "gh-personal-instructions",
+    "title": "Adding personal custom instructions for GitHub Copilot",
+    "url": "https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-personal-custom-instructions-for-github-copilot",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-6"
+    ],
+    "why": "Covers personal instruction scope and ordering relative to repository and organization instructions."
+  },
+  {
+    "id": "gh-mcp-server-setup",
+    "title": "Setting up the GitHub MCP Server",
+    "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2"
+    ],
+    "why": "Documents remote and local GitHub MCP server setup and why remote is recommended for most users."
+  },
+  {
+    "id": "gh-mcp-toolsets",
+    "title": "Configuring toolsets for the GitHub MCP Server",
+    "url": "https://docs.github.com/copilot/how-tos/provide-context/use-mcp/configure-toolsets",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Explains default toolsets, custom toolset configuration, and remote-only toolsets."
+  },
+  {
+    "id": "gh-mcp-chat",
+    "title": "Using the GitHub MCP Server from Copilot Chat",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/using-the-github-mcp-server-from-copilot-chat",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Shows GitHub MCP actions such as creating branches and merging pull requests with user confirmation."
+  },
+  {
+    "id": "gh-actions-workflows",
+    "title": "Workflows",
+    "url": "https://docs.github.com/en/actions/using-workflows/about-workflows",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-4"
+    ],
+    "why": "Defines GitHub Actions workflows, events, jobs, steps, and automation evidence."
+  },
+  {
+    "id": "gh-deploy-envs",
+    "title": "Deployments and environments",
+    "url": "https://docs.github.com/en/actions/reference/deployments-and-environments",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Explains deployment protection rules, required reviewers, wait timers, branches/tags, and environment secrets."
+  },
+  {
+    "id": "gh-managing-envs",
+    "title": "Managing environments for deployment",
+    "url": "https://docs.github.com/en/actions/reference/environments",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Details environment configuration, required reviewers, wait timers, branch restrictions, secrets, and variables."
+  },
+  {
+    "id": "gh-review-deployments",
+    "title": "Reviewing deployments",
+    "url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-6"
+    ],
+    "why": "Explains approving, rejecting, and bypassing jobs awaiting deployment review."
+  },
+  {
+    "id": "gh-protected-branches",
+    "title": "About protected branches",
+    "url": "https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Covers protected branch rules, required checks, reviews, deployments, and push restrictions."
+  },
+  {
+    "id": "gh-rulesets",
+    "title": "About rulesets",
+    "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-6"
+    ],
+    "why": "Explains repository rulesets, rule layering, enforcement, and discoverability."
+  },
+  {
+    "id": "gh-ruleset-rules",
+    "title": "Available rules for rulesets",
+    "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-6"
+    ],
+    "why": "Lists rules such as status checks, reviews, deployments, and merge restrictions."
+  },
+  {
+    "id": "gh-codeowners",
+    "title": "About code owners",
+    "url": "https://docs.github.com/articles/about-code-owners",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-6"
+    ],
+    "why": "Explains CODEOWNERS review routing and ownership for protected paths."
+  },
+  {
+    "id": "ms-responsible-ai-principles",
+    "title": "Responsible AI Principles and Approach",
+    "url": "https://www.microsoft.com/en-us/ai/principles-and-approach/",
+    "publisher": "Microsoft",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-6"
+    ],
+    "why": "Provides Microsoft Responsible AI principles and accountability framing."
+  },
+  {
+    "id": "ms-foundry-responsible-ai",
+    "title": "Responsible AI for Microsoft Foundry",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-4",
+      "domain-6"
+    ],
+    "why": "Connects trustworthy AI agents to security, observability, governance, controls, and checkpoints."
+  },
+  {
+    "id": "ms-agentic-foundations",
+    "title": "Foundations of Agentic AI in GitHub",
+    "url": "https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1",
+      "domain-2"
+    ],
+    "why": "Microsoft Learn foundation module for agentic AI in GitHub."
+  },
+  {
+    "id": "ms-agent-architecture-sdlc",
+    "title": "Designing Agent Architecture and SDLC Integration",
+    "url": "https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-1"
+    ],
+    "why": "Microsoft Learn module aligned to agent architecture and SDLC integration."
+  },
+  {
+    "id": "ms-tooling-mcp-envs",
+    "title": "Tooling, MCP, and Agent Execution Environments",
+    "url": "https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-05-21",
+    "domains": [
+      "domain-2"
+    ],
+    "why": "Microsoft Learn module for tooling, MCP, and execution environments."
+  }
+]

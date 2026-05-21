@@ -1,0 +1,11 @@
+{
+  "criteria": [
+    "All official skills studied",
+    "All coverage matrix rows marked Covered",
+    "At least 80% on a full mock exam",
+    "No domain below 70%",
+    "At least one lab completed in each domain",
+    "Can explain MCP, custom instructions, branch protection, rulesets, CODEOWNERS, environments, memory/state, evaluation, multi-agent recovery, and guardrails without notes"
+  ],
+  "statusAlgorithm": "The app uses local progress, quiz scores, and mock exam scores to recommend Ready, Nearly ready, or Needs focused review."
+}

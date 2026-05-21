@@ -1,0 +1,415 @@
+[
+  {
+    "id": "issue-task-contract",
+    "title": "Create a GitHub Issue as an agent task contract",
+    "domainIds": [
+      "domain-1",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks"
+    ],
+    "screen": {
+      "area": "Issues",
+      "primary": "New issue",
+      "secondary": "Agent task: improve login validation",
+      "badges": [
+        "Scope",
+        "Acceptance criteria",
+        "Rollback"
+      ]
+    },
+    "steps": [
+      "Open the repository Issues tab and create a new issue.",
+      "State the goal, context links, exact scope, and out-of-scope areas.",
+      "Add required evidence: tests, scans, screenshots, PR summary, and rollback note.",
+      "Name the human approval points before assignment."
+    ],
+    "verify": [
+      "Issue has acceptance criteria, not just a request.",
+      "Sensitive areas are explicitly out of scope or approval-gated.",
+      "The agent can infer done criteria without guessing."
+    ],
+    "examTrap": "A vague issue such as “fix login” is not a safe agent task contract."
+  },
+  {
+    "id": "assign-copilot-agent",
+    "title": "Assign work to Copilot cloud agent safely",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks"
+    ],
+    "screen": {
+      "area": "Issue sidebar",
+      "primary": "Assignees",
+      "secondary": "Copilot",
+      "badges": [
+        "copilot/ branch",
+        "Draft PR",
+        "Session log"
+      ]
+    },
+    "steps": [
+      "Assign the issue only after the task contract is clear.",
+      "Confirm the repository has instructions and a working validation path.",
+      "Expect work on a scoped Copilot branch or PR branch, not direct main changes.",
+      "Review the session log and draft PR before any merge decision."
+    ],
+    "verify": [
+      "Agent cannot approve or merge its own PR.",
+      "Required workflows and branch protections still apply.",
+      "A human reviewer owns the final decision."
+    ],
+    "examTrap": "Do not treat assignment to Copilot as approval to bypass PR review."
+  },
+  {
+    "id": "pr-evidence-review",
+    "title": "Review an agent-created pull request as evidence",
+    "domainIds": [
+      "domain-1",
+      "domain-4",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-ruleset-rules"
+    ],
+    "screen": {
+      "area": "Pull request",
+      "primary": "Files changed",
+      "secondary": "Checks passing / review required",
+      "badges": [
+        "Diff",
+        "Checks",
+        "Reviewers",
+        "Artifacts"
+      ]
+    },
+    "steps": [
+      "Read the PR summary and compare it with the original issue.",
+      "Inspect changed files for scope creep.",
+      "Open checks, logs, scans, and artifacts rather than trusting the summary.",
+      "Request changes when evidence is missing or a sensitive area changed."
+    ],
+    "verify": [
+      "Diff matches task scope.",
+      "Required checks are present and passing.",
+      "CODEOWNERS or specialist reviewers are included where needed."
+    ],
+    "examTrap": "The agent saying “done” is not evidence; the PR evidence trail is."
+  },
+  {
+    "id": "actions-logs-artifacts",
+    "title": "Use GitHub Actions logs and artifacts for validation",
+    "domainIds": [
+      "domain-2",
+      "domain-4"
+    ],
+    "sourceIds": [
+      "gh-actions-workflows"
+    ],
+    "screen": {
+      "area": "Actions run",
+      "primary": "Build and test",
+      "secondary": "Logs / Artifacts",
+      "badges": [
+        "Job graph",
+        "Logs",
+        "Artifact download"
+      ]
+    },
+    "steps": [
+      "Open the workflow run linked from the PR.",
+      "Inspect failing and passing jobs for useful signal.",
+      "Download or inspect artifacts when the workflow produces reports.",
+      "Classify failures as environment, tool, context, permission, or reasoning problems."
+    ],
+    "verify": [
+      "Logs support the claimed outcome.",
+      "Artifacts are relevant to acceptance criteria.",
+      "Failures are not hidden by removing checks."
+    ],
+    "examTrap": "A green check is useful, but you still need to know what the check actually validates."
+  },
+  {
+    "id": "branch-protection",
+    "title": "Configure branch protection for agent-created work",
+    "domainIds": [
+      "domain-1",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-protected-branches"
+    ],
+    "screen": {
+      "area": "Settings > Branches",
+      "primary": "Branch protection rule",
+      "secondary": "main",
+      "badges": [
+        "Require PR",
+        "Require checks",
+        "Restrict pushes"
+      ]
+    },
+    "steps": [
+      "Protect the default branch.",
+      "Require pull request review before merge.",
+      "Require status checks that prove build, test, security, or policy expectations.",
+      "Restrict direct pushes or force pushes where appropriate."
+    ],
+    "verify": [
+      "Agent work cannot land on main without PR review.",
+      "Required checks match real validation needs.",
+      "Sensitive repositories do not rely on informal review."
+    ],
+    "examTrap": "Disabling branch protection to “let the agent work faster” is usually the wrong answer."
+  },
+  {
+    "id": "rulesets",
+    "title": "Use repository rulesets for layered controls",
+    "domainIds": [
+      "domain-1",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-rulesets",
+      "gh-ruleset-rules"
+    ],
+    "screen": {
+      "area": "Settings > Rules",
+      "primary": "Ruleset: protected delivery",
+      "secondary": "Target branches: main, release/*",
+      "badges": [
+        "Status checks",
+        "Reviews",
+        "Deployments"
+      ]
+    },
+    "steps": [
+      "Create a named ruleset with a clear purpose.",
+      "Target the branch or tag patterns that need protection.",
+      "Add rules such as required checks, approving reviews, or deployment requirements.",
+      "Use ruleset visibility to help contributors understand blocked actions."
+    ],
+    "verify": [
+      "Rulesets cover the branches agents might target.",
+      "Rules are discoverable and auditable.",
+      "Multiple controls can layer without hidden gaps."
+    ],
+    "examTrap": "Rulesets and branch protection are control mechanisms, not documentation-only reminders."
+  },
+  {
+    "id": "codeowners",
+    "title": "Route agent changes with CODEOWNERS",
+    "domainIds": [
+      "domain-1",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-codeowners"
+    ],
+    "screen": {
+      "area": ".github/CODEOWNERS",
+      "primary": "/auth/ @security-team",
+      "secondary": "/payments/ @payments-owners",
+      "badges": [
+        "Path owner",
+        "Required review"
+      ]
+    },
+    "steps": [
+      "Identify sensitive paths such as auth, payment, deployment, or compliance files.",
+      "Add CODEOWNERS entries for those paths.",
+      "Combine code-owner review with branch protection or rulesets.",
+      "Keep ownership current when teams or components change."
+    ],
+    "verify": [
+      "Sensitive file changes request the correct reviewers.",
+      "A reviewer with write access can approve when required.",
+      "Ownership files are themselves protected."
+    ],
+    "examTrap": "A CODEOWNERS file alone does not enforce review unless paired with the right protection rule."
+  },
+  {
+    "id": "environments",
+    "title": "Gate deployments with GitHub environments",
+    "domainIds": [
+      "domain-2",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-deploy-envs",
+      "gh-managing-envs",
+      "gh-review-deployments"
+    ],
+    "screen": {
+      "area": "Settings > Environments",
+      "primary": "production",
+      "secondary": "Required reviewers + protected branches",
+      "badges": [
+        "Secrets locked",
+        "Manual approval",
+        "Branch rule"
+      ]
+    },
+    "steps": [
+      "Create an environment for production or sensitive deployment targets.",
+      "Add required reviewers and prevent self-review where needed.",
+      "Restrict branches or tags that can deploy.",
+      "Store environment secrets so they unlock only after protection rules pass."
+    ],
+    "verify": [
+      "Deployment jobs wait for approval before accessing protected secrets.",
+      "Only permitted branches/tags can deploy.",
+      "Bypass rules are intentionally configured."
+    ],
+    "examTrap": "Production deployment should not be just another agent tool call."
+  },
+  {
+    "id": "custom-instructions",
+    "title": "Write repository custom instructions for agentic development",
+    "domainIds": [
+      "domain-1",
+      "domain-2"
+    ],
+    "sourceIds": [
+      "gh-repository-instructions",
+      "gh-custom-instructions-support",
+      "gh-personal-instructions"
+    ],
+    "screen": {
+      "area": ".github/copilot-instructions.md",
+      "primary": "Project rules",
+      "secondary": "Build, test, validate, stop conditions",
+      "badges": [
+        "Repository-wide",
+        "Path-specific",
+        "Agent instructions"
+      ]
+    },
+    "steps": [
+      "Document project structure, build/test commands, coding conventions, and validation expectations.",
+      "Add stop conditions for sensitive files, secrets, production, and destructive commands.",
+      "Use path-specific instructions for special areas.",
+      "Avoid conflicting personal, repository, organization, and agent instructions."
+    ],
+    "verify": [
+      "Instructions tell Copilot how to validate work, not just how to style code.",
+      "Instructions do not contain secrets or temporary assumptions.",
+      "Path-specific rules load for the files they govern."
+    ],
+    "examTrap": "Instructions are governance support, not a substitute for branch protection or review."
+  },
+  {
+    "id": "mcp-configuration",
+    "title": "Configure MCP access with least privilege",
+    "domainIds": [
+      "domain-2",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-chat"
+    ],
+    "screen": {
+      "area": "MCP configuration",
+      "primary": "GitHub MCP server",
+      "secondary": "Toolsets: repos, issues, pull_requests",
+      "badges": [
+        "Read-only default",
+        "Allow list",
+        "Toolsets"
+      ]
+    },
+    "steps": [
+      "Decide whether the task needs tools or only context.",
+      "Prefer the remote GitHub MCP server for typical setup unless local hosting is required.",
+      "Enable only the toolsets needed for the task.",
+      "Document which tools are read-only and which can write issues, branches, PRs, or comments."
+    ],
+    "verify": [
+      "Tool access matches the task.",
+      "Write-capable tools have approval or branch boundaries.",
+      "MCP use is logged in the task or PR evidence."
+    ],
+    "examTrap": "MCP is not harmless context; tools can change GitHub state."
+  },
+  {
+    "id": "agent-session-log",
+    "title": "Review agent session logs and audit evidence",
+    "domainIds": [
+      "domain-4",
+      "domain-5",
+      "domain-6"
+    ],
+    "sourceIds": [
+      "gh-cloud-agent-risks"
+    ],
+    "screen": {
+      "area": "Agent session",
+      "primary": "Session log",
+      "secondary": "Commits, checks, review notes",
+      "badges": [
+        "Trace",
+        "Co-author",
+        "Audit"
+      ]
+    },
+    "steps": [
+      "Open the agent session linked from commits or the PR.",
+      "Review the agent plan, tool use, changes, and failure handling.",
+      "Compare session claims with PR checks and artifacts.",
+      "Preserve links in the review notes for future audit."
+    ],
+    "verify": [
+      "The session explains what the agent attempted and why.",
+      "Commits and PR discussion connect back to the human requester.",
+      "The evidence is enough for post-hoc analysis."
+    ],
+    "examTrap": "If administrators cannot see what the agent did, the workflow is not accountable."
+  },
+  {
+    "id": "multi-agent-handoff-ui",
+    "title": "Track multi-agent handoffs in GitHub artifacts",
+    "domainIds": [
+      "domain-5"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-actions-workflows"
+    ],
+    "screen": {
+      "area": "PR comment / project item",
+      "primary": "Handoff packet",
+      "secondary": "Planner -> Builder -> Reviewer",
+      "badges": [
+        "Decisions",
+        "Risks",
+        "Next action"
+      ]
+    },
+    "steps": [
+      "Give each agent a role and write scope.",
+      "Require a handoff comment or artifact after each stage.",
+      "Record decisions, changed files, evidence, risks, and next required action.",
+      "Pause or escalate when handoffs conflict."
+    ],
+    "verify": [
+      "No two agents silently own the same file or decision.",
+      "Handoffs are visible in GitHub, not only chat.",
+      "Conflict resolution is recorded before merge."
+    ],
+    "examTrap": "Parallel agents without handoff rules create speed-shaped confusion."
+  }
+]

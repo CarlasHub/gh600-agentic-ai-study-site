@@ -1,12 +1,30 @@
 {
   "name": "gh600-agentic-ai-study-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "GitHub Certified Agentic AI Developer GH-600 study site with learning documents, quizzes, and progress tracking.",
+  "type": "module",
+  "description": "Source-grounded GH-600 Developing in Agentic AI Systems study platform.",
   "scripts": {
-    "start": "python3 -m http.server 8080",
-    "check": "node --check assets/app.js"
+    "dev": "vite --host 0.0.0.0",
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "npm run build"
   },
-  "keywords": ["GH-600", "GitHub", "Copilot", "Agentic AI", "certification"],
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "GH-600",
+    "GitHub Copilot",
+    "Agentic AI",
+    "MCP",
+    "certification"
+  ],
   "license": "MIT"
 }

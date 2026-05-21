@@ -1,0 +1,33 @@
+{
+  "sevenDay": [
+    "Day 1: Blueprint and Domains 1-2 foundations",
+    "Day 2: MCP, tools, permissions, and environment scope",
+    "Day 3: Memory, state, context drift, and durable artifacts",
+    "Day 4: Evaluation signals, scans, logs, and failure analysis",
+    "Day 5: Multi-agent orchestration, handoffs, and recovery",
+    "Day 6: Guardrails, Responsible AI, and GitHub controls",
+    "Day 7: Mock exam, weak-domain review, final cram guide"
+  ],
+  "fourteenDay": [
+    "Day 1: Study Prepare agent architecture and SDLC processes",
+    "Day 2: Labs and quizzes for Prepare agent architecture and SDLC processes",
+    "Day 3: Study Implement tool use and environment interaction",
+    "Day 4: Labs and quizzes for Implement tool use and environment interaction",
+    "Day 5: Study Manage memory, state, and execution",
+    "Day 6: Labs and quizzes for Manage memory, state, and execution",
+    "Day 7: Study Perform evaluation, error analysis, and tuning",
+    "Day 8: Labs and quizzes for Perform evaluation, error analysis, and tuning",
+    "Day 9: Study Orchestrate multi-agent coordination",
+    "Day 10: Labs and quizzes for Orchestrate multi-agent coordination",
+    "Day 11: Study Implement guardrails and accountability",
+    "Day 12: Labs and quizzes for Implement guardrails and accountability",
+    "Day 13: Full mock exam and failure review",
+    "Day 14: Cram guide and readiness checklist"
+  ],
+  "thirtyDay": [
+    "Week 1: Agentic SDLC, task contracts, custom instructions, GitHub controls",
+    "Week 2: Tools, MCP, environments, CI, retries, rollback, traceability",
+    "Week 3: Memory, evaluation, tuning, failure analysis, multi-agent patterns",
+    "Week 4: Guardrails, Responsible AI, mock exams, labs, and final revision"
+  ]
+}
