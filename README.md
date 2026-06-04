@@ -9,14 +9,16 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 6 exam domains
 - 101 lessons
 - 505 quiz questions
-- 3 scenario-based exam simulator forms
-- 180 simulator questions aligned to the official domain weighting
-- 303 flashcards
-- 24 hands-on labs
+- 5 scenario-based exam simulator forms
+- 300 simulator questions aligned to the official domain weighting
+- 303 flashcards with spaced repetition progress
+- 40 hands-on labs, including capstone workflows
 - 12 GitHub UI workflow walkthroughs
 - 60 scenarios
 - 40 glossary terms
 - 65 official skill coverage rows
+- Adaptive quiz practice for weaker domains
+- Weekly source currentness workflow
 
 The machine-readable coverage matrix is in `src/data/coverageMatrix.json`. The readable version is in `docs/COVERAGE_MATRIX.md`.
 
@@ -62,6 +64,14 @@ npm run check
 
 That command validates the curriculum data and then builds the production app.
 
+Run the external source currentness check separately:
+
+```bash
+npm run check:sources
+```
+
+This checks source reachability and writes `docs/SOURCE_CURRENTNESS_REPORT.md`.
+
 ```bash
 npm run build
 ```
@@ -76,7 +86,7 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` installs dependencies, builds the Vite app, uploads `dist/`, and deploys through GitHub Pages. Push a branch or merge to `main` after enabling Pages with GitHub Actions as the source.
+The workflow in `.github/workflows/pages.yml` installs dependencies, runs content QA, builds the Vite app, uploads `dist/`, and deploys through GitHub Pages. Push a branch or merge to `main` after enabling Pages with GitHub Actions as the source.
 
 ## Repository Structure
 

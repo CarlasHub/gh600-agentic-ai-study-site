@@ -958,5 +958,649 @@
       "gh-deploy-envs",
       "gh-review-deployments"
     ]
+  },
+  {
+    "id": "lab-25-advanced-security-agent-review",
+    "title": "Agent pull request review with GitHub Advanced Security evidence",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s4",
+      "d4-g2-s1"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Use CodeQL, secret scanning, dependency review, and workflow logs to decide whether an agent PR is ready for human approval.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/advanced-security-agent-review. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for agent pull request review with github advanced security evidence with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-26-responsible-ai-risk-register",
+    "title": "Responsible AI risk register for agent work",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g1-s1",
+      "d6-g1-s2"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Create a risk register for privacy, security, fairness, transparency, and accountability in a GitHub agent workflow.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/responsible-ai-risk-register. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for responsible ai risk register for agent work with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-27-mcp-tool-allowlist-audit",
+    "title": "MCP tool allow-list audit",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g2-s1",
+      "d2-g2-s4"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Audit an MCP configuration and reduce available tools to the minimum useful set for a task.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/mcp-tool-allowlist-audit. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for mcp tool allow-list audit with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "lab-28-memory-state-recovery-plan",
+    "title": "Memory and state recovery plan",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g2-s1",
+      "d3-g2-s2"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Design durable progress records so an interrupted agent can resume without trusting stale memory.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/memory-state-recovery-plan. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for memory and state recovery plan with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "lab-29-multi-agent-conflict-drill",
+    "title": "Multi-agent conflict resolution drill",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g2-s2",
+      "d5-g3-s1"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Resolve overlapping outputs from builder, test, and documentation agents using handoff evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/multi-agent-conflict-drill. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for multi-agent conflict resolution drill with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "ms-agentic-foundations"
+    ]
+  },
+  {
+    "id": "lab-30-rulesets-codeowners-gate",
+    "title": "Rulesets and CODEOWNERS approval gate",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g2-s1",
+      "d6-g2-s4"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Combine rulesets, CODEOWNERS, required checks, and PR review to constrain agent autonomy.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/rulesets-codeowners-gate. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for rulesets and codeowners approval gate with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-31-ci-agent-invocation",
+    "title": "CI-invoked agent workflow design",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g3-s3",
+      "d2-g4-s5"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Design a CI-triggered agent workflow that records inputs, outputs, logs, and escalation paths.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/ci-agent-invocation. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for ci-invoked agent workflow design with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-mcp-cloud-agent",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-copilot-cloud-agent"
+    ]
+  },
+  {
+    "id": "lab-32-error-analysis-table",
+    "title": "Agent error analysis table",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g2-s1",
+      "d4-g2-s2"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Classify a failed agent run as reasoning, tool, context, environment, permission, or instruction failure.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/error-analysis-table. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for agent error analysis table with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-33-autonomy-decision-tree",
+    "title": "Autonomy level decision tree",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g3-s1",
+      "d1-g3-s3"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Build a decision tree for read-only, branch-write, PR-create, deployment, and destructive actions.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/autonomy-decision-tree. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for autonomy level decision tree with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-actions-workflows"
+    ]
+  },
+  {
+    "id": "lab-34-observability-evidence-pack",
+    "title": "Observability evidence pack",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s2",
+      "d4-g2-s1"
+    ],
+    "labType": "Advanced practice",
+    "objective": "Collect logs, traces, workflow artifacts, scan results, and review notes into a single PR evidence pack.",
+    "requiredTools": [
+      "GitHub repository",
+      "GitHub Actions",
+      "Pull request or issue template",
+      "A text editor"
+    ],
+    "setup": "Create a branch named lab/observability-evidence-pack. Use a sample repository if production controls are unavailable.",
+    "steps": [
+      "Read the related lessons and source panel before starting.",
+      "Write the requested artifact in a Markdown file or issue template.",
+      "Map each decision to a GitHub control such as issue, branch, PR, check, ruleset, CODEOWNERS, environment, or MCP configuration.",
+      "Add validation evidence that another reviewer can inspect.",
+      "Write a short recovery path for the most likely failure."
+    ],
+    "expectedResult": "A reviewable artifact for observability evidence pack with clear controls, evidence, and owner decisions.",
+    "validation": "A reviewer can identify the task boundary, required evidence, approval gate, and recovery action without asking the agent for clarification.",
+    "commonFailure": "The artifact describes a good intention but does not bind the agent to a concrete GitHub control or evidence object.",
+    "recovery": "Narrow the scope, add explicit validation evidence, and require human approval at sensitive or irreversible steps.",
+    "examRelevance": "Builds practical judgement for GH-600 scenario questions that ask which control should come next.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
+    ]
+  },
+  {
+    "id": "lab-35-capstone-1",
+    "title": "Capstone 1: end-to-end agentic SDLC workflow",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "skillIds": [
+      "d1-g1-s1",
+      "d1-g2-s1",
+      "d1-g3-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-1. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-36-capstone-2",
+    "title": "Capstone 2: end-to-end agentic SDLC workflow",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "skillIds": [
+      "d2-g1-s1",
+      "d2-g2-s1",
+      "d2-g3-s1",
+      "d2-g4-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-2. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-37-capstone-3",
+    "title": "Capstone 3: end-to-end agentic SDLC workflow",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "skillIds": [
+      "d3-g1-s1",
+      "d3-g2-s1",
+      "d3-g3-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-3. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-38-capstone-4",
+    "title": "Capstone 4: end-to-end agentic SDLC workflow",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "skillIds": [
+      "d4-g1-s1",
+      "d4-g2-s1",
+      "d4-g3-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-4. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-39-capstone-5",
+    "title": "Capstone 5: end-to-end agentic SDLC workflow",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "skillIds": [
+      "d5-g1-s1",
+      "d5-g2-s1",
+      "d5-g3-s1",
+      "d5-g4-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-5. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
+  },
+  {
+    "id": "lab-40-capstone-6",
+    "title": "Capstone 6: end-to-end agentic SDLC workflow",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "skillIds": [
+      "d6-g1-s1",
+      "d6-g2-s1"
+    ],
+    "labType": "Capstone project",
+    "objective": "Run a complete feature workflow from issue planning through agent execution, validation, review, and accountability evidence.",
+    "requiredTools": [
+      "GitHub repository",
+      "Issue template",
+      "Pull request template",
+      "GitHub Actions",
+      "Branch protection or ruleset notes",
+      "Optional MCP configuration"
+    ],
+    "setup": "Create a branch named capstone/agentic-sdlc-6. Use a harmless feature such as documentation, validation copy, or a sample service change.",
+    "steps": [
+      "Write a GitHub issue as the task contract with goal, scope, forbidden areas, acceptance criteria, and evidence.",
+      "Define the agent plan and stop points before any implementation step.",
+      "Specify tool access, MCP allow list, branch scope, and environment constraints.",
+      "Simulate or perform the implementation on a branch and open a PR with evidence.",
+      "Run checks or write expected check evidence, then classify any failure.",
+      "Add a reviewer handoff that explains risks, approvals, rollback, and audit trail."
+    ],
+    "expectedResult": "A complete issue-to-PR evidence trail showing how an agentic feature should be governed in GitHub.",
+    "validation": "A reviewer can replay the workflow from issue to PR and see why each permission, check, review, and escalation point exists.",
+    "commonFailure": "The workflow jumps from issue to code without explicit planning, tool boundaries, or reviewable evidence.",
+    "recovery": "Return to the issue contract, add missing boundaries and validation evidence, then rerun the workflow from the last safe checkpoint.",
+    "examRelevance": "Capstone labs build muscle memory for multi-domain GH-600 scenarios.",
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners",
+      "gh-mcp-cloud-agent",
+      "ms-responsible-ai-principles"
+    ]
   }
 ]

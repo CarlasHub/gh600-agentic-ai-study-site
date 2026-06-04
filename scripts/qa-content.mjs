@@ -256,7 +256,7 @@ for (const question of simulator) {
   if (!simulatorForms.has(question.form)) simulatorForms.set(question.form, []);
   simulatorForms.get(question.form).push(question);
 }
-if (simulatorForms.size !== 3) fail(`exam simulator should have exactly 3 forms, found ${simulatorForms.size}`);
+if (simulatorForms.size < 5) fail(`exam simulator should have at least 5 forms, found ${simulatorForms.size}`);
 const expectedFormDistribution = {
   "domain-1": 10,
   "domain-2": 14,

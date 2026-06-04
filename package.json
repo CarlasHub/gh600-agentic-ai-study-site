@@ -10,6 +10,7 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "qa:content": "node scripts/qa-content.mjs",
+    "check:sources": "node scripts/check-source-currentness.mjs",
     "check": "npm run qa:content && npm run build"
   },
   "dependencies": {

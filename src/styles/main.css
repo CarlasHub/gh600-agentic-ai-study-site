@@ -186,3 +186,9 @@ h3{color:#b9c1c9;font-weight:540}
 .page-mock .question{scroll-margin-top:5rem}
 .page-mock .mini strong{font-size:1.05rem}
 @media(max-width:760px){.page-mock .toolbar{display:grid}.page-mock .filter-control select{width:100%}}
+.reference-aid{background:#171b1f;border:1px solid var(--line-soft);border-radius:var(--radius);padding:1rem}
+.reference-aid h3{margin-bottom:.45rem}
+.reference-aid ol{margin:.45rem 0 0;padding-left:1.15rem}
+.reference-aid li{margin:.35rem 0;color:#aeb7c0}
+.flash small,.mini small{display:block;color:#aab3bc;font-size:.82rem;margin-top:.45rem}
+

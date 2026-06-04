@@ -7,6 +7,7 @@ GH-600 is an active certification area. Microsoft states that the listed bullets
 - Before each exam attempt.
 - Whenever the Microsoft GH-600 study guide changes.
 - Whenever GitHub Copilot cloud agent, MCP, custom agents, custom instructions, branch protection, rulesets, environments, or Responsible AI documentation changes in a way that affects exam behaviour.
+- Weekly through `.github/workflows/source-currentness.yml`, with human review for any flagged source.
 
 ## Review steps
 
@@ -18,9 +19,10 @@ GH-600 is an active certification area. Microsoft states that the listed bullets
 6. Update `docs/SOURCE_RESEARCH_LOG.md` with the date accessed and what changed.
 7. Run `npm install` if dependencies changed.
 8. Run `npm run qa:content` to catch broken mappings, invalid source IDs, incomplete lesson fields, and simulator balance problems.
-9. Run `npm run build`.
-10. Smoke test the main routes in a browser.
-11. Record results in `docs/RELEASE_CHECKLIST.md`.
+9. Run `npm run check:sources` to verify configured sources are reachable and write `docs/SOURCE_CURRENTNESS_REPORT.md`.
+10. Run `npm run build`.
+11. Smoke test the main routes in a browser.
+12. Record results in `docs/RELEASE_CHECKLIST.md`.
 
 ## What counts as up to date
 

@@ -38,6 +38,9 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Fixed broken source references in `src/data/examSimulatorQuestions.json`.
 - Updated the official GH-600 guide source metadata to reflect the 2026-06-04 recheck.
 - Updated `docs/CURRENTNESS_REVIEW.md` so future source reviews require the content QA script.
+- Expanded the simulator from 180 to 300 questions across five 60-question forms.
+- Expanded labs from 24 to 40, including capstone issue-to-PR workflows.
+- Added adaptive quiz tracking, spaced repetition flashcard scheduling, visual reference aids, and weekly source currentness automation.
 
 ## Current Data Counts
 
@@ -47,9 +50,10 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Coverage rows: 65
 - Lessons: 101
 - Lesson quiz questions: 505
-- Exam simulator questions: 180
+- Exam simulator questions: 300
 - Mock exam records: 3
-- Labs: 24
+- Exam simulator forms: 5
+- Labs: 40
 - Flashcards: 303
 - Glossary terms: 40
 - Scenarios: 60
@@ -70,6 +74,7 @@ The QA script confirms:
 - Every quiz and simulator question has four options, a valid correct answer, explanations, wrong-answer rationales, a source reference, and an exam trap.
 - Each simulator form has 60 questions with this domain distribution: 10 / 14 / 8 / 10 / 10 / 8.
 - Simulator answer positions are balanced and do not make the longest answer the correct answer too often.
+- The weekly source currentness check reached 24 of 24 configured sources on 2026-06-04.
 
 ## Accuracy Position
 

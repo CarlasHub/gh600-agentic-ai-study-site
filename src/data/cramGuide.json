@@ -5,7 +5,11 @@
     "Agent confidence is not evidence; checks, logs, artifacts, and PR review are evidence.",
     "Human approval belongs at sensitive, irreversible, production, security, or compliance-relevant points.",
     "MCP expands capability and therefore risk.",
-    "Multi-agent work needs isolation, handoffs, conflict detection, and auditability."
+    "Multi-agent work needs isolation, handoffs, conflict detection, and auditability.",
+    "Question strategy: identify the risk, then choose the answer that creates scope, evidence, and accountability.",
+    "Common distractors promise speed, autonomy, or confidence while weakening reviewability.",
+    "Observability means logs, traces, workflow artifacts, scans, PR notes, and decisions that a human can inspect.",
+    "Responsible AI in GH-600 is practical: privacy, security, reliability, transparency, and accountable human control in developer workflows."
   ],
   "decisionTables": [
     {
@@ -32,10 +36,89 @@
           "Explicit authorization and controlled path"
         ]
       ]
+    },
+    {
+      "title": "Tool selection decision tree",
+      "rows": [
+        [
+          "Need only understanding",
+          "Read-only repository or docs context",
+          "Do not grant write tools"
+        ],
+        [
+          "Need reproduction",
+          "Browser or test runner in isolated environment",
+          "Avoid production data"
+        ],
+        [
+          "Need code changes",
+          "Branch-scoped write access",
+          "Require PR and checks"
+        ],
+        [
+          "Need deployment/secrets",
+          "Human approval and protected environment",
+          "Do not let agent self-authorize"
+        ]
+      ]
+    },
+    {
+      "title": "Error handling decision tree",
+      "rows": [
+        [
+          "Test failure",
+          "Read logs and expected output",
+          "Fix root cause before retry"
+        ],
+        [
+          "Permission failure",
+          "Check tool/environment boundary",
+          "Escalate only if access is justified"
+        ],
+        [
+          "Context failure",
+          "Compare memory with current repo artifacts",
+          "Prune stale context"
+        ],
+        [
+          "Reasoning failure",
+          "Revise instructions and add examples",
+          "Run regression checks after tuning"
+        ]
+      ]
+    },
+    {
+      "title": "Multi-agent orchestration patterns",
+      "rows": [
+        [
+          "Sequential",
+          "Planner then builder then reviewer",
+          "Use when handoffs matter more than speed"
+        ],
+        [
+          "Parallel",
+          "Independent branches or files",
+          "Use only with conflict detection"
+        ],
+        [
+          "Reviewer agent",
+          "Second opinion on PR evidence",
+          "Never replace human accountability"
+        ],
+        [
+          "Retire or replace",
+          "Stalled or degraded agent",
+          "Record state before reassignment"
+        ]
+      ]
     }
   ],
   "cheatsheets": [
     "MCP: server exposes tools; allow list controls availability; remote GitHub MCP is hosted by GitHub; Playwright MCP supports web interaction in agent environment.",
-    "GitHub controls: issues scope work, branches isolate, PRs expose evidence, checks validate, CODEOWNERS routes review, environments gate deployment."
+    "GitHub controls: issues scope work, branches isolate, PRs expose evidence, checks validate, CODEOWNERS routes review, environments gate deployment.",
+    "Exam timing: answer known questions first, flag scenarios with unclear risk, then review flagged items against scope, evidence, permissions, and human approval.",
+    "Distractor pattern: answers that say “let the agent decide later” usually lose to answers that define controls before action.",
+    "Responsible AI checklist: classify risk, limit data exposure, require evidence, preserve audit trail, and keep sensitive decisions human-owned.",
+    "Observability checklist: plan, logs, traces, workflow artifacts, scan results, PR summary, reviewer comments, and rollback notes."
   ]
 }
