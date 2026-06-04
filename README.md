@@ -9,7 +9,8 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 6 exam domains
 - 101 lessons
 - 505 quiz questions
-- 3 mock exams
+- 3 scenario-based exam simulator forms
+- 180 simulator questions aligned to the official domain weighting
 - 303 flashcards
 - 24 hands-on labs
 - 12 GitHub UI workflow walkthroughs
@@ -76,7 +77,7 @@ public/              static assets
 
 ## Remaining Gaps and Uncertainty
 
-GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide on 2026-05-21, but learners should re-check the official Microsoft study guide before sitting the exam.
+GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide. The official Microsoft study guide was re-checked on 2026-06-04 and showed a page update date of 2026-05-13, but learners should still re-check the official Microsoft study guide before sitting the exam.
 
 The current content is broad and source-mapped. Each lesson now includes a domain-specific case study, and the app includes original GitHub UI workflow walkthroughs for the main control-plane flows. Future improvements could add periodic source-diff automation.
 
