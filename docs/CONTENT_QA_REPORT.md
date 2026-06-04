@@ -12,6 +12,7 @@ Checked:
 - Official skill bullet mapping from `src/data/examBlueprint.json` to `src/data/coverageMatrix.json`.
 - Lesson, quiz, lab, flashcard, scenario, glossary, source, cram guide, study plan, and exam simulator references.
 - Source ID integrity across student-facing content.
+- Lesson actionability fields: concrete action overview, step-by-step actions, files/settings/artifacts, copyable agent request, enterprise checklist, anti-patterns to avoid, exam drill, and key terms.
 - Exam simulator form size, domain distribution, answer-position balance, wrong-answer rationales, and longest-answer bias.
 - Local build readiness through `npm run qa:content` and `npm run build`.
 
@@ -41,6 +42,9 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Expanded the simulator from 180 to 300 questions across five 60-question forms.
 - Expanded labs from 24 to 40, including capstone issue-to-PR workflows.
 - Added adaptive quiz tracking, spaced repetition flashcard scheduling, visual reference aids, and weekly source currentness automation.
+- Added explicit action-manual sections to all lessons so each skill explains what to create, configure, request from an agent, validate, and avoid.
+- Expanded glossary coverage with common acronyms and short names such as SDLC, PR, CI, MCP, CODEOWNERS, RAI, HITL, RBAC, SAST, SBOM, RCA, DoD, and RACI.
+- Raised `npm run qa:content` so a lesson cannot pass without the practical action fields used by the lesson reader.
 
 ## Current Data Counts
 
@@ -55,7 +59,7 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Exam simulator forms: 5
 - Labs: 40
 - Flashcards: 303
-- Glossary terms: 40
+- Glossary terms: 58
 - Scenarios: 60
 
 ## QA Result
@@ -71,6 +75,7 @@ The QA script confirms:
 - Every coverage row maps to at least one lesson, quiz question, lab, flashcard, source, and revision note.
 - Every referenced lesson, quiz, lab, flashcard, source, glossary lesson, and scenario lesson exists.
 - Every lesson has source references and the required teaching fields used by the UI.
+- Every lesson has concrete action steps, file/artifact guidance, an agent request template, enterprise checks, mistakes to avoid, exam drill notes, and key terms.
 - Every quiz and simulator question has four options, a valid correct answer, explanations, wrong-answer rationales, a source reference, and an exam trap.
 - Each simulator form has 60 questions with this domain distribution: 10 / 14 / 8 / 10 / 10 / 8.
 - Simulator answer positions are balanced and do not make the longest answer the correct answer too often.

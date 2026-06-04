@@ -638,5 +638,329 @@
     "sourceIds": [
       "ms-gh600-guide"
     ]
+  },
+  {
+    "id": "gloss-sdlc",
+    "term": "SDLC",
+    "definition": "Software Development Lifecycle. In GH-600, this is the end-to-end path from requirement or issue through implementation, validation, review, deployment, and operation.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-pr",
+    "term": "PR",
+    "definition": "Pull Request. A GitHub review object used to show code changes, checks, comments, approvals, evidence, and merge decisions.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-ci",
+    "term": "CI",
+    "definition": "Continuous Integration. Automated workflows that build, test, scan, and validate changes before merge.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-mcp",
+    "term": "MCP",
+    "definition": "Model Context Protocol. A protocol for connecting AI agents to external tools and data sources. In Copilot coding agent, MCP tool access changes what the agent can do and must be controlled.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-rulesets",
+    "term": "Rulesets",
+    "definition": "GitHub repository rules that can require checks, reviews, branch restrictions, or other controls before changes are accepted.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-rai",
+    "term": "RAI",
+    "definition": "Responsible AI. Microsoft’s risk discipline for fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-hitl",
+    "term": "HITL",
+    "definition": "Human-in-the-loop. A workflow where a person must approve, review, or decide before the agent continues.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-rbac",
+    "term": "RBAC",
+    "definition": "Role-Based Access Control. Permissions assigned by role so users or agents have only the access they need.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-sast",
+    "term": "SAST",
+    "definition": "Static Application Security Testing. Security analysis performed on source code or build artifacts before runtime.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-dast",
+    "term": "DAST",
+    "definition": "Dynamic Application Security Testing. Security testing performed against a running application.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-sbom",
+    "term": "SBOM",
+    "definition": "Software Bill of Materials. A list of software components and dependencies used for supply-chain review.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-oidc",
+    "term": "OIDC",
+    "definition": "OpenID Connect. A federation protocol often used by GitHub Actions to authenticate to cloud providers without long-lived secrets.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-rca",
+    "term": "RCA",
+    "definition": "Root Cause Analysis. The practice of classifying why an agent or workflow failed before tuning prompts, memory, tools, or processes.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-dod",
+    "term": "DoD",
+    "definition": "Definition of Done. The explicit completion criteria for a task, including tests, evidence, review, and rollback expectations.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-raci",
+    "term": "RACI",
+    "definition": "Responsible, Accountable, Consulted, Informed. A responsibility model useful for multi-agent and human approval workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-p0-p1-p2",
+    "term": "P0/P1/P2",
+    "definition": "Priority or severity labels. Enterprises often use them to triage operational risk and decide escalation urgency.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-ga",
+    "term": "GA",
+    "definition": "General Availability. Microsoft notes exams mostly cover GA features, but may include commonly used Preview features.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
+  },
+  {
+    "id": "gloss-preview",
+    "term": "Preview",
+    "definition": "A feature stage before full general availability. Preview features may appear when commonly used, but should be treated carefully in enterprise workflows.",
+    "domainIds": [
+      "domain-1",
+      "domain-2",
+      "domain-6"
+    ],
+    "relatedLessons": [
+      "domain-1-lesson-01-identify-steps-for-agents-to-perform",
+      "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
+      "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide"
+    ]
   }
 ]

@@ -165,6 +165,18 @@ for (const lesson of lessons) {
   }
   requireArray(lesson.takeaways, `lesson ${lesson.id}`, "takeaways", 3);
   requireArray(lesson.revisionQuestions, `lesson ${lesson.id}`, "revisionQuestions", 3);
+  requireText(lesson.actionOverview, `lesson ${lesson.id}`, "actionOverview");
+  requireArray(lesson.actionSteps, `lesson ${lesson.id}`, "actionSteps", 6);
+  requireArray(lesson.filesToCreate, `lesson ${lesson.id}`, "filesToCreate", 3);
+  for (const artifact of lesson.filesToCreate || []) {
+    requireText(artifact.path, `lesson ${lesson.id} artifact`, "path");
+    requireText(artifact.purpose, `lesson ${lesson.id} artifact ${artifact.path || ""}`, "purpose");
+  }
+  requireText(lesson.agentRequestTemplate, `lesson ${lesson.id}`, "agentRequestTemplate");
+  requireArray(lesson.enterpriseChecklist, `lesson ${lesson.id}`, "enterpriseChecklist", 4);
+  requireArray(lesson.whatNotToDo, `lesson ${lesson.id}`, "whatNotToDo", 3);
+  requireArray(lesson.examActionDrill, `lesson ${lesson.id}`, "examActionDrill", 3);
+  requireArray(lesson.keyTerms, `lesson ${lesson.id}`, "keyTerms", 3);
   checkSourceIds(lesson.sourceIds, `lesson ${lesson.id}`);
 }
 

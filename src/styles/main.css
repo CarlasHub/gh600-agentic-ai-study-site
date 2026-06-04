@@ -192,3 +192,31 @@ h3{color:#b9c1c9;font-weight:540}
 .reference-aid li{margin:.35rem 0;color:#aeb7c0}
 .flash small,.mini small{display:block;color:#aab3bc;font-size:.82rem;margin-top:.45rem}
 
+/* Lesson action manual: concrete steps without visual noise. */
+.action-section{margin:1.35rem 0;padding:1.05rem 0;border-top:1px solid var(--line-soft)}
+.action-section h2{margin-bottom:.45rem}
+.action-section p{max-width:78ch}
+.action-steps{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.75rem}
+.action-steps li{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.75rem;align-items:start;margin:0}
+.action-steps span{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:999px;background:#222017;border:1px solid #3d3928;color:#d9bf7a;font-weight:620;font-size:.88rem}
+.action-steps p{margin:.08rem 0 0;color:#d7dde4}
+.artifact-list{margin:.9rem 0 0;display:grid;gap:.55rem}
+.artifact-list div{padding:.75rem .8rem;background:#161a1e;border:1px solid var(--line-soft);border-radius:7px}
+.artifact-list dt{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;color:#e1d3ac;overflow-wrap:anywhere}
+.artifact-list dd{margin:.3rem 0 0;color:#b9c2ca}
+.prompt-box{margin:.8rem 0 0;padding:.9rem;background:#15191d;border:1px solid var(--line-soft);border-radius:7px;white-space:pre-wrap;overflow:auto;color:#d7dde4;font-size:.92rem;line-height:1.65}
+.checklist{margin:.75rem 0 0;padding-left:1.15rem}
+.checklist li{margin:.45rem 0}
+.avoid-section{background:#181b1f;border:1px solid var(--line-soft);border-radius:7px;padding:.95rem}
+.avoid-section ul{margin:.7rem 0 0;padding-left:1.15rem}
+.key-terms{margin:1.2rem 0;padding:1rem 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.key-terms div{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.65rem}
+.key-terms a{display:inline-flex;text-decoration:none;background:#1f1e19;color:#d9bf7a;border:1px solid #342f22;border-radius:999px;padding:.32rem .62rem;font-size:.9rem}
+.key-terms a:hover{background:#242219;color:#ead79f}
+@media(max-width:760px){
+.action-section{margin:1.1rem 0;padding:.9rem 0}
+.action-steps li{grid-template-columns:1.75rem minmax(0,1fr);gap:.6rem}
+.action-steps span{width:1.75rem;height:1.75rem;font-size:.82rem}
+.prompt-box{font-size:.88rem;max-height:24rem}
+.artifact-list div{padding:.7rem}
+}

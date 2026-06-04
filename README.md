@@ -15,10 +15,11 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 40 hands-on labs, including capstone workflows
 - 12 GitHub UI workflow walkthroughs
 - 60 scenarios
-- 40 glossary terms
+- 58 glossary terms, including acronyms and short names
 - 65 official skill coverage rows
 - Adaptive quiz practice for weaker domains
 - Weekly source currentness workflow
+- Every lesson includes explicit action steps, concrete files/settings/artifacts, a copyable agent request, enterprise checks, common mistakes to avoid, and an exam action drill
 
 The machine-readable coverage matrix is in `src/data/coverageMatrix.json`. The readable version is in `docs/COVERAGE_MATRIX.md`.
 
@@ -105,7 +106,7 @@ public/              static assets
 
 GH-600 is a current/beta-style exam area and Microsoft states related topics may be covered beyond listed bullets. This repository maps every official bullet available from the researched study guide. The official Microsoft study guide was re-checked on 2026-06-04 and showed a page update date of 2026-05-13, but learners should still re-check the official Microsoft study guide before sitting the exam.
 
-The current content is broad and source-mapped. Each lesson now includes a domain-specific case study, and the app includes original GitHub UI workflow walkthroughs for the main control-plane flows. Future improvements could add periodic source-diff automation.
+The current content is broad and source-mapped. Each lesson includes a domain-specific case study, explicit implementation steps, file and artifact names, agent request guidance, enterprise review checks, and original GitHub UI workflow walkthroughs for the main control-plane flows. Future improvements could add more human editorial review passes as Microsoft and GitHub publish new GH-600-adjacent guidance.
 
 ## Copyright Note
 
