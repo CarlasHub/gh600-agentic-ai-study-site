@@ -30,6 +30,8 @@ Research log: [docs/SOURCE_RESEARCH_LOG.md](docs/SOURCE_RESEARCH_LOG.md).
 
 Currentness review workflow: [docs/CURRENTNESS_REVIEW.md](docs/CURRENTNESS_REVIEW.md).
 
+Latest content QA report: [docs/CONTENT_QA_REPORT.md](docs/CONTENT_QA_REPORT.md).
+
 ## Install
 
 ```bash
@@ -45,6 +47,20 @@ npm run dev
 Open the URL Vite prints, usually `http://localhost:5173`.
 
 ## Build
+
+Run the content QA gate before relying on the site for release:
+
+```bash
+npm run qa:content
+```
+
+Run the full local check:
+
+```bash
+npm run check
+```
+
+That command validates the curriculum data and then builds the production app.
 
 ```bash
 npm run build

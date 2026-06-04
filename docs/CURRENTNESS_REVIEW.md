@@ -17,9 +17,10 @@ GH-600 is an active certification area. Microsoft states that the listed bullets
 5. Add or revise lessons, quizzes, labs, flashcards, and mock exam questions for any changed skill.
 6. Update `docs/SOURCE_RESEARCH_LOG.md` with the date accessed and what changed.
 7. Run `npm install` if dependencies changed.
-8. Run `npm run build`.
-9. Smoke test the main routes in a browser.
-10. Record results in `docs/RELEASE_CHECKLIST.md`.
+8. Run `npm run qa:content` to catch broken mappings, invalid source IDs, incomplete lesson fields, and simulator balance problems.
+9. Run `npm run build`.
+10. Smoke test the main routes in a browser.
+11. Record results in `docs/RELEASE_CHECKLIST.md`.
 
 ## What counts as up to date
 

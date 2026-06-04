@@ -2,11 +2,13 @@
 
 Accessed: 2026-05-21
 
+Official GH-600 study guide rechecked: 2026-06-04. Microsoft Learn showed the page as last updated on 2026-05-13.
+
 ## Study guide for Exam GH-600: Developing in Agentic AI Systems
 
 - URL: https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600
 - Publisher: Microsoft Learn
-- Date accessed: 2026-05-21
+- Date accessed: 2026-06-04
 - Why it matters for GH-600: Primary exam blueprint, audience profile, domain weights, and official skill bullets.
 - Domains supported: domain-1, domain-2, domain-3, domain-4, domain-5, domain-6
 - Lessons using it: domain-1-lesson-01-identify-steps-for-agents-to-perform, domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents, domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents, domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution, domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan, domain-1-lesson-06-validate-agent-plans, domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved, domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails, domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too, domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery, domain-1-lesson-11-agentic-workflows-versus-ordinary-automation, domain-1-lesson-12-agent-task-decomposition-and-task-boundaries, plus more

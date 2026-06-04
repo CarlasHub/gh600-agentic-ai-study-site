@@ -433,8 +433,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Identify required tools"
@@ -473,8 +473,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure agent tool permissions"
@@ -513,8 +513,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure a GitHub remote MCP server"
@@ -553,8 +553,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure MCP allow lists"
@@ -593,8 +593,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure an agent's scope to a specific repository"
@@ -633,8 +633,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure an agent to use branch-based scope"
@@ -673,8 +673,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure an agent to handle environment-specific constraints"
@@ -713,8 +713,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Implement retries"
@@ -753,8 +753,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Implement escalation paths"
@@ -793,8 +793,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Identify required tools"
@@ -833,8 +833,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure agent tool permissions"
@@ -873,8 +873,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure a GitHub remote MCP server"
@@ -913,8 +913,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure MCP allow lists"
@@ -953,8 +953,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure an agent's scope to a specific repository"
@@ -993,8 +993,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Choose between short-term, long-term, and external memory"
@@ -1033,8 +1032,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Define memory expiration, pruning, and reset rules"
@@ -1073,8 +1071,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
@@ -1113,8 +1110,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Share agent state"
@@ -1153,8 +1149,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Prevent stale context"
@@ -1193,8 +1188,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Scope agent memory to task-relevant information"
@@ -1233,8 +1227,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Capture task progress and decisions as durable artifacts"
@@ -1273,8 +1266,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Detect and correct drift during extended agent execution"
@@ -1313,8 +1305,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
@@ -1353,8 +1345,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Align evaluation criteria with development intent"
@@ -1393,8 +1385,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
@@ -1433,8 +1425,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Revise instructions, workflows, or constraints"
@@ -1473,8 +1465,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Refine tool usage and tool access"
@@ -1513,8 +1505,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
@@ -1553,8 +1545,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Generate evaluation signals by using automated scanning tools"
@@ -1593,8 +1585,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
@@ -1633,8 +1625,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Refine memory usage"
@@ -1673,8 +1665,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
@@ -1713,8 +1705,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
@@ -1753,8 +1744,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
@@ -1793,8 +1783,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
@@ -1833,8 +1822,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Identify failed, partial, or stalled agent executions"
@@ -1873,8 +1861,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
@@ -1913,8 +1900,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
@@ -1953,8 +1939,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
@@ -1993,8 +1978,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
@@ -2033,8 +2017,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
@@ -2073,8 +2056,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Identify failed, partial, or stalled agent executions"
@@ -2113,8 +2095,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
@@ -2153,8 +2135,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Identify the subset of actions that require human judgment"
@@ -2193,8 +2175,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
@@ -2233,8 +2215,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
@@ -2273,8 +2255,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
@@ -2313,8 +2295,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
@@ -2353,8 +2335,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
@@ -2393,8 +2375,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
@@ -2833,8 +2815,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure agent tools"
@@ -2873,8 +2855,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Add an MCP server as a tool to an agent"
@@ -2913,8 +2895,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure the MCP registries"
@@ -2953,8 +2935,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Evaluate the execution context for an agent"
@@ -2993,8 +2975,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure an agent to be invoked in a CI workflow"
@@ -3033,8 +3015,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests"
@@ -3073,8 +3055,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Implement error handling"
@@ -3113,8 +3095,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Implement rollbacks"
@@ -3153,8 +3135,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Implement traceability and accountability for agent actions"
@@ -3193,8 +3175,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure agent tools"
@@ -3233,8 +3215,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Add an MCP server as a tool to an agent"
@@ -3273,8 +3255,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure the MCP registries"
@@ -3313,8 +3295,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Evaluate the execution context for an agent"
@@ -3353,8 +3335,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure an agent to be invoked in a CI workflow"
@@ -3393,8 +3375,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Scope agent memory to task-relevant information"
@@ -3433,8 +3414,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Capture task progress and decisions as durable artifacts"
@@ -3473,8 +3453,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Detect and correct drift during extended agent execution"
@@ -3513,8 +3492,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Prevent conflicting context"
@@ -3553,8 +3531,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Choose between short-term, long-term, and external memory"
@@ -3593,8 +3570,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Define memory expiration, pruning, and reset rules"
@@ -3633,8 +3609,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
@@ -3673,8 +3648,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Share agent state"
@@ -3713,8 +3687,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
@@ -3753,8 +3727,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Generate evaluation signals by using automated scanning tools"
@@ -3793,8 +3767,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
@@ -3833,8 +3807,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Refine memory usage"
@@ -3873,8 +3847,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
@@ -3913,8 +3887,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Align evaluation criteria with development intent"
@@ -3953,8 +3927,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
@@ -3993,8 +3967,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Revise instructions, workflows, or constraints"
@@ -4033,8 +4007,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Refine tool usage and tool access"
@@ -4073,8 +4047,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
@@ -4113,8 +4087,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Configure agent isolation for parallel execution"
@@ -4153,8 +4126,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit"
@@ -4193,8 +4165,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
@@ -4233,8 +4204,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Respond to degraded behavior or coordination across agents"
@@ -4273,8 +4243,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Add agents to existing multi-agent workflows"
@@ -4313,8 +4282,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Retire agents while preserving auditability and workflow continuity"
@@ -4353,8 +4321,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Configure agent isolation for parallel execution"
@@ -4393,8 +4360,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit"
@@ -4433,8 +4399,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
@@ -4473,8 +4438,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Respond to degraded behavior or coordination across agents"
@@ -4513,8 +4477,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
@@ -4553,8 +4517,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
@@ -4593,8 +4557,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
@@ -4633,8 +4597,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
@@ -4673,8 +4637,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Identify the subset of actions that require human judgment"
@@ -4713,8 +4677,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
@@ -4753,8 +4717,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
@@ -4793,8 +4757,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
@@ -5233,8 +5197,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure agent tool permissions"
@@ -5273,8 +5237,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure a GitHub remote MCP server"
@@ -5313,8 +5277,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure MCP allow lists"
@@ -5353,8 +5317,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure an agent's scope to a specific repository"
@@ -5393,8 +5357,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure an agent to use branch-based scope"
@@ -5433,8 +5397,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure an agent to handle environment-specific constraints"
@@ -5473,8 +5437,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Implement retries"
@@ -5513,8 +5477,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Implement escalation paths"
@@ -5553,8 +5517,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Identify required tools"
@@ -5593,8 +5557,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure agent tool permissions"
@@ -5633,8 +5597,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure a GitHub remote MCP server"
@@ -5673,8 +5637,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
     "officialSkill": "Configure MCP allow lists"
@@ -5713,8 +5677,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
     "officialSkill": "Configure an agent's scope to a specific repository"
@@ -5753,8 +5717,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-server",
-      "gh-copilot-agent-env"
+      "gh-mcp-server-setup",
+      "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
     "officialSkill": "Configure an agent to use branch-based scope"
@@ -5793,8 +5757,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Define memory expiration, pruning, and reset rules"
@@ -5833,8 +5796,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
@@ -5873,8 +5835,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Share agent state"
@@ -5913,8 +5874,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Prevent stale context"
@@ -5953,8 +5913,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Scope agent memory to task-relevant information"
@@ -5993,8 +5952,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
     "officialSkill": "Capture task progress and decisions as durable artifacts"
@@ -6033,8 +5991,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
     "officialSkill": "Detect and correct drift during extended agent execution"
@@ -6073,8 +6030,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-memory"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
     "officialSkill": "Prevent conflicting context"
@@ -6113,8 +6069,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Align evaluation criteria with development intent"
@@ -6153,8 +6109,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
@@ -6193,8 +6149,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Revise instructions, workflows, or constraints"
@@ -6233,8 +6189,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Refine tool usage and tool access"
@@ -6273,8 +6229,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
@@ -6313,8 +6269,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Generate evaluation signals by using automated scanning tools"
@@ -6353,8 +6309,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
@@ -6393,8 +6349,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
     "officialSkill": "Refine memory usage"
@@ -6433,8 +6389,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
     "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
@@ -6473,8 +6429,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-actions"
+      "ms-responsible-ai-principles",
+      "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
     "officialSkill": "Align evaluation criteria with development intent"
@@ -6513,8 +6469,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
@@ -6553,8 +6508,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
@@ -6593,8 +6547,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Identify failed, partial, or stalled agent executions"
@@ -6633,8 +6586,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
@@ -6673,8 +6625,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
@@ -6713,8 +6664,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
@@ -6753,8 +6703,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
@@ -6793,8 +6742,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
     "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
@@ -6833,8 +6781,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
     "officialSkill": "Identify failed, partial, or stalled agent executions"
@@ -6873,8 +6820,7 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "openai-agents-guide",
-      "langgraph-agents"
+      "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
     "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
@@ -6913,8 +6859,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Identify the subset of actions that require human judgment"
@@ -6953,8 +6899,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
@@ -6993,8 +6939,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
@@ -7033,8 +6979,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
@@ -7073,8 +7019,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
@@ -7113,8 +7059,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
     "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
@@ -7153,8 +7099,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
     "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
@@ -7193,8 +7139,8 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai",
-      "gh-branch-protection"
+      "ms-responsible-ai-principles",
+      "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
     "officialSkill": "Identify the subset of actions that require human judgment"
