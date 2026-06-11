@@ -74,7 +74,13 @@
       "domain-5": "15-20%",
       "domain-6": "10-15%"
     },
-    "readinessRule": "Aim for 80% overall and no domain below 70% before booking."
+    "readinessRule": "Aim for 80% overall and no domain below 70% before booking.",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "mock-2",
@@ -151,7 +157,13 @@
       "domain-5": "15-20%",
       "domain-6": "10-15%"
     },
-    "readinessRule": "Aim for 80% overall and no domain below 70% before booking."
+    "readinessRule": "Aim for 80% overall and no domain below 70% before booking.",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "mock-3",
@@ -228,6 +240,12 @@
       "domain-5": "15-20%",
       "domain-6": "10-15%"
     },
-    "readinessRule": "Aim for 80% overall and no domain below 70% before booking."
+    "readinessRule": "Aim for 80% overall and no domain below 70% before booking.",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

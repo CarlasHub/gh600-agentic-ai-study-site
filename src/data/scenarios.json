@@ -11,7 +11,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-02",
@@ -25,7 +31,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-03",
@@ -39,7 +51,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-04",
@@ -53,7 +71,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-05",
@@ -67,7 +91,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-06",
@@ -81,7 +111,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-07",
@@ -95,7 +131,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-08",
@@ -109,7 +151,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-09",
@@ -123,7 +171,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-10",
@@ -137,7 +191,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-11",
@@ -151,7 +211,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-12",
@@ -165,7 +231,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-13",
@@ -179,7 +251,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-14",
@@ -193,7 +271,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-15",
@@ -207,7 +291,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-16",
@@ -221,7 +311,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-17",
@@ -235,7 +331,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-18",
@@ -249,7 +351,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-19",
@@ -263,7 +371,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-20",
@@ -277,7 +391,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-21",
@@ -291,7 +411,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-22",
@@ -305,7 +431,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-23",
@@ -319,7 +451,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-24",
@@ -333,7 +471,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-25",
@@ -347,7 +491,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-26",
@@ -361,7 +511,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-27",
@@ -375,7 +531,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-28",
@@ -389,7 +551,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-29",
@@ -403,7 +571,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-30",
@@ -417,7 +591,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-31",
@@ -431,7 +611,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-32",
@@ -445,7 +631,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-33",
@@ -459,7 +651,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-34",
@@ -473,7 +671,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-35",
@@ -487,7 +691,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-36",
@@ -501,7 +711,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-37",
@@ -515,7 +731,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-38",
@@ -529,7 +751,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-39",
@@ -543,7 +771,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-40",
@@ -557,7 +791,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-41",
@@ -571,7 +811,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-42",
@@ -585,7 +831,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-43",
@@ -599,7 +851,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-44",
@@ -613,7 +871,13 @@
       "ms-gh600-guide",
       "gh-mcp-cloud-agent",
       "gh-mcp-server-setup"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-45",
@@ -627,7 +891,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-46",
@@ -641,7 +911,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-47",
@@ -655,7 +931,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-48",
@@ -669,7 +951,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-49",
@@ -683,7 +971,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-50",
@@ -697,7 +991,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-51",
@@ -711,7 +1011,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-52",
@@ -725,7 +1031,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-53",
@@ -739,7 +1051,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-54",
@@ -753,7 +1071,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-55",
@@ -767,7 +1091,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-56",
@@ -781,7 +1111,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-57",
@@ -795,7 +1131,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-58",
@@ -809,7 +1151,13 @@
       "ms-gh600-guide",
       "gh-copilot-cloud-agent",
       "gh-custom-instructions-support"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-59",
@@ -823,7 +1171,13 @@
       "ms-gh600-guide",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "scenario-60",
@@ -837,6 +1191,12 @@
       "ms-gh600-guide",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

@@ -19,8 +19,8 @@ Checked:
 Not checked by this local script:
 
 - Live web availability for every source URL.
-- Semantic fact review of every sentence against the current documentation.
-- Changes that Microsoft or GitHub publish after this QA date.
+- Full human semantic review of every sentence against the current documentation.
+- Changes that Microsoft or GitHub publish after this QA date unless `npm run check:sources` and `npm run data:accuracy` are run.
 
 ## Official Guide Currentness
 
@@ -45,6 +45,8 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Added explicit action-manual sections to all lessons so each skill explains what to create, configure, request from an agent, validate, and avoid.
 - Expanded glossary coverage with common acronyms and short names such as SDLC, PR, CI, MCP, CODEOWNERS, RAI, HITL, RBAC, SAST, SBOM, RCA, DoD, and RACI.
 - Raised `npm run qa:content` so a lesson cannot pass without the practical action fields used by the lesson reader.
+- Added `scripts/check-data-accuracy.mjs` for source-grounding evidence checks, item-level accuracy metadata, rationales, lab validation evidence, and manual review reporting.
+- Added source fingerprint monitoring in `scripts/check-source-currentness.mjs`.
 
 ## Current Data Counts
 
@@ -92,6 +94,8 @@ Minimum release QA:
 ```bash
 npm install
 npm run qa:content
+npm run check:sources
+npm run data:accuracy
 npm run build
 ```
 

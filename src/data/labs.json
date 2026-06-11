@@ -38,7 +38,13 @@
       "gh-codeowners",
       "gh-rulesets",
       "ms-agent-architecture-sdlc"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-02-custom-instructions-domain-1",
@@ -79,7 +85,13 @@
       "gh-codeowners",
       "gh-rulesets",
       "ms-agent-architecture-sdlc"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-03-mcp-policy-domain-1",
@@ -120,7 +132,13 @@
       "gh-codeowners",
       "gh-rulesets",
       "ms-agent-architecture-sdlc"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-04-branch-rules-domain-1",
@@ -161,7 +179,13 @@
       "gh-codeowners",
       "gh-rulesets",
       "ms-agent-architecture-sdlc"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-05-agent-task-contract-domain-2",
@@ -204,7 +228,13 @@
       "gh-deploy-envs",
       "gh-cloud-agent-risks",
       "ms-tooling-mcp-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-06-custom-instructions-domain-2",
@@ -247,7 +277,13 @@
       "gh-deploy-envs",
       "gh-cloud-agent-risks",
       "ms-tooling-mcp-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-07-mcp-policy-domain-2",
@@ -290,7 +326,13 @@
       "gh-deploy-envs",
       "gh-cloud-agent-risks",
       "ms-tooling-mcp-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-08-branch-rules-domain-2",
@@ -333,7 +375,13 @@
       "gh-deploy-envs",
       "gh-cloud-agent-risks",
       "ms-tooling-mcp-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-09-agent-task-contract-domain-3",
@@ -371,7 +419,13 @@
       "gh-custom-instructions-support",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-10-custom-instructions-domain-3",
@@ -409,7 +463,13 @@
       "gh-custom-instructions-support",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-11-mcp-policy-domain-3",
@@ -447,7 +507,13 @@
       "gh-custom-instructions-support",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-12-branch-rules-domain-3",
@@ -485,7 +551,13 @@
       "gh-custom-instructions-support",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-13-agent-task-contract-domain-4",
@@ -523,7 +595,13 @@
       "gh-cloud-agent-risks",
       "ms-foundry-responsible-ai",
       "gh-deploy-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-14-custom-instructions-domain-4",
@@ -561,7 +639,13 @@
       "gh-cloud-agent-risks",
       "ms-foundry-responsible-ai",
       "gh-deploy-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-15-mcp-policy-domain-4",
@@ -599,7 +683,13 @@
       "gh-cloud-agent-risks",
       "ms-foundry-responsible-ai",
       "gh-deploy-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-16-branch-rules-domain-4",
@@ -637,7 +727,13 @@
       "gh-cloud-agent-risks",
       "ms-foundry-responsible-ai",
       "gh-deploy-envs"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-17-agent-task-contract-domain-5",
@@ -675,7 +771,13 @@
       "gh-mcp-cloud-agent",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-18-custom-instructions-domain-5",
@@ -713,7 +815,13 @@
       "gh-mcp-cloud-agent",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-19-mcp-policy-domain-5",
@@ -751,7 +859,13 @@
       "gh-mcp-cloud-agent",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-20-branch-rules-domain-5",
@@ -789,7 +903,13 @@
       "gh-mcp-cloud-agent",
       "gh-actions-workflows",
       "gh-cloud-agent-risks"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-21-agent-task-contract-domain-6",
@@ -831,7 +951,13 @@
       "gh-codeowners",
       "gh-deploy-envs",
       "gh-review-deployments"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-22-custom-instructions-domain-6",
@@ -873,7 +999,13 @@
       "gh-codeowners",
       "gh-deploy-envs",
       "gh-review-deployments"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-23-mcp-policy-domain-6",
@@ -915,7 +1047,13 @@
       "gh-codeowners",
       "gh-deploy-envs",
       "gh-review-deployments"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-24-branch-rules-domain-6",
@@ -957,7 +1095,13 @@
       "gh-codeowners",
       "gh-deploy-envs",
       "gh-review-deployments"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-25-advanced-security-agent-review",
@@ -994,7 +1138,13 @@
       "gh-cloud-agent-risks",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-26-responsible-ai-risk-register",
@@ -1032,7 +1182,13 @@
       "gh-protected-branches",
       "gh-rulesets",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-27-mcp-tool-allowlist-audit",
@@ -1070,7 +1226,13 @@
       "gh-mcp-server-setup",
       "gh-mcp-toolsets",
       "gh-copilot-cloud-agent"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-28-memory-state-recovery-plan",
@@ -1106,7 +1268,13 @@
       "ms-gh600-guide",
       "ms-agentic-foundations",
       "gh-copilot-cloud-agent"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-29-multi-agent-conflict-drill",
@@ -1143,7 +1311,13 @@
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
       "ms-agentic-foundations"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-30-rulesets-codeowners-gate",
@@ -1181,7 +1355,13 @@
       "gh-protected-branches",
       "gh-rulesets",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-31-ci-agent-invocation",
@@ -1219,7 +1399,13 @@
       "gh-mcp-server-setup",
       "gh-mcp-toolsets",
       "gh-copilot-cloud-agent"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-32-error-analysis-table",
@@ -1256,7 +1442,13 @@
       "gh-cloud-agent-risks",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-33-autonomy-decision-tree",
@@ -1293,7 +1485,13 @@
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
       "gh-actions-workflows"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-34-observability-evidence-pack",
@@ -1330,7 +1528,13 @@
       "gh-cloud-agent-risks",
       "gh-actions-workflows",
       "ms-foundry-responsible-ai"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-35-capstone-1",
@@ -1375,7 +1579,13 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-36-capstone-2",
@@ -1421,7 +1631,13 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-37-capstone-3",
@@ -1466,7 +1682,13 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-38-capstone-4",
@@ -1511,7 +1733,13 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-39-capstone-5",
@@ -1557,7 +1785,13 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "lab-40-capstone-6",
@@ -1601,6 +1835,12 @@
       "gh-codeowners",
       "gh-mcp-cloud-agent",
       "ms-responsible-ai-principles"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

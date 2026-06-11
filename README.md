@@ -35,6 +35,12 @@ Currentness review workflow: [docs/CURRENTNESS_REVIEW.md](docs/CURRENTNESS_REVIE
 
 Latest content QA report: [docs/CONTENT_QA_REPORT.md](docs/CONTENT_QA_REPORT.md).
 
+Data accuracy framework: [docs/DATA_ACCURACY_FRAMEWORK.md](docs/DATA_ACCURACY_FRAMEWORK.md).
+
+Latest data accuracy report: [docs/DATA_ACCURACY_REPORT.md](docs/DATA_ACCURACY_REPORT.md).
+
+Suspected content drift report form: [GitHub issue form](https://github.com/CarlasHub/gh600-agentic-ai-study-site/issues/new?template=content-drift.yml).
+
 ## Install
 
 ```bash
@@ -63,7 +69,15 @@ Run the full local check:
 npm run check
 ```
 
-That command validates the curriculum data and then builds the production app.
+That command validates the curriculum data, runs the data accuracy scan, and then builds the production app.
+
+Run the semantic evidence and metadata scan separately:
+
+```bash
+npm run data:accuracy
+```
+
+This checks item-level accuracy metadata, source grounding signals, quiz rationales, lab validation evidence, and writes `docs/DATA_ACCURACY_REPORT.md`.
 
 Run the external source currentness check separately:
 
@@ -71,7 +85,7 @@ Run the external source currentness check separately:
 npm run check:sources
 ```
 
-This checks source reachability and writes `docs/SOURCE_CURRENTNESS_REPORT.md`.
+This checks source reachability, redirects, headers, content fingerprints, and source keywords. It writes `docs/SOURCE_CURRENTNESS_REPORT.md` and updates `src/data/sourceStatus.json`.
 
 ```bash
 npm run build
@@ -87,7 +101,7 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` installs dependencies, runs content QA, builds the Vite app, uploads `dist/`, and deploys through GitHub Pages. Push a branch or merge to `main` after enabling Pages with GitHub Actions as the source.
+The workflow in `.github/workflows/pages.yml` installs dependencies, runs content QA, runs data accuracy validation, builds the Vite app, uploads `dist/`, and deploys through GitHub Pages. Push a branch or merge to `main` after enabling Pages with GitHub Actions as the source.
 
 ## Repository Structure
 

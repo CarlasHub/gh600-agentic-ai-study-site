@@ -37,7 +37,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-02",
@@ -77,7 +83,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Define inputs, outputs, and success criteria for agents"
+    "officialSkill": "Define inputs, outputs, and success criteria for agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-03",
@@ -117,7 +129,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-04",
@@ -157,7 +175,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-05",
@@ -197,7 +221,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling"
+    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-06",
@@ -237,7 +267,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-07",
@@ -277,7 +313,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Define inputs, outputs, and success criteria for agents"
+    "officialSkill": "Define inputs, outputs, and success criteria for agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-08",
@@ -317,7 +359,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-09",
@@ -357,7 +405,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-1-10",
@@ -397,7 +451,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling"
+    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-01",
@@ -437,7 +497,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Identify required tools"
+    "officialSkill": "Identify required tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-02",
@@ -477,7 +543,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-03",
@@ -517,7 +589,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-04",
@@ -557,7 +635,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure MCP allow lists"
+    "officialSkill": "Configure MCP allow lists",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-05",
@@ -597,7 +681,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure an agent's scope to a specific repository"
+    "officialSkill": "Configure an agent's scope to a specific repository",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-06",
@@ -637,7 +727,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure an agent to use branch-based scope"
+    "officialSkill": "Configure an agent to use branch-based scope",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-07",
@@ -677,7 +773,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure an agent to handle environment-specific constraints"
+    "officialSkill": "Configure an agent to handle environment-specific constraints",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-08",
@@ -717,7 +819,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Implement retries"
+    "officialSkill": "Implement retries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-09",
@@ -757,7 +865,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Implement escalation paths"
+    "officialSkill": "Implement escalation paths",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-10",
@@ -797,7 +911,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Identify required tools"
+    "officialSkill": "Identify required tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-11",
@@ -837,7 +957,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-12",
@@ -877,7 +1003,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-13",
@@ -917,7 +1049,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure MCP allow lists"
+    "officialSkill": "Configure MCP allow lists",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-2-14",
@@ -957,7 +1095,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure an agent's scope to a specific repository"
+    "officialSkill": "Configure an agent's scope to a specific repository",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-01",
@@ -996,7 +1140,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-02",
@@ -1035,7 +1185,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Define memory expiration, pruning, and reset rules"
+    "officialSkill": "Define memory expiration, pruning, and reset rules",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-03",
@@ -1074,7 +1230,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-04",
@@ -1113,7 +1275,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Share agent state"
+    "officialSkill": "Share agent state",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-05",
@@ -1152,7 +1320,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-06",
@@ -1191,7 +1365,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Scope agent memory to task-relevant information"
+    "officialSkill": "Scope agent memory to task-relevant information",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-07",
@@ -1230,7 +1410,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Capture task progress and decisions as durable artifacts"
+    "officialSkill": "Capture task progress and decisions as durable artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-3-08",
@@ -1269,7 +1455,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Detect and correct drift during extended agent execution"
+    "officialSkill": "Detect and correct drift during extended agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-01",
@@ -1309,7 +1501,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-02",
@@ -1349,7 +1547,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Align evaluation criteria with development intent"
+    "officialSkill": "Align evaluation criteria with development intent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-03",
@@ -1389,7 +1593,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-04",
@@ -1429,7 +1639,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Revise instructions, workflows, or constraints"
+    "officialSkill": "Revise instructions, workflows, or constraints",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-05",
@@ -1469,7 +1685,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-06",
@@ -1509,7 +1731,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-07",
@@ -1549,7 +1777,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Generate evaluation signals by using automated scanning tools"
+    "officialSkill": "Generate evaluation signals by using automated scanning tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-08",
@@ -1589,7 +1823,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-09",
@@ -1629,7 +1869,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Refine memory usage"
+    "officialSkill": "Refine memory usage",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-4-10",
@@ -1669,7 +1915,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-01",
@@ -1708,7 +1960,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
+    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-02",
@@ -1747,7 +2005,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-03",
@@ -1786,7 +2050,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-04",
@@ -1825,7 +2095,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-05",
@@ -1864,7 +2140,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-06",
@@ -1903,7 +2185,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
+    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-07",
@@ -1942,7 +2230,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
+    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-08",
@@ -1981,7 +2275,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-09",
@@ -2020,7 +2320,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-5-10",
@@ -2059,7 +2365,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-01",
@@ -2099,7 +2411,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-02",
@@ -2139,7 +2457,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Identify the subset of actions that require human judgment"
+    "officialSkill": "Identify the subset of actions that require human judgment",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-03",
@@ -2179,7 +2503,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
+    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-04",
@@ -2219,7 +2549,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
+    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-05",
@@ -2259,7 +2595,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
+    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-06",
@@ -2299,7 +2641,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
+    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-07",
@@ -2339,7 +2687,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
+    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-1-domain-6-08",
@@ -2379,7 +2733,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-01",
@@ -2419,7 +2779,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Identify and mitigate common anti-patterns in agents"
+    "officialSkill": "Identify and mitigate common anti-patterns in agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-02",
@@ -2459,7 +2825,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Configure agent planning to be distinct from agent execution"
+    "officialSkill": "Configure agent planning to be distinct from agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-03",
@@ -2499,7 +2871,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Validate agent plans"
+    "officialSkill": "Validate agent plans",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-04",
@@ -2539,7 +2917,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Plan and implement the degree of agent autonomy, including guardrails"
+    "officialSkill": "Plan and implement the degree of agent autonomy, including guardrails",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-05",
@@ -2579,7 +2963,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-06",
@@ -2619,7 +3009,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Identify and mitigate common anti-patterns in agents"
+    "officialSkill": "Identify and mitigate common anti-patterns in agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-07",
@@ -2659,7 +3055,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Configure agent planning to be distinct from agent execution"
+    "officialSkill": "Configure agent planning to be distinct from agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-08",
@@ -2699,7 +3101,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Validate agent plans"
+    "officialSkill": "Validate agent plans",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-09",
@@ -2739,7 +3147,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Plan and implement the degree of agent autonomy, including guardrails"
+    "officialSkill": "Plan and implement the degree of agent autonomy, including guardrails",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-1-10",
@@ -2779,7 +3193,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-01",
@@ -2819,7 +3239,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure agent tools"
+    "officialSkill": "Configure agent tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-02",
@@ -2859,7 +3285,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Add an MCP server as a tool to an agent"
+    "officialSkill": "Add an MCP server as a tool to an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-03",
@@ -2899,7 +3331,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure the MCP registries"
+    "officialSkill": "Configure the MCP registries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-04",
@@ -2939,7 +3377,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Evaluate the execution context for an agent"
+    "officialSkill": "Evaluate the execution context for an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-05",
@@ -2979,7 +3423,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure an agent to be invoked in a CI workflow"
+    "officialSkill": "Configure an agent to be invoked in a CI workflow",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-06",
@@ -3019,7 +3469,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests"
+    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-07",
@@ -3059,7 +3515,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Implement error handling"
+    "officialSkill": "Implement error handling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-08",
@@ -3099,7 +3561,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Implement rollbacks"
+    "officialSkill": "Implement rollbacks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-09",
@@ -3139,7 +3607,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Implement traceability and accountability for agent actions"
+    "officialSkill": "Implement traceability and accountability for agent actions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-10",
@@ -3179,7 +3653,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure agent tools"
+    "officialSkill": "Configure agent tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-11",
@@ -3219,7 +3699,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Add an MCP server as a tool to an agent"
+    "officialSkill": "Add an MCP server as a tool to an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-12",
@@ -3259,7 +3745,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure the MCP registries"
+    "officialSkill": "Configure the MCP registries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-13",
@@ -3299,7 +3791,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Evaluate the execution context for an agent"
+    "officialSkill": "Evaluate the execution context for an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-2-14",
@@ -3339,7 +3837,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure an agent to be invoked in a CI workflow"
+    "officialSkill": "Configure an agent to be invoked in a CI workflow",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-01",
@@ -3378,7 +3882,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Scope agent memory to task-relevant information"
+    "officialSkill": "Scope agent memory to task-relevant information",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-02",
@@ -3417,7 +3927,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Capture task progress and decisions as durable artifacts"
+    "officialSkill": "Capture task progress and decisions as durable artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-03",
@@ -3456,7 +3972,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Detect and correct drift during extended agent execution"
+    "officialSkill": "Detect and correct drift during extended agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-04",
@@ -3495,7 +4017,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Prevent conflicting context"
+    "officialSkill": "Prevent conflicting context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-05",
@@ -3534,7 +4062,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-06",
@@ -3573,7 +4107,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Define memory expiration, pruning, and reset rules"
+    "officialSkill": "Define memory expiration, pruning, and reset rules",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-07",
@@ -3612,7 +4152,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-3-08",
@@ -3651,7 +4197,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Share agent state"
+    "officialSkill": "Share agent state",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-01",
@@ -3691,7 +4243,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-02",
@@ -3731,7 +4289,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Generate evaluation signals by using automated scanning tools"
+    "officialSkill": "Generate evaluation signals by using automated scanning tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-03",
@@ -3771,7 +4335,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-04",
@@ -3811,7 +4381,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Refine memory usage"
+    "officialSkill": "Refine memory usage",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-05",
@@ -3851,7 +4427,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-06",
@@ -3891,7 +4473,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Align evaluation criteria with development intent"
+    "officialSkill": "Align evaluation criteria with development intent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-07",
@@ -3931,7 +4519,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-08",
@@ -3971,7 +4565,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Revise instructions, workflows, or constraints"
+    "officialSkill": "Revise instructions, workflows, or constraints",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-09",
@@ -4011,7 +4611,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-4-10",
@@ -4051,7 +4657,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-01",
@@ -4090,7 +4702,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Configure agent isolation for parallel execution"
+    "officialSkill": "Configure agent isolation for parallel execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-02",
@@ -4129,7 +4747,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit"
+    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-03",
@@ -4168,7 +4792,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
+    "officialSkill": "Perform post-hoc analysis of multi-agent behavior",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-04",
@@ -4207,7 +4837,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Respond to degraded behavior or coordination across agents"
+    "officialSkill": "Respond to degraded behavior or coordination across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-05",
@@ -4246,7 +4882,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Add agents to existing multi-agent workflows"
+    "officialSkill": "Add agents to existing multi-agent workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-06",
@@ -4285,7 +4927,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Retire agents while preserving auditability and workflow continuity"
+    "officialSkill": "Retire agents while preserving auditability and workflow continuity",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-07",
@@ -4324,7 +4972,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Configure agent isolation for parallel execution"
+    "officialSkill": "Configure agent isolation for parallel execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-08",
@@ -4363,7 +5017,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit"
+    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-09",
@@ -4402,7 +5062,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
+    "officialSkill": "Perform post-hoc analysis of multi-agent behavior",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-5-10",
@@ -4441,7 +5107,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Respond to degraded behavior or coordination across agents"
+    "officialSkill": "Respond to degraded behavior or coordination across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-01",
@@ -4481,7 +5153,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
+    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-02",
@@ -4521,7 +5199,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
+    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-03",
@@ -4561,7 +5245,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
+    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-04",
@@ -4601,7 +5291,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-05",
@@ -4641,7 +5337,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Identify the subset of actions that require human judgment"
+    "officialSkill": "Identify the subset of actions that require human judgment",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-06",
@@ -4681,7 +5383,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
+    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-07",
@@ -4721,7 +5429,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
+    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-2-domain-6-08",
@@ -4761,7 +5475,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
+    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-01",
@@ -4801,7 +5521,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Define inputs, outputs, and success criteria for agents"
+    "officialSkill": "Define inputs, outputs, and success criteria for agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-02",
@@ -4841,7 +5567,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-03",
@@ -4881,7 +5613,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-04",
@@ -4921,7 +5659,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling"
+    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-05",
@@ -4961,7 +5705,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-06",
@@ -5001,7 +5751,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Define inputs, outputs, and success criteria for agents"
+    "officialSkill": "Define inputs, outputs, and success criteria for agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-07",
@@ -5041,7 +5797,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-08",
@@ -5081,7 +5843,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Vague tasking before autonomous execution",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-09",
@@ -5121,7 +5889,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Treating a detailed plan as approval to act",
-    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling"
+    "officialSkill": "Configure agent to produce inspectable artifacts within standard development tooling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-1-10",
@@ -5161,7 +5935,13 @@
       "gh-repository-instructions"
     ],
     "examTrap": "Over-correcting toward either no control or too much friction",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-01",
@@ -5201,7 +5981,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-02",
@@ -5241,7 +6027,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-03",
@@ -5281,7 +6073,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure MCP allow lists"
+    "officialSkill": "Configure MCP allow lists",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-04",
@@ -5321,7 +6119,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure an agent's scope to a specific repository"
+    "officialSkill": "Configure an agent's scope to a specific repository",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-05",
@@ -5361,7 +6165,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure an agent to use branch-based scope"
+    "officialSkill": "Configure an agent to use branch-based scope",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-06",
@@ -5401,7 +6211,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure an agent to handle environment-specific constraints"
+    "officialSkill": "Configure an agent to handle environment-specific constraints",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-07",
@@ -5441,7 +6257,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Implement retries"
+    "officialSkill": "Implement retries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-08",
@@ -5481,7 +6303,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Implement escalation paths"
+    "officialSkill": "Implement escalation paths",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-09",
@@ -5521,7 +6349,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Identify required tools"
+    "officialSkill": "Identify required tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-10",
@@ -5561,7 +6395,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-11",
@@ -5601,7 +6441,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-12",
@@ -5641,7 +6487,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Confusing reproduction needs with production access",
-    "officialSkill": "Configure MCP allow lists"
+    "officialSkill": "Configure MCP allow lists",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-13",
@@ -5681,7 +6533,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Bypassing GitHub control-plane evidence",
-    "officialSkill": "Configure an agent's scope to a specific repository"
+    "officialSkill": "Configure an agent's scope to a specific repository",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-2-14",
@@ -5721,7 +6579,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioned tool access",
-    "officialSkill": "Configure an agent to use branch-based scope"
+    "officialSkill": "Configure an agent to use branch-based scope",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-01",
@@ -5760,7 +6624,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Define memory expiration, pruning, and reset rules"
+    "officialSkill": "Define memory expiration, pruning, and reset rules",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-02",
@@ -5799,7 +6669,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-03",
@@ -5838,7 +6714,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Share agent state"
+    "officialSkill": "Share agent state",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-04",
@@ -5877,7 +6759,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-05",
@@ -5916,7 +6804,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Scope agent memory to task-relevant information"
+    "officialSkill": "Scope agent memory to task-relevant information",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-06",
@@ -5955,7 +6849,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unscoped shared memory",
-    "officialSkill": "Capture task progress and decisions as durable artifacts"
+    "officialSkill": "Capture task progress and decisions as durable artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-07",
@@ -5994,7 +6894,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Stale preference persistence",
-    "officialSkill": "Detect and correct drift during extended agent execution"
+    "officialSkill": "Detect and correct drift during extended agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-3-08",
@@ -6033,7 +6939,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Trusting stale memory over durable state",
-    "officialSkill": "Prevent conflicting context"
+    "officialSkill": "Prevent conflicting context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-01",
@@ -6073,7 +6985,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Align evaluation criteria with development intent"
+    "officialSkill": "Align evaluation criteria with development intent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-02",
@@ -6113,7 +7031,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-03",
@@ -6153,7 +7077,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Revise instructions, workflows, or constraints"
+    "officialSkill": "Revise instructions, workflows, or constraints",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-04",
@@ -6193,7 +7123,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-05",
@@ -6233,7 +7169,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-06",
@@ -6273,7 +7215,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Generate evaluation signals by using automated scanning tools"
+    "officialSkill": "Generate evaluation signals by using automated scanning tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-07",
@@ -6313,7 +7261,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-08",
@@ -6353,7 +7307,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Treating one green signal as sufficient evaluation",
-    "officialSkill": "Refine memory usage"
+    "officialSkill": "Refine memory usage",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-09",
@@ -6393,7 +7353,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Misclassifying failure cause",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-4-10",
@@ -6433,7 +7399,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Overfitting to one failure",
-    "officialSkill": "Align evaluation criteria with development intent"
+    "officialSkill": "Align evaluation criteria with development intent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-01",
@@ -6472,7 +7444,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-02",
@@ -6511,7 +7489,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-03",
@@ -6550,7 +7534,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-04",
@@ -6589,7 +7579,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-05",
@@ -6628,7 +7624,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
+    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-06",
@@ -6667,7 +7669,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
+    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-07",
@@ -6706,7 +7714,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-08",
@@ -6745,7 +7759,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Unmanaged parallelism",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-09",
@@ -6784,7 +7804,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Resolving conflicts without evidence",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-5-10",
@@ -6823,7 +7849,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Agent retirement without auditability",
-    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-01",
@@ -6863,7 +7895,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Identify the subset of actions that require human judgment"
+    "officialSkill": "Identify the subset of actions that require human judgment",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-02",
@@ -6903,7 +7941,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
+    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-03",
@@ -6943,7 +7987,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
+    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-04",
@@ -6983,7 +8033,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards"
+    "officialSkill": "Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-05",
@@ -7023,7 +8079,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
+    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-06",
@@ -7063,7 +8125,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Ignoring data exposure through tools",
-    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
+    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-07",
@@ -7103,7 +8171,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Approval friction that does not reduce risk",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-3-domain-6-08",
@@ -7143,7 +8217,13 @@
       "gh-protected-branches"
     ],
     "examTrap": "Urgency overriding governance",
-    "officialSkill": "Identify the subset of actions that require human judgment"
+    "officialSkill": "Identify the subset of actions that require human judgment",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-01",
@@ -7184,7 +8264,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent planning to be distinct from agent execution"
+    "officialSkill": "Configure agent planning to be distinct from agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-02",
@@ -7225,7 +8311,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-03",
@@ -7266,7 +8358,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-04",
@@ -7307,7 +8405,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-05",
@@ -7348,7 +8452,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-06",
@@ -7389,7 +8499,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-07",
@@ -7430,7 +8546,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Validate agent plans"
+    "officialSkill": "Validate agent plans",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-08",
@@ -7471,7 +8593,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-09",
@@ -7512,7 +8640,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-1-10",
@@ -7553,7 +8687,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-11",
@@ -7595,7 +8735,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Configure an agent to be invoked in a CI workflow"
+    "officialSkill": "Configure an agent to be invoked in a CI workflow",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-12",
@@ -7637,7 +8783,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement traceability and accountability for agent actions"
+    "officialSkill": "Implement traceability and accountability for agent actions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-13",
@@ -7679,7 +8831,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent tools"
+    "officialSkill": "Configure agent tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-14",
@@ -7721,7 +8879,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-15",
@@ -7763,7 +8927,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Evaluate the execution context for an agent"
+    "officialSkill": "Evaluate the execution context for an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-16",
@@ -7805,7 +8975,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement escalation paths"
+    "officialSkill": "Implement escalation paths",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-17",
@@ -7847,7 +9023,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-18",
@@ -7889,7 +9071,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-19",
@@ -7931,7 +9119,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests"
+    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-20",
@@ -7973,7 +9167,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement rollbacks"
+    "officialSkill": "Implement rollbacks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-21",
@@ -8015,7 +9215,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify required tools"
+    "officialSkill": "Identify required tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-22",
@@ -8057,7 +9263,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-23",
@@ -8099,7 +9311,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Configure an agent to be invoked in a CI workflow"
+    "officialSkill": "Configure an agent to be invoked in a CI workflow",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-2-24",
@@ -8141,7 +9359,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement retries"
+    "officialSkill": "Implement retries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-25",
@@ -8181,7 +9405,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-26",
@@ -8221,7 +9451,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-27",
@@ -8261,7 +9497,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-28",
@@ -8301,7 +9543,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-29",
@@ -8341,7 +9589,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-30",
@@ -8381,7 +9635,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-31",
@@ -8421,7 +9681,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-3-32",
@@ -8461,7 +9727,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-33",
@@ -8502,7 +9774,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-34",
@@ -8543,7 +9821,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-35",
@@ -8584,7 +9868,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-36",
@@ -8625,7 +9915,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Generate evaluation signals by using automated scanning tools"
+    "officialSkill": "Generate evaluation signals by using automated scanning tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-37",
@@ -8666,7 +9962,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-38",
@@ -8707,7 +10009,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-39",
@@ -8748,7 +10056,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Align evaluation criteria with development intent"
+    "officialSkill": "Align evaluation criteria with development intent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-40",
@@ -8789,7 +10103,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-41",
@@ -8830,7 +10150,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-4-42",
@@ -8871,7 +10197,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-43",
@@ -8912,7 +10244,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Respond to degraded behavior or coordination across agents"
+    "officialSkill": "Respond to degraded behavior or coordination across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-44",
@@ -8953,7 +10291,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Retire agents while preserving auditability and workflow continuity"
+    "officialSkill": "Retire agents while preserving auditability and workflow continuity",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-45",
@@ -8994,7 +10338,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
+    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-46",
@@ -9035,7 +10385,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-47",
@@ -9076,7 +10432,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-48",
@@ -9117,7 +10479,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Add agents to existing multi-agent workflows"
+    "officialSkill": "Add agents to existing multi-agent workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-49",
@@ -9158,7 +10526,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent isolation for parallel execution"
+    "officialSkill": "Configure agent isolation for parallel execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-50",
@@ -9199,7 +10573,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
+    "officialSkill": "Perform post-hoc analysis of multi-agent behavior",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-51",
@@ -9240,7 +10620,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-5-52",
@@ -9281,7 +10667,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
+    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-53",
@@ -9323,7 +10715,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-54",
@@ -9365,7 +10763,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
+    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-55",
@@ -9407,7 +10811,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-56",
@@ -9449,7 +10859,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
+    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-57",
@@ -9491,7 +10907,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-58",
@@ -9533,7 +10955,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Identify the subset of actions that require human judgment"
+    "officialSkill": "Identify the subset of actions that require human judgment",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-59",
@@ -9575,7 +11003,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-4-domain-6-60",
@@ -9617,7 +11051,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
+    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-01",
@@ -9658,7 +11098,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-02",
@@ -9699,7 +11145,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-03",
@@ -9740,7 +11192,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure an agent to output a structured plan"
+    "officialSkill": "Configure an agent to output a structured plan",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-04",
@@ -9781,7 +11239,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-05",
@@ -9822,7 +11286,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-06",
@@ -9863,7 +11333,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent planning to be distinct from agent execution"
+    "officialSkill": "Configure agent planning to be distinct from agent execution",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-07",
@@ -9904,7 +11380,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-08",
@@ -9945,7 +11427,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Identify steps for agents to perform"
+    "officialSkill": "Identify steps for agents to perform",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-09",
@@ -9986,7 +11474,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Prevent agent action until the agent checked and approved"
+    "officialSkill": "Prevent agent action until the agent checked and approved",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-1-10",
@@ -10027,7 +11521,13 @@
       "gh-actions-workflows"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery"
+    "officialSkill": "Configure human intervention for autonomous agents without slowing delivery",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-11",
@@ -10069,7 +11569,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-12",
@@ -10111,7 +11617,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests"
+    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-13",
@@ -10153,7 +11665,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement rollbacks"
+    "officialSkill": "Implement rollbacks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-14",
@@ -10195,7 +11713,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify required tools"
+    "officialSkill": "Identify required tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-15",
@@ -10237,7 +11761,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-16",
@@ -10279,7 +11809,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Configure an agent to be invoked in a CI workflow"
+    "officialSkill": "Configure an agent to be invoked in a CI workflow",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-17",
@@ -10321,7 +11857,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement retries"
+    "officialSkill": "Implement retries",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-18",
@@ -10363,7 +11905,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent tools"
+    "officialSkill": "Configure agent tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-19",
@@ -10405,7 +11953,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-20",
@@ -10447,7 +12001,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Evaluate the execution context for an agent"
+    "officialSkill": "Evaluate the execution context for an agent",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-21",
@@ -10489,7 +12049,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Implement error handling"
+    "officialSkill": "Implement error handling",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-22",
@@ -10531,7 +12097,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Configure agent tool permissions"
+    "officialSkill": "Configure agent tool permissions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-23",
@@ -10573,7 +12145,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure a GitHub remote MCP server"
+    "officialSkill": "Configure a GitHub remote MCP server",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-2-24",
@@ -10615,7 +12193,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests"
+    "officialSkill": "Enable an agent to perform autonomous actions, including creating branches and pull requests",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-25",
@@ -10655,7 +12239,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-26",
@@ -10695,7 +12285,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-27",
@@ -10735,7 +12331,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-28",
@@ -10775,7 +12377,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-29",
@@ -10815,7 +12423,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-30",
@@ -10855,7 +12469,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions"
+    "officialSkill": "Resume agent work without repeating steps or diverging from prior decisions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-31",
@@ -10895,7 +12515,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Prevent stale context"
+    "officialSkill": "Prevent stale context",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-3-32",
@@ -10935,7 +12561,13 @@
       "gh-copilot-cloud-agent"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Choose between short-term, long-term, and external memory"
+    "officialSkill": "Choose between short-term, long-term, and external memory",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-33",
@@ -10976,7 +12608,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-34",
@@ -11017,7 +12655,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-35",
@@ -11058,7 +12702,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents"
+    "officialSkill": "Identify qualitative and quantitative evaluation signals to evaluate agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-36",
@@ -11099,7 +12749,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-37",
@@ -11140,7 +12796,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-38",
@@ -11181,7 +12843,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks"
+    "officialSkill": "Specify expected outcomes and operational constraints for agent tasks",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-39",
@@ -11222,7 +12890,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues"
+    "officialSkill": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-40",
@@ -11263,7 +12937,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Refine tool usage and tool access"
+    "officialSkill": "Refine tool usage and tool access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-41",
@@ -11304,7 +12984,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Generate evaluation signals by using automated scanning tools"
+    "officialSkill": "Generate evaluation signals by using automated scanning tools",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-4-42",
@@ -11345,7 +13031,13 @@
       "ms-foundry-responsible-ai"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts"
+    "officialSkill": "Identify failures by using logs, plans, traces, outputs, and workflow artifacts",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-43",
@@ -11386,7 +13078,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Perform post-hoc analysis of multi-agent behavior"
+    "officialSkill": "Perform post-hoc analysis of multi-agent behavior",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-44",
@@ -11427,7 +13125,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Identify failed, partial, or stalled agent executions"
+    "officialSkill": "Identify failed, partial, or stalled agent executions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-45",
@@ -11468,7 +13172,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows"
+    "officialSkill": "Update, reconfigure, or replace agents without disrupting active workflows",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-46",
@@ -11509,7 +13219,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs"
+    "officialSkill": "Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-47",
@@ -11550,7 +13266,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit"
+    "officialSkill": "Configure multi-agent workflows to produce artifacts suitable for review and audit",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-48",
@@ -11591,7 +13313,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Respond to degraded behavior or coordination across agents"
+    "officialSkill": "Respond to degraded behavior or coordination across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-49",
@@ -11632,7 +13360,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Retire agents while preserving auditability and workflow continuity"
+    "officialSkill": "Retire agents while preserving auditability and workflow continuity",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-50",
@@ -11673,7 +13407,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents"
+    "officialSkill": "Apply an orchestration pattern to coordinate multiple agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-51",
@@ -11714,7 +13454,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Document key decisions, handoffs, and outcomes across agents"
+    "officialSkill": "Document key decisions, handoffs, and outcomes across agents",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-5-52",
@@ -11755,7 +13501,13 @@
       "ms-agentic-foundations"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop"
+    "officialSkill": "Implement multi-agent recovery patterns, including rollback and human-in-the-loop",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-53",
@@ -11797,7 +13549,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access"
+    "officialSkill": "Scope permissions and execution contexts to enforce least-privilege access",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-54",
@@ -11839,7 +13597,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-55",
@@ -11881,7 +13645,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk"
+    "officialSkill": "Preserve execution velocity by minimizing approvals that do not materially reduce risk",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-56",
@@ -11923,7 +13693,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-57",
@@ -11965,7 +13741,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Ignoring human accountability",
-    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies"
+    "officialSkill": "Block actions that violate defined security, compliance, or Responsible AI policies",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-58",
@@ -12007,7 +13789,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-trusting agent confidence",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-59",
@@ -12049,7 +13837,13 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Skipping GitHub evidence",
-    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes"
+    "officialSkill": "Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "sim-5-domain-6-60",
@@ -12091,6 +13885,12 @@
       "ms-responsible-ai-principles"
     ],
     "examTrap": "Over-permissioning tools",
-    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions"
+    "officialSkill": "Classify agent actions by operational, security, and compliance risk to right-size human interventions",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

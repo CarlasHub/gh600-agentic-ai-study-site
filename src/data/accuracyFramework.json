@@ -1,0 +1,64 @@
+{
+  "frameworkVersion": "2026.06.11",
+  "sourceSnapshot": {
+    "id": "gh600-source-baseline-2026-06-11",
+    "createdAt": "2026-06-11",
+    "sourceStatusPath": "src/data/sourceStatus.json",
+    "description": "Baseline source metadata, redirects, headers, content fingerprints, and extracted source keywords used to review GH-600 study content."
+  },
+  "contentReview": {
+    "lastHumanReview": "2026-06-11",
+    "reviewCadence": "Run automated checks weekly and after source changes; run human editorial review before major releases or exam-sitting recommendations.",
+    "metadataRequiredOn": [
+      "lessons",
+      "quizzes",
+      "examSimulatorQuestions",
+      "mockExams",
+      "labs",
+      "flashcards",
+      "glossary",
+      "scenarios",
+      "coverageMatrix"
+    ],
+    "requiredAccuracyFields": [
+      "reviewedAt",
+      "sourceSnapshot",
+      "verification",
+      "reviewRequiredOnSourceChange"
+    ]
+  },
+  "semanticChecks": {
+    "script": "scripts/check-data-accuracy.mjs",
+    "method": "Deterministic source-grounding scan that checks cited source IDs, source snapshot metadata, extracted source keywords, quiz rationales, lab validation evidence, flashcard definitions, glossary definitions, and manual-review triggers.",
+    "manualReviewRequiredFor": [
+      "source fingerprint changes",
+      "source reachability failures",
+      "low source keyword overlap",
+      "missing or stale accuracy metadata",
+      "thin quiz rationales or lab validation text",
+      "exam blueprint changes"
+    ]
+  },
+  "sourceMonitoring": {
+    "script": "scripts/check-source-currentness.mjs",
+    "workflow": ".github/workflows/source-currentness.yml",
+    "trackedSignals": [
+      "HTTP status",
+      "final URL",
+      "Last-Modified",
+      "ETag",
+      "content hash",
+      "page title",
+      "source keywords"
+    ]
+  },
+  "reports": {
+    "dataAccuracy": "docs/DATA_ACCURACY_REPORT.md",
+    "sourceCurrentness": "docs/SOURCE_CURRENTNESS_REPORT.md",
+    "actionLog": "docs/DATA_ACCURACY_ACTION_LOG.md"
+  },
+  "userReporting": {
+    "issueTemplate": ".github/ISSUE_TEMPLATE/content-drift.yml",
+    "issueUrl": "https://github.com/CarlasHub/gh600-agentic-ai-study-site/issues/new?template=content-drift.yml"
+  }
+}

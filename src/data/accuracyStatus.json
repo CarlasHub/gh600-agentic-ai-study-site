@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-06-11T06:46:44.893Z",
+  "status": "passed",
+  "frameworkVersion": "2026.06.11",
+  "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+  "sourceLastChecked": "2026-06-11",
+  "reportHash": "de5c00deab2a8502437afe5498cd101495ae6402311a6eda4b6f77887991850c",
+  "contentItemsChecked": 1435,
+  "sourcesChecked": 24,
+  "reviewQueue": {
+    "high": 0,
+    "medium": 0,
+    "total": 0
+  },
+  "reports": {
+    "dataAccuracy": "docs/DATA_ACCURACY_REPORT.md",
+    "sourceCurrentness": "docs/SOURCE_CURRENTNESS_REPORT.md",
+    "actionLog": "docs/DATA_ACCURACY_ACTION_LOG.md"
+  },
+  "userReportUrl": "https://github.com/CarlasHub/gh600-agentic-ai-study-site/issues/new?template=content-drift.yml"
+}

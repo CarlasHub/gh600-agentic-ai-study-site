@@ -124,7 +124,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-02-identify-and-mitigate-common-anti-patterns-in-agents",
@@ -251,7 +257,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-03-define-inputs-outputs-and-success-criteria-for-agents",
@@ -378,7 +390,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution",
@@ -505,7 +523,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan",
@@ -632,7 +656,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-06-validate-agent-plans",
@@ -759,7 +789,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-07-prevent-agent-action-until-the-agent-checked-and-approved",
@@ -886,7 +922,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails",
@@ -1013,7 +1055,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too",
@@ -1141,7 +1189,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery",
@@ -1269,7 +1323,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-11-agentic-workflows-versus-ordinary-automation",
@@ -1396,7 +1456,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-12-agent-task-decomposition-and-task-boundaries",
@@ -1523,7 +1589,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-13-github-issues-as-task-contracts",
@@ -1650,7 +1722,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-14-pull-requests-as-evidence-objects",
@@ -1778,7 +1856,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-15-repository-custom-instructions-as-governance",
@@ -1906,7 +1990,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-1-lesson-16-when-not-to-use-agents",
@@ -2033,7 +2123,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-01-identify-required-tools",
@@ -2163,7 +2259,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-02-configure-agent-tools",
@@ -2293,7 +2395,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-03-configure-agent-tool-permissions",
@@ -2423,7 +2531,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent",
@@ -2554,7 +2668,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-05-configure-a-github-remote-mcp-server",
@@ -2685,7 +2805,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-06-configure-the-mcp-registries",
@@ -2816,7 +2942,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-07-configure-mcp-allow-lists",
@@ -2947,7 +3079,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-08-evaluate-the-execution-context-for-an-agent",
@@ -3078,7 +3216,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository",
@@ -3208,7 +3352,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow",
@@ -3338,7 +3488,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope",
@@ -3469,7 +3625,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu",
@@ -3600,7 +3762,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints",
@@ -3730,7 +3898,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-14-implement-error-handling",
@@ -3860,7 +4034,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-15-implement-retries",
@@ -3990,7 +4170,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-16-implement-rollbacks",
@@ -4121,7 +4307,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-17-implement-escalation-paths",
@@ -4251,7 +4443,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions",
@@ -4381,7 +4579,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-19-read-only-versus-write-capable-tool-design",
@@ -4511,7 +4715,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-20-tool-risk-classification",
@@ -4641,7 +4851,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-21-github-mcp-server-default-toolsets",
@@ -4772,7 +4988,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-22-remote-mcp-server-versus-local-mcp-server",
@@ -4903,7 +5125,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-23-playwright-mcp-in-agent-validation",
@@ -5034,7 +5262,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-24-repository-level-mcp-configuration",
@@ -5165,7 +5399,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-25-branch-based-tool-scope",
@@ -5296,7 +5536,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-26-safe-autonomous-pr-creation",
@@ -5426,7 +5672,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-27-environment-specific-constraints",
@@ -5556,7 +5808,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-2-lesson-28-traceability-through-session-logs-and-audit-evidence",
@@ -5687,7 +5945,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-01-choose-between-short-term-long-term-and-external-memory",
@@ -5813,7 +6077,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-02-scope-agent-memory-to-task-relevant-information",
@@ -5939,7 +6209,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-03-define-memory-expiration-pruning-and-reset-rules",
@@ -6065,7 +6341,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-04-capture-task-progress-and-decisions-as-durable-artifacts",
@@ -6191,7 +6473,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-05-resume-agent-work-without-repeating-steps-or-diverging-from-prior-decisions",
@@ -6316,7 +6604,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-06-detect-and-correct-drift-during-extended-agent-execution",
@@ -6441,7 +6735,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-07-share-agent-state",
@@ -6567,7 +6867,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-08-prevent-conflicting-context",
@@ -6693,7 +6999,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-09-prevent-stale-context",
@@ -6819,7 +7131,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-10-repository-artifacts-as-durable-state",
@@ -6945,7 +7263,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-11-issues-and-pull-requests-as-state-carriers",
@@ -7071,7 +7395,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-12-workflow-artifacts-as-state-checkpoints",
@@ -7197,7 +7527,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-13-memory-reset-and-expiry-decisions",
@@ -7323,7 +7659,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-3-lesson-14-shared-multi-agent-state-contracts",
@@ -7449,7 +7791,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-01-specify-expected-outcomes-and-operational-constraints-for-agent-tasks",
@@ -7574,7 +7922,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-02-identify-qualitative-and-quantitative-evaluation-signals-to-evaluate-agents",
@@ -7700,7 +8054,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-03-align-evaluation-criteria-with-development-intent",
@@ -7826,7 +8186,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-04-generate-evaluation-signals-by-using-automated-scanning-tools",
@@ -7952,7 +8318,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-05-identify-failures-by-using-logs-plans-traces-outputs-and-workflow-artifacts",
@@ -8078,7 +8450,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-06-classify-root-causes-including-reasoning-errors-tool-misuse-and-context-or-envir",
@@ -8204,7 +8582,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-07-revise-instructions-workflows-or-constraints",
@@ -8330,7 +8714,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-08-refine-memory-usage",
@@ -8456,7 +8846,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-09-refine-tool-usage-and-tool-access",
@@ -8581,7 +8977,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-10-static-analysis-codeql-secret-scanning-dependency-checks",
@@ -8707,7 +9109,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-11-accessibility-scans-as-evaluation-signals",
@@ -8833,7 +9241,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-12-prompt-and-instruction-failure-classification",
@@ -8959,7 +9373,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-13-avoiding-overfitting-after-tuning",
@@ -9084,7 +9504,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-4-lesson-14-regression-checks-after-tuning",
@@ -9209,7 +9635,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-01-apply-an-orchestration-pattern-to-coordinate-multiple-agents",
@@ -9334,7 +9766,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-02-configure-agent-isolation-for-parallel-execution",
@@ -9459,7 +9897,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-03-detect-and-resolve-agent-conflicts-including-overlapping-code-changes-duplicated",
@@ -9584,7 +10028,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud",
@@ -9710,7 +10160,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-05-document-key-decisions-handoffs-and-outcomes-across-agents",
@@ -9835,7 +10291,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-06-perform-post-hoc-analysis-of-multi-agent-behavior",
@@ -9960,7 +10422,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-07-identify-failed-partial-or-stalled-agent-executions",
@@ -10085,7 +10553,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-08-respond-to-degraded-behavior-or-coordination-across-agents",
@@ -10210,7 +10684,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop",
@@ -10336,7 +10816,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows",
@@ -10461,7 +10947,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows",
@@ -10586,7 +11078,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-12-retire-agents-while-preserving-auditability-and-workflow-continuity",
@@ -10711,7 +11209,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-13-planner-builder-reviewer-security-test-and-docs-agent-roles",
@@ -10836,7 +11340,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-14-parallel-branch-strategy",
@@ -10962,7 +11472,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-15-duplicate-effort-detection",
@@ -11087,7 +11603,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-16-contradictory-output-arbitration",
@@ -11212,7 +11734,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-5-lesson-17-agent-replacement-and-retirement-checklist",
@@ -11337,7 +11865,13 @@
       "PR",
       "CI",
       "MCP"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-01-classify-agent-actions-by-operational-security-and-compliance-risk-to-right-size",
@@ -11468,7 +12002,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with",
@@ -11598,7 +12138,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment",
@@ -11729,7 +12275,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie",
@@ -11859,7 +12411,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access",
@@ -11990,7 +12548,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc",
@@ -12121,7 +12685,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc",
@@ -12252,7 +12822,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-08-operational-security-and-compliance-risk-examples",
@@ -12382,7 +12958,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-09-sensitive-and-irreversible-action-controls",
@@ -12512,7 +13094,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-10-avoiding-unnecessary-approval-friction",
@@ -12643,7 +13231,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-11-responsible-ai-controls-for-developer-agents",
@@ -12773,7 +13367,13 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "domain-6-lesson-12-audit-logs-and-review-trails",
@@ -12904,6 +13504,12 @@
       "CODEOWNERS",
       "Rulesets",
       "Branch protection"
-    ]
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

@@ -36,7 +36,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify steps for agents to perform\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g1-s2",
@@ -75,7 +81,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify and mitigate common anti-patterns in agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g1-s3",
@@ -114,7 +126,13 @@
     ],
     "revisionNote": "Be able to apply \"Define inputs, outputs, and success criteria for agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g2-s1",
@@ -153,7 +171,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure agent planning to be distinct from agent execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g2-s2",
@@ -192,7 +216,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure an agent to output a structured plan\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g2-s3",
@@ -231,7 +261,13 @@
     ],
     "revisionNote": "Be able to apply \"Validate agent plans\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should check the plan or output against evidence before allowing the next step, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g2-s4",
@@ -270,7 +306,13 @@
     ],
     "revisionNote": "Be able to apply \"Prevent agent action until the agent checked and approved\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should stop the unsafe path before it reaches code, data, or deployment, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g3-s1",
@@ -309,7 +351,13 @@
     ],
     "revisionNote": "Be able to apply \"Plan and implement the degree of agent autonomy, including guardrails\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g3-s2",
@@ -348,7 +396,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure agent to produce inspectable artifacts within standard development tooling\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d1-g3-s3",
@@ -387,7 +441,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure human intervention for autonomous agents without slowing delivery\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: task contract plus PR evidence table. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using issue template, plan gate, PR checklist, CODEOWNERS review. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g1-s1",
@@ -426,7 +486,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify required tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g1-s2",
@@ -465,7 +531,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure agent tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g1-s3",
@@ -504,7 +576,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure agent tool permissions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g2-s1",
@@ -543,7 +621,13 @@
     ],
     "revisionNote": "Be able to apply \"Add an MCP server as a tool to an agent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g2-s2",
@@ -582,7 +666,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure a GitHub remote MCP server\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g2-s3",
@@ -621,7 +711,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure the MCP registries\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g2-s4",
@@ -660,7 +756,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure MCP allow lists\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s1",
@@ -699,7 +801,13 @@
     ],
     "revisionNote": "Be able to apply \"Evaluate the execution context for an agent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should check the plan or output against evidence before allowing the next step, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s2",
@@ -738,7 +846,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure an agent's scope to a specific repository\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s3",
@@ -777,7 +891,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure an agent to be invoked in a CI workflow\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s4",
@@ -816,7 +936,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure an agent to use branch-based scope\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s5",
@@ -855,7 +981,13 @@
     ],
     "revisionNote": "Be able to apply \"Enable an agent to perform autonomous actions, including creating branches and pull requests\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g3-s6",
@@ -894,7 +1026,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure an agent to handle environment-specific constraints\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g4-s1",
@@ -933,7 +1071,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement error handling\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g4-s2",
@@ -972,7 +1116,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement retries\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g4-s3",
@@ -1011,7 +1161,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement rollbacks\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g4-s4",
@@ -1050,7 +1206,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement escalation paths\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d2-g4-s5",
@@ -1089,7 +1251,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement traceability and accountability for agent actions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: tool access matrix and failed-tool escalation log. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using MCP allow list, branch scope, setup workflow, tool permission table. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g1-s1",
@@ -1126,7 +1294,13 @@
     ],
     "revisionNote": "Be able to apply \"Choose between short-term, long-term, and external memory\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g1-s2",
@@ -1163,7 +1337,13 @@
     ],
     "revisionNote": "Be able to apply \"Scope agent memory to task-relevant information\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g1-s3",
@@ -1200,7 +1380,13 @@
     ],
     "revisionNote": "Be able to apply \"Define memory expiration, pruning, and reset rules\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g2-s1",
@@ -1237,7 +1423,13 @@
     ],
     "revisionNote": "Be able to apply \"Capture task progress and decisions as durable artifacts\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should record the state where other humans or agents can inspect it, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g2-s2",
@@ -1274,7 +1466,13 @@
     ],
     "revisionNote": "Be able to apply \"Resume agent work without repeating steps or diverging from prior decisions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g2-s3",
@@ -1311,7 +1509,13 @@
     ],
     "revisionNote": "Be able to apply \"Detect and correct drift during extended agent execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g3-s1",
@@ -1348,7 +1552,13 @@
     ],
     "revisionNote": "Be able to apply \"Share agent state\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should record the state where other humans or agents can inspect it, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g3-s2",
@@ -1385,7 +1595,13 @@
     ],
     "revisionNote": "Be able to apply \"Prevent conflicting context\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should stop the unsafe path before it reaches code, data, or deployment, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d3-g3-s3",
@@ -1422,7 +1638,13 @@
     ],
     "revisionNote": "Be able to apply \"Prevent stale context\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: AGENT_STATE.md and DECISIONS.md entries. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using decision log, state checkpoint, PR notes, stale-context review. The agent should stop the unsafe path before it reaches code, data, or deployment, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g1-s1",
@@ -1459,7 +1681,13 @@
     ],
     "revisionNote": "Be able to apply \"Specify expected outcomes and operational constraints for agent tasks\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g1-s2",
@@ -1496,7 +1724,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify qualitative and quantitative evaluation signals to evaluate agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g1-s3",
@@ -1533,7 +1767,13 @@
     ],
     "revisionNote": "Be able to apply \"Align evaluation criteria with development intent\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g1-s4",
@@ -1570,7 +1810,13 @@
     ],
     "revisionNote": "Be able to apply \"Generate evaluation signals by using automated scanning tools\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g2-s1",
@@ -1607,7 +1853,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g2-s2",
@@ -1644,7 +1896,13 @@
     ],
     "revisionNote": "Be able to apply \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should name the risk or failure mode so the right control can be applied, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g3-s1",
@@ -1681,7 +1939,13 @@
     ],
     "revisionNote": "Be able to apply \"Revise instructions, workflows, or constraints\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should improve the system based on evidence without hiding defects, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g3-s2",
@@ -1718,7 +1982,13 @@
     ],
     "revisionNote": "Be able to apply \"Refine memory usage\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should improve the system based on evidence without hiding defects, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d4-g3-s3",
@@ -1755,7 +2025,13 @@
     ],
     "revisionNote": "Be able to apply \"Refine tool usage and tool access\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: failure-analysis table and evaluation scorecard. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using CI logs, CodeQL or security scan, test evidence, root-cause table. The agent should improve the system based on evidence without hiding defects, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g1-s1",
@@ -1792,7 +2068,13 @@
     ],
     "revisionNote": "Be able to apply \"Apply an orchestration pattern to coordinate multiple agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g1-s2",
@@ -1829,7 +2111,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure agent isolation for parallel execution\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g1-s3",
@@ -1866,7 +2154,13 @@
     ],
     "revisionNote": "Be able to apply \"Detect and resolve agent conflicts, including overlapping code changes, duplicated effort, and contradictory outputs\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g2-s1",
@@ -1903,7 +2197,13 @@
     ],
     "revisionNote": "Be able to apply \"Configure multi-agent workflows to produce artifacts suitable for review and audit\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g2-s2",
@@ -1940,7 +2240,13 @@
     ],
     "revisionNote": "Be able to apply \"Document key decisions, handoffs, and outcomes across agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should record the state where other humans or agents can inspect it, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g2-s3",
@@ -1977,7 +2283,13 @@
     ],
     "revisionNote": "Be able to apply \"Perform post-hoc analysis of multi-agent behavior\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g3-s1",
@@ -2014,7 +2326,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify failed, partial, or stalled agent executions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g3-s2",
@@ -2051,7 +2369,13 @@
     ],
     "revisionNote": "Be able to apply \"Respond to degraded behavior or coordination across agents\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g3-s3",
@@ -2088,7 +2412,13 @@
     ],
     "revisionNote": "Be able to apply \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should make the control executable and visible in the workflow, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g4-s1",
@@ -2125,7 +2455,13 @@
     ],
     "revisionNote": "Be able to apply \"Add agents to existing multi-agent workflows\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g4-s2",
@@ -2162,7 +2498,13 @@
     ],
     "revisionNote": "Be able to apply \"Update, reconfigure, or replace agents without disrupting active workflows\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should turn a policy decision into a concrete GitHub or Copilot configuration, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d5-g4-s3",
@@ -2199,7 +2541,13 @@
     ],
     "revisionNote": "Be able to apply \"Retire agents while preserving auditability and workflow continuity\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: handoff packet and conflict-resolution record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using branch isolation, handoff contract, conflict register, rollback decision. The agent should change the agent lifecycle while preserving continuity and auditability, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g1-s1",
@@ -2238,7 +2586,13 @@
     ],
     "revisionNote": "Be able to apply \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should name the risk or failure mode so the right control can be applied, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g1-s2",
@@ -2277,7 +2631,13 @@
     ],
     "revisionNote": "Be able to apply \"Assign autonomy levels to maximize delivery speed while remaining compliant with organizational security and Responsible AI standards\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g2-s1",
@@ -2316,7 +2676,13 @@
     ],
     "revisionNote": "Be able to apply \"Identify the subset of actions that require human judgment\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should separate what the agent may safely do from what must remain human-owned, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g2-s2",
@@ -2355,7 +2721,13 @@
     ],
     "revisionNote": "Be able to apply \"Block actions that violate defined security, compliance, or Responsible AI policies\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should stop the unsafe path before it reaches code, data, or deployment, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g2-s3",
@@ -2394,7 +2766,13 @@
     ],
     "revisionNote": "Be able to apply \"Scope permissions and execution contexts to enforce least-privilege access\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g2-s4",
@@ -2433,7 +2811,13 @@
     ],
     "revisionNote": "Be able to apply \"Require explicit authorization or controlled paths for irreversible or compliance-sensitive changes\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   },
   {
     "id": "d6-g2-s5",
@@ -2472,6 +2856,12 @@
     ],
     "revisionNote": "Be able to apply \"Preserve execution velocity by minimizing approvals that do not materially reduce risk\" to an issue-to-PR agent workflow with evidence and right-sized autonomy. Also review the case study artifact: Expected artifact: autonomy matrix and approval record. It should name the scope, tool access, checks or logs, open risks, and the human decision point..",
     "practicalExample": "Apply this lesson by using risk matrix, environment approval, branch protection, audit log, explicit authorization. The agent should apply the official skill to an agentic GitHub workflow with right-sized autonomy, then record enough evidence for a reviewer to decide whether the next step is safe.",
-    "coverageStatus": "Covered"
+    "coverageStatus": "Covered",
+    "accuracy": {
+      "reviewedAt": "2026-06-11",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
   }
 ]

@@ -8,6 +8,7 @@ GH-600 is an active certification area. Microsoft states that the listed bullets
 - Whenever the Microsoft GH-600 study guide changes.
 - Whenever GitHub Copilot cloud agent, MCP, custom agents, custom instructions, branch protection, rulesets, environments, or Responsible AI documentation changes in a way that affects exam behaviour.
 - Weekly through `.github/workflows/source-currentness.yml`, with human review for any flagged source.
+- Whenever `npm run data:accuracy` generates a high-severity manual review flag.
 
 ## Review steps
 
@@ -18,11 +19,13 @@ GH-600 is an active certification area. Microsoft states that the listed bullets
 5. Add or revise lessons, quizzes, labs, flashcards, and mock exam questions for any changed skill.
 6. Update `docs/SOURCE_RESEARCH_LOG.md` with the date accessed and what changed.
 7. Run `npm install` if dependencies changed.
-8. Run `npm run qa:content` to catch broken mappings, invalid source IDs, incomplete lesson fields, and simulator balance problems.
-9. Run `npm run check:sources` to verify configured sources are reachable and write `docs/SOURCE_CURRENTNESS_REPORT.md`.
-10. Run `npm run build`.
-11. Smoke test the main routes in a browser.
-12. Record results in `docs/RELEASE_CHECKLIST.md`.
+8. Run `npm run qa:content` to catch broken mappings, invalid source IDs, incomplete lesson fields, metadata gaps, and simulator balance problems.
+9. Run `npm run check:sources` to verify configured sources are reachable and update source fingerprints in `docs/SOURCE_CURRENTNESS_REPORT.md` and `src/data/sourceStatus.json`.
+10. Run `npm run data:accuracy` to cross-check source grounding signals, quiz rationales, lab validation evidence, flashcards, glossary definitions, and manual review triggers.
+11. Review `docs/DATA_ACCURACY_REPORT.md` and record any decision in `docs/DATA_ACCURACY_ACTION_LOG.md`.
+12. Run `npm run build`.
+13. Smoke test the main routes in a browser, including `#accuracy`.
+14. Record results in `docs/RELEASE_CHECKLIST.md`.
 
 ## What counts as up to date
 
@@ -35,3 +38,5 @@ A skill is current only when it still appears in the official guide or is clearl
 - Lab or practice artifact.
 - Source citation.
 - Revision note.
+- Accuracy metadata linked to the current source snapshot.
+- No unresolved high-severity item in `docs/DATA_ACCURACY_REPORT.md`.

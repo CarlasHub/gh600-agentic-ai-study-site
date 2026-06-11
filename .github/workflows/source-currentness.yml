@@ -25,3 +25,14 @@ jobs:
         run: npm run qa:content
       - name: Check source currentness
         run: npm run check:sources
+      - name: Run data accuracy scan
+        run: npm run data:accuracy
+      - name: Upload accuracy reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gh600-accuracy-reports
+          path: |
+            docs/SOURCE_CURRENTNESS_REPORT.md
+            docs/DATA_ACCURACY_REPORT.md
+            docs/DATA_ACCURACY_ACTION_LOG.md

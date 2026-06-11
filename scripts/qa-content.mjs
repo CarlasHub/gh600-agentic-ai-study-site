@@ -19,6 +19,7 @@ const flashcards = readJson("flashcards.json");
 const glossary = readJson("glossary.json");
 const mockExams = readJson("mockExams.json");
 const sources = readJson("sources.json");
+const accuracyFramework = readJson("accuracyFramework.json");
 const scenarios = readJson("scenarios.json");
 const cramGuide = readJson("cramGuide.json");
 const studyPlans = readJson("studyPlans.json");
@@ -43,6 +44,8 @@ const quizMap = by(quizzes, "id");
 const labMap = by(labs, "id");
 const flashcardMap = by(flashcards, "id");
 const scenarioMap = by(scenarios, "id");
+const expectedSourceSnapshot = accuracyFramework.sourceSnapshot.id;
+const requiredAccuracyFields = accuracyFramework.contentReview.requiredAccuracyFields;
 
 function fail(message) {
   errors.push(message);
@@ -73,6 +76,28 @@ function checkSourceIds(ids, context) {
   requireArray(ids, context, "sourceIds");
   for (const id of ids || []) {
     if (!sourceMap.has(id)) fail(`${context} references unknown sourceId ${id}`);
+  }
+}
+
+function checkAccuracyMetadata(item, context) {
+  if (!item.accuracy || typeof item.accuracy !== "object") {
+    fail(`${context} is missing accuracy metadata`);
+    return;
+  }
+  for (const field of requiredAccuracyFields) {
+    if (!(field in item.accuracy)) fail(`${context} accuracy metadata is missing ${field}`);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(item.accuracy.reviewedAt || "")) {
+    fail(`${context} accuracy.reviewedAt must use YYYY-MM-DD`);
+  }
+  if (item.accuracy.sourceSnapshot !== expectedSourceSnapshot) {
+    fail(`${context} accuracy.sourceSnapshot must be ${expectedSourceSnapshot}`);
+  }
+  if (!["source-mapped", "human-reviewed", "needs-review"].includes(item.accuracy.verification)) {
+    fail(`${context} accuracy.verification is invalid`);
+  }
+  if (item.accuracy.reviewRequiredOnSourceChange !== true) {
+    fail(`${context} accuracy.reviewRequiredOnSourceChange must be true`);
   }
 }
 
@@ -132,6 +157,7 @@ for (const skill of officialSkills) {
 }
 
 for (const row of coverage) {
+  checkAccuracyMetadata(row, `coverage ${row.id}`);
   checkDomain(row.domainId, `coverage ${row.id}`);
   if (!officialSkillKey.has(`${row.domainId}::${row.skill}`)) {
     fail(`coverage ${row.id} does not match an official blueprint skill: ${row.skill}`);
@@ -150,6 +176,7 @@ for (const row of coverage) {
 }
 
 for (const lesson of lessons) {
+  checkAccuracyMetadata(lesson, `lesson ${lesson.id}`);
   checkDomain(lesson.domainId, `lesson ${lesson.id}`);
   requireText(lesson.title, `lesson ${lesson.id}`, "title");
   requireText(lesson.officialSkill, `lesson ${lesson.id}`, "officialSkill");
@@ -181,6 +208,7 @@ for (const lesson of lessons) {
 }
 
 function checkQuestion(question, context, allowNullLesson = false) {
+  checkAccuracyMetadata(question, context);
   checkDomain(question.domainId, context);
   requireText(question.question, context, "question");
   requireArray(question.options, context, "options", 4);
@@ -213,6 +241,7 @@ for (const question of simulator) {
 }
 
 for (const lab of labs) {
+  checkAccuracyMetadata(lab, `lab ${lab.id}`);
   checkDomain(lab.domainId, `lab ${lab.id}`);
   requireText(lab.title, `lab ${lab.id}`, "title");
   requireText(lab.objective, `lab ${lab.id}`, "objective");
@@ -229,6 +258,7 @@ for (const lab of labs) {
 }
 
 for (const card of flashcards) {
+  checkAccuracyMetadata(card, `flashcard ${card.id}`);
   checkDomain(card.domainId, `flashcard ${card.id}`);
   requireText(card.front, `flashcard ${card.id}`, "front");
   requireText(card.back, `flashcard ${card.id}`, "back");
@@ -237,6 +267,7 @@ for (const card of flashcards) {
 }
 
 for (const term of glossary) {
+  checkAccuracyMetadata(term, `glossary ${term.id}`);
   requireText(term.term, `glossary ${term.id}`, "term");
   requireText(term.definition, `glossary ${term.id}`, "definition");
   requireArray(term.domainIds, `glossary ${term.id}`, "domainIds");
@@ -246,6 +277,7 @@ for (const term of glossary) {
 }
 
 for (const scenario of scenarios) {
+  checkAccuracyMetadata(scenario, `scenario ${scenario.id}`);
   checkDomain(scenario.domainId, `scenario ${scenario.id}`);
   requireText(scenario.title, `scenario ${scenario.id}`, "title");
   requireText(scenario.prompt, `scenario ${scenario.id}`, "prompt");
@@ -256,6 +288,7 @@ for (const scenario of scenarios) {
 }
 
 for (const exam of mockExams) {
+  checkAccuracyMetadata(exam, `mock exam ${exam.id}`);
   requireText(exam.id, `mock exam`, "id");
   requireText(exam.title, `mock exam ${exam.id}`, "title");
   if (!Number.isInteger(exam.durationMinutes) || exam.durationMinutes < 1) fail(`mock exam ${exam.id} has invalid durationMinutes`);

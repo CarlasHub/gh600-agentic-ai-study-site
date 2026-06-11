@@ -1,0 +1,57 @@
+name: Content drift or data accuracy report
+description: Report a suspected GH-600 content inaccuracy, outdated source, or product/documentation drift.
+title: "Content drift: "
+labels:
+  - documentation
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a lesson, quiz, lab, flashcard, glossary item, or source reference appears outdated or inaccurate.
+  - type: input
+    id: site-area
+    attributes:
+      label: Site area
+      description: Page, lesson, quiz ID, lab ID, flashcard, glossary term, or source ID.
+      placeholder: "Example: domain-2 lesson, q-domain-2-..., lab-07, gh-mcp-cloud-agent"
+    validations:
+      required: true
+  - type: textarea
+    id: suspected-issue
+    attributes:
+      label: Suspected issue
+      description: Describe what appears incorrect, stale, confusing, or unsupported.
+    validations:
+      required: true
+  - type: input
+    id: official-source
+    attributes:
+      label: Official source URL
+      description: Link to the Microsoft Learn or GitHub Docs page that supports the correction.
+      placeholder: "https://learn.microsoft.com/... or https://docs.github.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-correction
+    attributes:
+      label: Expected correction
+      description: What should the content say or do instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocks accurate exam preparation
+        - Product behavior changed
+        - Source wording changed
+        - Minor wording or clarity issue
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or notes
+      description: Add screenshots, source excerpts, dates checked, or reproduction notes. Keep excerpts short and link the source.
