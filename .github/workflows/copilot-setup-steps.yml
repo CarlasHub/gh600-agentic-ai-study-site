@@ -1,0 +1,31 @@
+# Copilot Setup Steps Workflow
+# Goal: Prepare repository dependencies and environment setup for Copilot coding agent sessions.
+# Suggested use: Use when Copilot needs deterministic setup before building, testing, or validating work.
+
+name: Copilot Setup Steps Workflow
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "{{path_or_glob}}"
+
+permissions:
+  contents: read
+  pull-requests: read
+  security-events: write
+
+jobs:
+  copilot_setup_steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Document expectations
+        run: |
+          echo "Goal: {{goal}}"
+          echo "Owner: {{owner}}"
+          echo "Evidence required: {{evidence}}"
+      - name: Run validation
+        run: |
+          {{validation_command}}

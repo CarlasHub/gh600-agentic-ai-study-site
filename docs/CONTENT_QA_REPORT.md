@@ -65,7 +65,7 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Glossary terms: 58
 - Scenarios: 60
 - Template library sections: 7
-- Agent documentation templates: 15
+- Agent documentation templates: 42
 
 ## QA Result
 

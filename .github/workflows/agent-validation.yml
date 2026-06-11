@@ -1,0 +1,31 @@
+# Agent Validation Workflow
+# Goal: Run repeatable validation for agent-generated changes in CI.
+# Suggested use: Use when agent work needs automated checks, artifacts, and release evidence.
+
+name: Agent Validation Workflow
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "{{path_or_glob}}"
+
+permissions:
+  contents: read
+  pull-requests: read
+  security-events: write
+
+jobs:
+  agent_validation_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Document expectations
+        run: |
+          echo "Goal: {{goal}}"
+          echo "Owner: {{owner}}"
+          echo "Evidence required: {{evidence}}"
+      - name: Run validation
+        run: |
+          {{validation_command}}

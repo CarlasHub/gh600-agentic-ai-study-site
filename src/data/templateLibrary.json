@@ -41,105 +41,25 @@
   ],
   "templates": [
     {
-      "id": "agent-task-issue",
-      "sectionId": "task-intake",
-      "title": "Agent Task Issue Template",
-      "filePath": ".github/ISSUE_TEMPLATE/agent-task.yml",
-      "goal": "Create a task record that names the business goal, scope, constraints, evidence, and stop conditions before an agent starts work.",
-      "suggestedUse": "Use for every agent-assigned issue, especially work that touches tests, workflows, security, user-facing behavior, or source-grounded content.",
-      "placeholders": ["goal", "context", "allowed_paths", "forbidden_paths", "acceptance_criteria", "validation_commands", "required_evidence", "stop_conditions"],
-      "expectations": ["The issue is understandable without reading chat history.", "The agent can identify what is allowed and what is blocked.", "A reviewer can verify completion from PR evidence."]
-    },
-    {
-      "id": "agent-task-contract",
-      "sectionId": "task-intake",
-      "title": "Agent Task Contract",
-      "filePath": "docs/agent-task-contract.md",
-      "aliases": ["templates/agent-task-contract.md"],
-      "goal": "Define a reusable contract for issue-to-PR agent work.",
-      "suggestedUse": "Use when an issue needs more governance than a short issue form can express.",
-      "placeholders": ["task_owner", "repository", "success_definition", "scope_boundary", "tool_boundary", "evidence_required", "approval_owner"],
-      "expectations": ["The contract names the owner of each risk.", "The contract names the final evidence required.", "The contract defines when the agent must stop."]
-    },
-    {
-      "id": "copilot-instructions",
-      "sectionId": "repository-instructions",
-      "title": "Copilot Repository Instructions",
-      "filePath": ".github/copilot-instructions.md",
-      "goal": "Give Copilot and coding agents repository-specific build, test, validation, architecture, and safety instructions.",
-      "suggestedUse": "Use as the root repository instruction file and update it whenever commands, ownership, or sensitive areas change.",
-      "placeholders": ["project_purpose", "setup_commands", "test_commands", "architecture_map", "sensitive_paths", "evidence_policy", "style_rules"],
-      "expectations": ["The instructions are short enough to be read every session.", "Commands are exact and current.", "Sensitive areas and approval gates are explicit."]
-    },
-    {
-      "id": "agents-md",
-      "sectionId": "repository-instructions",
-      "title": "AGENTS.md",
-      "filePath": "AGENTS.md",
-      "goal": "Define agent operating rules, local scope, approval points, and evidence requirements.",
-      "suggestedUse": "Use at the repository root, and add nested AGENTS.md files for areas with stricter local rules.",
-      "placeholders": ["agent_scope", "allowed_actions", "blocked_actions", "local_commands", "review_gates", "handoff_format"],
-      "expectations": ["Nearest instructions are authoritative for a path.", "Agents know when not to continue.", "Reviewer evidence is predictable."]
-    },
-    {
-      "id": "agent-plan",
-      "sectionId": "planning-handoffs",
-      "title": "Agent Plan",
-      "filePath": "docs/agent-plan.md",
-      "goal": "Require a plan before edits, including assumptions, files, validation, risks, and decision points.",
-      "suggestedUse": "Use before allowing an agent to make non-trivial or cross-file changes.",
-      "placeholders": ["objective", "assumptions", "files_to_read", "files_to_edit", "validation_plan", "risks", "approval_needed"],
-      "expectations": ["The plan can be approved or rejected before edits.", "The plan maps each action to validation.", "Risky work has named review gates."]
-    },
-    {
-      "id": "multi-agent-handoff",
-      "sectionId": "planning-handoffs",
-      "title": "Multi-Agent Handoff Contract",
-      "filePath": "docs/multi-agent-handoff-contract.md",
-      "goal": "Define when ownership transfers between planner, builder, tester, reviewer, or specialist agents.",
-      "suggestedUse": "Use when more than one agent or specialist workflow participates in the same delivery chain.",
-      "placeholders": ["from_agent", "to_agent", "handoff_reason", "state_summary", "inputs", "outputs", "rollback_owner"],
-      "expectations": ["Only one agent owns the next action.", "Handoffs include state and evidence.", "Circular handoffs are blocked."]
-    },
-    {
-      "id": "pull-request-template",
-      "sectionId": "review-approval",
-      "title": "Pull Request Template",
-      "filePath": ".github/pull_request_template.md",
-      "goal": "Make every agent PR reviewable through scope, evidence, tests, risk, and rollback information.",
-      "suggestedUse": "Use for all PRs, with extra rigor for agent-generated changes.",
-      "placeholders": ["linked_issue", "summary", "changed_files", "evidence", "tests", "risk", "rollback", "reviewers"],
-      "expectations": ["A reviewer can decide from the PR body.", "Validation output is linked or summarized.", "Risk and rollback are not hidden."]
-    },
-    {
-      "id": "approval-gates",
-      "sectionId": "review-approval",
-      "title": "Agent Approval Gates",
-      "filePath": "docs/agent-approval-gates.md",
-      "goal": "Document which actions require human approval before the agent continues.",
-      "suggestedUse": "Use in regulated, production, security, deployment, data, or MCP/tool-enabled workflows.",
-      "placeholders": ["action_type", "risk_tier", "approver", "evidence_required", "approval_record", "bypass_policy"],
-      "expectations": ["Approval rules are tied to risk.", "Approvers are named by role.", "Bypass conditions are exceptional and logged."]
-    },
-    {
-      "id": "tool-permission-matrix",
-      "sectionId": "tools-mcp",
-      "title": "Tool Permission Matrix",
-      "filePath": "docs/agent-tool-permission-matrix.md",
-      "goal": "Inventory allowed tools, denied tools, escalation rules, and data exposure boundaries.",
-      "suggestedUse": "Use before enabling shell, browser, MCP, deployment, database, or third-party integration tools.",
-      "placeholders": ["tool_name", "allowed_use", "denied_use", "data_access", "approval_required", "audit_signal"],
-      "expectations": ["Tool access is least privilege.", "Secrets and write actions have gates.", "Each tool has an observable audit signal."]
-    },
-    {
-      "id": "mcp-server-review",
-      "sectionId": "tools-mcp",
-      "title": "MCP Server Review",
-      "filePath": "docs/agent-mcp-server-review.md",
-      "goal": "Review MCP server capability, roots, tools, secrets, transport, and autonomous-use risk before enabling it.",
-      "suggestedUse": "Use before adding or changing an MCP server for Copilot, code review, an IDE, or a custom agent.",
-      "placeholders": ["server_name", "transport", "roots", "tools", "secrets", "auth_model", "risk_decision", "owner"],
-      "expectations": ["Tools are mapped to business need.", "Root boundaries and auth are explicit.", "Autonomous use is accepted or rejected by an accountable owner."]
+      "id": "accessibility-checklist",
+      "sectionId": "evaluation-observability",
+      "title": "Accessibility Checklist",
+      "filePath": "docs/accessibility-checklist.md",
+      "goal": "Define accessibility expectations and evidence for UI or documentation changes.",
+      "suggestedUse": "Use when agent work changes visible UI, navigation, forms, tables, or learning content.",
+      "placeholders": [
+        "affected_routes",
+        "wcag_criteria",
+        "keyboard_checks",
+        "screen_reader_checks",
+        "contrast_checks",
+        "evidence"
+      ],
+      "expectations": [
+        "Accessibility checks are tied to affected routes.",
+        "Keyboard and responsive behavior are checked.",
+        "Evidence is linked from the PR."
+      ]
     },
     {
       "id": "evaluation-plan",
@@ -148,8 +68,158 @@
       "filePath": "docs/agent-evaluation-plan.md",
       "goal": "Define task-level, trace-level, and release-level evaluation for agent workflows.",
       "suggestedUse": "Use before changing prompts, tools, routing, handoffs, models, or guardrails.",
-      "placeholders": ["workflow", "eval_dataset", "success_metric", "failure_modes", "grader", "human_review_sample", "release_threshold"],
-      "expectations": ["Evals include realistic edge cases.", "Metrics match the workflow risk.", "Human review calibrates model-graded results."]
+      "placeholders": [
+        "workflow",
+        "eval_dataset",
+        "success_metric",
+        "failure_modes",
+        "grader",
+        "human_review_sample",
+        "release_threshold"
+      ],
+      "expectations": [
+        "Evals include realistic edge cases.",
+        "Metrics match the workflow risk.",
+        "Human review calibrates model-graded results."
+      ],
+      "aliases": [
+        "docs/evaluation-plan.md"
+      ]
+    },
+    {
+      "id": "failure-analysis",
+      "sectionId": "evaluation-observability",
+      "title": "Agent Failure Analysis",
+      "filePath": "docs/agent-failure-analysis.md",
+      "aliases": [
+        "templates/failure-analysis.md",
+        "docs/error-analysis.md"
+      ],
+      "goal": "Classify agent failures by prompt, context, tool, state, handoff, evaluation, or governance root cause.",
+      "suggestedUse": "Use after failed tasks, unsafe tool calls, incorrect PRs, broken releases, or drift reports.",
+      "placeholders": [
+        "incident",
+        "expected_behavior",
+        "actual_behavior",
+        "root_cause",
+        "containment",
+        "regression_test",
+        "owner"
+      ],
+      "expectations": [
+        "Root cause is specific enough to fix.",
+        "A regression test or guardrail is added.",
+        "The action owner and due date are clear."
+      ]
+    },
+    {
+      "id": "agent-validation-workflow",
+      "sectionId": "evaluation-observability",
+      "title": "Agent Validation Workflow",
+      "filePath": ".github/workflows/agent-validation.yml",
+      "goal": "Run repeatable validation for agent-generated changes in CI.",
+      "suggestedUse": "Use when agent work needs automated checks, artifacts, and release evidence.",
+      "placeholders": [
+        "workflow_name",
+        "trigger",
+        "permissions",
+        "setup_steps",
+        "validation_commands",
+        "artifacts",
+        "failure_policy"
+      ],
+      "expectations": [
+        "Workflow permissions are least privilege.",
+        "Validation commands match repository instructions.",
+        "Artifacts preserve review evidence."
+      ]
+    },
+    {
+      "id": "audit-trail",
+      "sectionId": "evaluation-observability",
+      "title": "Audit Trail",
+      "filePath": "docs/audit-trail.md",
+      "goal": "Record agent decisions, tool calls, approvals, and evidence in a durable trail.",
+      "suggestedUse": "Use when accountability, compliance, or multi-agent traceability matters.",
+      "placeholders": [
+        "event_time",
+        "actor",
+        "action",
+        "tool",
+        "evidence",
+        "decision",
+        "reviewer"
+      ],
+      "expectations": [
+        "Events are chronological.",
+        "Tool use and approvals are visible.",
+        "Sensitive data is redacted."
+      ]
+    },
+    {
+      "id": "codeql-workflow",
+      "sectionId": "evaluation-observability",
+      "title": "CodeQL Workflow",
+      "filePath": ".github/workflows/codeql.yml",
+      "goal": "Run semantic security analysis for code touched by agents.",
+      "suggestedUse": "Use when agent changes touch code paths where static analysis evidence is required.",
+      "placeholders": [
+        "languages",
+        "query_suite",
+        "schedule",
+        "permissions",
+        "paths",
+        "security_owner"
+      ],
+      "expectations": [
+        "Security scanning is automatic and repeatable.",
+        "Alerts have a named owner.",
+        "The workflow uses minimal permissions."
+      ]
+    },
+    {
+      "id": "error-analysis",
+      "sectionId": "evaluation-observability",
+      "title": "Error Analysis",
+      "filePath": "docs/error-analysis.md",
+      "goal": "Classify errors and convert failures into evals, tests, or template updates.",
+      "suggestedUse": "Use after wrong answers, bad PRs, failed checks, tool mistakes, or source drift.",
+      "placeholders": [
+        "failure",
+        "expected",
+        "actual",
+        "root_cause",
+        "fix",
+        "regression_case",
+        "owner"
+      ],
+      "expectations": [
+        "Root cause is specific.",
+        "A regression check is added.",
+        "Ownership is explicit."
+      ]
+    },
+    {
+      "id": "security-scan-evidence",
+      "sectionId": "evaluation-observability",
+      "title": "Security Scan Evidence",
+      "filePath": "docs/security-scan-evidence.md",
+      "goal": "Record static, dependency, secret, or policy scan evidence for agent changes.",
+      "suggestedUse": "Use when agent work touches code, workflows, dependencies, secrets, or deploy paths.",
+      "placeholders": [
+        "scan_type",
+        "command",
+        "scope",
+        "result",
+        "findings",
+        "owner",
+        "remediation"
+      ],
+      "expectations": [
+        "Scan scope matches changed files.",
+        "Findings have owners.",
+        "Evidence is linked in the PR."
+      ]
     },
     {
       "id": "trace-review-record",
@@ -158,29 +228,63 @@
       "filePath": "docs/agent-trace-review.md",
       "goal": "Capture tool calls, handoffs, guardrail trips, and evidence from an agent run.",
       "suggestedUse": "Use for debugging agent behavior and building eval cases from real failures.",
-      "placeholders": ["trace_id", "workflow", "tool_calls", "handoffs", "guardrails", "unexpected_behavior", "follow_up_eval"],
-      "expectations": ["Trace review is actionable.", "Failures become regression cases.", "Sensitive trace data is redacted before sharing."]
+      "placeholders": [
+        "trace_id",
+        "workflow",
+        "tool_calls",
+        "handoffs",
+        "guardrails",
+        "unexpected_behavior",
+        "follow_up_eval"
+      ],
+      "expectations": [
+        "Trace review is actionable.",
+        "Failures become regression cases.",
+        "Sensitive trace data is redacted before sharing."
+      ]
     },
     {
-      "id": "failure-analysis",
+      "id": "tuning-log",
       "sectionId": "evaluation-observability",
-      "title": "Agent Failure Analysis",
-      "filePath": "docs/agent-failure-analysis.md",
-      "aliases": ["templates/failure-analysis.md"],
-      "goal": "Classify agent failures by prompt, context, tool, state, handoff, evaluation, or governance root cause.",
-      "suggestedUse": "Use after failed tasks, unsafe tool calls, incorrect PRs, broken releases, or drift reports.",
-      "placeholders": ["incident", "expected_behavior", "actual_behavior", "root_cause", "containment", "regression_test", "owner"],
-      "expectations": ["Root cause is specific enough to fix.", "A regression test or guardrail is added.", "The action owner and due date are clear."]
+      "title": "Tuning Log",
+      "filePath": "docs/tuning-log.md",
+      "goal": "Record prompt, model, tool, route, or guardrail changes and their evaluation impact.",
+      "suggestedUse": "Use when improving agent behavior after evals, failures, or source-drift findings.",
+      "placeholders": [
+        "change",
+        "reason",
+        "baseline_result",
+        "new_result",
+        "risk",
+        "decision",
+        "rollback"
+      ],
+      "expectations": [
+        "Tuning changes are evidence-backed.",
+        "Baseline and new results are compared.",
+        "Rollback is possible."
+      ]
     },
     {
-      "id": "memory-state-record",
+      "id": "agent-memory-policy",
       "sectionId": "memory-release",
-      "title": "Memory And State Record",
-      "filePath": "docs/agent-memory-state-record.md",
-      "goal": "Keep durable state explicit across long-running or resumed agent work.",
-      "suggestedUse": "Use when an agent continues across sessions, summarizes work, compacts context, or stores durable memory.",
-      "placeholders": ["current_goal", "completed_actions", "active_assumptions", "open_risks", "external_ids", "next_action"],
-      "expectations": ["State can be audited outside chat.", "Assumptions are not mistaken for facts.", "Next actions are concrete."]
+      "title": "Agent Memory Policy",
+      "filePath": "docs/agent-memory-policy.md",
+      "goal": "Define what agent memory may store, reuse, redact, or forget.",
+      "suggestedUse": "Use when lessons cover short-term, long-term, external, or shared memory.",
+      "placeholders": [
+        "memory_type",
+        "allowed_content",
+        "forbidden_content",
+        "retention",
+        "redaction",
+        "review_owner"
+      ],
+      "expectations": [
+        "Memory policy separates facts from assumptions.",
+        "Sensitive data is blocked or redacted.",
+        "Retention and review cadence are explicit."
+      ]
     },
     {
       "id": "release-retrospective",
@@ -189,8 +293,680 @@
       "filePath": "docs/agent-release-retrospective.md",
       "goal": "Record what changed, what evidence passed, what failed, and what the next template or eval improvement should be.",
       "suggestedUse": "Use after agent-assisted releases, workflow migrations, source updates, or template-library changes.",
-      "placeholders": ["release", "changes", "evidence", "misses", "learnt_rule", "template_update", "eval_update"],
-      "expectations": ["Lessons become durable process updates.", "Misses become eval or template changes.", "Release confidence is evidence-backed."]
+      "placeholders": [
+        "release",
+        "changes",
+        "evidence",
+        "misses",
+        "learnt_rule",
+        "template_update",
+        "eval_update"
+      ],
+      "expectations": [
+        "Lessons become durable process updates.",
+        "Misses become eval or template changes.",
+        "Release confidence is evidence-backed."
+      ]
+    },
+    {
+      "id": "agent-state",
+      "sectionId": "memory-release",
+      "title": "Agent State Record",
+      "filePath": "docs/agent-state.md",
+      "goal": "Capture durable workflow state for long-running agent tasks.",
+      "suggestedUse": "Use when lessons mention state, checkpoints, resumes, or external memory.",
+      "placeholders": [
+        "current_state",
+        "completed_steps",
+        "pending_steps",
+        "external_ids",
+        "assumptions",
+        "next_action"
+      ],
+      "expectations": [
+        "State is auditable outside chat.",
+        "Pending work is concrete.",
+        "Assumptions are marked as assumptions."
+      ]
+    },
+    {
+      "id": "context-handoff",
+      "sectionId": "memory-release",
+      "title": "Context Handoff",
+      "filePath": "docs/context-handoff.md",
+      "goal": "Transfer relevant context between sessions without carrying stale or private data.",
+      "suggestedUse": "Use when compacting, resuming, or handing off agent work.",
+      "placeholders": [
+        "goal",
+        "relevant_context",
+        "excluded_context",
+        "stale_context_risk",
+        "next_action",
+        "review_date"
+      ],
+      "expectations": [
+        "Only relevant context is carried forward.",
+        "Stale context is flagged.",
+        "Sensitive context is excluded."
+      ]
+    },
+    {
+      "id": "decision-log",
+      "sectionId": "memory-release",
+      "title": "Decision Log",
+      "filePath": "docs/decision-log.md",
+      "goal": "Record durable decisions and why they were made.",
+      "suggestedUse": "Use when lessons mention governance, state, memory, review, or source-drift decisions.",
+      "placeholders": [
+        "decision",
+        "options_considered",
+        "evidence",
+        "owner",
+        "date",
+        "review_trigger"
+      ],
+      "expectations": [
+        "Decisions include rationale and owner.",
+        "Review triggers are explicit.",
+        "The log separates evidence from preference."
+      ]
+    },
+    {
+      "id": "memory-state-record",
+      "sectionId": "memory-release",
+      "title": "Memory And State Record",
+      "filePath": "docs/agent-memory-state-record.md",
+      "goal": "Keep durable state explicit across long-running or resumed agent work.",
+      "suggestedUse": "Use when an agent continues across sessions, summarizes work, compacts context, or stores durable memory.",
+      "placeholders": [
+        "current_goal",
+        "completed_actions",
+        "active_assumptions",
+        "open_risks",
+        "external_ids",
+        "next_action"
+      ],
+      "expectations": [
+        "State can be audited outside chat.",
+        "Assumptions are not mistaken for facts.",
+        "Next actions are concrete."
+      ],
+      "aliases": [
+        "docs/agent-state.md"
+      ]
+    },
+    {
+      "id": "recovery-plan",
+      "sectionId": "memory-release",
+      "title": "Recovery Plan",
+      "filePath": "docs/recovery-plan.md",
+      "goal": "Define how to recover when an agent workflow fails or produces unsafe output.",
+      "suggestedUse": "Use for production, release, multi-agent, or tool-enabled workflows.",
+      "placeholders": [
+        "failure_mode",
+        "detection",
+        "rollback",
+        "data_repair",
+        "owner",
+        "communication",
+        "postmortem"
+      ],
+      "expectations": [
+        "Recovery actions are executable.",
+        "Owners are named.",
+        "Post-incident learning is captured."
+      ]
+    },
+    {
+      "id": "resume-checkpoint",
+      "sectionId": "memory-release",
+      "title": "Resume Checkpoint",
+      "filePath": "docs/resume-checkpoint.md",
+      "goal": "Create a checkpoint that lets an agent resume safely after interruption or context compaction.",
+      "suggestedUse": "Use for long tasks, paused sessions, or handoffs.",
+      "placeholders": [
+        "goal",
+        "completed",
+        "current_state",
+        "next_step",
+        "open_questions",
+        "validation_status",
+        "stale_context_check"
+      ],
+      "expectations": [
+        "Resume state is current.",
+        "Next action is concrete.",
+        "Stale context is checked before continuing."
+      ]
+    },
+    {
+      "id": "stale-context-checklist",
+      "sectionId": "memory-release",
+      "title": "Stale Context Checklist",
+      "filePath": "docs/stale-context-checklist.md",
+      "goal": "Check whether assumptions, sources, memory, or instructions have expired.",
+      "suggestedUse": "Use before resuming long-running work or relying on prior source-grounded content.",
+      "placeholders": [
+        "context_item",
+        "last_checked",
+        "expiry_trigger",
+        "current_source",
+        "decision",
+        "owner"
+      ],
+      "expectations": [
+        "Stale assumptions are surfaced.",
+        "Current sources are checked.",
+        "Decisions are recorded."
+      ]
+    },
+    {
+      "id": "agent-handoff",
+      "sectionId": "planning-handoffs",
+      "title": "Agent Handoff",
+      "filePath": "docs/agent-handoff.md",
+      "goal": "Summarize current state and transfer work to another agent or human reviewer.",
+      "suggestedUse": "Use for resumed work, specialist transitions, or multi-agent workflows.",
+      "placeholders": [
+        "goal",
+        "completed_work",
+        "changed_files",
+        "validation",
+        "open_risks",
+        "next_owner"
+      ],
+      "expectations": [
+        "The receiver can continue without chat history.",
+        "Open risks and decisions are explicit.",
+        "Ownership of the next action is clear."
+      ]
+    },
+    {
+      "id": "agent-plan",
+      "sectionId": "planning-handoffs",
+      "title": "Agent Plan",
+      "filePath": "docs/agent-plan.md",
+      "goal": "Require a plan before edits, including assumptions, files, validation, risks, and decision points.",
+      "suggestedUse": "Use before allowing an agent to make non-trivial or cross-file changes.",
+      "placeholders": [
+        "objective",
+        "assumptions",
+        "files_to_read",
+        "files_to_edit",
+        "validation_plan",
+        "risks",
+        "approval_needed"
+      ],
+      "expectations": [
+        "The plan can be approved or rejected before edits.",
+        "The plan maps each action to validation.",
+        "Risky work has named review gates."
+      ]
+    },
+    {
+      "id": "agent-roles",
+      "sectionId": "planning-handoffs",
+      "title": "Agent Roles",
+      "filePath": "docs/agent-roles.md",
+      "goal": "Define responsibilities, boundaries, and handoff rules for each agent role.",
+      "suggestedUse": "Use when planner, builder, tester, reviewer, security, or release agents coordinate.",
+      "placeholders": [
+        "role_name",
+        "responsibilities",
+        "inputs",
+        "outputs",
+        "tools",
+        "handoff_rules",
+        "stop_conditions"
+      ],
+      "expectations": [
+        "Each role has one clear responsibility.",
+        "Tools match the role.",
+        "Handoffs do not create ownership gaps."
+      ]
+    },
+    {
+      "id": "conflict-log",
+      "sectionId": "planning-handoffs",
+      "title": "Conflict Log",
+      "filePath": "docs/conflict-log.md",
+      "goal": "Track conflicts between agents, tools, requirements, or source documents.",
+      "suggestedUse": "Use when multi-agent work or source-grounded content produces incompatible recommendations.",
+      "placeholders": [
+        "conflict",
+        "source_a",
+        "source_b",
+        "impact",
+        "decision_owner",
+        "resolution",
+        "follow_up"
+      ],
+      "expectations": [
+        "Conflicts are not hidden.",
+        "A decision owner is named.",
+        "Resolution is linked to evidence."
+      ]
+    },
+    {
+      "id": "multi-agent-handoff",
+      "sectionId": "planning-handoffs",
+      "title": "Multi-Agent Handoff Contract",
+      "filePath": "docs/multi-agent-handoff-contract.md",
+      "goal": "Define when ownership transfers between planner, builder, tester, reviewer, or specialist agents.",
+      "suggestedUse": "Use when more than one agent or specialist workflow participates in the same delivery chain.",
+      "placeholders": [
+        "from_agent",
+        "to_agent",
+        "handoff_reason",
+        "state_summary",
+        "inputs",
+        "outputs",
+        "rollback_owner"
+      ],
+      "expectations": [
+        "Only one agent owns the next action.",
+        "Handoffs include state and evidence.",
+        "Circular handoffs are blocked."
+      ],
+      "aliases": [
+        "docs/agent-handoff.md"
+      ]
+    },
+    {
+      "id": "multi-agent-plan",
+      "sectionId": "planning-handoffs",
+      "title": "Multi-Agent Plan",
+      "filePath": "docs/multi-agent-plan.md",
+      "goal": "Plan coordinated work across multiple specialist agents.",
+      "suggestedUse": "Use when planner, builder, tester, reviewer, or release agents share one goal.",
+      "placeholders": [
+        "goal",
+        "agent_roles",
+        "handoff_order",
+        "shared_state",
+        "conflict_policy",
+        "validation",
+        "owner"
+      ],
+      "expectations": [
+        "One owner controls each step.",
+        "Shared state is durable.",
+        "Conflicts have a resolution policy."
+      ]
+    },
+    {
+      "id": "agents-md",
+      "sectionId": "repository-instructions",
+      "title": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "goal": "Define agent operating rules, local scope, approval points, and evidence requirements.",
+      "suggestedUse": "Use at the repository root, and add nested AGENTS.md files for areas with stricter local rules.",
+      "placeholders": [
+        "agent_scope",
+        "allowed_actions",
+        "blocked_actions",
+        "local_commands",
+        "review_gates",
+        "handoff_format"
+      ],
+      "expectations": [
+        "Nearest instructions are authoritative for a path.",
+        "Agents know when not to continue.",
+        "Reviewer evidence is predictable."
+      ]
+    },
+    {
+      "id": "copilot-instructions",
+      "sectionId": "repository-instructions",
+      "title": "Copilot Repository Instructions",
+      "filePath": ".github/copilot-instructions.md",
+      "goal": "Give Copilot and coding agents repository-specific build, test, validation, architecture, and safety instructions.",
+      "suggestedUse": "Use as the root repository instruction file and update it whenever commands, ownership, or sensitive areas change.",
+      "placeholders": [
+        "project_purpose",
+        "setup_commands",
+        "test_commands",
+        "architecture_map",
+        "sensitive_paths",
+        "evidence_policy",
+        "style_rules"
+      ],
+      "expectations": [
+        "The instructions are short enough to be read every session.",
+        "Commands are exact and current.",
+        "Sensitive areas and approval gates are explicit."
+      ]
+    },
+    {
+      "id": "copilot-setup-steps",
+      "sectionId": "repository-instructions",
+      "title": "Copilot Setup Steps Workflow",
+      "filePath": ".github/workflows/copilot-setup-steps.yml",
+      "goal": "Prepare repository dependencies and environment setup for Copilot coding agent sessions.",
+      "suggestedUse": "Use when Copilot needs deterministic setup before building, testing, or validating work.",
+      "placeholders": [
+        "setup_commands",
+        "dependency_cache",
+        "required_tools",
+        "validation_command",
+        "secrets_policy"
+      ],
+      "expectations": [
+        "Setup is reproducible.",
+        "Secrets are not exposed in logs.",
+        "The workflow mirrors local repository instructions."
+      ]
+    },
+    {
+      "id": "approval-gates",
+      "sectionId": "review-approval",
+      "title": "Agent Approval Gates",
+      "filePath": "docs/agent-approval-gates.md",
+      "goal": "Document which actions require human approval before the agent continues.",
+      "suggestedUse": "Use in regulated, production, security, deployment, data, or MCP/tool-enabled workflows.",
+      "placeholders": [
+        "action_type",
+        "risk_tier",
+        "approver",
+        "evidence_required",
+        "approval_record",
+        "bypass_policy"
+      ],
+      "expectations": [
+        "Approval rules are tied to risk.",
+        "Approvers are named by role.",
+        "Bypass conditions are exceptional and logged."
+      ]
+    },
+    {
+      "id": "approval-policy",
+      "sectionId": "review-approval",
+      "title": "Approval Policy",
+      "filePath": "docs/approval-policy.md",
+      "goal": "Define risk-based approval rules for agent actions.",
+      "suggestedUse": "Use for high-risk agent actions, production controls, security, data, or compliance work.",
+      "placeholders": [
+        "risk_tier",
+        "action",
+        "approver",
+        "evidence",
+        "approval_record",
+        "bypass_rule"
+      ],
+      "expectations": [
+        "Risk tiers are actionable.",
+        "Approvers are named by role.",
+        "Bypass rules are exceptional and logged."
+      ]
+    },
+    {
+      "id": "autonomy-matrix",
+      "sectionId": "review-approval",
+      "title": "Autonomy Matrix",
+      "filePath": "docs/autonomy-matrix.md",
+      "goal": "Map agent autonomy levels to allowed actions and approval gates.",
+      "suggestedUse": "Use when deciding how much independence an agent should have for a task or domain.",
+      "placeholders": [
+        "autonomy_level",
+        "allowed_actions",
+        "blocked_actions",
+        "approval_gate",
+        "evidence",
+        "rollback"
+      ],
+      "expectations": [
+        "Autonomy increases only with evidence.",
+        "High-risk actions require approval.",
+        "Rollback is defined for each tier."
+      ]
+    },
+    {
+      "id": "codeowners-template",
+      "sectionId": "review-approval",
+      "title": "CODEOWNERS Template",
+      "filePath": ".github/CODEOWNERS",
+      "goal": "Define ownership rules so agent changes route to accountable reviewers.",
+      "suggestedUse": "Use when lessons mention CODEOWNERS, sensitive paths, or owner review for agent-generated changes.",
+      "placeholders": [
+        "path_pattern",
+        "owner_team",
+        "sensitive_area",
+        "review_reason",
+        "fallback_owner"
+      ],
+      "expectations": [
+        "Ownership rules cover sensitive paths.",
+        "Reviewers are teams or users with authority.",
+        "The PR explains why each owner is required."
+      ]
+    },
+    {
+      "id": "escalation-paths",
+      "sectionId": "review-approval",
+      "title": "Escalation Paths",
+      "filePath": "docs/escalation-paths.md",
+      "goal": "Define how agents escalate ambiguity, risk, tool failures, and approval needs.",
+      "suggestedUse": "Use when agent tasks can encounter blocked tools, unclear requirements, or sensitive decisions.",
+      "placeholders": [
+        "trigger",
+        "escalation_owner",
+        "channel",
+        "required_context",
+        "sla",
+        "fallback"
+      ],
+      "expectations": [
+        "Escalation triggers are concrete.",
+        "Owners and channels are named.",
+        "Fallback behavior is safe."
+      ]
+    },
+    {
+      "id": "guardrails",
+      "sectionId": "review-approval",
+      "title": "Guardrails",
+      "filePath": "docs/guardrails.md",
+      "goal": "Document behavioral, tool, data, and approval guardrails for agents.",
+      "suggestedUse": "Use for safety-sensitive tasks, compliance, responsible AI, or production workflows.",
+      "placeholders": [
+        "risk",
+        "guardrail",
+        "trigger",
+        "blocked_action",
+        "allowed_alternative",
+        "evidence"
+      ],
+      "expectations": [
+        "Guardrails are testable.",
+        "Blocked behavior is explicit.",
+        "Safe alternatives are provided."
+      ]
+    },
+    {
+      "id": "pull-request-template",
+      "sectionId": "review-approval",
+      "title": "Pull Request Template",
+      "filePath": ".github/pull_request_template.md",
+      "goal": "Make every agent PR reviewable through scope, evidence, tests, risk, and rollback information.",
+      "suggestedUse": "Use for all PRs, with extra rigor for agent-generated changes.",
+      "placeholders": [
+        "linked_issue",
+        "summary",
+        "changed_files",
+        "evidence",
+        "tests",
+        "risk",
+        "rollback",
+        "reviewers"
+      ],
+      "expectations": [
+        "A reviewer can decide from the PR body.",
+        "Validation output is linked or summarized.",
+        "Risk and rollback are not hidden."
+      ]
+    },
+    {
+      "id": "responsible-ai-risk-review",
+      "sectionId": "review-approval",
+      "title": "Responsible AI Risk Review",
+      "filePath": "docs/responsible-ai-risk-review.md",
+      "goal": "Assess fairness, reliability, privacy, safety, transparency, and accountability risks.",
+      "suggestedUse": "Use for agent workflows affecting people, sensitive data, decisions, or user-facing automation.",
+      "placeholders": [
+        "use_case",
+        "affected_users",
+        "rai_risks",
+        "mitigations",
+        "human_oversight",
+        "monitoring",
+        "owner"
+      ],
+      "expectations": [
+        "Human oversight is defined.",
+        "Risks map to mitigations.",
+        "Monitoring and accountability are explicit."
+      ]
+    },
+    {
+      "id": "agent-task-contract",
+      "sectionId": "task-intake",
+      "title": "Agent Task Contract",
+      "filePath": "docs/agent-task-contract.md",
+      "aliases": [
+        "templates/agent-task-contract.md"
+      ],
+      "goal": "Define a reusable contract for issue-to-PR agent work.",
+      "suggestedUse": "Use when an issue needs more governance than a short issue form can express.",
+      "placeholders": [
+        "task_owner",
+        "repository",
+        "success_definition",
+        "scope_boundary",
+        "tool_boundary",
+        "evidence_required",
+        "approval_owner"
+      ],
+      "expectations": [
+        "The contract names the owner of each risk.",
+        "The contract names the final evidence required.",
+        "The contract defines when the agent must stop."
+      ]
+    },
+    {
+      "id": "agent-task-issue",
+      "sectionId": "task-intake",
+      "title": "Agent Task Issue Template",
+      "filePath": ".github/ISSUE_TEMPLATE/agent-task.yml",
+      "goal": "Create a task record that names the business goal, scope, constraints, evidence, and stop conditions before an agent starts work.",
+      "suggestedUse": "Use for every agent-assigned issue, especially work that touches tests, workflows, security, user-facing behavior, or source-grounded content.",
+      "placeholders": [
+        "goal",
+        "context",
+        "allowed_paths",
+        "forbidden_paths",
+        "acceptance_criteria",
+        "validation_commands",
+        "required_evidence",
+        "stop_conditions"
+      ],
+      "expectations": [
+        "The issue is understandable without reading chat history.",
+        "The agent can identify what is allowed and what is blocked.",
+        "A reviewer can verify completion from PR evidence."
+      ]
+    },
+    {
+      "id": "environment-constraints",
+      "sectionId": "tools-mcp",
+      "title": "Environment Constraints",
+      "filePath": "docs/environment-constraints.md",
+      "goal": "Document runtime, network, filesystem, secret, and deployment constraints for agent work.",
+      "suggestedUse": "Use before running agents in local, CI, cloud, or sandboxed environments.",
+      "placeholders": [
+        "runtime",
+        "network_access",
+        "filesystem_scope",
+        "secrets",
+        "blocked_actions",
+        "validation_command"
+      ],
+      "expectations": [
+        "Constraints are visible before execution.",
+        "Secrets and write surfaces are protected.",
+        "Validation matches the environment."
+      ]
+    },
+    {
+      "id": "mcp-server-review",
+      "sectionId": "tools-mcp",
+      "title": "MCP Server Review",
+      "filePath": "docs/agent-mcp-server-review.md",
+      "goal": "Review MCP server capability, roots, tools, secrets, transport, and autonomous-use risk before enabling it.",
+      "suggestedUse": "Use before adding or changing an MCP server for Copilot, code review, an IDE, or a custom agent.",
+      "placeholders": [
+        "server_name",
+        "transport",
+        "roots",
+        "tools",
+        "secrets",
+        "auth_model",
+        "risk_decision",
+        "owner"
+      ],
+      "expectations": [
+        "Tools are mapped to business need.",
+        "Root boundaries and auth are explicit.",
+        "Autonomous use is accepted or rejected by an accountable owner."
+      ],
+      "aliases": [
+        "docs/mcp-tool-policy.md"
+      ]
+    },
+    {
+      "id": "mcp-tool-policy",
+      "sectionId": "tools-mcp",
+      "title": "MCP Tool Policy",
+      "filePath": "docs/mcp-tool-policy.md",
+      "goal": "Define which MCP tools are allowed, restricted, or forbidden.",
+      "suggestedUse": "Use before enabling MCP servers or toolsets for agents.",
+      "placeholders": [
+        "server",
+        "tool",
+        "allowed_use",
+        "denied_use",
+        "data_scope",
+        "approval",
+        "audit"
+      ],
+      "expectations": [
+        "Tool access is least privilege.",
+        "Data scope is explicit.",
+        "Auditable use is required."
+      ]
+    },
+    {
+      "id": "tool-permission-matrix",
+      "sectionId": "tools-mcp",
+      "title": "Tool Permission Matrix",
+      "filePath": "docs/agent-tool-permission-matrix.md",
+      "goal": "Inventory allowed tools, denied tools, escalation rules, and data exposure boundaries.",
+      "suggestedUse": "Use before enabling shell, browser, MCP, deployment, database, or third-party integration tools.",
+      "placeholders": [
+        "tool_name",
+        "allowed_use",
+        "denied_use",
+        "data_access",
+        "approval_required",
+        "audit_signal"
+      ],
+      "expectations": [
+        "Tool access is least privilege.",
+        "Secrets and write actions have gates.",
+        "Each tool has an observable audit signal."
+      ],
+      "aliases": [
+        "docs/tool-permission-matrix.md"
+      ]
     }
   ]
 }

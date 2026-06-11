@@ -1,0 +1,11 @@
+# CODEOWNERS Template
+# Goal: Define ownership rules so agent changes route to accountable reviewers.
+# Suggested use: Use when lessons mention CODEOWNERS, sensitive paths, or owner review for agent-generated changes.
+
+# Path pattern | owner | review reason
+{{path_pattern}} {{owner_team_or_user}}
+
+# Examples:
+# /src/data/ @team/content-reviewers
+# /.github/workflows/ @team/platform-owners
+# /docs/security/ @team/security-reviewers
