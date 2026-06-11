@@ -8,3 +8,4 @@
 - Added source-linked accuracy metadata to instructional and assessment content records.
 - Added maintainer-facing reports and a data accuracy action log.
 - Added an end-user issue form for suspected content drift or inaccuracies.
+- Added the agent documentation template library, including task intake, repository instructions, planning, handoffs, approval gates, MCP/tool governance, evaluation, trace review, memory/state, and release retrospective templates.

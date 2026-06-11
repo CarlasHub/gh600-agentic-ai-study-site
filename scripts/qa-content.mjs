@@ -20,6 +20,7 @@ const glossary = readJson("glossary.json");
 const mockExams = readJson("mockExams.json");
 const sources = readJson("sources.json");
 const accuracyFramework = readJson("accuracyFramework.json");
+const templateLibrary = readJson("templateLibrary.json");
 const scenarios = readJson("scenarios.json");
 const cramGuide = readJson("cramGuide.json");
 const studyPlans = readJson("studyPlans.json");
@@ -130,6 +131,20 @@ uniqCheck(labs, "id", "lab");
 uniqCheck(flashcards, "id", "flashcard");
 uniqCheck(glossary, "id", "glossary term");
 uniqCheck(coverage, "id", "coverage row");
+uniqCheck(templateLibrary.sections, "id", "template library section");
+uniqCheck(templateLibrary.templates, "id", "template library template");
+
+const templateSectionIds = new Set(templateLibrary.sections.map((section) => section.id));
+for (const template of templateLibrary.templates) {
+  requireText(template.title, `template ${template.id}`, "title");
+  requireText(template.filePath, `template ${template.id}`, "filePath");
+  requireText(template.goal, `template ${template.id}`, "goal");
+  requireText(template.suggestedUse, `template ${template.id}`, "suggestedUse");
+  requireArray(template.placeholders, `template ${template.id}`, "placeholders", 3);
+  requireArray(template.expectations, `template ${template.id}`, "expectations", 2);
+  if (!templateSectionIds.has(template.sectionId)) fail(`template ${template.id} references unknown section ${template.sectionId}`);
+  if (!fs.existsSync(path.join(root, template.filePath))) fail(`template ${template.id} file does not exist: ${template.filePath}`);
+}
 
 for (const [id, title, weight] of expectedDomains) {
   const domain = domainMap.get(id);
@@ -353,6 +368,8 @@ const summary = {
   flashcards: flashcards.length,
   glossaryTerms: glossary.length,
   scenarios: scenarios.length,
+  templateSections: templateLibrary.sections.length,
+  templates: templateLibrary.templates.length,
   warnings: warnings.length,
   errors: errors.length
 };

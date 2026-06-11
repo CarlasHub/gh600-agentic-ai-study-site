@@ -19,6 +19,7 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 65 official skill coverage rows
 - Adaptive quiz practice for weaker domains
 - Weekly source currentness workflow
+- Agent documentation template library for task contracts, repository instructions, planning, approval gates, MCP/tool governance, evaluation, traces, state, and release learning
 - Every lesson includes explicit action steps, concrete files/settings/artifacts, a copyable agent request, enterprise checks, common mistakes to avoid, and an exam action drill
 
 The machine-readable coverage matrix is in `src/data/coverageMatrix.json`. The readable version is in `docs/COVERAGE_MATRIX.md`.
@@ -38,6 +39,8 @@ Latest content QA report: [docs/CONTENT_QA_REPORT.md](docs/CONTENT_QA_REPORT.md)
 Data accuracy framework: [docs/DATA_ACCURACY_FRAMEWORK.md](docs/DATA_ACCURACY_FRAMEWORK.md).
 
 Latest data accuracy report: [docs/DATA_ACCURACY_REPORT.md](docs/DATA_ACCURACY_REPORT.md).
+
+Agent documentation template library: [docs/TEMPLATE_LIBRARY.md](docs/TEMPLATE_LIBRARY.md).
 
 Suspected content drift report form: [GitHub issue form](https://github.com/CarlasHub/gh600-agentic-ai-study-site/issues/new?template=content-drift.yml).
 

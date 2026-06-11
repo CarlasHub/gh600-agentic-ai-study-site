@@ -1,0 +1,114 @@
+name: Agent task contract
+description: Assign bounded, evidence-backed work to an AI coding agent.
+title: "Agent task: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when assigning work to Copilot cloud agent, a custom agent, or another coding agent.
+        The goal is to make the task clear without relying on chat history.
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: What outcome should exist when the task is complete?
+      placeholder: "{{one_sentence_goal}}"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What should the agent know before planning?
+      placeholder: |
+        {{business_context}}
+        {{links_to_docs_or_designs}}
+        {{known_constraints}}
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Allowed scope
+      description: Files, directories, settings, or docs the agent may inspect or edit.
+      placeholder: |
+        Allowed to edit:
+        - {{path_or_area}}
+
+        Allowed to inspect only:
+        - {{path_or_area}}
+    validations:
+      required: true
+  - type: textarea
+    id: non-goals
+    attributes:
+      label: Non-goals and forbidden changes
+      description: What must not be changed without a new approval?
+      placeholder: |
+        Do not:
+        - {{forbidden_change}}
+        - {{sensitive_area_or_data}}
+    validations:
+      required: true
+  - type: textarea
+    id: tools
+    attributes:
+      label: Tool and MCP boundary
+      description: Which tools may the agent use, and which require approval?
+      placeholder: |
+        Allowed without extra approval:
+        - {{read_or_search_tool}}
+
+        Requires approval:
+        - {{write_or_external_tool}}
+
+        Forbidden:
+        - {{tool_or_mcp_server}}
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable checks that prove the goal was met.
+      placeholder: |
+        - [ ] {{criterion_with_expected_result}}
+        - [ ] {{criterion_with_expected_result}}
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation commands and evidence
+      description: Commands, screenshots, logs, traces, or documents the PR must include.
+      placeholder: |
+        Commands:
+        - {{npm_run_check_or_test_command}}
+
+        Evidence:
+        - {{build_log_or_test_output}}
+        - {{screenshot_or_trace_link}}
+    validations:
+      required: true
+  - type: textarea
+    id: stop-conditions
+    attributes:
+      label: Stop conditions
+      description: When must the agent stop and ask a human before continuing?
+      placeholder: |
+        Stop if:
+        - {{ambiguous_requirement}}
+        - {{test_or_build_fails_after_one_fix_attempt}}
+        - {{sensitive_area_needs_change}}
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk tier
+      options:
+        - Low - docs or isolated non-production change
+        - Medium - app behavior, build, or workflow change
+        - High - security, data, deployment, auth, payments, or compliance
+    validations:
+      required: true

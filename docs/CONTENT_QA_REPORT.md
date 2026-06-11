@@ -14,6 +14,7 @@ Checked:
 - Source ID integrity across student-facing content.
 - Lesson actionability fields: concrete action overview, step-by-step actions, files/settings/artifacts, copyable agent request, enterprise checklist, anti-patterns to avoid, exam drill, and key terms.
 - Exam simulator form size, domain distribution, answer-position balance, wrong-answer rationales, and longest-answer bias.
+- Agent documentation template library metadata and file existence.
 - Local build readiness through `npm run qa:content` and `npm run build`.
 
 Not checked by this local script:
@@ -63,6 +64,8 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Flashcards: 303
 - Glossary terms: 58
 - Scenarios: 60
+- Template library sections: 7
+- Agent documentation templates: 15
 
 ## QA Result
 
@@ -81,6 +84,7 @@ The QA script confirms:
 - Every quiz and simulator question has four options, a valid correct answer, explanations, wrong-answer rationales, a source reference, and an exam trap.
 - Each simulator form has 60 questions with this domain distribution: 10 / 14 / 8 / 10 / 10 / 8.
 - Simulator answer positions are balanced and do not make the longest answer the correct answer too often.
+- The agent documentation template library has valid section references and every listed template file exists.
 - The weekly source currentness check reached 24 of 24 configured sources on 2026-06-04.
 
 ## Accuracy Position

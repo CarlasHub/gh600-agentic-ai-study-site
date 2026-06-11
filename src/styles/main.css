@@ -165,6 +165,7 @@ a:hover{color:#ead79f}
 @media(max-width:760px){
 h1{font-size:1.42rem}
 h2{font-size:1.08rem}
+.topbar nav{justify-content:flex-start}
 .lab-card{padding:1rem}
 .badge,.domain-card span{white-space:normal;line-height:1.35}
 }
@@ -204,6 +205,7 @@ h3{color:#b9c1c9;font-weight:540}
 .artifact-list div{padding:.75rem .8rem;background:#161a1e;border:1px solid var(--line-soft);border-radius:7px}
 .artifact-list dt{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;color:#e1d3ac;overflow-wrap:anywhere}
 .artifact-list dd{margin:.3rem 0 0;color:#b9c2ca}
+.artifact-library-link{display:block;margin-top:.35rem;font-size:.9rem;color:#aeb7c0}
 .prompt-box{margin:.8rem 0 0;padding:.9rem;background:#15191d;border:1px solid var(--line-soft);border-radius:7px;white-space:pre-wrap;overflow:auto;color:#d7dde4;font-size:.92rem;line-height:1.65}
 .checklist{margin:.75rem 0 0;padding-left:1.15rem}
 .checklist li{margin:.45rem 0}
@@ -213,10 +215,23 @@ h3{color:#b9c1c9;font-weight:540}
 .key-terms div{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.65rem}
 .key-terms a{display:inline-flex;text-decoration:none;background:#1f1e19;color:#d9bf7a;border:1px solid #342f22;border-radius:999px;padding:.32rem .62rem;font-size:.9rem}
 .key-terms a:hover{background:#242219;color:#ead79f}
+.library-section{margin:1.5rem 0 2rem}
+.library-section-heading{margin-bottom:.75rem}
+.library-template-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.template-card{display:flex;flex-direction:column;gap:.55rem}
+.template-card h3{margin:.15rem 0 0}
+.template-card h3 a{text-decoration:none;color:#d8d3c7}
+.template-card h3 a:hover{text-decoration:underline}
+.template-card .button{width:max-content;margin-top:auto}
+.template-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:.65rem 0}
+.template-tags code{display:inline-flex;border:1px solid #343b43;border-radius:999px;background:#171a1e;color:#d9bf7a;padding:.22rem .48rem;font-size:.82rem;overflow-wrap:anywhere}
+.library-detail h2:not(:first-child){margin-top:1.2rem}
 @media(max-width:760px){
 .action-section{margin:1.1rem 0;padding:.9rem 0}
 .action-steps li{grid-template-columns:1.75rem minmax(0,1fr);gap:.6rem}
 .action-steps span{width:1.75rem;height:1.75rem;font-size:.82rem}
 .prompt-box{font-size:.88rem;max-height:24rem}
 .artifact-list div{padding:.7rem}
+.library-template-grid{grid-template-columns:1fr}
+.template-card .button{width:100%}
 }
