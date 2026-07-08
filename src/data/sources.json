@@ -295,5 +295,100 @@
       "domain-2"
     ],
     "why": "Microsoft Learn module for tooling, MCP, and execution environments."
+  },
+  {
+    "id": "gh-mcp-management",
+    "title": "MCP server usage in your company",
+    "url": "https://docs.github.com/en/copilot/concepts/mcp-management",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Defines MCP registries as catalogs of approved servers and explains MCP policy settings, supported surfaces, and allow-list management."
+  },
+  {
+    "id": "gh-mcp-registry",
+    "title": "Configure an MCP registry for your organization or enterprise",
+    "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Explains registry endpoint requirements, CORS requirements, Azure API Center option, and the relationship between registry entries and local server IDs."
+  },
+  {
+    "id": "gh-mcp-server-access",
+    "title": "Configure MCP server access for your organization or enterprise",
+    "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Documents enterprise and organization MCP registry URLs, the Allow all versus Registry only policy, and where MCP access controls are configured."
+  },
+  {
+    "id": "gh-mcp-allowlist-enforcement",
+    "title": "MCP allowlist enforcement",
+    "url": "https://docs.github.com/en/copilot/reference/mcp-allowlist-enforcement",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Documents current MCP allow-list enforcement limitations, local server ID matching, and policy precedence for users with multiple Copilot seats."
+  },
+  {
+    "id": "gh-copilot-setup-steps",
+    "title": "Configure the development environment for Copilot cloud agent",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2"
+    ],
+    "why": "Explains copilot-setup-steps.yml, the required copilot-setup-steps job, allowed job settings, default branch requirement, runner choices, and setup logs."
+  },
+  {
+    "id": "gh-copilot-cli-actions",
+    "title": "Using Copilot CLI in GitHub Actions with GITHUB_TOKEN",
+    "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-6"
+    ],
+    "why": "Explains CI invocation of Copilot CLI, copilot-requests: write, GITHUB_TOKEN authentication, and the risk of broad workflow-environment access."
+  },
+  {
+    "id": "gh-agentic-workflows",
+    "title": "About GitHub Agentic Workflows",
+    "url": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-2",
+      "domain-5",
+      "domain-6"
+    ],
+    "why": "Explains markdown-defined agentic workflows, GitHub Actions execution, frontmatter permissions, tools, safe outputs, and security guardrails."
+  },
+  {
+    "id": "gh-copilot-memory",
+    "title": "About GitHub Copilot Memory",
+    "url": "https://docs.github.com/en/copilot/concepts/agents/copilot-memory",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-08",
+    "domains": [
+      "domain-3"
+    ],
+    "why": "Explains repository-level facts, user-level preferences, feature availability, citations, retention, scope, and deletion/review behavior for Copilot Memory."
   }
 ]

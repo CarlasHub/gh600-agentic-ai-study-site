@@ -170,12 +170,16 @@ function lessonsPage() {
 
 function lessonPage(lesson) {
   const relatedSources = sourceNames(lesson.sourceIds);
-  const relatedLabs = labs.filter((lab) => (lab.skillIds || []).includes(lesson.skillId));
+  const relatedLabs = (lesson.relatedLabs || []).length
+    ? lesson.relatedLabs.map((id) => labs.find((lab) => lab.id === id)).filter(Boolean)
+    : labs.filter((lab) => (lab.skillIds || []).includes(lesson.skillId));
   const templateLinks = (lesson.filesToCreate || []).map((artifact) => {
     const template = templateLibrary.templates.find((item) => item.filePath === artifact.path || (item.aliases || []).includes(artifact.path));
     return `<li><code>${escapeHtml(artifact.path)}</code>${template ? ` - <a href="${routeUrl("library", template.id)}">${escapeHtml(template.title)}</a>` : ""}</li>`;
   }).join("");
-  const body = `<h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.whyExam)}</p><section><h2>Official exam skill</h2><p>${escapeHtml(lesson.officialSkill)}</p></section><section><h2>Core explanation</h2>${lesson.core.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section><section><h2>GitHub implementation detail</h2><p>${escapeHtml(lesson.githubDetail)}</p></section><section><h2>Action steps</h2>${ordered(lesson.actionSteps || [], escapeHtml)}</section>${templateLinks ? `<section><h2>Files and artifacts to create</h2><ul>${templateLinks}</ul></section>` : ""}<section><h2>What to know</h2>${list(lesson.takeaways || [], escapeHtml)}</section>${relatedLabs.length ? `<section><h2>Related labs</h2>${list(relatedLabs, (lab) => `<a href="${routeUrl("labs", lab.id)}">${escapeHtml(lab.title)}</a>`)}</section>` : ""}<section><h2>Related sources</h2>${list(relatedSources, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
+  const plainLanguage = (lesson.plainLanguage || []).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
+  const scenario = lesson.scenario ? `<section><h2>Scenario</h2><p>${escapeHtml(lesson.scenario.body || lesson.scenario.prompt || "")}</p>${lesson.scenario.goodAnswer ? `<p><strong>Strong answer:</strong> ${escapeHtml(lesson.scenario.goodAnswer)}</p>` : ""}</section>` : "";
+  const body = `<h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.whyExam)}</p>${plainLanguage ? `<section><h2>Plain-language idea</h2>${plainLanguage}</section>` : ""}<section><h2>Official exam skill</h2><p>${escapeHtml(lesson.officialSkill)}</p></section><section><h2>Core explanation</h2>${lesson.core.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section><section><h2>GitHub implementation detail</h2><p>${escapeHtml(lesson.githubDetail)}</p></section><section><h2>Action steps</h2>${ordered(lesson.actionSteps || [], escapeHtml)}</section>${templateLinks ? `<section><h2>Files and artifacts to create</h2><ul>${templateLinks}</ul></section>` : ""}${scenario}<section><h2>What to know</h2>${list(lesson.takeaways || [], escapeHtml)}</section>${relatedLabs.length ? `<section><h2>Related labs</h2>${list(relatedLabs, (lab) => `<a href="${routeUrl("labs", lab.id)}">${escapeHtml(lab.title)}</a>`)}</section>` : ""}<section><h2>Related sources</h2>${list(relatedSources, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
   return pageShell(`${lesson.title} | GH-600 Lesson`, lesson.whyExam, body, { page: "lesson", id: lesson.id }, {
     "@context": "https://schema.org",
     "@type": "LearningResource",

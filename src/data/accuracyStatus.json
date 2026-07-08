@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-07-08T12:29:51.521Z",
-  "status": "review-needed",
+  "checkedAt": "2026-07-08T21:58:43.621Z",
+  "status": "passed",
   "frameworkVersion": "2026.06.11",
   "sourceSnapshot": "gh600-source-baseline-2026-06-11",
   "sourceLastChecked": "2026-07-08",
-  "reportHash": "1c203e27797167565af1ed66b5cfd607dfaaa97d10d31954126b66b04a388306",
-  "contentItemsChecked": 1435,
-  "sourcesChecked": 24,
+  "reportHash": "27ad9c7dcfff6f34de32954581a9018e6fcda031701b39ef0a191067fdf5801d",
+  "contentItemsChecked": 1577,
+  "sourcesChecked": 32,
   "reviewQueue": {
-    "high": 14,
+    "high": 0,
     "medium": 0,
-    "total": 14
+    "total": 0
   },
   "reports": {
     "dataAccuracy": "docs/DATA_ACCURACY_REPORT.md",

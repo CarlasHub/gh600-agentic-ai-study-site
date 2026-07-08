@@ -35,6 +35,18 @@ Template placeholders:
 5. Run relevant checks.
 6. Record evidence and residual risk.
 
+## GH-600 Lesson Quality Rule
+
+When editing lessons, labs, scenarios, quizzes, or source mappings, follow `docs/LESSON_QUALITY_STANDARD.md`.
+
+Lessons marked with `accuracy.verification: "human-reviewed"` are considered final lessons and must pass:
+
+```bash
+npm run qa:lessons
+```
+
+Do not mark a lesson `human-reviewed` unless its rendered page uses lesson-specific plain-language teaching, curated scenario, related lab, five non-generic quiz questions, concrete GitHub artifacts, and official source support.
+
 ## Stop Conditions
 
 Stop and ask for human approval when:

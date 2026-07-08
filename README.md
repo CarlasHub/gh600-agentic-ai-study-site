@@ -12,9 +12,9 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 5 scenario-based exam simulator forms
 - 300 simulator questions aligned to the official domain weighting
 - 303 flashcards with spaced repetition progress
-- 40 hands-on labs, including capstone workflows
+- 141 hands-on labs, including 101 gold lesson labs and capstone workflows
 - 12 GitHub UI workflow walkthroughs
-- 60 scenarios
+- 101 scenarios
 - 58 glossary terms, including acronyms and short names
 - 65 official skill coverage rows
 - Adaptive quiz practice for weaker domains
@@ -73,7 +73,7 @@ Run the full local check:
 npm run check
 ```
 
-That command validates the curriculum data, checks the SEO discovery files, runs the data accuracy scan, and then builds the production app.
+That command builds the production app, checks source currentness, validates curriculum structure, enforces the final lesson quality gate, and runs the data accuracy scan.
 
 Run the semantic evidence and metadata scan separately:
 
