@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "start": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "node scripts/generate-seo-pages.mjs --public-only && vite build && node scripts/generate-seo-pages.mjs --dist",
     "preview": "vite preview --host 0.0.0.0",
     "qa:content": "node scripts/qa-content.mjs",
     "data:accuracy": "node scripts/check-data-accuracy.mjs",

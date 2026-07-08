@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlashub.github.io/gh600-agentic-ai-study-site/sitemap.xml

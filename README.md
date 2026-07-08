@@ -19,6 +19,7 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 65 official skill coverage rows
 - Adaptive quiz practice for weaker domains
 - Weekly source currentness workflow
+- Search discovery support with `robots.txt`, `sitemap.xml`, clean route entry points, per-route metadata, and structured data
 - Agent documentation template library for task contracts, repository instructions, planning, approval gates, MCP/tool governance, evaluation, traces, state, and release learning
 - Every lesson includes explicit action steps, concrete files/settings/artifacts, a copyable agent request, enterprise checks, common mistakes to avoid, and an exam action drill
 
@@ -72,7 +73,7 @@ Run the full local check:
 npm run check
 ```
 
-That command validates the curriculum data, runs the data accuracy scan, and then builds the production app.
+That command validates the curriculum data, checks the SEO discovery files, runs the data accuracy scan, and then builds the production app.
 
 Run the semantic evidence and metadata scan separately:
 
@@ -94,7 +95,7 @@ This checks source reachability, redirects, headers, content fingerprints, and s
 npm run build
 ```
 
-The production build is written to `dist/`.
+The production build is written to `dist/`. The build also generates crawlable HTML entry points for lessons, domains, labs, glossary terms, library templates, and key study pages.
 
 ## Preview Build
 

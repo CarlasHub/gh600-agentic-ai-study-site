@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-06-11",
-  "checkedAt": "2026-06-11T06:45:57.063Z",
+  "lastChecked": "2026-07-08",
+  "checkedAt": "2026-07-08T12:27:28.644Z",
   "policy": "Automated currentness checks verify reachability, redirects, headers, source fingerprints, and extracted source keywords. Source changes are review triggers; human review is required before changing content assumptions.",
   "sourceSnapshotId": "gh600-source-baseline-2026-06-11",
   "sources": [
@@ -8,15 +8,15 @@
       "id": "ms-gh600-guide",
       "title": "Study guide for Exam GH-600: Developing in Agentic AI Systems",
       "url": "https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600",
       "lastModified": "Wed, 13 May 2026 15:11:02 GMT",
-      "etag": "\"wuteaGUz1z6o/aRZndYAYXA3OKA=\"",
+      "etag": "\"Bu1K6ngm6jVO7bgOmghW6+QjAm0=\"",
       "contentType": "text/html",
       "contentHash": "1c9ec332cb8cbdc77aad7d16e71fd94582f14dd0d6e34913ac107bef6428deae",
-      "contentLength": 51359,
+      "contentLength": 51770,
       "pageTitle": "Study guide for Exam GH-600: Developing in Agentic AI Systems | Microsoft Learn",
       "contentKeywords": [
         "configure",
@@ -52,15 +52,15 @@
       "id": "gh-copilot-cloud-agent",
       "title": "About GitHub Copilot cloud agent",
       "url": "https://docs.github.com/copilot/concepts/about-copilot-coding-agent",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "e60b0ea5eff7bf80c7155ee93cbd39985161d2966cf5ce25ff0709b044d74c7c",
-      "contentLength": 558311,
+      "contentHash": "12ec1c7528506eba2e2f2691e8e7fb9bf99b87534071406e93cf53b28bed9d14",
+      "contentLength": 617341,
       "pageTitle": "About GitHub Copilot cloud agent - GitHub Docs",
       "contentKeywords": [
         "copilot",
@@ -76,6 +76,7 @@
         "access",
         "allow",
         "branch",
+        "context",
         "different",
         "issues",
         "requests",
@@ -84,27 +85,28 @@
         "configure",
         "example",
         "instructions",
-        "actions",
-        "agent.",
-        "assign"
+        "session",
+        "start"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-cloud-agent-risks",
       "title": "Risks and mitigations for GitHub Copilot cloud agent",
       "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/risks-and-mitigations",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/risks-and-mitigations",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "8e2b3545ba842ef8123f19de54a9143a5b9a1857f510e97eb27eea27deb7dea7",
-      "contentLength": 524431,
+      "contentHash": "94ebbb8ee999fa7f6d175e9290dfaa9f286d9cc7b0fa22fc3a4904023f56aa11",
+      "contentLength": 558105,
       "pageTitle": "Risks and mitigations for GitHub Copilot cloud agent - GitHub Docs",
       "contentKeywords": [
         "copilot",
@@ -132,23 +134,25 @@
         "without",
         "approve"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-mcp-cloud-agent",
       "title": "Model Context Protocol (MCP) and GitHub Copilot cloud agent",
       "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/mcp-and-coding-agent/",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/mcp-and-cloud-agent",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "f1b6a392361e119443eb1bf95bd876559b6a3e7867b90234ef0efdb9fe84b91e",
-      "contentLength": 516894,
+      "contentHash": "25bc7e2d04bcd58f10f5a43e8c0eabfd07f4af860db63f3868c42c4be55723e8",
+      "contentLength": 546263,
       "pageTitle": "Model Context Protocol (MCP) and GitHub Copilot cloud agent - GitHub Docs",
       "contentKeywords": [
         "servers",
@@ -176,23 +180,25 @@
         "tools.",
         "within"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-custom-agents-config",
       "title": "Custom agents configuration",
       "url": "https://docs.github.com/en/copilot/reference/custom-agents-configuration",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/reference/custom-agents-configuration",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "dca12a41e240e287abe5a715e96dac8cf2e7ca1336b42d14999d60ad72dc37ef",
-      "contentLength": 558798,
+      "contentHash": "a1a0386062cd51f640d74227060cea95c8fa3acc7b9b225cdf2414433c1552f5",
+      "contentLength": 629525,
       "pageTitle": "Custom agents configuration - GitHub Docs",
       "contentKeywords": [
         "tools",
@@ -220,67 +226,71 @@
         "search",
         "string"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-custom-instructions-support",
       "title": "Support for different types of custom instructions",
       "url": "https://docs.github.com/en/copilot/reference/custom-instructions-support",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/reference/custom-instructions-support",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "2d0007ef91a92295630c28c9c3fcd0485547f87e8e18aec020ad0aa97ba05a1a",
-      "contentLength": 538967,
+      "contentHash": "c42211fdf8058331301e744a815935bf3cffd3ede6c5cf0d0e931ae815d1b78b",
+      "contentLength": 610418,
       "pageTitle": "Support for different types of custom instructions - GitHub Docs",
       "contentKeywords": [
         "instructions",
         "copilot",
+        ".github/",
         "files",
-        ".github/copilot-instructions.md",
-        "repository-wide",
         "custom",
-        ".github/instructions/",
+        "repository-wide",
+        "copilot-instructions.md",
         ".instructions.md",
         "path-specific",
+        "instructions/",
         "types",
-        "agents.md",
-        "review",
         "supported",
+        "agents.md",
         "cloud",
+        "instructions.",
+        "review",
         "feature",
         "claude.md",
+        "customizations",
         "gemini.md",
-        "instructions.",
-        "organization",
         "adding",
-        "support",
-        "article",
-        "different",
-        "personal"
+        "organization",
+        "personal",
+        "support"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-repository-instructions",
       "title": "Adding repository custom instructions for GitHub Copilot",
       "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "8d97db446d2fa6d9b0fd77b49436752f3c24ca5990b6c82ddc6fac2aeb19af44",
-      "contentLength": 591577,
+      "contentHash": "108d0b503897cf333047fd7d344aeff0d51e4e2e200ea248809d9c28ed46fd6c",
+      "contentLength": 680555,
       "pageTitle": "Adding repository custom instructions for GitHub Copilot - GitHub Docs",
       "contentKeywords": [
         "instructions",
@@ -308,15 +318,17 @@
         "instructions.",
         "request"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-personal-instructions",
       "title": "Adding personal custom instructions for GitHub Copilot",
       "url": "https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-personal-custom-instructions-for-github-copilot",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-personal-instructions",
@@ -324,7 +336,7 @@
       "etag": null,
       "contentType": "text/html; charset=utf-8",
       "contentHash": "8bd0fe75f04786f54066769f6fda51b30adec1c4d54c8e2a6233c5f3b6b190b4",
-      "contentLength": 516390,
+      "contentLength": 544639,
       "pageTitle": "Adding personal custom instructions for GitHub Copilot - GitHub Docs",
       "contentKeywords": [
         "instructions",
@@ -352,23 +364,23 @@
         "types",
         "appears."
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "gh-mcp-server-setup",
       "title": "Setting up the GitHub MCP Server",
       "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "3747a0417032b726f3b5edcd7c08cc856346c0ee36058d5c801cfc7e31ae439d",
-      "contentLength": 638780,
+      "contentHash": "cfd2670426825997a97a5b461ea03102ca0d9898b3e63f3f304a315d1b385e96",
+      "contentLength": 775413,
       "pageTitle": "Setting up the GitHub MCP Server - GitHub Docs",
       "contentKeywords": [
         "server",
@@ -396,15 +408,17 @@
         "personal",
         "protocol"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-mcp-toolsets",
       "title": "Configuring toolsets for the GitHub MCP Server",
       "url": "https://docs.github.com/copilot/how-tos/provide-context/use-mcp/configure-toolsets",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/configure-toolsets",
@@ -412,7 +426,7 @@
       "etag": null,
       "contentType": "text/html; charset=utf-8",
       "contentHash": "ceaef25b22af62428bd563c7c993f8fddaa589d2554403d77e275bf9b5ff4605",
-      "contentLength": 511972,
+      "contentLength": 538968,
       "pageTitle": "Configuring toolsets for the GitHub MCP Server - GitHub Docs",
       "contentKeywords": [
         "server",
@@ -440,15 +454,15 @@
         "remote-only",
         "scanning"
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "gh-mcp-chat",
       "title": "Using the GitHub MCP Server from Copilot Chat",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/using-the-github-mcp-server-from-copilot-chat",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/copilot-for-github-tasks/using-the-github-mcp-server-from-copilot-chat",
@@ -456,7 +470,7 @@
       "etag": null,
       "contentType": "text/html; charset=utf-8",
       "contentHash": "fb07066f98bc37e822ab310a96eab9622efb1c0b830200c8e6d940957f27b451",
-      "contentLength": 525230,
+      "contentLength": 556965,
       "pageTitle": "Using the GitHub MCP Server from Copilot Chat - GitHub Docs",
       "contentKeywords": [
         "copilot",
@@ -484,23 +498,23 @@
         "article",
         "available"
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "gh-actions-workflows",
       "title": "Workflows",
       "url": "https://docs.github.com/en/actions/using-workflows/about-workflows",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "a1736d6f9177298387ea2544a89d7ee86c9c4f2aba0e16049661baa8bfcd7b3f",
-      "contentLength": 269989,
+      "contentHash": "a614417f3d9d08b51cd9e7d6d70405d1a733e3d1129ed409d1cd3f0359645cf7",
+      "contentLength": 282396,
       "pageTitle": "Workflows - GitHub Docs",
       "contentKeywords": [
         "workflow",
@@ -528,23 +542,25 @@
         "default",
         "directory"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-deploy-envs",
       "title": "Deployments and environments",
       "url": "https://docs.github.com/en/actions/reference/deployments-and-environments",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "0fd1bfba2ceb03e07995e13e7c3828b2dced758da38e5655f58b151a221eb814",
-      "contentLength": 292840,
+      "contentHash": "7710a0984ec8e4edda7a934e394140cc6e689678a706f2890aea3e4e8de68e7b",
+      "contentLength": 321954,
       "pageTitle": "Deployments and environments - GitHub Docs",
       "contentKeywords": [
         "deployment",
@@ -572,23 +588,25 @@
         "reference",
         "systems"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-managing-envs",
       "title": "Managing environments for deployment",
       "url": "https://docs.github.com/en/actions/reference/environments",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "e088aa1566b3bdbff98c56a470b49a1f12b3b5882f97d3cbda1717a6c7abbc78",
-      "contentLength": 309554,
+      "contentHash": "119aa002ccdf6939c046ed902bc5faf449cb5672df33eae0fcbf0bfb6f568e93",
+      "contentLength": 350675,
       "pageTitle": "Managing environments for deployment - GitHub Docs",
       "contentKeywords": [
         "environment",
@@ -616,15 +634,17 @@
         "actions",
         "branches"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-review-deployments",
       "title": "Reviewing deployments",
       "url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments",
@@ -632,7 +652,7 @@
       "etag": null,
       "contentType": "text/html; charset=utf-8",
       "contentHash": "56deed908214db83ff056e2e0f57528062221e715e8f29ed4c2629c76a39b2fe",
-      "contentLength": 271952,
+      "contentLength": 283140,
       "pageTitle": "Reviewing deployments - GitHub Docs",
       "contentKeywords": [
         "deployment",
@@ -660,23 +680,23 @@
         "history",
         "leave"
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "gh-protected-branches",
       "title": "About protected branches",
       "url": "https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "1e85a4d57fc5c4d76a0b409bcde1e1004de0258a41649f4c0f8e70a5a130bc37",
-      "contentLength": 235902,
+      "contentHash": "0ca9351fe21503164f1e3bad364a65ccef5bb712bd8f23434c3fb4d49f59d7fb",
+      "contentLength": 288031,
       "pageTitle": "About protected branches - GitHub Enterprise Cloud Docs",
       "contentKeywords": [
         "branch",
@@ -704,23 +724,25 @@
         "enable",
         "permissions"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-rulesets",
       "title": "About rulesets",
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "4f0324f7b81260b24a7688d69ab4d754d78a4d7ce6e4e82edd26bb7330250890",
-      "contentLength": 192444,
+      "contentHash": "423554437e71044bb79db79409c561feb6cb9b9e3fb845685b1ccb81d1ba8f55",
+      "contentLength": 215386,
       "pageTitle": "About rulesets - GitHub Docs",
       "contentKeywords": [
         "rulesets",
@@ -748,23 +770,25 @@
         "creating",
         "enforcement"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-ruleset-rules",
       "title": "Available rules for rulesets",
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "36ddd3b9d309dfddf7db5815ca22a5d4f5a84a96b47c8ef3d014353825d8bff2",
-      "contentLength": 230311,
+      "contentHash": "31dcb74e06f72555d2724cbe6fd3df5a5495f6f4a4c261fa8191dc4ef11e108a",
+      "contentLength": 287035,
       "pageTitle": "Available rules for rulesets - GitHub Docs",
       "contentKeywords": [
         "branch",
@@ -773,42 +797,44 @@
         "required",
         "require",
         "status",
-        "commits",
         "repository",
+        "commits",
         "changes",
-        "commit",
         "information",
         "rulesets",
-        "checks",
+        "commit",
         "requests",
         "branches",
-        "rules",
+        "checks",
         "branch.",
+        "coverage",
+        "rules",
         "check",
+        "merged",
         "repository.",
-        "permissions",
         "reviews",
         "users",
-        "collaborators",
-        "merged"
+        "permissions"
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "gh-codeowners",
       "title": "About code owners",
       "url": "https://docs.github.com/articles/about-code-owners",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners",
       "lastModified": null,
       "etag": null,
       "contentType": "text/html; charset=utf-8",
-      "contentHash": "f7e96b2ec9532cd8f059e00d8222ce244e8a17b021ced0246c9c54eeed5ef1be",
-      "contentLength": 209392,
+      "contentHash": "d7eb3f9d07871e7cfc5d9acbaece086c52a3bfd2d4a24d045bce6ef961f74e3a",
+      "contentLength": 242451,
       "pageTitle": "About code owners - GitHub Docs",
       "contentKeywords": [
         "codeowners",
@@ -836,15 +862,17 @@
         "protection",
         "request."
       ],
-      "reviewState": "baseline-established",
-      "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "reviewState": "source-review-needed",
+      "changedSignals": [
+        "content hash"
+      ],
+      "note": "Review required: content hash changed since previous baseline."
     },
     {
       "id": "ms-responsible-ai-principles",
       "title": "Responsible AI Principles and Approach",
       "url": "https://www.microsoft.com/en-us/ai/principles-and-approach/",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://www.microsoft.com/en-us/ai/principles-and-approach/",
@@ -852,7 +880,7 @@
       "etag": null,
       "contentType": "text/html; charset=utf-8",
       "contentHash": "4383ccbcfe5a02c8bab50bce0872ad99e9cd0d88ec2e463a322409c72c6f9a7c",
-      "contentLength": 424187,
+      "contentLength": 425371,
       "pageTitle": "Responsible AI Principles and Approach | Microsoft AI",
       "contentKeywords": [
         "responsible",
@@ -880,23 +908,23 @@
         "teams",
         "ensure"
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "ms-foundry-responsible-ai",
       "title": "Responsible AI for Microsoft Foundry",
       "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-us/azure/foundry/responsible-use-of-ai-overview",
       "lastModified": "Fri, 05 Jun 2026 22:13:21 GMT",
-      "etag": "\"PqQRUYC7syfjQXZri4ZHbg8VsKE=\"",
+      "etag": "\"+ThIVKyaXRESZVG1nhXSkvFYR3o=\"",
       "contentType": "text/html",
       "contentHash": "d354e3cdcb9ccf1b6a89be6ab0599500567456bcc2d5e640021f6fe6373c26cc",
-      "contentLength": 51128,
+      "contentLength": 51539,
       "pageTitle": "Responsible AI for Microsoft Foundry - Microsoft Foundry | Microsoft Learn",
       "contentKeywords": [
         "security",
@@ -924,23 +952,23 @@
         "compliance",
         "contents"
       ],
-      "reviewState": "baseline-established",
+      "reviewState": "current",
       "changedSignals": [],
-      "note": "Enhanced source fingerprint baseline established."
+      "note": "OK"
     },
     {
       "id": "ms-agentic-foundations",
       "title": "Foundations of Agentic AI in GitHub",
       "url": "https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/",
       "lastModified": "Mon, 04 May 2026 14:54:35 GMT",
-      "etag": "\"BzDFOJh/uoVsWSDLfVH2KkY1eAM=\"",
+      "etag": "\"cK3OikWdal6OFdEXxMVAEtNOORg=\"",
       "contentType": "text/html",
       "contentHash": "2cc6ba972ea431efe564b2aef8c174fb7544b6228ee5b2e27dd88b357d6cddd4",
-      "contentLength": 39547,
+      "contentLength": 39961,
       "pageTitle": "Foundations of Agentic AI in GitHub - Training | Microsoft Learn",
       "contentKeywords": [
         "module",
@@ -976,15 +1004,15 @@
       "id": "ms-agent-architecture-sdlc",
       "title": "Designing Agent Architecture and SDLC Integration",
       "url": "https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/",
       "lastModified": "Mon, 04 May 2026 14:54:35 GMT",
-      "etag": "\"TlLxK0nj0s13PqMVXVmR03FhHgw=\"",
+      "etag": "\"9KhFA7l/qspmULSxm6Cqy9TpvAQ=\"",
       "contentType": "text/html",
       "contentHash": "d9a8694ff7466f2a6166d2a28701b5ae6cb8f5088d28b87c4234013cc7478e0e",
-      "contentLength": 41560,
+      "contentLength": 41974,
       "pageTitle": "Designing Agent Architecture and SDLC Integration - Training | Microsoft Learn",
       "contentKeywords": [
         "module",
@@ -1020,15 +1048,15 @@
       "id": "ms-tooling-mcp-envs",
       "title": "Tooling, MCP, and Agent Execution Environments",
       "url": "https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/",
-      "checkedAt": "2026-06-11T06:45:57.063Z",
+      "checkedAt": "2026-07-08T12:27:28.644Z",
       "status": "reachable",
       "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/",
       "lastModified": "Mon, 04 May 2026 14:54:35 GMT",
-      "etag": "\"V0LCFXTz6hVjgmF22QRDRRI3BGw=\"",
+      "etag": "\"grICC8d/480ZXhqaGBafyW5tNIU=\"",
       "contentType": "text/html",
       "contentHash": "084ce9734cd9692308e8074be198a3e69349ff2e0193787e1b5730731aeacc01",
-      "contentLength": 38565,
+      "contentLength": 38979,
       "pageTitle": "Tooling, MCP, and Agent Execution Environments - Training | Microsoft Learn",
       "contentKeywords": [
         "execution",

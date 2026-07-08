@@ -1,12 +1,12 @@
 # Data Accuracy Report
 
-Checked: 2026-06-11T08:38:06.124Z
+Checked: 2026-07-08T12:29:51.521Z
 
-Status: passed
+Status: review-needed
 Framework version: 2026.06.11
 Source snapshot: gh600-source-baseline-2026-06-11
-Source metadata last checked: 2026-06-11
-Report hash: de5c00deab2a8502437afe5498cd101495ae6402311a6eda4b6f77887991850c
+Source metadata last checked: 2026-07-08
+Report hash: 1c203e27797167565af1ed66b5cfd607dfaaa97d10d31954126b66b04a388306
 
 ## Scope
 
@@ -37,12 +37,26 @@ Coverage rows | 65
 
 ## Manual Review Queue
 
-High severity: 0
+High severity: 14
 Medium severity: 0
-Total: 0
+Total: 14
 
-No manual review flags were generated.
-
+Severity | Item | Reason | Sources
+--- | --- | --- | ---
+high | source gh-copilot-cloud-agent | Source review state is source-review-needed. | gh-copilot-cloud-agent
+high | source gh-cloud-agent-risks | Source review state is source-review-needed. | gh-cloud-agent-risks
+high | source gh-mcp-cloud-agent | Source review state is source-review-needed. | gh-mcp-cloud-agent
+high | source gh-custom-agents-config | Source review state is source-review-needed. | gh-custom-agents-config
+high | source gh-custom-instructions-support | Source review state is source-review-needed. | gh-custom-instructions-support
+high | source gh-repository-instructions | Source review state is source-review-needed. | gh-repository-instructions
+high | source gh-mcp-server-setup | Source review state is source-review-needed. | gh-mcp-server-setup
+high | source gh-actions-workflows | Source review state is source-review-needed. | gh-actions-workflows
+high | source gh-deploy-envs | Source review state is source-review-needed. | gh-deploy-envs
+high | source gh-managing-envs | Source review state is source-review-needed. | gh-managing-envs
+high | source gh-protected-branches | Source review state is source-review-needed. | gh-protected-branches
+high | source gh-rulesets | Source review state is source-review-needed. | gh-rulesets
+high | source gh-ruleset-rules | Source review state is source-review-needed. | gh-ruleset-rules
+high | source gh-codeowners | Source review state is source-review-needed. | gh-codeowners
 
 
 ## Errors And Warnings

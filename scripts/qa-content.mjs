@@ -355,6 +355,39 @@ requireArray(studyPlans.sevenDay, "studyPlans.json", "sevenDay", 7);
 requireArray(studyPlans.fourteenDay, "studyPlans.json", "fourteenDay", 14);
 requireArray(studyPlans.thirtyDay, "studyPlans.json", "thirtyDay");
 
+const siteBaseUrl = "https://carlashub.github.io/gh600-agentic-ai-study-site";
+const publicDir = path.join(root, "public");
+const robotsPath = path.join(publicDir, "robots.txt");
+const sitemapPath = path.join(publicDir, "sitemap.xml");
+if (!fs.existsSync(robotsPath)) {
+  fail("public/robots.txt is missing");
+} else {
+  const robots = fs.readFileSync(robotsPath, "utf8");
+  if (!robots.includes(`Sitemap: ${siteBaseUrl}/sitemap.xml`)) fail("public/robots.txt does not reference the GH-600 sitemap");
+}
+if (!fs.existsSync(sitemapPath)) {
+  fail("public/sitemap.xml is missing");
+} else {
+  const sitemap = fs.readFileSync(sitemapPath, "utf8");
+  const locs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
+  const locSet = new Set(locs);
+  const expectedUrls = [
+    `${siteBaseUrl}/`,
+    `${siteBaseUrl}/domains/`,
+    `${siteBaseUrl}/lessons/`,
+    `${siteBaseUrl}/library/`,
+    `${siteBaseUrl}/labs/`,
+    `${siteBaseUrl}/glossary/`,
+    ...blueprint.domains.map((domain) => `${siteBaseUrl}/domain/${domain.id}/`),
+    ...lessons.map((lesson) => `${siteBaseUrl}/lesson/${lesson.id}/`),
+    ...labs.map((lab) => `${siteBaseUrl}/labs/${lab.id}/`),
+    ...templateLibrary.templates.map((template) => `${siteBaseUrl}/library/${template.id}/`),
+    ...glossary.map((term) => `${siteBaseUrl}/glossary/${term.id}/`)
+  ];
+  for (const url of expectedUrls) if (!locSet.has(url)) fail(`public/sitemap.xml is missing ${url}`);
+  if (locs.length < expectedUrls.length) fail(`public/sitemap.xml has ${locs.length} URLs; expected at least ${expectedUrls.length}`);
+}
+
 const summary = {
   sources: sources.length,
   blueprintDomains: blueprint.domains.length,
@@ -370,6 +403,7 @@ const summary = {
   scenarios: scenarios.length,
   templateSections: templateLibrary.sections.length,
   templates: templateLibrary.templates.length,
+  sitemapUrls: fs.existsSync(sitemapPath) ? [...fs.readFileSync(sitemapPath, "utf8").matchAll(/<loc>(.*?)<\/loc>/g)].length : 0,
   warnings: warnings.length,
   errors: errors.length
 };
