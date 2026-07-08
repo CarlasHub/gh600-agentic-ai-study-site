@@ -45,7 +45,13 @@ function safeJson(value) {
 
 function strip(value = "", max = 158) {
   const text = String(value).replace(/\s+/g, " ").trim();
-  return text.length > max ? text.slice(0, max - 1).trimEnd() + "." : text;
+  if (text.length <= max) return text;
+  const clipped = text.slice(0, max).trimEnd();
+  const sentenceEnd = Math.max(clipped.lastIndexOf(". "), clipped.lastIndexOf("? "), clipped.lastIndexOf("! "));
+  if (sentenceEnd > 80) return clipped.slice(0, sentenceEnd + 1);
+  const wordEnd = clipped.lastIndexOf(" ");
+  const boundary = wordEnd > 80 ? wordEnd : max;
+  return clipped.slice(0, boundary).replace(/[,:;.-]+$/g, "") + "...";
 }
 
 function routePath(page, id) {
@@ -67,6 +73,10 @@ function routeUrl(page, id) {
 
 function sourceNames(ids = []) {
   return ids.map((id) => sources.find((source) => source.id === id)).filter(Boolean);
+}
+
+function lessonDescription(lesson) {
+  return `${lesson.title} GH-600 lesson: GitHub controls, scenario, gold lab, quizzes, and official source links.`;
 }
 
 function baseCourseSchema() {
@@ -180,11 +190,12 @@ function lessonPage(lesson) {
   const plainLanguage = (lesson.plainLanguage || []).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
   const scenario = lesson.scenario ? `<section><h2>Scenario</h2><p>${escapeHtml(lesson.scenario.body || lesson.scenario.prompt || "")}</p>${lesson.scenario.goodAnswer ? `<p><strong>Strong answer:</strong> ${escapeHtml(lesson.scenario.goodAnswer)}</p>` : ""}</section>` : "";
   const body = `<h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.whyExam)}</p>${plainLanguage ? `<section><h2>Plain-language idea</h2>${plainLanguage}</section>` : ""}<section><h2>Official exam skill</h2><p>${escapeHtml(lesson.officialSkill)}</p></section><section><h2>Core explanation</h2>${lesson.core.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section><section><h2>GitHub implementation detail</h2><p>${escapeHtml(lesson.githubDetail)}</p></section><section><h2>Action steps</h2>${ordered(lesson.actionSteps || [], escapeHtml)}</section>${templateLinks ? `<section><h2>Files and artifacts to create</h2><ul>${templateLinks}</ul></section>` : ""}${scenario}<section><h2>What to know</h2>${list(lesson.takeaways || [], escapeHtml)}</section>${relatedLabs.length ? `<section><h2>Related labs</h2>${list(relatedLabs, (lab) => `<a href="${routeUrl("labs", lab.id)}">${escapeHtml(lab.title)}</a>`)}</section>` : ""}<section><h2>Related sources</h2>${list(relatedSources, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
-  return pageShell(`${lesson.title} | GH-600 Lesson`, lesson.whyExam, body, { page: "lesson", id: lesson.id }, {
+  const description = lessonDescription(lesson);
+  return pageShell(`${lesson.title} | GH-600 Lesson`, description, body, { page: "lesson", id: lesson.id }, {
     "@context": "https://schema.org",
     "@type": "LearningResource",
     name: lesson.title,
-    description: strip(lesson.whyExam),
+    description,
     learningResourceType: "Lesson",
     educationalLevel: "Professional certification preparation",
     teaches: lesson.officialSkill,
