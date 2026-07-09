@@ -349,3 +349,21 @@ h3{color:#b9c1c9;font-weight:540}
 .topbar .primary-nav{max-height:calc(100vh - 5rem)}
 .primary-nav a{min-height:2.85rem;padding:.7rem .75rem}
 }
+
+/* Wide viewport container system: use available space up to 1600px. */
+.shell,.footer-inner{width:min(1600px,calc(100% - 2rem))}
+.page-home,.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:1600px}
+.content-stack,.lesson-content{max-width:none}
+.lesson-rail{width:auto}
+.primary-nav{width:min(100%,1120px)}
+@media(min-width:1001px){
+.lesson-page{display:grid;grid-template-columns:minmax(0,1fr) 320px}
+}
+@media(min-width:1280px){
+.home-metrics{grid-template-columns:repeat(8,minmax(0,1fr))}
+.primary-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media(max-width:760px){
+.shell,.footer-inner{width:min(100% - 1rem,1600px)}
+.page-home,.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:none}
+}
