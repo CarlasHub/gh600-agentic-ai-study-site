@@ -383,3 +383,35 @@ h3{color:#b9c1c9;font-weight:540}
 .nav-toggle,.nav-toggle:hover,.nav-toggle:focus-visible,.nav-open .nav-toggle,.primary-nav a.active,.primary-nav a[aria-current="page"]{border-color:var(--border-neutral-strong)}
 .primary-nav a:hover,.primary-nav a:focus-visible,.home-capability:hover,.home-capability:focus-visible,.home-op:hover,.home-op:focus-visible,.domain-card:hover,.lesson-row:hover,.lesson-row:focus-within,.card:hover,.button:hover,.flash .actions button:hover{border-color:var(--border-neutral-strong)}
 .badge,.domain-card span,.mock-badges span,.key-terms a,.template-tags code,.action-steps span,.home-flow-step span{border-color:var(--border-neutral)}
+
+/* High-contrast visual finish: neutral structure, clear text, restrained blue interaction. */
+:root{--bg:#0f1115;--surface:#1a1e24;--surface-2:#252b33;--surface-3:#14171c;--text:#f6f8fb;--muted:#c5ced8;--line:#3b434e;--line-soft:#2b323c;--brand:#9ed8ff;--brand-2:#9ad8b5;--danger:#ffb2ad;--success:#9ad8a6;--warn:#f1d38b;--border-neutral:#3b434e;--border-neutral-strong:#596574;--surface-neutral:#1a1e24;--surface-neutral-alt:#20262e;color-scheme:dark}
+body{background:var(--bg);color:var(--text)}
+h1,h2,h3,.brand strong,.card h2,.panel h2,.lab-card h2,.question h2,.home-hero-copy h1,.home-capability strong,.home-flow-step strong,.home-op strong{color:#f7f9fc}
+.page-title p:not(.eyebrow),.lesson-row p,.domain-card p,.card p,.panel p,.muted,.home-lede,.home-section-heading p:not(.eyebrow),.home-capability span,.home-flow-step p,.home-op span,.home-op small,.source-panel span,.reference-aid li{color:var(--muted)}
+.eyebrow,.lab-notes dt,.tracker-label,.flash button:first-child span{color:#d9e6f2}
+a,.sources-inline a,.breadcrumbs a,.template-card h3 a,.key-terms a{color:var(--brand)}
+a:hover,.sources-inline a:hover,.breadcrumbs a:hover,.template-card h3 a:hover,.key-terms a:hover{color:#d8efff}
+.topbar{background:rgba(15,17,21,.97);border-bottom-color:var(--line)}
+.skip-link{background:var(--surface-2);border-color:var(--border-neutral-strong);color:var(--text)}
+.brand{color:var(--text)}
+.panel,.card,.question,.source-panel,.scenario-card,.domain-card,.lesson-row,.flash,.guide-card,.must-know,.lesson-tracker,.table-wrap,.reference-aid,.avoid-section,.artifact-list div,.lab-notes div,.practice-list,.case-study,.home-hero-copy,.home-status-panel,.home-capability,.home-flow,.home-domain-readiness,.home-op,.primary-nav,.primary-nav a{background:var(--surface);border-color:var(--border-neutral)}
+.home-hero-copy,.home-status-panel{background:linear-gradient(135deg,#1f242b,#1a1e24 72%,#171b20)}
+.home-metrics .stat:nth-child(n),.home-capability:nth-child(n),.home-op:nth-child(n),.mini,.practice-grid div,.practice-link,.prompt-box,.worked-options li{background:var(--surface)}
+.button,.flash .actions button,.footer-links a{background:var(--surface-2);border-color:var(--border-neutral);color:#eef5fb}
+.button:hover,.flash .actions button:hover,.footer-links a:hover,.primary-nav a:hover,.primary-nav a:focus-visible,.home-capability:hover,.home-capability:focus-visible,.home-op:hover,.home-op:focus-visible,.domain-card:hover,.lesson-row:hover,.lesson-row:focus-within,.card:hover{background:#2c333d;border-color:var(--border-neutral-strong);color:#fff}
+.button.primary{background:#f2f5f8;border-color:#f2f5f8;color:#101318}
+.button.primary:hover{background:#ffffff;border-color:#ffffff;color:#101318}
+.nav-toggle{background:#f2f5f8;border-color:#f2f5f8;color:#101318}
+.nav-toggle svg{color:#101318}
+.nav-toggle:hover,.nav-toggle:focus-visible,.nav-open .nav-toggle{background:#ffffff;border-color:#ffffff;color:#101318}
+.primary-nav a.active,.primary-nav a[aria-current="page"]{background:#303843;border-color:var(--border-neutral-strong);color:#fff}
+.primary-nav a.active svg,.primary-nav a[aria-current="page"] svg,.primary-nav a svg,.home-capability svg,.stat svg{color:#d8e7f2}
+.badge,.domain-card span,.mock-badges span,.template-tags code,.action-steps span,.home-flow-step span,.question-counter{background:#252b33;border-color:var(--border-neutral);color:#eef5fb}
+.score{background:#20252c;border-color:var(--border-neutral);color:var(--text)}
+input,select,.search{background:#15191f;border-color:var(--border-neutral);color:var(--text)}
+.option,button.option{background:#242a32;border-color:#4b5562;color:#f4f7fa}
+.option-prefix{background:#15191f;border-color:#4b5562;color:#f4f7fa}
+.option.correct{background:#17311f;color:#eefbf1;border-color:#5e9f6d}
+.option.wrong{background:#351d1f;color:#fff1ef;border-color:#b96f68}
+:focus-visible{outline-color:#9ed8ff}
