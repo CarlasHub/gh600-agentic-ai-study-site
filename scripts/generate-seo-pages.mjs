@@ -142,6 +142,36 @@ function ordered(items, getValue = (item) => item) {
   return `<ol>${items.map((item) => `<li>${getValue(item)}</li>`).join("")}</ol>`;
 }
 
+function tableHtml(table) {
+  if (!table?.rows?.length) return "";
+  const columns = table.columns || [];
+  const head = columns.length ? `<thead><tr>${columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead>` : "";
+  const body = table.rows
+    .map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`)
+    .join("");
+  return `<section><h2>${escapeHtml(table.title || "Decision table")}</h2>${table.intro ? `<p>${escapeHtml(table.intro)}</p>` : ""}<table>${head}<tbody>${body}</tbody></table></section>`;
+}
+
+function lessonDeepeningSections(lesson) {
+  const worked = lesson.workedExamQuestion;
+  const workedSection = worked
+    ? `<section><h2>${escapeHtml(worked.title || "Worked exam-style question")}</h2>${worked.scenario ? `<p>${escapeHtml(worked.scenario)}</p>` : ""}<p><strong>${escapeHtml(worked.question || "")}</strong></p>${ordered(worked.options || [], escapeHtml)}${worked.strongAnswer ? `<p><strong>Strong answer:</strong> ${escapeHtml(worked.strongAnswer)}</p>` : ""}${worked.examTip ? `<p>${escapeHtml(worked.examTip)}</p>` : ""}</section>`
+    : "";
+  const tableSection = tableHtml(lesson.teachingTable);
+  const ui = lesson.uiConfigExample;
+  const uiSection = ui
+    ? `<section><h2>${escapeHtml(ui.title || "Configuration example")}</h2>${ui.intro ? `<p>${escapeHtml(ui.intro)}</p>` : ""}${ordered(ui.steps || [], escapeHtml)}${ui.expectedEvidence ? `<p><strong>${escapeHtml(ui.expectedEvidence)}</strong></p>` : ""}${ui.sourceNotes?.length ? list(ui.sourceNotes, escapeHtml) : ""}</section>`
+    : "";
+  return workedSection + tableSection + uiSection;
+}
+
+function topicSpecificSection(lesson) {
+  const item = lesson.topicSpecificExplanation;
+  if (!item?.paragraphs?.length) return "";
+  const distinctions = item.distinctions?.length ? list(item.distinctions, escapeHtml) : "";
+  return `<section><h2>${escapeHtml(item.title || "What is different about this topic")}</h2>${item.category ? `<h3>${escapeHtml(item.category)}</h3>` : ""}${item.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${distinctions}${item.examConnection ? `<p>${escapeHtml(item.examConnection)}</p>` : ""}</section>`;
+}
+
 function homePage() {
   const body = `<h1>GH-600: Developing in Agentic AI Systems</h1><p>A source-grounded course for learning agentic SDLC workflows, Copilot coding agent, MCP, GitHub controls, evaluation, multi-agent coordination, guardrails, and accountability.</p><section><h2>Study platform coverage</h2>${list([
     `${blueprint.domains.length} course modules`,
@@ -183,13 +213,21 @@ function lessonPage(lesson) {
   const relatedLabs = (lesson.relatedLabs || []).length
     ? lesson.relatedLabs.map((id) => labs.find((lab) => lab.id === id)).filter(Boolean)
     : labs.filter((lab) => (lab.skillIds || []).includes(lesson.skillId));
+  const primaryLab = relatedLabs[0];
   const templateLinks = (lesson.filesToCreate || []).map((artifact) => {
     const template = templateLibrary.templates.find((item) => item.filePath === artifact.path || (item.aliases || []).includes(artifact.path));
     return `<li><code>${escapeHtml(artifact.path)}</code>${template ? ` - <a href="${routeUrl("library", template.id)}">${escapeHtml(template.title)}</a>` : ""}</li>`;
   }).join("");
   const plainLanguage = (lesson.plainLanguage || []).map((item) => `<p>${escapeHtml(item)}</p>`).join("");
   const scenario = lesson.scenario ? `<section><h2>Scenario</h2><p>${escapeHtml(lesson.scenario.body || lesson.scenario.prompt || "")}</p>${lesson.scenario.goodAnswer ? `<p><strong>Strong answer:</strong> ${escapeHtml(lesson.scenario.goodAnswer)}</p>` : ""}</section>` : "";
-  const body = `<h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.whyExam)}</p>${plainLanguage ? `<section><h2>Plain-language idea</h2>${plainLanguage}</section>` : ""}<section><h2>Official exam skill</h2><p>${escapeHtml(lesson.officialSkill)}</p></section><section><h2>Core explanation</h2>${lesson.core.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section><section><h2>GitHub implementation detail</h2><p>${escapeHtml(lesson.githubDetail)}</p></section><section><h2>Action steps</h2>${ordered(lesson.actionSteps || [], escapeHtml)}</section>${templateLinks ? `<section><h2>Files and artifacts to create</h2><ul>${templateLinks}</ul></section>` : ""}${scenario}<section><h2>What to know</h2>${list(lesson.takeaways || [], escapeHtml)}</section>${relatedLabs.length ? `<section><h2>Related labs</h2>${list(relatedLabs, (lab) => `<a href="${routeUrl("labs", lab.id)}">${escapeHtml(lab.title)}</a>`)}</section>` : ""}<section><h2>Related sources</h2>${list(relatedSources, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
+  const practicalExample = lesson.practicalExample ? `<section><h2>Original teaching example</h2><p>${escapeHtml(lesson.practicalExample)}</p></section>` : "";
+  const deepening = lessonDeepeningSections(lesson);
+  const topicSpecific = topicSpecificSection(lesson);
+  const examStrategy = lesson.examActionDrill?.length ? `<section><h2>Exam strategy</h2>${ordered(lesson.examActionDrill, escapeHtml)}</section>` : "";
+  const task = lesson.practicalLabTask || primaryLab;
+  const taskSteps = task?.steps || primaryLab?.steps || [];
+  const labTask = task ? `<section><h2>Practical lab task</h2><p><strong>${escapeHtml(task.title || primaryLab?.title || "")}</strong></p><p>${escapeHtml(task.objective || primaryLab?.objective || "")}</p>${ordered(taskSteps.slice(0, 5), escapeHtml)}${task.deliverable ? `<p><strong>Deliverable:</strong> ${escapeHtml(task.deliverable)}</p>` : ""}${primaryLab ? `<p><a href="${routeUrl("labs", primaryLab.id)}">Open full lab</a></p>` : ""}</section>` : "";
+  const body = `<h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.whyExam)}</p>${plainLanguage ? `<section><h2>Plain-language idea</h2>${plainLanguage}</section>` : ""}<section><h2>Official skill</h2><p>${escapeHtml(lesson.officialSkill)}</p></section><section><h2>Core explanation</h2>${lesson.core.map((item) => `<p>${escapeHtml(item)}</p>`).join("")}</section>${topicSpecific}<section><h2>GitHub product behaviour</h2><p>${escapeHtml(lesson.githubDetail)}</p></section>${examStrategy}${practicalExample}${deepening}${labTask}<section><h2>Action steps</h2>${ordered(lesson.actionSteps || [], escapeHtml)}</section>${templateLinks ? `<section><h2>Files and artifacts to create</h2><ul>${templateLinks}</ul></section>` : ""}${scenario}<section><h2>What to know</h2>${list(lesson.takeaways || [], escapeHtml)}</section>${relatedLabs.length ? `<section><h2>Related labs</h2>${list(relatedLabs, (lab) => `<a href="${routeUrl("labs", lab.id)}">${escapeHtml(lab.title)}</a>`)}</section>` : ""}<section><h2>Related sources</h2>${list(relatedSources, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
   const description = lessonDescription(lesson);
   return pageShell(`${lesson.title} | GH-600 Lesson`, description, body, { page: "lesson", id: lesson.id }, {
     "@context": "https://schema.org",

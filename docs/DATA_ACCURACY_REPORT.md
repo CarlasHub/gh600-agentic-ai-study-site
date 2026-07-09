@@ -1,11 +1,11 @@
 # Data Accuracy Report
 
-Checked: 2026-07-08T22:02:09.677Z
+Checked: 2026-07-09T07:56:41.900Z
 
 Status: passed
 Framework version: 2026.06.11
 Source snapshot: gh600-source-baseline-2026-06-11
-Source metadata last checked: 2026-07-08
+Source metadata last checked: 2026-07-09
 Report hash: 27ad9c7dcfff6f34de32954581a9018e6fcda031701b39ef0a191067fdf5801d
 
 ## Scope

@@ -14,6 +14,38 @@ const quizzes = readJson("quizzes.json");
 const labs = readJson("labs.json");
 const sources = readJson("sources.json");
 const sourceStatus = readJson("sourceStatus.json");
+const requiredLessonLabels = [
+  "Official skill",
+  "GitHub product behaviour",
+  "Exam strategy",
+  "Original teaching example",
+  "Practical lab task",
+  "What is different about this topic"
+];
+const allowedTopicSpecificCategories = new Set([
+  "MCP and tool access",
+  "Memory and state",
+  "Responsible AI and guardrails",
+  "Multi-agent coordination",
+  "Evaluation and tuning",
+  "Repository and branch governance",
+  "Workflow execution",
+  "Agent architecture and SDLC"
+]);
+const bannedGenericActionStepFragments = [
+  "Name the allowed inputs, editable scope, denied scope",
+  "Create or update",
+  "so the rule is durable",
+  "Add the human approval point",
+  "Run or require the check",
+  "Write the PR or handoff note"
+];
+const bannedGenericCoreFragments = [
+  "Start by identifying the request, the execution boundary, the allowed tools or memory, the output artifact",
+  "Wrong answers usually move too fast, grant broad autonomy, skip a plan or check",
+  "The skill \"",
+  "means turning an agent instruction into a concrete GitHub workflow decision"
+];
 
 const sourceMap = new Map(sources.map((source) => [source.id, source]));
 const sourceStatusMap = new Map((sourceStatus.sources || []).map((source) => [source.id, source]));
@@ -28,6 +60,49 @@ const broadSourceIds = new Set([
   "ms-tooling-mcp-envs",
   "ms-responsible-ai-principles",
   "ms-foundry-responsible-ai"
+]);
+const expectedAuditKindCounts = {
+  "worked-scenario": 50,
+  "memory-state": 15,
+  "risk-matrix": 13,
+  "source-config": 9,
+  "conflict-tree": 4,
+  "evidence-thresholds": 8,
+  "anti-pattern": 1,
+  "tuning-before-after": 1
+};
+const requiredUiConfigLessonIds = new Set([
+  "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution",
+  "domain-1-lesson-05-configure-an-agent-to-output-a-structured-plan",
+  "domain-1-lesson-08-plan-and-implement-the-degree-of-agent-autonomy-including-guardrails",
+  "domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too",
+  "domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery",
+  "domain-1-lesson-15-repository-custom-instructions-as-governance",
+  "domain-2-lesson-02-configure-agent-tools",
+  "domain-2-lesson-03-configure-agent-tool-permissions",
+  "domain-2-lesson-04-add-an-mcp-server-as-a-tool-to-an-agent",
+  "domain-2-lesson-05-configure-a-github-remote-mcp-server",
+  "domain-2-lesson-06-configure-the-mcp-registries",
+  "domain-2-lesson-07-configure-mcp-allow-lists",
+  "domain-2-lesson-09-configure-an-agent-s-scope-to-a-specific-repository",
+  "domain-2-lesson-10-configure-an-agent-to-be-invoked-in-a-ci-workflow",
+  "domain-2-lesson-11-configure-an-agent-to-use-branch-based-scope",
+  "domain-2-lesson-12-enable-an-agent-to-perform-autonomous-actions-including-creating-branches-and-pu",
+  "domain-2-lesson-13-configure-an-agent-to-handle-environment-specific-constraints",
+  "domain-2-lesson-14-implement-error-handling",
+  "domain-2-lesson-15-implement-retries",
+  "domain-2-lesson-16-implement-rollbacks",
+  "domain-2-lesson-17-implement-escalation-paths",
+  "domain-2-lesson-18-implement-traceability-and-accountability-for-agent-actions",
+  "domain-2-lesson-21-github-mcp-server-default-toolsets",
+  "domain-2-lesson-22-remote-mcp-server-versus-local-mcp-server",
+  "domain-2-lesson-23-playwright-mcp-in-agent-validation",
+  "domain-2-lesson-24-repository-level-mcp-configuration",
+  "domain-5-lesson-02-configure-agent-isolation-for-parallel-execution",
+  "domain-5-lesson-04-configure-multi-agent-workflows-to-produce-artifacts-suitable-for-review-and-aud",
+  "domain-5-lesson-09-implement-multi-agent-recovery-patterns-including-rollback-and-human-in-the-loop",
+  "domain-5-lesson-10-add-agents-to-existing-multi-agent-workflows",
+  "domain-5-lesson-11-update-reconfigure-or-replace-agents-without-disrupting-active-workflows"
 ]);
 
 function fail(message) {
@@ -54,6 +129,117 @@ function requireArray(value, context, field, minItems) {
   if (!Array.isArray(value) || value.length < minItems) {
     fail(`${context} needs ${field} with at least ${minItems} item(s)`);
   }
+}
+
+function checkWorkedExamQuestion(lesson, context) {
+  const worked = lesson.workedExamQuestion;
+  if (!worked || typeof worked !== "object") {
+    fail(`${context} is missing workedExamQuestion`);
+    return;
+  }
+  requireText(worked.title, context, "workedExamQuestion.title", 3);
+  requireText(worked.scenario, context, "workedExamQuestion.scenario", 24);
+  requireText(worked.question, context, "workedExamQuestion.question", 8);
+  requireArray(worked.options, context, "workedExamQuestion.options", 4);
+  for (const [index, option] of (worked.options || []).entries()) {
+    requireText(option, `${context} workedExamQuestion.options[${index}]`, "option", 8);
+  }
+  if (!Number.isInteger(worked.correctIndex) || worked.correctIndex < 0 || worked.correctIndex >= (worked.options || []).length) {
+    fail(`${context} workedExamQuestion.correctIndex must point to an option`);
+  }
+  requireText(worked.strongAnswer, context, "workedExamQuestion.strongAnswer", 22);
+  requireArray(worked.whyWrong, context, "workedExamQuestion.whyWrong", 3);
+  for (const [index, item] of (worked.whyWrong || []).entries()) {
+    if (!Number.isInteger(item?.optionIndex)) fail(`${context} workedExamQuestion.whyWrong[${index}] is missing optionIndex`);
+    requireText(item?.rationale, `${context} workedExamQuestion.whyWrong[${index}]`, "rationale", 10);
+  }
+}
+
+function checkTeachingTable(lesson, context) {
+  const table = lesson.teachingTable;
+  if (!table || typeof table !== "object") {
+    fail(`${context} is missing teachingTable`);
+    return;
+  }
+  requireText(table.title, context, "teachingTable.title", 2);
+  requireText(table.intro, context, "teachingTable.intro", 12);
+  requireArray(table.columns, context, "teachingTable.columns", 4);
+  requireArray(table.rows, context, "teachingTable.rows", 4);
+  for (const [index, column] of (table.columns || []).entries()) {
+    requireText(column, `${context} teachingTable.columns[${index}]`, "column", 1);
+  }
+  for (const [rowIndex, row] of (table.rows || []).entries()) {
+    if (!Array.isArray(row)) {
+      fail(`${context} teachingTable.rows[${rowIndex}] must be an array`);
+      continue;
+    }
+    if (row.length !== (table.columns || []).length) {
+      fail(`${context} teachingTable.rows[${rowIndex}] must match teachingTable.columns length`);
+    }
+    for (const [cellIndex, cell] of row.entries()) {
+      requireText(cell, `${context} teachingTable.rows[${rowIndex}][${cellIndex}]`, "cell", 1);
+    }
+  }
+}
+
+function checkUiConfigExample(lesson, context) {
+  const ui = lesson.uiConfigExample;
+  if (!ui || typeof ui !== "object") {
+    fail(`${context} is missing required uiConfigExample`);
+    return;
+  }
+  requireText(ui.title, context, "uiConfigExample.title", 3);
+  requireText(ui.intro, context, "uiConfigExample.intro", 16);
+  requireArray(ui.steps, context, "uiConfigExample.steps", 4);
+  for (const [index, step] of (ui.steps || []).entries()) {
+    requireText(step, `${context} uiConfigExample.steps[${index}]`, "step", 12);
+  }
+  requireText(ui.expectedEvidence, context, "uiConfigExample.expectedEvidence", 18);
+  requireArray(ui.sourceNotes, context, "uiConfigExample.sourceNotes", 2);
+}
+
+function checkTopicSpecificExplanation(lesson, context) {
+  const item = lesson.topicSpecificExplanation;
+  if (!item || typeof item !== "object") {
+    fail(`${context} is missing topicSpecificExplanation`);
+    return;
+  }
+  requireText(item.title, context, "topicSpecificExplanation.title", 5);
+  requireText(item.category, context, "topicSpecificExplanation.category", 2);
+  if (!allowedTopicSpecificCategories.has(item.category)) {
+    fail(`${context} topicSpecificExplanation.category ${item.category} is not recognized`);
+  }
+  requireArray(item.paragraphs, context, "topicSpecificExplanation.paragraphs", 3);
+  for (const [index, paragraph] of (item.paragraphs || []).entries()) {
+    requireText(paragraph, `${context} topicSpecificExplanation.paragraphs[${index}]`, "paragraph", 18);
+  }
+  requireArray(item.distinctions, context, "topicSpecificExplanation.distinctions", 3);
+  for (const [index, distinction] of (item.distinctions || []).entries()) {
+    requireText(distinction, `${context} topicSpecificExplanation.distinctions[${index}]`, "distinction", 8);
+  }
+  requireText(item.examConnection, context, "topicSpecificExplanation.examConnection", 18);
+}
+
+function checkPracticalLabTask(lesson, context) {
+  const task = lesson.practicalLabTask;
+  if (!task || typeof task !== "object") {
+    fail(`${context} is missing practicalLabTask`);
+    return;
+  }
+  requireText(task.title, context, "practicalLabTask.title", 3);
+  requireText(task.category, context, "practicalLabTask.category", 2);
+  if (!allowedTopicSpecificCategories.has(task.category)) {
+    fail(`${context} practicalLabTask.category ${task.category} is not recognized`);
+  }
+  requireText(task.objective, context, "practicalLabTask.objective", 16);
+  requireArray(task.steps, context, "practicalLabTask.steps", 5);
+  for (const [index, step] of (task.steps || []).entries()) {
+    requireText(step, `${context} practicalLabTask.steps[${index}]`, "step", 12);
+    for (const fragment of bannedGenericActionStepFragments) {
+      if (step.includes(fragment)) fail(`${context} practicalLabTask.steps[${index}] still contains generic step fragment "${fragment}"`);
+    }
+  }
+  requireText(task.deliverable, context, "practicalLabTask.deliverable", 12);
 }
 
 function normalized(value) {
@@ -101,12 +287,43 @@ for (const lesson of finalLessons) {
   requireArray(lesson.takeaways, context, "takeaways", 4);
   requireArray(lesson.revisionQuestions, context, "revisionQuestions", 5);
   requireArray(lesson.actionSteps, context, "actionSteps", 7);
+  for (const [index, step] of (lesson.actionSteps || []).entries()) {
+    requireText(step, `${context} actionSteps[${index}]`, "step", 12);
+    for (const fragment of bannedGenericActionStepFragments) {
+      if (step.includes(fragment)) fail(`${context} actionSteps[${index}] still contains generic step fragment "${fragment}"`);
+    }
+  }
+  const coreText = (lesson.core || []).join(" ");
+  for (const fragment of bannedGenericCoreFragments) {
+    if (coreText.includes(fragment)) fail(`${context} core still contains generic explanation fragment "${fragment}"`);
+  }
   requireArray(lesson.filesToCreate, context, "filesToCreate", 5);
   requireText(lesson.agentRequestTemplate, context, "agentRequestTemplate", 35);
   requireArray(lesson.enterpriseChecklist, context, "enterpriseChecklist", 5);
   requireArray(lesson.whatNotToDo, context, "whatNotToDo", 3);
   requireArray(lesson.examActionDrill, context, "examActionDrill", 3);
   requireArray(lesson.keyTerms, context, "keyTerms", 5);
+
+  if (!lesson.auditRecommendation || typeof lesson.auditRecommendation !== "object") {
+    fail(`${context} is missing auditRecommendation`);
+  } else {
+    requireText(lesson.auditRecommendation.reviewedAt, context, "auditRecommendation.reviewedAt", 1);
+    requireText(lesson.auditRecommendation.kind, context, "auditRecommendation.kind", 1);
+    requireText(lesson.auditRecommendation.recommendation, context, "auditRecommendation.recommendation", 6);
+    if (!Object.hasOwn(expectedAuditKindCounts, lesson.auditRecommendation.kind)) {
+      fail(`${context} auditRecommendation.kind ${lesson.auditRecommendation.kind} is not recognized`);
+    }
+  }
+
+  checkWorkedExamQuestion(lesson, context);
+  checkTeachingTable(lesson, context);
+  checkTopicSpecificExplanation(lesson, context);
+  checkPracticalLabTask(lesson, context);
+  if (requiredUiConfigLessonIds.has(lesson.id) || lesson.auditRecommendation?.kind === "source-config") {
+    checkUiConfigExample(lesson, context);
+  } else if (lesson.uiConfigExample) {
+    checkUiConfigExample(lesson, context);
+  }
 
   if (!lesson.sourceIds?.includes("ms-gh600-guide")) fail(`${context} must cite the official GH-600 study guide`);
   requireArray(lesson.sourceIds, context, "sourceIds", 5);
@@ -223,11 +440,42 @@ checkNoDuplicate("agentRequestTemplate", finalLessons.map((lesson) => [`lesson $
 
 const relatedQuizIds = finalLessons.flatMap((lesson) => lesson.relatedQuiz || []);
 checkNoDuplicate("related quiz reference", relatedQuizIds.map((id) => [`quiz reference ${id}`, id]));
+checkNoDuplicate(
+  "lesson action step",
+  finalLessons.flatMap((lesson) => (lesson.actionSteps || []).map((step, index) => [`lesson ${lesson.id} actionSteps[${index}]`, step]))
+);
+checkNoDuplicate(
+  "lesson practical lab task step",
+  finalLessons.flatMap((lesson) => (lesson.practicalLabTask?.steps || []).map((step, index) => [`lesson ${lesson.id} practicalLabTask.steps[${index}]`, step]))
+);
+
+for (const file of ["src/main.jsx", "scripts/generate-seo-pages.mjs"]) {
+  const content = fs.readFileSync(path.join(root, file), "utf8");
+  for (const label of requiredLessonLabels) {
+    if (!content.includes(label)) fail(`${file} must render required lesson label "${label}"`);
+  }
+}
+
+const auditKindCounts = finalLessons.reduce((counts, lesson) => {
+  const kind = lesson.auditRecommendation?.kind || "missing";
+  counts[kind] = (counts[kind] || 0) + 1;
+  return counts;
+}, {});
+for (const [kind, expected] of Object.entries(expectedAuditKindCounts)) {
+  if ((auditKindCounts[kind] || 0) !== expected) {
+    fail(`audit recommendation kind ${kind} expected ${expected}, found ${auditKindCounts[kind] || 0}`);
+  }
+}
+for (const kind of Object.keys(auditKindCounts)) {
+  if (!Object.hasOwn(expectedAuditKindCounts, kind)) fail(`unexpected audit recommendation kind ${kind}`);
+}
 
 const summary = {
   finalLessons: finalLessons.length,
   goldLabs: labs.filter((lab) => lab.qualityTier === "gold").length,
   checkedQuizQuestions: relatedQuizIds.length,
+  auditKindCounts,
+  uiConfigExamples: finalLessons.filter((lesson) => lesson.uiConfigExample).length,
   errors: errors.length
 };
 

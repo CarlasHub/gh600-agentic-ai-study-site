@@ -211,6 +211,21 @@ h3{color:#b9c1c9;font-weight:540}
 .checklist li{margin:.45rem 0}
 .avoid-section{background:#181b1f;border:1px solid var(--line-soft);border-radius:7px;padding:.95rem}
 .avoid-section ul{margin:.7rem 0 0;padding-left:1.15rem}
+.worked-question h3{margin:.9rem 0 .45rem;font-size:1rem;color:#e1d3ac}
+.worked-options{list-style:none;margin:.85rem 0;padding:0;display:grid;gap:.55rem}
+.worked-options li{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.65rem;align-items:start;padding:.7rem .75rem;border:1px solid var(--line-soft);border-radius:7px;background:#161a1e}
+.worked-options span{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:7px;background:#101316;border:1px solid #343b43;color:#d7dde4;font-weight:620}
+.worked-options p{margin:.08rem 0 0;color:#d7dde4}
+.worked-options .correct-option{border-color:#3f6b4a;background:#17231b}
+.worked-options .correct-option span{background:#1c3322;border-color:#4d8058;color:#d8f0dd}
+.worked-rationales ul,.config-example ol,.config-example ul{margin:.65rem 0 0;padding-left:1.15rem}
+.worked-rationales li,.config-example li{margin:.42rem 0}
+.lesson-teaching-table h2{margin-bottom:.45rem}
+.lesson-teaching-table p{max-width:78ch;margin-bottom:.75rem}
+.lesson-teaching-table td{overflow-wrap:anywhere}
+.topic-specific h3{margin:.25rem 0 .65rem;color:#e1d3ac;font-size:1rem}
+.topic-specific ul{margin:.75rem 0 0;padding-left:1.15rem}
+.topic-specific li{margin:.4rem 0}
 .key-terms{margin:1.2rem 0;padding:1rem 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
 .key-terms div{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.65rem}
 .key-terms a{display:inline-flex;text-decoration:none;background:#1f1e19;color:#d9bf7a;border:1px solid #342f22;border-radius:999px;padding:.32rem .62rem;font-size:.9rem}
