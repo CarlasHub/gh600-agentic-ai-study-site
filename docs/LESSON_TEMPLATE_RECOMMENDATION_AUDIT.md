@@ -10,11 +10,11 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 - Total lessons checked: 101
 - Lessons with changed recommendation paths since the previous commit: 101
-- Templates in library: 53
+- Templates in library: 63
 - Templates added: 0
-- Existing templates improved with production fields: 53
+- Existing templates improved with production fields: 63
 - Lessons where issue template alone was enough: 0
-- Lessons where a different or additional artifact was required: 80
+- Lessons where a different or additional artifact was required: 97
 
 ## Lessons By Domain
 
@@ -27,14 +27,14 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 ## Recommendation Categories
 
-- Agent architecture and SDLC: 8
-- Evaluation and tuning: 14
-- MCP and tool access: 14
-- Memory and state: 15
+- Agent architecture and SDLC: 13
+- Evaluation and tuning: 13
+- MCP and tool access: 13
+- Memory and state: 14
 - Multi-agent coordination: 17
-- Repository and branch governance: 8
-- Responsible AI and guardrails: 15
-- Workflow execution: 10
+- Repository and branch governance: 7
+- Responsible AI and guardrails: 13
+- Workflow execution: 11
 
 ## Templates Added
 
@@ -88,6 +88,14 @@ None. The issue template is useful intake, but every final lesson needs at least
 - [Using Copilot CLI in GitHub Actions with GITHUB_TOKEN](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions)
 - [About GitHub Agentic Workflows](https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows)
 - [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [About code scanning](https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)
+- [Code scanning with CodeQL](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [Secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
+- [Dependency review](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review)
+- [Configuring the dependency review action](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependency-review-action)
+- [Accessibility evaluation and testing](https://learn.microsoft.com/en-us/training/modules/accessibility-evaluation-and-testing/)
+- [Accessibility testing](https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility-testing)
+- [Resources for accessibility testing](https://learn.microsoft.com/en-us/microsoft-edge/accessibility/test)
 
 ## QA Rules Added
 

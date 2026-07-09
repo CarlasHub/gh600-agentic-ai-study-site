@@ -390,5 +390,94 @@
       "domain-3"
     ],
     "why": "Explains repository-level facts, user-level preferences, feature availability, citations, retention, scope, and deletion/review behavior for Copilot Memory."
+  },
+  {
+    "id": "gh-code-scanning",
+    "title": "About code scanning",
+    "url": "https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact GitHub Docs support for code scanning as a repository security analysis signal and code scanning alert source."
+  },
+  {
+    "id": "gh-codeql-code-scanning",
+    "title": "Code scanning with CodeQL",
+    "url": "https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact GitHub Docs support for CodeQL analysis, CodeQL databases, query results, and code scanning alerts."
+  },
+  {
+    "id": "gh-secret-scanning",
+    "title": "Secret scanning",
+    "url": "https://docs.github.com/code-security/secret-scanning/about-secret-scanning",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4",
+      "domain-6"
+    ],
+    "why": "Exact GitHub Docs support for secret scanning across repository history and hardcoded credential alerts."
+  },
+  {
+    "id": "gh-dependency-review",
+    "title": "Dependency review",
+    "url": "https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact GitHub Docs support for reviewing insecure dependency changes before they enter the environment."
+  },
+  {
+    "id": "gh-dependency-review-action",
+    "title": "Configuring the dependency review action",
+    "url": "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependency-review-action",
+    "publisher": "GitHub Docs",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact GitHub Docs support for dependency review as a GitHub Actions workflow signal and enforcement mechanism."
+  },
+  {
+    "id": "ms-accessibility-evaluation-testing",
+    "title": "Accessibility evaluation and testing",
+    "url": "https://learn.microsoft.com/en-us/training/modules/accessibility-evaluation-and-testing/",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact Microsoft Learn support for manual, automated, and user accessibility testing and interpreting accessibility results."
+  },
+  {
+    "id": "ms-accessibility-testing",
+    "title": "Accessibility testing",
+    "url": "https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility-testing",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact Microsoft Learn support for Accessibility Insights, FastPass, assessment, and accessibility testing workflows."
+  },
+  {
+    "id": "ms-edge-accessibility-testing",
+    "title": "Resources for accessibility testing",
+    "url": "https://learn.microsoft.com/en-us/microsoft-edge/accessibility/test",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-07-09",
+    "domains": [
+      "domain-4"
+    ],
+    "why": "Exact Microsoft Edge documentation for automated accessibility reports and DevTools accessibility testing signals."
   }
 ]

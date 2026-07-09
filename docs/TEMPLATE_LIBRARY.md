@@ -46,7 +46,9 @@ Templates for plans, specialist ownership, multi-agent coordination, and transfe
 | Agent Handoff | `docs/agent-handoff.md` | Use for resumed work, specialist transitions, or multi-agent workflows. | Tests separation of planning, execution, handoff, and reviewable evidence. |
 | Agent Lifecycle Record | `docs/agent-lifecycle-record.md` | Use when adding, updating, replacing, or retiring agents in active workflows. | Tests separation of planning, execution, handoff, and reviewable evidence. |
 | Agent Plan | `docs/agent-plan.md` | Use before allowing an agent to make non-trivial or cross-file changes. | Tests separation of planning, execution, handoff, and reviewable evidence. |
+| Agent Plan Approval Record | `docs/agent-plan-approval-record.md` | Use when planning and execution must be separated for code, workflow, permission, or PR actions. | Teaches that planning is not a control unless execution is gated before write-capable action. |
 | Agent Roles | `docs/agent-roles.md` | Use when planner, builder, tester, reviewer, security, or release agents coordinate. | Tests separation of planning, execution, handoff, and reviewable evidence. |
+| Agentic Versus Automation Decision Table | `docs/agentic-vs-automation-decision-table.md` | Use when a lesson asks whether a deterministic workflow is enough or an agent needs planning, tool, and review controls. | Teaches the exam distinction between ordinary automation and agentic workflows with planning, uncertainty, tools, and review evidence. |
 | Conflict Log | `docs/conflict-log.md` | Use when multi-agent work or source-grounded content produces incompatible recommendations. | Tests separation of planning, execution, handoff, and reviewable evidence. |
 | Duplicate Effort Checklist | `docs/duplicate-effort-checklist.md` | Use before and during parallel multi-agent execution. | Tests separation of planning, execution, handoff, and reviewable evidence. |
 | Multi-agent Arbitration Record | `docs/multi-agent-arbitration-record.md` | Use when agents conflict, duplicate effort, edit overlapping files, or disagree on success. | Teaches that conflicting agent outputs need human-owned arbitration with evidence, not agent consensus. |
@@ -67,6 +69,7 @@ Templates for pull requests, human review, sensitive actions, and release decisi
 | Guardrails | `docs/guardrails.md` | Use for safety-sensitive tasks, compliance, responsible AI, or production workflows. | Tests right-sized human intervention, guardrails, least privilege, and accountability. |
 | Least-privilege Access Review | `docs/least-privilege-access-review.md` | Use when a lesson covers permissions, execution contexts, tool access, or guardrails. | Teaches that least privilege applies across repository, branch, workflow token, MCP, secret, environment, and deployment surfaces. |
 | Policy Violation Record | `docs/policy-violation-record.md` | Use when guardrails block an action or when an agent requests a risky exception. | Teaches that a policy-violating action should be blocked and recorded, not allowed and explained afterward. |
+| Pull Request Evidence Table | `docs/pr-evidence-table.md` | Use when an agent must produce standard development artifacts that reviewers can inspect without trusting chat history. | Teaches how agent output becomes inspectable inside ordinary GitHub pull request review. |
 | Pull Request Template | `.github/pull_request_template.md` | Use for all PRs, with extra rigor for agent-generated changes. | Tests right-sized human intervention, guardrails, least privilege, and accountability. |
 | Responsible AI Risk Review | `docs/responsible-ai-risk-review.md` | Use for agent workflows affecting people, sensitive data, decisions, or user-facing automation. | Tests right-sized human intervention, guardrails, least privilege, and accountability. |
 | Sensitive Action Control | `docs/sensitive-action-control.md` | Use before an agent can perform actions that need explicit authorization or controlled paths. | Teaches when irreversible, privileged, production, or compliance-sensitive actions need explicit authorization or a controlled path. |
@@ -78,10 +81,12 @@ Templates that document tool access, MCP risk, roots, secrets, and allowed execu
 | Template | Path | Use when | GH-600 relevance |
 | --- | --- | --- | --- |
 | Environment Constraints | `docs/environment-constraints.md` | Use before running agents in local, CI, cloud, or sandboxed environments. | Tests tool choice, MCP governance, execution context, and least-privilege tool access. |
+| Execution Context Checklist | `docs/execution-context-checklist.md` | Use before an agent acts in a GitHub workflow, Copilot cloud agent environment, MCP-backed tool path, or protected environment. | Teaches that execution context is an access boundary decision, not a vague environment description. |
 | MCP Allow-list Decision | `docs/mcp-allowlist-decision.md` | Use for MCP registry, allow-list, server access, remote server, local server, or toolset lessons. | Teaches that MCP server approval, registry policy, allow-list status, and toolset selection are separate exam decisions. |
 | MCP Server Review | `docs/agent-mcp-server-review.md` | Use before adding or changing an MCP server for Copilot, code review, an IDE, or a custom agent. | Tests tool choice, MCP governance, execution context, and least-privilege tool access. |
 | MCP Tool Policy | `docs/mcp-tool-policy.md` | Use before enabling MCP servers or toolsets for agents. | Tests tool choice, MCP governance, execution context, and least-privilege tool access. |
 | Tool Permission Matrix | `docs/agent-tool-permission-matrix.md` | Use before enabling shell, browser, MCP, deployment, database, or third-party integration tools. | Tests tool choice, MCP governance, execution context, and least-privilege tool access. |
+| Tool Risk Classification | `docs/tool-risk-classification.md` | Use before approving MCP tools, custom-agent tools, workflow actions, deployment tools, or external integrations. | Teaches how tool class changes approval, logging, and rollback requirements in GH-600 scenarios. |
 
 ## Evaluation And Observability
 
@@ -90,16 +95,20 @@ Templates for trace review, regression tests, failure analysis, and reliability 
 | Template | Path | Use when | GH-600 relevance |
 | --- | --- | --- | --- |
 | Accessibility Checklist | `docs/accessibility-checklist.md` | Use when agent work changes visible UI, navigation, forms, tables, or learning content. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
+| Accessibility Scan Evidence | `docs/accessibility-scan-evidence.md` | Use when an accessibility scan is an evaluation signal for an agent-created UI or documentation change. | Teaches accessibility scans as evaluation signals with limitations, not generic quality checks. |
 | Agent Evaluation Plan | `docs/agent-evaluation-plan.md` | Use before changing prompts, tools, routing, handoffs, models, or guardrails. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Agent Failure Analysis | `docs/agent-failure-analysis.md` | Use after failed tasks, unsafe tool calls, incorrect PRs, broken releases, or drift reports. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
+| Agent Session Log Review | `docs/agent-session-log-review.md` | Use when traceability depends on reconstructing what the agent saw, decided, called, changed, and escalated. | Teaches traceability as a reconstruction task across session logs and GitHub evidence. |
 | Agent Validation Workflow | `.github/workflows/agent-validation.yml` | Use when agent work needs automated checks, artifacts, and release evidence. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Audit Trail | `docs/audit-trail.md` | Use when accountability, compliance, or multi-agent traceability matters. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | CodeQL Workflow | `.github/workflows/codeql.yml` | Use when agent changes touch code paths where static analysis evidence is required. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Error Analysis | `docs/error-analysis.md` | Use after wrong answers, bad PRs, failed checks, tool mistakes, or source drift. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Regression Checklist | `docs/regression-checklist.md` | Use after tuning, root-cause fixes, scan remediation, or workflow changes. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
+| Root Cause Classification | `docs/root-cause-classification.md` | Use when an agent output fails and the learner must distinguish reasoning, instruction, context, tool, permission, environment, workflow, or threshold causes. | Teaches error analysis before tuning, permission changes, tool changes, or workflow edits. |
 | Security Scan Evidence | `docs/security-scan-evidence.md` | Use when agent work touches code, workflows, dependencies, secrets, or deploy paths. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Trace Review Record | `docs/agent-trace-review.md` | Use for debugging agent behavior and building eval cases from real failures. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
 | Tuning Log | `docs/tuning-log.md` | Use when improving agent behavior after evals, failures, or source-drift findings. | Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions. |
+| Workflow Evidence Record | `docs/workflow-evidence-record.md` | Use when workflow runs, setup steps, checks, scans, retries, or rollbacks are part of the lesson evidence. | Teaches that workflow success must be interpreted with setup, permission, failure, retry, and scan context. |
 
 ## Memory, State, And Release Learning
 
@@ -113,6 +122,7 @@ Templates for durable state, decisions, retrospectives, and cross-session learni
 | Context Handoff | `docs/context-handoff.md` | Use when compacting, resuming, or handing off agent work. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
 | Decision Log | `docs/decision-log.md` | Use when lessons mention governance, state, memory, review, or source-drift decisions. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
 | Memory And State Record | `docs/agent-memory-state-record.md` | Use when an agent continues across sessions, summarizes work, compacts context, or stores durable memory. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
+| Memory Reset Decision | `docs/memory-reset-decision.md` | Use before reusing memory after source, branch, issue, PR, policy, owner, or secret-context changes. | Teaches preserve, prune, expire, reset, and durable-state replacement decisions for agent memory. |
 | Recovery Plan | `docs/recovery-plan.md` | Use for production, release, multi-agent, or tool-enabled workflows. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
 | Resume Checkpoint | `docs/resume-checkpoint.md` | Use for long tasks, paused sessions, or handoffs. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
 | Stale Context Checklist | `docs/stale-context-checklist.md` | Use before resuming long-running work or relying on prior source-grounded content. | Tests memory scope, state continuity, context refresh, and durable evidence across sessions. |
@@ -151,3 +161,8 @@ Templates for durable state, decisions, retrospectives, and cross-session learni
 - [Using Copilot CLI in GitHub Actions with GITHUB_TOKEN](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions)
 - [About GitHub Agentic Workflows](https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows)
 - [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [About code scanning](https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)
+- [Code scanning with CodeQL](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [Secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
+- [Dependency review](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review)
+- [Configuring the dependency review action](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependency-review-action)
