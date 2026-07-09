@@ -700,8 +700,11 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .course-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media(max-width:560px){
-.course-steps{display:flex;justify-content:flex-start;overflow-x:auto;scrollbar-width:thin}
-.course-step{flex:0 0 8.6rem}
+.course-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-content:stretch;overflow:visible;gap:.5rem;padding:.55rem}
+.course-step{min-width:0;min-height:3rem;padding:.52rem}
+.course-step-icon{width:1.75rem;height:1.75rem}
+.course-step-text small{font-size:.62rem}
+.course-step-text strong{font-size:.86rem;white-space:normal}
 }
 
 /* Lesson readability pass: wider workspace, clearer metadata, restrained color cues. */
@@ -769,4 +772,41 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .shell:not(.page-home) .lesson-row{grid-template-columns:1.25rem minmax(0,1fr);gap:.75rem;padding:.85rem}
 .shell:not(.page-home) .lesson-row .difficulty-badge{grid-column:2}
 .lesson-summary-list{grid-template-columns:1fr}
+}
+
+/* Legibility correction: no clipped steps, brighter body copy, calmer mobile breadcrumbs. */
+.shell:not(.page-home) .page-title p:not(.eyebrow){color:#d0d7de;line-height:1.72}
+.shell:not(.page-home) .lesson-content p,
+.shell:not(.page-home) .lesson-content li,
+.shell:not(.page-home) .action-section p,
+.shell:not(.page-home) .action-section li,
+.shell:not(.page-home) .guide-card p,
+.shell:not(.page-home) .must-know li,
+.shell:not(.page-home) .scenario-card p,
+.shell:not(.page-home) .case-study dd,
+.shell:not(.page-home) .practice-list a,
+.shell:not(.page-home) .lesson-row p{color:#e1e8f0;line-height:1.78}
+.shell:not(.page-home) .lesson-content p,
+.shell:not(.page-home) .action-section p,
+.shell:not(.page-home) .guide-card p,
+.shell:not(.page-home) .scenario-card p{margin-top:.72rem}
+.shell:not(.page-home) .muted,
+.shell:not(.page-home) .source-panel span,
+.shell:not(.page-home) .lesson-meta dt,
+.shell:not(.page-home) .lesson-summary-list dt,
+.shell:not(.page-home) .lesson-row-meta .context-chip:not([class*="domain-color"]){color:#c3ccd7}
+.shell:not(.page-home) .steps{gap:.8rem}
+.shell:not(.page-home) .steps li{padding:.72rem .85rem .72rem 3.15rem;line-height:1.68;color:#e1e8f0}
+.shell:not(.page-home) .steps li::before{top:.72rem}
+.shell:not(.page-home) .action-steps{gap:.9rem}
+.shell:not(.page-home) .action-steps li{gap:.85rem}
+.shell:not(.page-home) .action-steps p{line-height:1.72;color:#e1e8f0}
+@media(max-width:760px){
+.breadcrumbs ol{display:grid;gap:.4rem;font-size:.92rem}
+.breadcrumbs li{display:block;min-width:0}
+.breadcrumbs li+li::before{display:none}
+.breadcrumbs a,.breadcrumbs li[aria-current="page"]{display:inline;line-height:1.55}
+}
+@media(max-width:360px){
+.course-steps{grid-template-columns:1fr}
 }
