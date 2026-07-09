@@ -700,6 +700,73 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .course-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media(max-width:560px){
-.course-steps{display:flex;overflow-x:auto;scrollbar-width:thin}
+.course-steps{display:flex;justify-content:flex-start;overflow-x:auto;scrollbar-width:thin}
 .course-step{flex:0 0 8.6rem}
+}
+
+/* Lesson readability pass: wider workspace, clearer metadata, restrained color cues. */
+.shell{width:min(1450px,calc(100% - 2rem))}
+.footer-inner{width:min(1450px,calc(100% - 2rem))}
+.lesson-context-strip{display:flex;flex-wrap:wrap;gap:.5rem;margin:-.35rem 0 1rem;padding:.7rem;background:#161b22;border:1px solid #30363d;border-radius:8px}
+.context-chip{display:inline-flex;align-items:center;min-height:1.8rem;width:max-content;max-width:100%;padding:.3rem .62rem;border:1px solid #30363d;border-radius:999px;background:#0d1117;color:#c9d1d9;font-size:.78rem;font-weight:750;line-height:1.2;text-decoration:none}
+.context-chip-wide{max-width:min(100%,48rem);white-space:normal}
+.context-chip-quiz{background:#10233d;color:#c9e3ff}
+.context-chip-lab{background:#17301f;color:#dff8e6}
+.domain-color-domain-1{background:#10233d;color:#c9e3ff}
+.domain-color-domain-2{background:#17301f;color:#dff8e6}
+.domain-color-domain-3{background:#332a12;color:#ffe8b0}
+.domain-color-domain-4{background:#271b3f;color:#eadcff}
+.domain-color-domain-5{background:#1f2b35;color:#d8e8ff}
+.domain-color-domain-6{background:#331d1d;color:#ffe1df}
+.page-lessons > section > .lesson-list{grid-template-columns:repeat(auto-fit,minmax(min(100%,34rem),1fr));align-items:start;gap:.85rem}
+.shell:not(.page-home) .lesson-row{grid-template-columns:1.35rem minmax(0,1fr) max-content;align-items:start;gap:1rem;padding:1rem}
+.lesson-row-main{display:grid;gap:.45rem;min-width:0}
+.lesson-row-title{display:inline-flex;width:max-content;max-width:100%;line-height:1.35}
+.lesson-row-title strong{white-space:normal}
+.shell:not(.page-home) .lesson-row p{max-width:92ch;margin:0;line-height:1.56;color:#c9d1d9}
+.lesson-row-meta{display:flex;flex-wrap:wrap;gap:.38rem;margin-top:.1rem}
+.lesson-row-meta .context-chip{font-size:.72rem;min-height:1.55rem;padding:.24rem .5rem}
+.lesson-page{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,360px);gap:1.15rem;align-items:start}
+.lesson-content{min-width:0;max-width:none}
+.lesson-content.lesson{display:grid;gap:.95rem}
+.lesson-rail{width:auto;position:sticky;top:5.4rem;display:grid;gap:1rem}
+.lesson-tracker,.lesson-rail .source-panel{position:static;margin:0}
+.lesson-actions{margin:0;justify-content:flex-start}
+.lesson-content .guide-card,.lesson-content .must-know,.lesson-content .scenario-card,.lesson-content .case-study,.lesson-content .embedded-practice,.lesson-content .action-section,.lesson-content .table-wrap,.lesson-content .practice-list{max-width:98ch}
+.shell:not(.page-home) .lesson-content > h2{display:flex;align-items:center;gap:.5rem;width:100%;max-width:98ch;margin:1.15rem 0 .1rem;padding:.72rem .85rem;background:#0d1117;border:1px solid #30363d;border-radius:8px;color:#f0f6fc}
+.shell:not(.page-home) .lesson-content > h2::before{flex:0 0 auto;width:.62rem;height:.62rem;margin:0;border-radius:3px;background:#58a6ff}
+.shell:not(.page-home) .lesson-content > p,.shell:not(.page-home) .lesson-content > ol,.shell:not(.page-home) .lesson-content > ul{max-width:92ch}
+.shell:not(.page-home) .action-section{border-left:1px solid #30363d;background:#161b22}
+.shell:not(.page-home) .topic-specific{background:#121d2b}
+.shell:not(.page-home) .practical-lab-task{background:#11231a}
+.shell:not(.page-home) .worked-question{background:#1d182b}
+.shell:not(.page-home) .config-example{background:#151c24}
+.shell:not(.page-home) .avoid-section{background:#2a1717}
+.shell:not(.page-home) .guide-card{background:#121d2b}
+.shell:not(.page-home) .must-know{background:#221f13}
+.shell:not(.page-home) .scenario-card{background:#1d182b}
+.lesson-summary-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:.2rem 0}
+.shell:not(.page-home) .lesson-summary-list div{border-color:#30363d}
+.shell:not(.page-home) .lesson-summary-list div:nth-child(1){background:#10233d}
+.shell:not(.page-home) .lesson-summary-list div:nth-child(2){background:#17301f}
+.shell:not(.page-home) .lesson-summary-list div:nth-child(3){background:#271b3f}
+.shell:not(.page-home) .lesson-summary-list dd{color:#f0f6fc}
+.shell:not(.page-home) .practice-list a{background:#0d1117}
+.shell:not(.page-home) .practice-list a:hover{background:#1c2128}
+.shell:not(.page-home) .source-panel a{border-top-color:#30363d}
+.shell:not(.page-home) .source-panel a:first-of-type{border-top:0}
+@media(max-width:1100px){
+.lesson-page{grid-template-columns:1fr}
+.lesson-rail{position:static}
+.lesson-content .guide-card,.lesson-content .must-know,.lesson-content .scenario-card,.lesson-content .case-study,.lesson-content .embedded-practice,.lesson-content .action-section,.lesson-content .table-wrap,.lesson-content .practice-list{max-width:none}
+}
+@media(max-width:760px){
+.shell{width:min(100% - 1rem,1450px)}
+.footer-inner{width:min(100% - 1rem,1450px)}
+.lesson-context-strip{padding:.6rem;gap:.4rem}
+.context-chip{width:auto;max-width:100%}
+.page-lessons > section > .lesson-list{grid-template-columns:1fr}
+.shell:not(.page-home) .lesson-row{grid-template-columns:1.25rem minmax(0,1fr);gap:.75rem;padding:.85rem}
+.shell:not(.page-home) .lesson-row .difficulty-badge{grid-column:2}
+.lesson-summary-list{grid-template-columns:1fr}
 }
