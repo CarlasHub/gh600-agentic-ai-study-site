@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BookOpen, Brain, BriefcaseBusiness, CheckCircle2, ClipboardList, ExternalLink, FileText, FlaskConical, Globe2, GraduationCap, Layers, Library, ListChecks, Search, ShieldCheck, Timer, Trophy } from 'lucide-react';
+import { BookOpen, Brain, BriefcaseBusiness, CheckCircle2, ClipboardList, ExternalLink, FileText, FlaskConical, Globe2, GraduationCap, Layers, Library, ListChecks, Menu, Search, ShieldCheck, Timer, Trophy, X } from 'lucide-react';
 import './styles/main.css';
 import blueprint from './data/examBlueprint.json';
 import lessons from './data/lessons.json';
@@ -159,7 +159,15 @@ function NotFound({type,id,backHref}){return <section><PageTitle eyebrow="Missin
 function Layout({children,progress,route}){
  const done=Object.values(progress.lessons||{}).filter(Boolean).length;
  const activeNav=navIdForRoute(route?.page);
- return <><a className="skip-link" href="#main">Skip to content</a><header className="topbar"><a className="brand" href={routeHref('home')}><img className="brand-logo" src={assetHref('cat-microsoft.png')} alt="CarlaHub cat logo in Microsoft colors"/><strong>GH-600 Study Platform</strong></a><nav aria-label="Primary navigation">{navItems.map(([id,label,Icon])=>{const active=activeNav===id; return <a key={id} href={routeHref(id)} aria-current={active?'page':undefined} className={active?'active':''}><Icon size={16} aria-hidden="true" />{label}</a>})}</nav></header><main id="main" className={'shell page-'+activeNav}>{children}</main><footer><div className="footer-inner"><div><strong>CarlaHub</strong><p>Unofficial GH-600 study resource. Always verify current exam objectives with Microsoft Learn before sitting the exam.</p><p>{done}/{lessons.length} lessons marked studied ({pct(done,lessons.length)}%).</p></div><nav className="footer-links" aria-label="CarlaHub links">{socialLinks.map(([label,url,Icon])=><a key={label} href={url} target="_blank" rel="noreferrer"><Icon size={16} aria-hidden="true"/>{label}</a>)}</nav></div></footer></>;
+ const [navOpen,setNavOpen]=useState(false);
+ useEffect(()=>{setNavOpen(false);},[route?.page,route?.id]);
+ useEffect(()=>{
+  if(!navOpen) return undefined;
+  const onKeyDown=(event)=>{if(event.key==='Escape') setNavOpen(false);};
+  addEventListener('keydown',onKeyDown);
+  return()=>removeEventListener('keydown',onKeyDown);
+ },[navOpen]);
+ return <><a className="skip-link" href="#main">Skip to content</a><header className={navOpen?'topbar nav-open':'topbar'}><a className="brand" href={routeHref('home')} onClick={()=>setNavOpen(false)}><img className="brand-logo" src={assetHref('cat-microsoft.png')} alt="CarlaHub cat logo in Microsoft colors"/><strong>GH-600 Study Platform</strong></a><button className="nav-toggle" type="button" aria-expanded={navOpen} aria-controls="primary-navigation" onClick={()=>setNavOpen(open=>!open)}>{navOpen?<X size={26} aria-hidden="true"/>:<Menu size={30} aria-hidden="true"/>}<span>{navOpen?'Close':'Menu'}</span></button><nav id="primary-navigation" className="primary-nav" aria-label="Primary navigation" hidden={!navOpen}>{navItems.map(([id,label,Icon])=>{const active=activeNav===id; return <a key={id} href={routeHref(id)} aria-current={active?'page':undefined} className={active?'active':''} onClick={()=>setNavOpen(false)}><Icon size={16} aria-hidden="true" />{label}</a>})}</nav></header><main id="main" className={'shell page-'+activeNav}>{children}</main><footer><div className="footer-inner"><div><strong>CarlaHub</strong><p>Unofficial GH-600 study resource. Always verify current exam objectives with Microsoft Learn before sitting the exam.</p><p>{done}/{lessons.length} lessons marked studied ({pct(done,lessons.length)}%).</p></div><nav className="footer-links" aria-label="CarlaHub links">{socialLinks.map(([label,url,Icon])=><a key={label} href={url} target="_blank" rel="noreferrer"><Icon size={16} aria-hidden="true"/>{label}</a>)}</nav></div></footer></>;
 }
 function Stat({label,value,icon:Icon}){return <div className="stat"><Icon aria-hidden="true"/><strong>{value}</strong><span>{label}</span></div>}
 function ProgressBar({value,label}){return <div className="progress"><div><span>{label}</span><strong>{value}%</strong></div><meter min="0" max="100" value={value}>{value}%</meter></div>}
