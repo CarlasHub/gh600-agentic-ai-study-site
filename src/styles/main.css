@@ -674,3 +674,32 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .shell:not(.page-home) .option.wrong{background:#331d1d;border-color:#ff7b72;color:#ffe1df}
 .shell:not(.page-home) .option.correct .option-prefix{border-color:#3fb950;color:#dff8e6}
 .shell:not(.page-home) .option.wrong .option-prefix{border-color:#ff7b72;color:#ffe1df}
+
+.course-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.5rem;margin:.9rem 0 1rem;padding:.65rem;background:#161b22;border:1px solid #30363d;border-radius:8px}
+.course-step{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.55rem;align-items:center;min-height:3.25rem;padding:.55rem .62rem;background:#0d1117;border:1px solid #30363d;border-radius:7px;color:#c9d1d9;text-decoration:none!important}
+.course-step:hover{background:#1c2128;border-color:#6e7681;color:#f0f6fc}
+.course-step-icon{display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:999px;background:#161b22;border:1px solid #30363d;color:#8b949e}
+.course-step-text{display:grid;gap:.05rem;min-width:0}
+.course-step-text small{color:#8b949e;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em}
+.course-step-text strong{color:inherit;font-size:.9rem;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.course-step.is-complete .course-step-icon{background:#17301f;border-color:#3fb950;color:#dff8e6}
+.course-step.is-current{border-color:#58a6ff;box-shadow:inset 0 0 0 1px rgba(88,166,255,.35)}
+.course-step.is-current .course-step-icon{background:#10233d;border-color:#58a6ff;color:#c9e3ff}
+.course-step.is-next{opacity:.82}
+.question-meta{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.shell:not(.page-home) .badge.difficulty-badge,.shell:not(.page-home) .badge.lab-level-badge{display:inline-flex;align-items:center;width:max-content;max-width:100%;font-weight:750;text-decoration:none;border-radius:999px}
+.shell:not(.page-home) .badge.difficulty-badge.level-foundation{background:#17301f;border-color:#3fb950;color:#dff8e6}
+.shell:not(.page-home) .badge.difficulty-badge.level-applied{background:#10233d;border-color:#58a6ff;color:#c9e3ff}
+.shell:not(.page-home) .badge.difficulty-badge.level-advanced{background:#332a12;border-color:#d29922;color:#ffe8b0}
+.shell:not(.page-home) .badge.difficulty-badge.level-scenario{background:#271b3f;border-color:#a371f7;color:#eadcff}
+.shell:not(.page-home) .badge.lab-level-badge.level-standard-lab{background:#161b22;border-color:#6e7681;color:#c9d1d9}
+.shell:not(.page-home) .badge.lab-level-badge.level-gold-lesson-lab{background:#332a12;border-color:#d29922;color:#ffe8b0}
+.shell:not(.page-home) .badge.lab-level-badge.level-advanced-practice{background:#10233d;border-color:#58a6ff;color:#c9e3ff}
+.shell:not(.page-home) .badge.lab-level-badge.level-capstone-project{background:#271b3f;border-color:#a371f7;color:#eadcff}
+@media(max-width:980px){
+.course-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:560px){
+.course-steps{display:flex;overflow-x:auto;scrollbar-width:thin}
+.course-step{flex:0 0 8.6rem}
+}
