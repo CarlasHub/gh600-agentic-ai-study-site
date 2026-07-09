@@ -69,8 +69,8 @@ const broadSourceIds = new Set([
 ]);
 const expectedAuditKindCounts = {
   "worked-scenario": 50,
-  "memory-state": 15,
-  "risk-matrix": 13,
+  "memory-state": 14,
+  "risk-matrix": 14,
   "source-config": 9,
   "conflict-tree": 4,
   "evidence-thresholds": 8,
@@ -361,6 +361,12 @@ for (const lesson of finalLessons) {
   checkWorkedExamQuestion(lesson, context);
   checkTeachingTable(lesson, context);
   checkTopicSpecificExplanation(lesson, context);
+  if (lesson.topicSpecificExplanation?.category === "Responsible AI and guardrails" && /memory and state/i.test(lesson.teachingTable?.title || "")) {
+    fail(`${context} is a Responsible AI lesson but renders a memory/state teaching table`);
+  }
+  if (lesson.domainId === "domain-6" && lesson.auditRecommendation?.kind === "memory-state") {
+    fail(`${context} is a Domain 6 guardrail lesson but is tagged as memory-state`);
+  }
   checkPracticalLabTask(lesson, context);
   if (requiredUiConfigLessonIds.has(lesson.id) || lesson.auditRecommendation?.kind === "source-config") {
     checkUiConfigExample(lesson, context);

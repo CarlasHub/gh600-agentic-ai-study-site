@@ -335,6 +335,9 @@ for (const card of flashcards) {
   checkDomain(card.domainId, `flashcard ${card.id}`);
   requireText(card.front, `flashcard ${card.id}`, "front");
   requireText(card.back, `flashcard ${card.id}`, "back");
+  if (/\bwhether you can [a-z]+ing\b/i.test(card.back || "")) {
+    fail(`flashcard ${card.id} has ungrammatical "whether you can ...ing" phrasing`);
+  }
   requireText(card.skillId, `flashcard ${card.id}`, "skillId");
   checkSourceIds(card.sourceIds, `flashcard ${card.id}`);
 }

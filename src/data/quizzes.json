@@ -12599,7 +12599,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Capture task progress and decisions as durable artifacts\" in long-running-refactor. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -12621,17 +12621,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Letting speed outrank the control needed for capture task progress and decisions as durable artifacts.",
     "accuracy": {
@@ -12651,7 +12651,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Capture task progress and decisions as durable artifacts\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -12673,17 +12673,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -12702,7 +12702,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Capture task progress and decisions as durable artifacts\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -12725,17 +12725,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -12756,7 +12756,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -12777,17 +12777,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -12806,10 +12806,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Capture task progress and decisions as durable artifacts\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -12829,17 +12829,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -14139,7 +14139,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Repository artifacts as durable state\" in long-running-refactor. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -14161,17 +14161,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Letting speed outrank the control needed for repository artifacts as durable state.",
     "accuracy": {
@@ -14191,7 +14191,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Repository artifacts as durable state\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -14213,17 +14213,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -14242,7 +14242,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Repository artifacts as durable state\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -14265,17 +14265,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -14296,7 +14296,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -14317,17 +14317,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -14346,10 +14346,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Repository artifacts as durable state\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -14369,17 +14369,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -14399,7 +14399,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Issues and pull requests as state carriers\" in long-running-refactor. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -14421,17 +14421,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Letting speed outrank the control needed for issues and pull requests as state carriers.",
     "accuracy": {
@@ -14451,7 +14451,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Issues and pull requests as state carriers\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -14473,17 +14473,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -14502,7 +14502,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Issues and pull requests as state carriers\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -14525,17 +14525,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -14556,7 +14556,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -14577,17 +14577,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -14606,10 +14606,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Issues and pull requests as state carriers\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -14629,17 +14629,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -14659,7 +14659,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Workflow artifacts as state checkpoints\" in long-running-refactor. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -14681,10 +14681,14 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
       "gh-repository-instructions",
       "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
@@ -14693,11 +14697,7 @@
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
       "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-review-deployments"
     ],
     "examTrap": "Letting speed outrank the control needed for workflow artifacts as state checkpoints.",
     "accuracy": {
@@ -14717,7 +14717,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Workflow artifacts as state checkpoints\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -14739,10 +14739,14 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
       "gh-repository-instructions",
       "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
@@ -14751,11 +14755,7 @@
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
       "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-review-deployments"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -14774,7 +14774,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Workflow artifacts as state checkpoints\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -14797,10 +14797,14 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
       "gh-repository-instructions",
       "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
@@ -14809,11 +14813,7 @@
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
       "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-review-deployments"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -14834,7 +14834,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -14855,10 +14855,14 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
       "gh-repository-instructions",
       "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
@@ -14867,11 +14871,7 @@
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
       "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-review-deployments"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -14890,10 +14890,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Workflow artifacts as state checkpoints\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -14913,10 +14913,14 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
       "gh-repository-instructions",
       "gh-actions-workflows",
+      "ms-foundry-responsible-ai",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
@@ -14925,11 +14929,7 @@
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
       "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai"
+      "gh-review-deployments"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -16439,7 +16439,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\" in security-cleanup. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -16461,21 +16461,21 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks"
+      "gh-review-deployments"
     ],
     "examTrap": "Letting speed outrank the control needed for identify failures by using logs, plans, traces, outputs, and workflow artifacts.",
     "accuracy": {
@@ -16495,7 +16495,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -16517,21 +16517,21 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks"
+      "gh-review-deployments"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -16550,7 +16550,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow the agent changes instructions, memory, or tool access before the failure mode is understood and retested before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -16573,21 +16573,21 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks"
+      "gh-review-deployments"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -16608,7 +16608,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -16629,21 +16629,21 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks"
+      "gh-review-deployments"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -16662,10 +16662,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Identify failures by using logs, plans, traces, outputs, and workflow artifacts\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though the agent changes instructions, memory, or tool access before the failure mode is understood and retested."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -16685,21 +16685,21 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks"
+      "gh-review-deployments"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -16719,7 +16719,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\" in security-cleanup. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -16741,24 +16741,24 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
       "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
       "gh-custom-agents-config",
       "gh-mcp-toolsets"
     ],
@@ -16780,7 +16780,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -16802,24 +16802,24 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
       "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
       "gh-custom-agents-config",
       "gh-mcp-toolsets"
     ],
@@ -16840,7 +16840,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow the agent changes instructions, memory, or tool access before the failure mode is understood and retested before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -16863,24 +16863,24 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
       "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
       "gh-custom-agents-config",
       "gh-mcp-toolsets"
     ],
@@ -16903,7 +16903,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -16924,24 +16924,24 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
       "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
       "gh-custom-agents-config",
       "gh-mcp-toolsets"
     ],
@@ -16962,10 +16962,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Classify root causes, including reasoning errors, tool misuse, and context or environment issues\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though the agent changes instructions, memory, or tool access before the failure mode is understood and retested."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -16985,24 +16985,24 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-deploy-envs",
+      "gh-rulesets",
+      "gh-codeowners",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
       "gh-agentic-workflows",
-      "gh-deploy-envs",
       "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
       "gh-custom-agents-config",
       "gh-mcp-toolsets"
     ],
@@ -17304,7 +17304,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Refine memory usage\" in security-cleanup. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -17326,16 +17326,16 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
       "gh-deploy-envs",
       "gh-rulesets",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions"
     ],
     "examTrap": "Letting speed outrank the control needed for refine memory usage.",
     "accuracy": {
@@ -17355,7 +17355,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Refine memory usage\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
+      "expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -17377,16 +17377,16 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
       "gh-deploy-envs",
       "gh-rulesets",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -17405,7 +17405,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Refine memory usage\" chooses the fastest agent path?",
     "options": [
-      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
+      "The path may allow the agent changes instructions, memory, or tool access before the failure mode is understood and retested before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -17428,16 +17428,16 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
       "gh-deploy-envs",
       "gh-rulesets",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -17458,7 +17458,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -17479,16 +17479,16 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
       "gh-deploy-envs",
       "gh-rulesets",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -17507,10 +17507,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Refine memory usage\"?",
     "options": [
-      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
+      "The answer that defines scope, uses workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
+      "The answer that lets the agent continue even though the agent changes instructions, memory, or tool access before the failure mode is understood and retested."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -17530,16 +17530,16 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
       "gh-deploy-envs",
       "gh-rulesets",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -19719,7 +19719,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Configure multi-agent workflows to produce artifacts suitable for review and audit\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -19741,23 +19741,23 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-mcp-server-access"
@@ -19780,7 +19780,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Configure multi-agent workflows to produce artifacts suitable for review and audit\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -19802,23 +19802,23 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-mcp-server-access"
@@ -19840,7 +19840,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Configure multi-agent workflows to produce artifacts suitable for review and audit\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -19863,23 +19863,23 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-mcp-server-access"
@@ -19903,7 +19903,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -19924,23 +19924,23 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-mcp-server-access"
@@ -19962,10 +19962,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Configure multi-agent workflows to produce artifacts suitable for review and audit\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -19985,23 +19985,23 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
-      "gh-actions-workflows",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
       "ms-tooling-mcp-envs",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-mcp-server-access"
@@ -20024,7 +20024,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Document key decisions, handoffs, and outcomes across agents\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -20047,15 +20047,15 @@
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "ms-foundry-responsible-ai"
     ],
     "examTrap": "Letting speed outrank the control needed for document key decisions, handoffs, and outcomes across agents.",
     "accuracy": {
@@ -20075,7 +20075,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Document key decisions, handoffs, and outcomes across agents\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -20098,15 +20098,15 @@
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "ms-foundry-responsible-ai"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -20125,7 +20125,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Document key decisions, handoffs, and outcomes across agents\" chooses the fastest agent path?",
     "options": [
-      "The path may allow old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -20149,15 +20149,15 @@
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "ms-foundry-responsible-ai"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -20178,7 +20178,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -20200,15 +20200,15 @@
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "ms-foundry-responsible-ai"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -20227,10 +20227,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Document key decisions, handoffs, and outcomes across agents\"?",
     "options": [
-      "The answer that defines scope, uses Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -20251,15 +20251,15 @@
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
+      "gh-custom-agents-config",
+      "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-custom-agents-config",
-      "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "ms-foundry-responsible-ai"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -20984,7 +20984,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -21006,17 +21006,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21042,7 +21042,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -21064,17 +21064,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21099,7 +21099,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -21122,17 +21122,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21159,7 +21159,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -21180,17 +21180,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21215,10 +21215,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Implement multi-agent recovery patterns, including rollback and human-in-the-loop\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -21238,17 +21238,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21274,7 +21274,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Add agents to existing multi-agent workflows\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -21296,17 +21296,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments"
     ],
     "examTrap": "Letting speed outrank the control needed for add agents to existing multi-agent workflows.",
     "accuracy": {
@@ -21326,7 +21326,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Add agents to existing multi-agent workflows\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -21348,17 +21348,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -21377,7 +21377,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Add agents to existing multi-agent workflows\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -21400,17 +21400,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -21431,7 +21431,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -21452,17 +21452,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -21481,10 +21481,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Add agents to existing multi-agent workflows\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -21504,17 +21504,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -21794,7 +21794,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Retire agents while preserving auditability and workflow continuity\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -21816,17 +21816,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21855,7 +21855,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Retire agents while preserving auditability and workflow continuity\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -21877,17 +21877,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21915,7 +21915,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Retire agents while preserving auditability and workflow continuity\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -21938,17 +21938,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -21978,7 +21978,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -21999,17 +21999,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -22037,10 +22037,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Retire agents while preserving auditability and workflow continuity\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -22060,17 +22060,17 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
+      "gh-agentic-workflows",
+      "ms-tooling-mcp-envs",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-protected-branches",
@@ -22374,7 +22374,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Parallel branch strategy\" in multi-agent-release. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -22396,18 +22396,18 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "gh-agentic-workflows",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Letting speed outrank the control needed for parallel branch strategy.",
     "accuracy": {
@@ -22427,7 +22427,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Parallel branch strategy\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, connected to the issue, branch, pull request, workflow, or policy record.",
+      "role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -22449,18 +22449,18 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "gh-agentic-workflows",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -22479,7 +22479,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Parallel branch strategy\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision before the reviewer sees evidence.",
+      "The path may allow multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -22502,18 +22502,18 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "gh-agentic-workflows",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -22534,7 +22534,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, issue contract, branch diff, PR summary, check run, CODEOWNERS review, ruleset result, and handoff comment, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, role map, branch ownership map, handoff packet, conflict record, failed-agent state, recovery decision, and final review note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -22555,18 +22555,18 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "gh-agentic-workflows",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -22585,10 +22585,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Parallel branch strategy\"?",
     "options": [
-      "The answer that defines scope, uses GitHub Issues, repository instructions, branches, pull requests, required checks, CODEOWNERS, branch protection, and rulesets, and records reviewable evidence.",
+      "The answer that defines scope, uses custom-agent roles, branch isolation, handoff contracts, conflict logs, workflow artifacts, audit trail, and recovery plan, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent's chat summary replaces durable GitHub evidence and reviewers cannot reconstruct the decision."
+      "The answer that lets the agent continue even though multiple agents modify overlapping scope or pass contradictory conclusions without a human-owned arbitration point."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -22608,18 +22608,18 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-agent-architecture-sdlc",
-      "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
       "ms-agentic-foundations",
       "gh-custom-agents-config",
       "gh-mcp-cloud-agent",
+      "gh-actions-workflows",
       "gh-cloud-agent-risks",
-      "gh-agentic-workflows"
+      "gh-agentic-workflows",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -23344,7 +23344,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\" in regulated-api. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -23366,20 +23366,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Letting speed outrank the control needed for classify agent actions by operational, security, and compliance risk to right-size human interventions.",
     "accuracy": {
@@ -23399,7 +23399,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -23421,20 +23421,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -23453,7 +23453,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow approvals become ceremony while privileged or irreversible actions remain possible before a human decision before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -23476,20 +23476,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -23510,7 +23510,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -23531,20 +23531,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -23563,10 +23563,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Classify agent actions by operational, security, and compliance risk to right-size human interventions\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though approvals become ceremony while privileged or irreversible actions remain possible before a human decision."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -23586,20 +23586,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -23874,7 +23874,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Identify the subset of actions that require human judgment\" in regulated-api. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -23896,20 +23896,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Letting speed outrank the control needed for identify the subset of actions that require human judgment.",
     "accuracy": {
@@ -23929,7 +23929,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Identify the subset of actions that require human judgment\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -23951,20 +23951,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -23983,7 +23983,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Identify the subset of actions that require human judgment\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow approvals become ceremony while privileged or irreversible actions remain possible before a human decision before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -24006,20 +24006,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -24040,7 +24040,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -24061,20 +24061,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -24093,10 +24093,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Identify the subset of actions that require human judgment\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though approvals become ceremony while privileged or irreversible actions remain possible before a human decision."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -24116,20 +24116,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {
@@ -24149,7 +24149,7 @@
     "question": "A maintainer asks a GitHub agent to apply the skill \"Block actions that violate defined security, compliance, or Responsible AI policies\" in regulated-api. Which first response is strongest?",
     "options": [
       "Let the agent begin implementation and summarize the decision later.",
-      "Create a scoped plan that names workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, required evidence, and the human stop point before execution.",
+      "Create a scoped plan that names autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, required evidence, and the human stop point before execution.",
       "Grant broad repository and workflow access because the branch will still require review.",
       "Ask the agent to choose whatever tool path seems fastest after exploring the repository."
     ],
@@ -24171,20 +24171,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Letting speed outrank the control needed for block actions that violate defined security, compliance, or Responsible AI policies.",
     "accuracy": {
@@ -24204,7 +24204,7 @@
     "question": "Which reviewer-visible evidence best proves the skill \"Block actions that violate defined security, compliance, or Responsible AI policies\" was handled correctly in this repository workflow?",
     "options": [
       "A confident final message from the agent with no links to artifacts.",
-      "workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, connected to the issue, branch, pull request, workflow, or policy record.",
+      "risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, connected to the issue, branch, pull request, workflow, or policy record.",
       "A note that the agent did not see any obvious errors during its work.",
       "A broad checklist copied from another lesson without task-specific source links."
     ],
@@ -24226,20 +24226,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Accepting narration as evidence.",
     "accuracy": {
@@ -24258,7 +24258,7 @@
     "difficulty": "Scenario",
     "question": "What is the main risk when a GH-600 scenario about the skill \"Block actions that violate defined security, compliance, or Responsible AI policies\" chooses the fastest agent path?",
     "options": [
-      "The path may allow the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires before the reviewer sees evidence.",
+      "The path may allow approvals become ceremony while privileged or irreversible actions remain possible before a human decision before the reviewer sees evidence.",
       "The agent will always refuse to create a branch.",
       "GitHub Actions cannot be used for agent validation.",
       "Human review is never useful for agentic workflows."
@@ -24281,20 +24281,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Choosing speed without identifying the failure mode.",
     "accuracy": {
@@ -24315,7 +24315,7 @@
     "options": [
       "Only the changed files, because evidence slows down delivery.",
       "Only the original prompt, because prompts define all expected behavior.",
-      "The task boundary, source-backed control, workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and unresolved risk in the PR or handoff.",
+      "The task boundary, source-backed control, risk tier, allowed action, denied action, approval owner, check result, environment review, PR review, and audit note, and unresolved risk in the PR or handoff.",
       "Only whether the agent used advanced reasoning."
     ],
     "correctIndex": 2,
@@ -24336,20 +24336,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Approving output without checking the control path.",
     "accuracy": {
@@ -24368,10 +24368,10 @@
     "difficulty": "Scenario",
     "question": "Which answer should you eliminate in a GH-600 question about the skill \"Block actions that violate defined security, compliance, or Responsible AI policies\"?",
     "options": [
-      "The answer that defines scope, uses workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, and records reviewable evidence.",
+      "The answer that defines scope, uses autonomy matrix, guardrail policy, branch protection, rulesets, CODEOWNERS, protected environments, MCP access policy, and audit trail, and records reviewable evidence.",
       "The answer that narrows access and asks for approval before sensitive expansion.",
       "The answer that makes validation and handoff visible in GitHub artifacts.",
-      "The answer that lets the agent continue even though the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires."
+      "The answer that lets the agent continue even though approvals become ceremony while privileged or irreversible actions remain possible before a human decision."
     ],
     "correctIndex": 3,
     "correctExplanation": "Correct: GH-600 wrong answers often allow the exact failure the lesson is meant to prevent, especially when they defer evidence or approval until after execution.",
@@ -24391,20 +24391,20 @@
     ],
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-responsible-ai-principles",
       "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-rulesets",
       "gh-codeowners",
-      "gh-mcp-server-access"
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-server-access",
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-agentic-workflows"
     ],
     "examTrap": "Missing the delayed-control pattern in a wrong answer.",
     "accuracy": {

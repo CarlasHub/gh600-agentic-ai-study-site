@@ -352,6 +352,10 @@ const topicRules = [
 
 function topicPriority(rule, lesson) {
   const title = lessonTitle(lesson).toLowerCase();
+  if (lesson.domainId === "domain-3" && rule.name === "Memory and state") return 120;
+  if (lesson.domainId === "domain-4" && rule.name === "Evaluation and tuning") return 120;
+  if (lesson.domainId === "domain-5" && rule.name === "Multi-agent coordination") return 120;
+  if (lesson.domainId === "domain-6" && rule.name === "Guardrails and approvals") return 120;
   if (rule.name === "MCP governance" && /mcp|toolset|registry|allow list|allow-list|allowlist|remote server|local server|playwright/.test(title)) return 100;
   if (rule.name === "Repository governance" && /branch|pull request|\bpr\b|issue|repository|codeowners|ruleset|protected|artifacts|instructions|creating branches/.test(title)) return 95;
   if (rule.name === "Workflow execution" && /ci workflow|workflow|actions|setup|environment|execution context|constraints|retries|retry|rollback|error handling|traceability|accountability/.test(title)) return 90;
@@ -687,7 +691,7 @@ const auditRecommendationKindByLesson = new Map([
   ["domain-6-lesson-02-assign-autonomy-levels-to-maximize-delivery-speed-while-remaining-compliant-with", "risk-matrix"],
   ["domain-6-lesson-03-identify-the-subset-of-actions-that-require-human-judgment", "risk-matrix"],
   ["domain-6-lesson-04-block-actions-that-violate-defined-security-compliance-or-responsible-ai-policie", "risk-matrix"],
-  ["domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access", "memory-state"],
+  ["domain-6-lesson-05-scope-permissions-and-execution-contexts-to-enforce-least-privilege-access", "risk-matrix"],
   ["domain-6-lesson-06-require-explicit-authorization-or-controlled-paths-for-irreversible-or-complianc", "risk-matrix"],
   ["domain-6-lesson-07-preserve-execution-velocity-by-minimizing-approvals-that-do-not-materially-reduc", "risk-matrix"],
   ["domain-6-lesson-08-operational-security-and-compliance-risk-examples", "risk-matrix"],
@@ -979,12 +983,16 @@ function uiConfigExampleFor(lesson, topic, kind) {
 function topicSpecificCategory(lesson, topic) {
   const title = lessonTitle(lesson).toLowerCase();
   const value = `${title} ${topic.name} ${topic.teaches}`.toLowerCase();
+  if (lesson.domainId === "domain-6") return "Responsible AI and guardrails";
+  if (lesson.domainId === "domain-5") return "Multi-agent coordination";
+  if (lesson.domainId === "domain-4") return "Evaluation and tuning";
+  if (lesson.domainId === "domain-3") return "Memory and state";
   if (/mcp|toolset|registry|allow list|allow-list|allowlist|remote server|local server|playwright/.test(title)) return "MCP and tool access";
   if (/memory|state|context|stale|drift|resume|durable|checkpoint|expiry|expiration|pruning|reset/.test(title)) return "Memory and state";
-  if (lesson.domainId === "domain-6" || /responsible ai|compliance|guardrail|autonomy|authorization|approval|least-privilege|least privilege|policy|audit|risk|human judgment|irreversible|velocity/.test(title)) return "Responsible AI and guardrails";
-  if (lesson.domainId === "domain-5" || /multi-agent|orchestration|parallel|handoff|conflict|duplicate|contradictory|degraded|replacement|retire|retirement|lifecycle/.test(title)) return "Multi-agent coordination";
+  if (/responsible ai|compliance|guardrail|autonomy|authorization|approval|least-privilege|least privilege|policy|audit|risk|human judgment|irreversible|velocity/.test(title)) return "Responsible AI and guardrails";
+  if (/multi-agent|orchestration|parallel|handoff|conflict|duplicate|contradictory|degraded|replacement|retire|retirement|lifecycle/.test(title)) return "Multi-agent coordination";
   if (/branch|pull request|\bpr\b|repository|issue|codeowners|ruleset|protected|instructions|creating branches/.test(title)) return "Repository and branch governance";
-  if (lesson.domainId === "domain-4" || /evaluation|evaluate|signal|scan|codeql|secret scanning|dependency|failure|root cause|tuning|regression|accessibility|static analysis|overfitting/.test(title)) return "Evaluation and tuning";
+  if (/evaluation|evaluate|signal|scan|codeql|secret scanning|dependency|failure|root cause|tuning|regression|accessibility|static analysis|overfitting/.test(title)) return "Evaluation and tuning";
   if (/workflow|actions|setup|environment|retry|rollback|traceability|execution|ci|permission|constraints|error handling/.test(title)) return "Workflow execution";
   if (/tool|permission|read-only|write-capable|scope|least-privilege|least privilege/.test(value)) return "MCP and tool access";
   return "Agent architecture and SDLC";

@@ -28,12 +28,12 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 ## Recommendation Categories
 
 - Agent architecture and SDLC: 8
-- Evaluation and tuning: 11
+- Evaluation and tuning: 14
 - MCP and tool access: 14
-- Memory and state: 18
-- Multi-agent coordination: 15
-- Repository and branch governance: 9
-- Responsible AI and guardrails: 16
+- Memory and state: 15
+- Multi-agent coordination: 17
+- Repository and branch governance: 8
+- Responsible AI and guardrails: 15
 - Workflow execution: 10
 
 ## Templates Added
