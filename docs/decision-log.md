@@ -1,42 +1,84 @@
 # Decision Log
 
-## Goal
+## Purpose
 
 Record durable decisions and why they were made.
 
-## Suggested Use
+## When To Use
 
 Use when lessons mention governance, state, memory, review, or source-drift decisions.
 
-## Placeholders
+## Owner
 
-- `{{decision}}`: replace with the expected value for this repository, task, or workflow.
-- `{{options_considered}}`: replace with the expected value for this repository, task, or workflow.
-- `{{evidence}}`: replace with the expected value for this repository, task, or workflow.
-- `{{owner}}`: replace with the expected value for this repository, task, or workflow.
-- `{{date}}`: replace with the expected value for this repository, task, or workflow.
-- `{{review_trigger}}`: replace with the expected value for this repository, task, or workflow.
+Workflow owner or reviewer taking over the task
+
+## Required Fields
+
+- Current state
+- Decision
+- Assumption
+- Expiry trigger
+- Refresh source
+- Next owner
+
+## Evidence
+
+- State file
+- Decision log
+- Checkpoint
+- Stale-context checklist
+
+## Approval And Review
+
+- Reviewer approval before reusing remembered context after source, branch, policy, or owner changes
+
+## Failure Modes
+
+- Stale memory is trusted
+- Assumptions overwrite facts
+- Handoff loses open risk
+
+## Recovery Or Rollback
+
+- Reset memory, refresh current GitHub artifacts, and append a superseding decision
+
+## Security And Compliance
+
+- Do not retain sensitive data, secrets, private context, or expired assumptions in agent memory.
+
+## GH-600 Relevance
+
+Tests memory scope, state continuity, context refresh, and durable evidence across sessions.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Foundations of Agentic AI in GitHub](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/)
+- [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Decision Log can continue.
+
+Completed example: Fill docs/decision-log.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| decision | `{{decision}}` | `{{decision_evidence_or_owner}}` |
-| options considered | `{{options_considered}}` | `{{options_considered_evidence_or_owner}}` |
-| evidence | `{{evidence}}` | `{{evidence_evidence_or_owner}}` |
-| owner | `{{owner}}` | `{{owner_evidence_or_owner}}` |
-| date | `{{date}}` | `{{date_evidence_or_owner}}` |
-| review trigger | `{{review_trigger}}` | `{{review_trigger_evidence_or_owner}}` |
-
-## Expectations
-
-- Decisions include rationale and owner.
-- Review triggers are explicit.
-- The log separates evidence from preference.
+| Current state | `{{current_state}}` | Link or owner proving the value is current |
+| Decision | `{{decision}}` | Link or owner proving the value is current |
+| Assumption | `{{assumption}}` | Link or owner proving the value is current |
+| Expiry trigger | `{{expiry_trigger}}` | Link or owner proving the value is current |
+| Refresh source | `{{refresh_source}}` | Link or owner proving the value is current |
+| Next owner | `{{next_owner}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 
-- [ ] The goal is specific and observable.
-- [ ] Required evidence is linked or named.
-- [ ] Approval or ownership is explicit.
-- [ ] Stale assumptions, sensitive data, and tool boundaries were reviewed.
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

@@ -1,12 +1,12 @@
-# Agent Roles
+# Duplicate Effort Checklist
 
 ## Purpose
 
-Define responsibilities, boundaries, and handoff rules for each agent role.
+Detect whether agents are solving the same work, touching the same scope, or producing redundant evidence.
 
 ## When To Use
 
-Use when planner, builder, tester, reviewer, security, or release agents coordinate.
+Use before and during parallel multi-agent execution.
 
 ## Owner
 
@@ -14,13 +14,12 @@ Agent workflow owner
 
 ## Required Fields
 
-- Objective
-- Assumptions
-- Files
-- Steps
-- Validation
-- Owner
-- Next decision
+- agent
+- assigned_scope
+- overlap_signal
+- duplicate_work
+- decision
+- owner
 
 ## Evidence
 
@@ -60,21 +59,20 @@ Tests separation of planning, execution, handoff, and reviewable evidence.
 
 ## Mini-example
 
-Scenario: A reviewer needs to decide whether an agent task using Agent Roles can continue.
+Scenario: A reviewer needs to decide whether an agent task using Duplicate Effort Checklist can continue.
 
-Completed example: Fill docs/agent-roles.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+Completed example: Fill docs/duplicate-effort-checklist.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| Objective | `{{objective}}` | Link or owner proving the value is current |
-| Assumptions | `{{assumptions}}` | Link or owner proving the value is current |
-| Files | `{{files}}` | Link or owner proving the value is current |
-| Steps | `{{steps}}` | Link or owner proving the value is current |
-| Validation | `{{validation}}` | Link or owner proving the value is current |
-| Owner | `{{owner}}` | Link or owner proving the value is current |
-| Next decision | `{{next_decision}}` | Link or owner proving the value is current |
+| agent | `{{agent}}` | Link or owner proving the value is current |
+| assigned_scope | `{{assigned_scope}}` | Link or owner proving the value is current |
+| overlap_signal | `{{overlap_signal}}` | Link or owner proving the value is current |
+| duplicate_work | `{{duplicate_work}}` | Link or owner proving the value is current |
+| decision | `{{decision}}` | Link or owner proving the value is current |
+| owner | `{{owner}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 

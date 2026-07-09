@@ -1,6 +1,6 @@
 # Content QA Report
 
-Date: 2026-06-04
+Date: 2026-07-09
 
 ## Scope
 
@@ -25,12 +25,12 @@ Not checked by this local script:
 
 ## Official Guide Currentness
 
-The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
+The official Microsoft GH-600 study guide and source pack were rechecked by automated currentness scan on 2026-07-09:
 
 - URL: https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600
 - Publisher: Microsoft Learn
 - Page last updated by Microsoft: 2026-05-13
-- Result: the six official domains, domain weights, and 65 official skill bullets in the repository match the current Microsoft guide checked on this date.
+- Result: all 32 tracked official sources were reachable with no source-review-needed flags. The six official domains, domain weights, and 65 official skill bullets remain mapped in the repository.
 
 ## QA Fixes Made
 
@@ -48,10 +48,13 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Raised `npm run qa:content` so a lesson cannot pass without the practical action fields used by the lesson reader.
 - Added `scripts/check-data-accuracy.mjs` for source-grounding evidence checks, item-level accuracy metadata, rationales, lab validation evidence, and manual review reporting.
 - Added source fingerprint monitoring in `scripts/check-source-currentness.mjs`.
+- Added `docs/LESSON_TEMPLATE_RECOMMENDATION_AUDIT.md` and expanded lesson template recommendations so every lesson has domain-specific production artifacts.
+- Expanded the template library from 42 to 53 templates, including branch scope, MCP allow-list, least-privilege, sensitive action, policy violation, regression, arbitration, duplicate-effort, lifecycle, step-map, and anti-pattern records.
+- Added QA checks that fail when lesson artifact recommendations do not resolve to the template library, use only the generic issue template, or mismatch branch/MCP/domain expectations.
 
 ## Current Data Counts
 
-- Sources: 24
+- Sources: 32
 - Official domains: 6
 - Official skills: 65
 - Coverage rows: 65
@@ -60,12 +63,12 @@ The official Microsoft GH-600 study guide was rechecked on 2026-06-04:
 - Exam simulator questions: 300
 - Mock exam records: 3
 - Exam simulator forms: 5
-- Labs: 40
+- Labs: 141
 - Flashcards: 303
 - Glossary terms: 58
-- Scenarios: 60
+- Scenarios: 101
 - Template library sections: 7
-- Agent documentation templates: 42
+- Agent documentation templates: 53
 
 ## QA Result
 
@@ -85,7 +88,7 @@ The QA script confirms:
 - Each simulator form has 60 questions with this domain distribution: 10 / 14 / 8 / 10 / 10 / 8.
 - Simulator answer positions are balanced and do not make the longest answer the correct answer too often.
 - The agent documentation template library has valid section references and every listed template file exists.
-- The weekly source currentness check reached 24 of 24 configured sources on 2026-06-04.
+- The source currentness check reached 32 of 32 configured sources on 2026-07-09.
 
 ## Accuracy Position
 

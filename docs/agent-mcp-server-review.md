@@ -1,58 +1,85 @@
 # MCP Server Review
 
-## Goal
+## Purpose
 
-Review an MCP server before it is made available to an agent.
+Review MCP server capability, roots, tools, secrets, transport, and autonomous-use risk before enabling it.
 
-## Suggested Use
+## When To Use
 
-Use before adding or changing an MCP server for Copilot cloud agent, code review, an IDE, CLI, or a custom agent.
+Use before adding or changing an MCP server for Copilot, code review, an IDE, or a custom agent.
 
-## Server Summary
+## Owner
 
-- Server name: `{{server_name}}`
-- Owner: `{{owner}}`
-- Business reason: `{{business_reason}}`
-- Transport: `{{stdio_streamable_http_other}}`
-- Deployment location: `{{local_remote_hosted}}`
-- Authentication model: `{{auth_model}}`
+Platform owner or tool/MCP administrator
 
-## Capability Inventory
+## Required Fields
 
-| Capability | Names | Needed? | Risk |
-| --- | --- | --- | --- |
-| Tools | `{{tool_names}}` | `{{yes_no}}` | `{{risk}}` |
-| Resources | `{{resource_uris}}` | `{{yes_no}}` | `{{risk}}` |
-| Prompts | `{{prompt_names}}` | `{{yes_no}}` | `{{risk}}` |
-| Roots | `{{roots}}` | `{{yes_no}}` | `{{risk}}` |
-| Sampling | `{{sampling_behavior}}` | `{{yes_no}}` | `{{risk}}` |
-| Elicitation | `{{elicitation_behavior}}` | `{{yes_no}}` | `{{risk}}` |
+- Tool or server
+- Allowed operation
+- Denied operation
+- Data boundary
+- Approval owner
+- Evidence
 
-## Root And Data Boundary
+## Evidence
 
-- Allowed roots or URIs: `{{allowed_roots}}`
-- Forbidden roots or data: `{{forbidden_data}}`
-- Path traversal protection reviewed: `{{yes_no}}`
-- Sensitive data redaction: `{{redaction_policy}}`
+- Permission matrix
+- MCP registry or allow-list decision
+- Tool-call log
+- Escalation record
 
-## Autonomous-Use Decision
+## Approval And Review
 
-Once enabled for some agent contexts, tools may be used autonomously. Record whether that is acceptable.
+- Platform owner review before adding write-capable tools, remote servers, or broader toolsets
 
-```text
-Decision: {{allow_reject_restrict}}
-Reason: {{reason}}
-Approver: {{approver}}
-Restrictions: {{restrictions}}
-Review date: {{date}}
-```
+## Failure Modes
 
-## Validation
+- All tools enabled
+- Server approved but toolset too broad
+- Data boundary undocumented
 
-- [ ] Configuration syntax validated.
-- [ ] Secrets use approved storage.
-- [ ] Tool list matches business need.
-- [ ] Roots and data access are least privilege.
-- [ ] Transport security reviewed.
-- [ ] Audit or trace signal identified.
-- [ ] Rollback or disablement path documented.
+## Recovery Or Rollback
+
+- Disable the tool, revoke the server or toolset, and rerun validation with reduced access
+
+## Security And Compliance
+
+- Treat MCP and tools as external capability boundaries that can expose data or act autonomously.
+
+## GH-600 Relevance
+
+Tests tool choice, MCP governance, execution context, and least-privilege tool access.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Tooling, MCP, and Agent Execution Environments](https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/)
+- [Model Context Protocol (MCP) and GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/mcp-and-coding-agent/)
+- [Configuring toolsets for the GitHub MCP Server](https://docs.github.com/copilot/how-tos/provide-context/use-mcp/configure-toolsets)
+- [Configure MCP server access for your organization or enterprise](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access)
+- [MCP allowlist enforcement](https://docs.github.com/en/copilot/reference/mcp-allowlist-enforcement)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using MCP Server Review can continue.
+
+Completed example: Fill docs/agent-mcp-server-review.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
+| --- | --- | --- |
+| Tool or server | `{{tool_or_server}}` | Link or owner proving the value is current |
+| Allowed operation | `{{allowed_operation}}` | Link or owner proving the value is current |
+| Denied operation | `{{denied_operation}}` | Link or owner proving the value is current |
+| Data boundary | `{{data_boundary}}` | Link or owner proving the value is current |
+| Approval owner | `{{approval_owner}}` | Link or owner proving the value is current |
+| Evidence | `{{evidence}}` | Link or owner proving the value is current |
+
+## Review Checklist
+
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

@@ -1,42 +1,84 @@
 # Stale Context Checklist
 
-## Goal
+## Purpose
 
 Check whether assumptions, sources, memory, or instructions have expired.
 
-## Suggested Use
+## When To Use
 
 Use before resuming long-running work or relying on prior source-grounded content.
 
-## Placeholders
+## Owner
 
-- `{{context_item}}`: replace with the expected value for this repository, task, or workflow.
-- `{{last_checked}}`: replace with the expected value for this repository, task, or workflow.
-- `{{expiry_trigger}}`: replace with the expected value for this repository, task, or workflow.
-- `{{current_source}}`: replace with the expected value for this repository, task, or workflow.
-- `{{decision}}`: replace with the expected value for this repository, task, or workflow.
-- `{{owner}}`: replace with the expected value for this repository, task, or workflow.
+Workflow owner or reviewer taking over the task
+
+## Required Fields
+
+- Current state
+- Decision
+- Assumption
+- Expiry trigger
+- Refresh source
+- Next owner
+
+## Evidence
+
+- State file
+- Decision log
+- Checkpoint
+- Stale-context checklist
+
+## Approval And Review
+
+- Reviewer approval before reusing remembered context after source, branch, policy, or owner changes
+
+## Failure Modes
+
+- Stale memory is trusted
+- Assumptions overwrite facts
+- Handoff loses open risk
+
+## Recovery Or Rollback
+
+- Reset memory, refresh current GitHub artifacts, and append a superseding decision
+
+## Security And Compliance
+
+- Do not retain sensitive data, secrets, private context, or expired assumptions in agent memory.
+
+## GH-600 Relevance
+
+Tests memory scope, state continuity, context refresh, and durable evidence across sessions.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Foundations of Agentic AI in GitHub](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/)
+- [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Stale Context Checklist can continue.
+
+Completed example: Fill docs/stale-context-checklist.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| context item | `{{context_item}}` | `{{context_item_evidence_or_owner}}` |
-| last checked | `{{last_checked}}` | `{{last_checked_evidence_or_owner}}` |
-| expiry trigger | `{{expiry_trigger}}` | `{{expiry_trigger_evidence_or_owner}}` |
-| current source | `{{current_source}}` | `{{current_source_evidence_or_owner}}` |
-| decision | `{{decision}}` | `{{decision_evidence_or_owner}}` |
-| owner | `{{owner}}` | `{{owner_evidence_or_owner}}` |
-
-## Expectations
-
-- Stale assumptions are surfaced.
-- Current sources are checked.
-- Decisions are recorded.
+| Current state | `{{current_state}}` | Link or owner proving the value is current |
+| Decision | `{{decision}}` | Link or owner proving the value is current |
+| Assumption | `{{assumption}}` | Link or owner proving the value is current |
+| Expiry trigger | `{{expiry_trigger}}` | Link or owner proving the value is current |
+| Refresh source | `{{refresh_source}}` | Link or owner proving the value is current |
+| Next owner | `{{next_owner}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 
-- [ ] The goal is specific and observable.
-- [ ] Required evidence is linked or named.
-- [ ] Approval or ownership is explicit.
-- [ ] Stale assumptions, sensitive data, and tool boundaries were reviewed.
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

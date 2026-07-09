@@ -1,64 +1,85 @@
 # Multi-Agent Handoff Contract
 
-## Goal
+## Purpose
 
-Transfer responsibility between agents without losing state, scope, or accountability.
+Define when ownership transfers between planner, builder, tester, reviewer, or specialist agents.
 
-## Suggested Use
+## When To Use
 
-Use when a workflow involves planner, builder, tester, reviewer, documentation, security, or release agents.
+Use when more than one agent or specialist workflow participates in the same delivery chain.
 
-## Handoff Summary
+## Owner
 
-- From agent: `{{from_agent}}`
-- To agent: `{{to_agent}}`
-- Handoff reason: `{{handoff_reason}}`
-- Current owner of next action: `{{owner}}`
-- Related issue or PR: `{{issue_or_pr}}`
+Agent workflow owner
 
-## State To Transfer
+## Required Fields
 
-| Field | Value |
-| --- | --- |
-| Goal | `{{goal}}` |
-| Completed work | `{{completed_work}}` |
-| Files changed | `{{files_changed}}` |
-| Validation already run | `{{validation}}` |
-| Open risks | `{{open_risks}}` |
-| Decisions made | `{{decisions}}` |
-| Decisions still needed | `{{pending_decisions}}` |
+- Objective
+- Assumptions
+- Files
+- Steps
+- Validation
+- Owner
+- Next decision
 
-## Inputs For Next Agent
+## Evidence
 
-- `{{input_artifact}}`
-- `{{source_link}}`
-- `{{trace_or_log}}`
+- Approved plan
+- Handoff packet
+- Decision log
+- PR comment
 
-## Expected Output From Next Agent
+## Approval And Review
 
-- `{{expected_output}}`
+- Approval before execution when the plan touches sensitive paths or expands scope
 
-## Tool Boundary
+## Failure Modes
 
-The receiving agent may use:
+- Plan and execution happen in one step
+- Handoff omits risk
+- Next owner is unclear
 
-- `{{allowed_tool}}`
+## Recovery Or Rollback
 
-The receiving agent must not use:
+- Return to planning state, assign an owner, and preserve current evidence before continuing
 
-- `{{forbidden_tool}}`
+## Security And Compliance
 
-## Circular Handoff Guard
+- Do not carry private or stale context into a handoff without review
 
-Do not hand back to the previous agent unless:
+## GH-600 Relevance
 
-- the exact missing input is named;
-- the owner of the missing input is identified;
-- the handoff includes a deadline or decision path.
+Tests separation of planning, execution, handoff, and reviewable evidence.
 
-## Completion Criteria
+## Sources
 
-- [ ] The receiving agent has enough state to continue.
-- [ ] Ownership is explicit.
-- [ ] Risks and approvals are preserved.
-- [ ] The handoff is recorded in the issue or PR.
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Designing Agent Architecture and SDLC Integration](https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/)
+- [About GitHub Copilot cloud agent](https://docs.github.com/copilot/concepts/about-copilot-coding-agent)
+- [About GitHub Agentic Workflows](https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Multi-Agent Handoff Contract can continue.
+
+Completed example: Fill docs/multi-agent-handoff-contract.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
+| --- | --- | --- |
+| Objective | `{{objective}}` | Link or owner proving the value is current |
+| Assumptions | `{{assumptions}}` | Link or owner proving the value is current |
+| Files | `{{files}}` | Link or owner proving the value is current |
+| Steps | `{{steps}}` | Link or owner proving the value is current |
+| Validation | `{{validation}}` | Link or owner proving the value is current |
+| Owner | `{{owner}}` | Link or owner proving the value is current |
+| Next decision | `{{next_decision}}` | Link or owner proving the value is current |
+
+## Review Checklist
+
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

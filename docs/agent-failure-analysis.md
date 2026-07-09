@@ -1,70 +1,84 @@
 # Agent Failure Analysis
 
-## Goal
+## Purpose
 
-Turn a failed or unsafe agent run into a specific fix, regression check, and process update.
+Classify agent failures by prompt, context, tool, state, handoff, evaluation, or governance root cause.
 
-## Suggested Use
+## When To Use
 
-Use after an incorrect PR, failed workflow, unsafe tool call, source drift incident, release miss, or incomplete handoff.
+Use after failed tasks, unsafe tool calls, incorrect PRs, broken releases, or drift reports.
 
-## Incident Summary
+## Owner
 
-- Incident ID: `{{incident_id}}`
-- Date: `{{date}}`
-- Reporter: `{{reporter}}`
-- Related issue, PR, trace, or release: `{{link}}`
-- Severity: `{{low_medium_high}}`
+Quality, security, or release owner
 
-## Expected Behavior
+## Required Fields
 
-`{{expected_behavior}}`
+- Expected result
+- Signal
+- Threshold
+- Failure class
+- Owner
+- Rerun evidence
 
-## Actual Behavior
+## Evidence
 
-`{{actual_behavior}}`
+- Workflow run
+- Scan output
+- Trace review
+- Failure analysis
+- Tuning log
 
-## Impact
+## Approval And Review
 
-- User impact: `{{user_impact}}`
-- Repository impact: `{{repo_impact}}`
-- Security or data impact: `{{security_data_impact}}`
+- Quality or security owner signs off before accepting residual risk or tuning changes
 
-## Root Cause
+## Failure Modes
 
-Choose the primary cause:
+- Agent confidence replaces evidence
+- Tuning happens before root cause
+- Regression checks are skipped
 
-- [ ] Task contract was ambiguous.
-- [ ] Repository instructions were missing or stale.
-- [ ] Source documentation drifted.
-- [ ] Tool or MCP access was too broad.
-- [ ] Tool arguments were wrong.
-- [ ] Handoff owner was unclear.
-- [ ] Eval coverage missed this case.
-- [ ] Human approval gate was missing or bypassed.
-- [ ] External dependency failed.
+## Recovery Or Rollback
 
-Details:
+- Restore baseline behavior, classify root cause, and rerun the original plus adjacent cases
 
-`{{root_cause_details}}`
+## Security And Compliance
 
-## Containment
+- Preserve scan findings, trace data, and accepted-risk decisions without leaking sensitive information.
 
-- Immediate fix: `{{immediate_fix}}`
-- Rollback or disablement: `{{rollback}}`
-- User communication: `{{communication}}`
+## GH-600 Relevance
 
-## Prevention
+Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions.
 
-- Template update: `{{template_path_and_change}}`
-- Eval case: `{{eval_case}}`
-- Guardrail or approval change: `{{guardrail_change}}`
-- Owner: `{{owner}}`
-- Due date: `{{due_date}}`
+## Sources
 
-## Verification
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+- [Risks and mitigations for GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/risks-and-mitigations)
+- [Responsible AI for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview)
 
-- [ ] Regression test added or updated.
-- [ ] Template or instruction updated.
-- [ ] Owner reviewed the prevention step.
-- [ ] Action logged in release or accuracy notes.
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Agent Failure Analysis can continue.
+
+Completed example: Fill docs/agent-failure-analysis.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
+| --- | --- | --- |
+| Expected result | `{{expected_result}}` | Link or owner proving the value is current |
+| Signal | `{{signal}}` | Link or owner proving the value is current |
+| Threshold | `{{threshold}}` | Link or owner proving the value is current |
+| Failure class | `{{failure_class}}` | Link or owner proving the value is current |
+| Owner | `{{owner}}` | Link or owner proving the value is current |
+| Rerun evidence | `{{rerun_evidence}}` | Link or owner proving the value is current |
+
+## Review Checklist
+
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

@@ -10,6 +10,7 @@
     "build": "node scripts/generate-seo-pages.mjs --public-only && vite build && node scripts/generate-seo-pages.mjs --dist",
     "preview": "vite preview --host 0.0.0.0",
     "curate:lessons": "node scripts/curate-final-lessons.mjs",
+    "curate:templates": "node scripts/curate-template-recommendations.mjs",
     "qa:content": "node scripts/qa-content.mjs",
     "qa:lessons": "node scripts/check-lesson-quality.mjs",
     "data:accuracy": "node scripts/check-data-accuracy.mjs",

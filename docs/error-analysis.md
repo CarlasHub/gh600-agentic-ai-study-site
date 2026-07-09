@@ -1,44 +1,84 @@
 # Error Analysis
 
-## Goal
+## Purpose
 
 Classify errors and convert failures into evals, tests, or template updates.
 
-## Suggested Use
+## When To Use
 
 Use after wrong answers, bad PRs, failed checks, tool mistakes, or source drift.
 
-## Placeholders
+## Owner
 
-- `{{failure}}`: replace with the expected value for this repository, task, or workflow.
-- `{{expected}}`: replace with the expected value for this repository, task, or workflow.
-- `{{actual}}`: replace with the expected value for this repository, task, or workflow.
-- `{{root_cause}}`: replace with the expected value for this repository, task, or workflow.
-- `{{fix}}`: replace with the expected value for this repository, task, or workflow.
-- `{{regression_case}}`: replace with the expected value for this repository, task, or workflow.
-- `{{owner}}`: replace with the expected value for this repository, task, or workflow.
+Quality, security, or release owner
+
+## Required Fields
+
+- Expected result
+- Signal
+- Threshold
+- Failure class
+- Owner
+- Rerun evidence
+
+## Evidence
+
+- Workflow run
+- Scan output
+- Trace review
+- Failure analysis
+- Tuning log
+
+## Approval And Review
+
+- Quality or security owner signs off before accepting residual risk or tuning changes
+
+## Failure Modes
+
+- Agent confidence replaces evidence
+- Tuning happens before root cause
+- Regression checks are skipped
+
+## Recovery Or Rollback
+
+- Restore baseline behavior, classify root cause, and rerun the original plus adjacent cases
+
+## Security And Compliance
+
+- Preserve scan findings, trace data, and accepted-risk decisions without leaking sensitive information.
+
+## GH-600 Relevance
+
+Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+- [Risks and mitigations for GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/risks-and-mitigations)
+- [Responsible AI for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Error Analysis can continue.
+
+Completed example: Fill docs/error-analysis.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| failure | `{{failure}}` | `{{failure_evidence_or_owner}}` |
-| expected | `{{expected}}` | `{{expected_evidence_or_owner}}` |
-| actual | `{{actual}}` | `{{actual_evidence_or_owner}}` |
-| root cause | `{{root_cause}}` | `{{root_cause_evidence_or_owner}}` |
-| fix | `{{fix}}` | `{{fix_evidence_or_owner}}` |
-| regression case | `{{regression_case}}` | `{{regression_case_evidence_or_owner}}` |
-| owner | `{{owner}}` | `{{owner_evidence_or_owner}}` |
-
-## Expectations
-
-- Root cause is specific.
-- A regression check is added.
-- Ownership is explicit.
+| Expected result | `{{expected_result}}` | Link or owner proving the value is current |
+| Signal | `{{signal}}` | Link or owner proving the value is current |
+| Threshold | `{{threshold}}` | Link or owner proving the value is current |
+| Failure class | `{{failure_class}}` | Link or owner proving the value is current |
+| Owner | `{{owner}}` | Link or owner proving the value is current |
+| Rerun evidence | `{{rerun_evidence}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 
-- [ ] The goal is specific and observable.
-- [ ] Required evidence is linked or named.
-- [ ] Approval or ownership is explicit.
-- [ ] Stale assumptions, sensitive data, and tool boundaries were reviewed.
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

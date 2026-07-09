@@ -1,12 +1,12 @@
-# Agent Task Contract
+# Agent Anti-pattern Review
 
 ## Purpose
 
-Define a reusable contract for issue-to-PR agent work.
+Identify unsafe agent workflow patterns and pair each one with a concrete GitHub control.
 
 ## When To Use
 
-Use when an issue needs more governance than a short issue form can express.
+Use before accepting broad, vague, over-permissioned, or evidence-light agent work.
 
 ## Owner
 
@@ -14,13 +14,12 @@ Requester plus repository maintainer
 
 ## Required Fields
 
-- Goal
-- Allowed scope
-- Denied scope
-- Inputs
-- Outputs
-- Validation
-- Stop conditions
+- anti_pattern
+- symptom
+- risk
+- mitigation
+- github_control
+- evidence
 
 ## Evidence
 
@@ -60,21 +59,20 @@ Tests whether the learner can convert a broad request into a bounded agent task 
 
 ## Mini-example
 
-Scenario: A reviewer needs to decide whether an agent task using Agent Task Contract can continue.
+Scenario: A reviewer needs to decide whether an agent task using Agent Anti-pattern Review can continue.
 
-Completed example: Fill docs/agent-task-contract.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+Completed example: Fill docs/agent-anti-pattern-review.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| Goal | `{{goal}}` | Link or owner proving the value is current |
-| Allowed scope | `{{allowed_scope}}` | Link or owner proving the value is current |
-| Denied scope | `{{denied_scope}}` | Link or owner proving the value is current |
-| Inputs | `{{inputs}}` | Link or owner proving the value is current |
-| Outputs | `{{outputs}}` | Link or owner proving the value is current |
-| Validation | `{{validation}}` | Link or owner proving the value is current |
-| Stop conditions | `{{stop_conditions}}` | Link or owner proving the value is current |
+| anti_pattern | `{{anti_pattern}}` | Link or owner proving the value is current |
+| symptom | `{{symptom}}` | Link or owner proving the value is current |
+| risk | `{{risk}}` | Link or owner proving the value is current |
+| mitigation | `{{mitigation}}` | Link or owner proving the value is current |
+| github_control | `{{github_control}}` | Link or owner proving the value is current |
+| evidence | `{{evidence}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 

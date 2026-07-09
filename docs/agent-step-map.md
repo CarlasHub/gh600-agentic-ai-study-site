@@ -1,12 +1,12 @@
-# Agent Task Contract
+# Agent Step Map
 
 ## Purpose
 
-Define a reusable contract for issue-to-PR agent work.
+Map an agent task into ordered intake, context, planning, approval, execution, validation, review, and handoff steps.
 
 ## When To Use
 
-Use when an issue needs more governance than a short issue form can express.
+Use when the lesson asks what an agent should do first, next, or never before implementation.
 
 ## Owner
 
@@ -14,13 +14,12 @@ Requester plus repository maintainer
 
 ## Required Fields
 
-- Goal
-- Allowed scope
-- Denied scope
-- Inputs
-- Outputs
-- Validation
-- Stop conditions
+- step
+- allowed_action
+- blocked_action
+- approval_owner
+- evidence
+- stop_condition
 
 ## Evidence
 
@@ -60,21 +59,20 @@ Tests whether the learner can convert a broad request into a bounded agent task 
 
 ## Mini-example
 
-Scenario: A reviewer needs to decide whether an agent task using Agent Task Contract can continue.
+Scenario: A reviewer needs to decide whether an agent task using Agent Step Map can continue.
 
-Completed example: Fill docs/agent-task-contract.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+Completed example: Fill docs/agent-step-map.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| Goal | `{{goal}}` | Link or owner proving the value is current |
-| Allowed scope | `{{allowed_scope}}` | Link or owner proving the value is current |
-| Denied scope | `{{denied_scope}}` | Link or owner proving the value is current |
-| Inputs | `{{inputs}}` | Link or owner proving the value is current |
-| Outputs | `{{outputs}}` | Link or owner proving the value is current |
-| Validation | `{{validation}}` | Link or owner proving the value is current |
-| Stop conditions | `{{stop_conditions}}` | Link or owner proving the value is current |
+| step | `{{step}}` | Link or owner proving the value is current |
+| allowed_action | `{{allowed_action}}` | Link or owner proving the value is current |
+| blocked_action | `{{blocked_action}}` | Link or owner proving the value is current |
+| approval_owner | `{{approval_owner}}` | Link or owner proving the value is current |
+| evidence | `{{evidence}}` | Link or owner proving the value is current |
+| stop_condition | `{{stop_condition}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 

@@ -142,8 +142,43 @@ for (const template of templateLibrary.templates) {
   requireText(template.suggestedUse, `template ${template.id}`, "suggestedUse");
   requireArray(template.placeholders, `template ${template.id}`, "placeholders", 3);
   requireArray(template.expectations, `template ${template.id}`, "expectations", 2);
+  requireText(template.owner, `template ${template.id}`, "owner");
+  requireArray(template.requiredFields, `template ${template.id}`, "requiredFields", 3);
+  requireArray(template.evidence, `template ${template.id}`, "evidence", 2);
+  requireArray(template.approvalReview, `template ${template.id}`, "approvalReview", 1);
+  requireArray(template.failureModes, `template ${template.id}`, "failureModes", 2);
+  requireArray(template.recoveryRollback, `template ${template.id}`, "recoveryRollback", 1);
+  requireArray(template.securityCompliance, `template ${template.id}`, "securityCompliance", 1);
+  requireText(template.gh600Relevance, `template ${template.id}`, "gh600Relevance");
+  requireArray(template.sourceIds, `template ${template.id}`, "sourceIds", 1);
+  checkSourceIds(template.sourceIds, `template ${template.id}`);
+  if (!template.miniExample || typeof template.miniExample !== "object") {
+    fail(`template ${template.id} is missing miniExample`);
+  } else {
+    requireText(template.miniExample.scenario, `template ${template.id}`, "miniExample.scenario");
+    requireText(template.miniExample.completedExample, `template ${template.id}`, "miniExample.completedExample");
+  }
   if (!templateSectionIds.has(template.sectionId)) fail(`template ${template.id} references unknown section ${template.sectionId}`);
   if (!fs.existsSync(path.join(root, template.filePath))) fail(`template ${template.id} file does not exist: ${template.filePath}`);
+}
+
+const templatePathMap = new Map();
+for (const template of templateLibrary.templates) {
+  templatePathMap.set(template.filePath, template);
+  for (const alias of template.aliases || []) templatePathMap.set(alias, template);
+}
+
+const domainArtifactPatterns = {
+  "domain-1": /^(?:\.github\/ISSUE_TEMPLATE\/agent-task\.yml|docs\/agent-task-contract\.md|docs\/agent-step-map\.md|docs\/agent-anti-pattern-review\.md|docs\/agent-plan\.md|\.github\/pull_request_template\.md|\.github\/CODEOWNERS|docs\/agent-approval-gates\.md|docs\/agent-handoff\.md)$/,
+  "domain-2": /^(?:docs\/agent-tool-permission-matrix\.md|docs\/mcp-tool-policy\.md|docs\/agent-mcp-server-review\.md|docs\/mcp-allowlist-decision\.md|docs\/environment-constraints\.md|docs\/branch-scope-control\.md|docs\/escalation-paths\.md|\.github\/workflows\/copilot-setup-steps\.yml|\.github\/workflows\/agent-validation\.yml)$/,
+  "domain-3": /^(?:docs\/agent-memory-policy\.md|docs\/agent-state\.md|docs\/resume-checkpoint\.md|docs\/stale-context-checklist\.md|docs\/decision-log\.md|docs\/context-handoff\.md)$/,
+  "domain-4": /^(?:docs\/agent-evaluation-plan\.md|\.github\/workflows\/agent-validation\.yml|docs\/security-scan-evidence\.md|docs\/agent-failure-analysis\.md|docs\/error-analysis\.md|docs\/tuning-log\.md|docs\/regression-checklist\.md|docs\/agent-trace-review\.md)$/,
+  "domain-5": /^(?:docs\/agent-roles\.md|docs\/multi-agent-plan\.md|docs\/multi-agent-handoff-contract\.md|docs\/conflict-log\.md|docs\/multi-agent-arbitration-record\.md|docs\/duplicate-effort-checklist\.md|docs\/recovery-plan\.md|docs\/agent-lifecycle-record\.md)$/,
+  "domain-6": /^(?:docs\/autonomy-matrix\.md|docs\/guardrails\.md|docs\/approval-policy\.md|docs\/responsible-ai-risk-review\.md|docs\/least-privilege-access-review\.md|docs\/sensitive-action-control\.md|docs\/policy-violation-record\.md|docs\/audit-trail\.md|docs\/agent-tool-permission-matrix\.md|docs\/environment-constraints\.md)$/
+};
+
+function pathMatchesDomain(domainId, artifactPath) {
+  return domainArtifactPatterns[domainId]?.test(artifactPath);
 }
 
 for (const [id, title, weight] of expectedDomains) {
@@ -210,9 +245,32 @@ for (const lesson of lessons) {
   requireText(lesson.actionOverview, `lesson ${lesson.id}`, "actionOverview");
   requireArray(lesson.actionSteps, `lesson ${lesson.id}`, "actionSteps", 6);
   requireArray(lesson.filesToCreate, `lesson ${lesson.id}`, "filesToCreate", 3);
+  const artifactPaths = (lesson.filesToCreate || []).map((artifact) => artifact.path);
+  if (artifactPaths.length === 1 && artifactPaths[0] === ".github/ISSUE_TEMPLATE/agent-task.yml") {
+    fail(`lesson ${lesson.id} uses only the generic issue template`);
+  }
+  if (!artifactPaths.some((artifactPath) => pathMatchesDomain(lesson.domainId, artifactPath))) {
+    fail(`lesson ${lesson.id} does not include a domain-specific template recommendation`);
+  }
+  if (/branch(?:-| )based|branch scope|specific repository|autonomous pr|creating branches/i.test(lesson.title) && !/mcp/i.test(lesson.title)) {
+    if (artifactPaths.includes("docs/mcp-tool-policy.md")) {
+      fail(`lesson ${lesson.id} is branch/repository-scope focused but recommends MCP policy as a primary artifact`);
+    }
+    if (!artifactPaths.includes("docs/branch-scope-control.md")) {
+      fail(`lesson ${lesson.id} should recommend docs/branch-scope-control.md for branch or repository scope`);
+    }
+  }
+  if (/mcp|toolset|allow-?list|registry|remote server|local server/i.test(lesson.title)) {
+    if (!artifactPaths.includes("docs/mcp-tool-policy.md") && !artifactPaths.includes("docs/agent-mcp-server-review.md")) {
+      fail(`lesson ${lesson.id} is MCP-focused but lacks an MCP template recommendation`);
+    }
+  }
   for (const artifact of lesson.filesToCreate || []) {
     requireText(artifact.path, `lesson ${lesson.id} artifact`, "path");
     requireText(artifact.purpose, `lesson ${lesson.id} artifact ${artifact.path || ""}`, "purpose");
+    if (!templatePathMap.has(artifact.path)) {
+      fail(`lesson ${lesson.id} artifact ${artifact.path} does not resolve to a template library path or alias`);
+    }
   }
   requireText(lesson.agentRequestTemplate, `lesson ${lesson.id}`, "agentRequestTemplate");
   requireArray(lesson.enterpriseChecklist, `lesson ${lesson.id}`, "enterpriseChecklist", 4);

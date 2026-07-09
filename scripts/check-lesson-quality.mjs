@@ -14,6 +14,7 @@ const quizzes = readJson("quizzes.json");
 const labs = readJson("labs.json");
 const sources = readJson("sources.json");
 const sourceStatus = readJson("sourceStatus.json");
+const templateLibrary = readJson("templateLibrary.json");
 const requiredLessonLabels = [
   "Official skill",
   "GitHub product behaviour",
@@ -51,6 +52,11 @@ const sourceMap = new Map(sources.map((source) => [source.id, source]));
 const sourceStatusMap = new Map((sourceStatus.sources || []).map((source) => [source.id, source]));
 const quizMap = new Map(quizzes.map((quiz) => [quiz.id, quiz]));
 const labMap = new Map(labs.map((lab) => [lab.id, lab]));
+const templatePathMap = new Map();
+for (const template of templateLibrary.templates || []) {
+  templatePathMap.set(template.filePath, template);
+  for (const alias of template.aliases || []) templatePathMap.set(alias, template);
+}
 const finalLessons = lessons.filter((lesson) => lesson.accuracy?.verification === "human-reviewed");
 const errors = [];
 const broadSourceIds = new Set([
@@ -70,6 +76,14 @@ const expectedAuditKindCounts = {
   "evidence-thresholds": 8,
   "anti-pattern": 1,
   "tuning-before-after": 1
+};
+const domainArtifactPatterns = {
+  "domain-1": /^(?:\.github\/ISSUE_TEMPLATE\/agent-task\.yml|docs\/agent-task-contract\.md|docs\/agent-step-map\.md|docs\/agent-anti-pattern-review\.md|docs\/agent-plan\.md|\.github\/pull_request_template\.md|\.github\/CODEOWNERS|docs\/agent-approval-gates\.md|docs\/agent-handoff\.md)$/,
+  "domain-2": /^(?:docs\/agent-tool-permission-matrix\.md|docs\/mcp-tool-policy\.md|docs\/agent-mcp-server-review\.md|docs\/mcp-allowlist-decision\.md|docs\/environment-constraints\.md|docs\/branch-scope-control\.md|docs\/escalation-paths\.md|\.github\/workflows\/copilot-setup-steps\.yml|\.github\/workflows\/agent-validation\.yml)$/,
+  "domain-3": /^(?:docs\/agent-memory-policy\.md|docs\/agent-state\.md|docs\/resume-checkpoint\.md|docs\/stale-context-checklist\.md|docs\/decision-log\.md|docs\/context-handoff\.md)$/,
+  "domain-4": /^(?:docs\/agent-evaluation-plan\.md|\.github\/workflows\/agent-validation\.yml|docs\/security-scan-evidence\.md|docs\/agent-failure-analysis\.md|docs\/error-analysis\.md|docs\/tuning-log\.md|docs\/regression-checklist\.md|docs\/agent-trace-review\.md)$/,
+  "domain-5": /^(?:docs\/agent-roles\.md|docs\/multi-agent-plan\.md|docs\/multi-agent-handoff-contract\.md|docs\/conflict-log\.md|docs\/multi-agent-arbitration-record\.md|docs\/duplicate-effort-checklist\.md|docs\/recovery-plan\.md|docs\/agent-lifecycle-record\.md)$/,
+  "domain-6": /^(?:docs\/autonomy-matrix\.md|docs\/guardrails\.md|docs\/approval-policy\.md|docs\/responsible-ai-risk-review\.md|docs\/least-privilege-access-review\.md|docs\/sensitive-action-control\.md|docs\/policy-violation-record\.md|docs\/audit-trail\.md|docs\/agent-tool-permission-matrix\.md|docs\/environment-constraints\.md)$/
 };
 const requiredUiConfigLessonIds = new Set([
   "domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution",
@@ -260,6 +274,10 @@ function sourceTitles(ids) {
   return (ids || []).map((id) => sourceMap.get(id)?.title || "").join(" ");
 }
 
+function pathMatchesDomain(domainId, artifactPath) {
+  return domainArtifactPatterns[domainId]?.test(artifactPath);
+}
+
 function officialPublisher(source) {
   return /^(GitHub Docs|Microsoft Learn|Microsoft)$/i.test(source?.publisher || "");
 }
@@ -298,6 +316,31 @@ for (const lesson of finalLessons) {
     if (coreText.includes(fragment)) fail(`${context} core still contains generic explanation fragment "${fragment}"`);
   }
   requireArray(lesson.filesToCreate, context, "filesToCreate", 5);
+  const artifactPaths = (lesson.filesToCreate || []).map((artifact) => artifact.path);
+  if (artifactPaths.length === 1 && artifactPaths[0] === ".github/ISSUE_TEMPLATE/agent-task.yml") {
+    fail(`${context} uses only the generic issue template`);
+  }
+  if (!artifactPaths.some((artifactPath) => pathMatchesDomain(lesson.domainId, artifactPath))) {
+    fail(`${context} does not include a domain-specific template recommendation`);
+  }
+  if (/branch(?:-| )based|branch scope|specific repository|autonomous pr|creating branches/i.test(lesson.title) && !/mcp/i.test(lesson.title)) {
+    if (artifactPaths.includes("docs/mcp-tool-policy.md")) {
+      fail(`${context} is branch/repository-scope focused but recommends MCP policy as a primary artifact`);
+    }
+    if (!artifactPaths.includes("docs/branch-scope-control.md")) {
+      fail(`${context} should recommend docs/branch-scope-control.md for branch or repository scope`);
+    }
+  }
+  if (/mcp|toolset|allow-?list|registry|remote server|local server/i.test(lesson.title)) {
+    if (!artifactPaths.includes("docs/mcp-tool-policy.md") && !artifactPaths.includes("docs/agent-mcp-server-review.md")) {
+      fail(`${context} is MCP-focused but lacks an MCP template recommendation`);
+    }
+  }
+  for (const artifactPath of artifactPaths) {
+    if (!templatePathMap.has(artifactPath)) {
+      fail(`${context} artifact ${artifactPath} does not resolve to a template library path or alias`);
+    }
+  }
   requireText(lesson.agentRequestTemplate, context, "agentRequestTemplate", 35);
   requireArray(lesson.enterpriseChecklist, context, "enterpriseChecklist", 5);
   requireArray(lesson.whatNotToDo, context, "whatNotToDo", 3);

@@ -350,9 +350,24 @@ const topicRules = [
   }
 ];
 
+function topicPriority(rule, lesson) {
+  const title = lessonTitle(lesson).toLowerCase();
+  if (rule.name === "MCP governance" && /mcp|toolset|registry|allow list|allow-list|allowlist|remote server|local server|playwright/.test(title)) return 100;
+  if (rule.name === "Repository governance" && /branch|pull request|\bpr\b|issue|repository|codeowners|ruleset|protected|artifacts|instructions|creating branches/.test(title)) return 95;
+  if (rule.name === "Workflow execution" && /ci workflow|workflow|actions|setup|environment|execution context|constraints|retries|retry|rollback|error handling|traceability|accountability/.test(title)) return 90;
+  if (rule.name === "Memory and state" && /memory|state|context|stale|drift|resume|handoff|durable|conflicting|checkpoint|expiry|expiration|pruning|reset/.test(title)) return 88;
+  if (rule.name === "Evaluation and tuning" && /evaluation|evaluate|signals|scanning|scan|failure|root cause|tune|tuning|refine|regression|overfitting|accessibility|static analysis|codeql|secret scanning|dependency/.test(title)) return 86;
+  if (rule.name === "Multi-agent coordination" && /multi-agent|orchestration|parallel|conflict|handoff|duplicate|contradictory|roles|replacement|retirement|retire|degraded|lifecycle/.test(title)) return 84;
+  if (rule.name === "Guardrails and approvals" && /guardrail|autonomy|human|approval|authorization|irreversible|compliance|security|responsible ai|policy|audit|risk|velocity|least-privilege|least privilege/.test(title)) return 82;
+  if (rule.name === "Tool permission design" && /tool|permission|read-only|write-capable|scope|least-privilege|least privilege/.test(title)) return 70;
+  return 10;
+}
+
 function topicFor(lesson) {
   const title = lesson.title;
-  const matches = topicRules.filter((rule) => rule.match.test(title));
+  const matches = topicRules
+    .filter((rule) => rule.match.test(title))
+    .sort((a, b) => topicPriority(b, lesson) - topicPriority(a, lesson));
   const profile = domainProfiles[lesson.domainId];
   const primary = matches[0] || {
     name: profile.examLens,
@@ -409,17 +424,205 @@ function documentationProfile(lesson, topic, sourceIds) {
   };
 }
 
-function artifactsFor(lesson, topic) {
-  const profile = domainProfiles[lesson.domainId];
-  return unique([...topic.artifacts, ...profile.artifacts].map(([artifactPath]) => artifactPath))
-    .slice(0, 7)
-    .map((artifactPath) => {
-      const found = [...topic.artifacts, ...profile.artifacts].find(([candidate]) => candidate === artifactPath);
-      return asArtifact(
-        artifactPath,
-        `${found?.[1] || "Records the lesson-specific control and review evidence."} Lesson use: support the skill "${lessonTitle(lesson)}" with evidence a reviewer can inspect.`
+const artifactCatalog = {
+  ".github/ISSUE_TEMPLATE/agent-task.yml": "Captures the issue-level goal, scope, non-goals, validation, risk tier, and stop conditions before an agent starts work.",
+  "docs/agent-task-contract.md": "Expands the task contract with inputs, outputs, success criteria, tool boundaries, evidence, and approval owners.",
+  "docs/agent-step-map.md": "Shows the ordered agent phases from intake through handoff so reviewers can evaluate the safest next step.",
+  "docs/agent-anti-pattern-review.md": "Records unsafe workflow symptoms, risk impact, mitigation controls, and the GitHub evidence that proves the mitigation.",
+  "docs/agent-plan.md": "Separates planning from execution by recording assumptions, target files, validation, risks, and approval points before edits.",
+  ".github/pull_request_template.md": "Requires changed files, checks, approvals, source links, residual risk, and rollback evidence in the pull request.",
+  ".github/CODEOWNERS": "Routes sensitive paths, policy files, workflows, and owned domains to accountable reviewers before merge.",
+  ".github/copilot-instructions.md": "Defines repository-specific instructions, build/test commands, safety boundaries, and stop conditions for Copilot.",
+  "AGENTS.md": "Defines local operating rules for agents, including scope, validation, evidence, and stop conditions.",
+  "docs/agent-approval-gates.md": "Names the human approval point for sensitive, irreversible, privileged, or uncertain agent actions.",
+  "docs/approval-policy.md": "Explains when explicit authorization is required and which GitHub control records the decision.",
+  "docs/branch-scope-control.md": "Documents branch purpose, allowed paths, denied paths, required checks, CODEOWNERS review, and ruleset or protection evidence.",
+  "docs/agent-tool-permission-matrix.md": "Maps each tool to task need, access level, denied use, data boundary, validation evidence, and escalation owner.",
+  "docs/mcp-tool-policy.md": "Defines approved MCP servers, allowed toolsets, denied capabilities, data boundaries, and review requirements.",
+  "docs/agent-mcp-server-review.md": "Reviews an MCP server against registry, allow-list, remote/local trust, data exposure, toolset, and audit requirements.",
+  "docs/mcp-allowlist-decision.md": "Records the MCP allow-list or registry decision, selected server, selected toolsets, denied operations, and reviewer approval.",
+  "docs/environment-constraints.md": "Constrains runner, network, secrets, token permissions, environments, and external systems for agent execution.",
+  ".github/workflows/copilot-setup-steps.yml": "Prepares the Copilot cloud-agent environment and leaves setup logs for dependency and environment review.",
+  ".github/workflows/agent-validation.yml": "Runs repeatable build, test, scan, or validation checks and preserves workflow evidence for review.",
+  "docs/escalation-paths.md": "Explains what evidence the agent must provide before asking for broader scope, stronger tools, or human intervention.",
+  "docs/recovery-plan.md": "Documents retry, rollback, containment, replacement, and human-in-the-loop recovery when agent work fails.",
+  "docs/agent-trace-review.md": "Captures tool calls, handoffs, guardrail events, workflow logs, and unexpected behavior from an agent run.",
+  "docs/agent-state.md": "Records current progress, branch, files, checks, blockers, assumptions, and next owner for long-running work.",
+  "docs/agent-memory-policy.md": "Defines what the agent may remember, reuse, expire, prune, reset, redact, or write to durable state.",
+  "docs/context-handoff.md": "Transfers state between sessions, agents, or tools without relying on hidden chat memory.",
+  "docs/decision-log.md": "Records durable decisions with owner, date, source evidence, rationale, superseding rule, and review trigger.",
+  "docs/resume-checkpoint.md": "Creates a safe checkpoint for resumed work, including current state, validation status, and stale-context checks.",
+  "docs/stale-context-checklist.md": "Forces a refresh of issue, PR, branch, CI, instructions, source docs, and policy before reused context is trusted.",
+  "docs/agent-evaluation-plan.md": "Defines success criteria, evaluation signals, thresholds, datasets, human review, and release decision rules.",
+  "docs/security-scan-evidence.md": "Records CodeQL, secret scanning, dependency, policy, or accessibility scan scope, findings, disposition, and owner.",
+  "docs/agent-failure-analysis.md": "Classifies failures by reasoning, prompt, context, tool, environment, handoff, evaluation, or governance root cause.",
+  "docs/error-analysis.md": "Converts incorrect, unsafe, or incomplete behavior into a specific root-cause fix and regression case.",
+  "docs/tuning-log.md": "Records instruction, memory, tool, routing, or guardrail changes with before/after evidence and rollback plan.",
+  "docs/regression-checklist.md": "Lists baseline cases, adjacent cases, rerun commands, thresholds, and owner approval after tuning or fixes.",
+  "docs/agent-roles.md": "Defines each agent role, responsibility, input, output, tool boundary, handoff rule, and stop condition.",
+  "docs/multi-agent-plan.md": "Coordinates sequencing, parallel branches, file ownership, dependencies, validation, and stop conditions.",
+  "docs/multi-agent-handoff-contract.md": "Transfers branch, files, decisions, evidence, open risks, and next owner between agents.",
+  "docs/conflict-log.md": "Records overlapping edits, duplicate work, contradictory outputs, arbitration, and final decision.",
+  "docs/multi-agent-arbitration-record.md": "Names the human arbitration owner and final decision when agent outputs conflict or overlap.",
+  "docs/duplicate-effort-checklist.md": "Checks whether multiple agents are solving the same work, touching the same files, or producing redundant evidence.",
+  "docs/agent-lifecycle-record.md": "Records agent addition, reconfiguration, replacement, retirement, preserved state, and audit continuity.",
+  "docs/autonomy-matrix.md": "Maps action types to autonomy level, allowed behavior, blocked behavior, approval requirement, validation, and owner.",
+  "docs/guardrails.md": "Defines blocked actions, controlled paths, policy boundaries, trigger conditions, and safe alternatives.",
+  "docs/responsible-ai-risk-review.md": "Reviews fairness, reliability, privacy, security, transparency, accountability, and human oversight risk.",
+  "docs/least-privilege-access-review.md": "Reviews repository, branch, workflow, MCP, secret, environment, and deployment access against task need.",
+  "docs/sensitive-action-control.md": "Defines controls for irreversible, privileged, production, data-handling, compliance, or deployment actions.",
+  "docs/policy-violation-record.md": "Records blocked or denied actions, violated policy, evidence, owner decision, and corrective path.",
+  "docs/audit-trail.md": "Collects chronological PR, workflow, approval, environment, tool-call, and review evidence for accountability.",
+  "docs/agent-handoff.md": "Captures completed steps, changed artifacts, validation, open risks, blocked work, and the next human decision."
+};
+
+const baseArtifacts = [
+  ".github/ISSUE_TEMPLATE/agent-task.yml",
+  "docs/agent-task-contract.md",
+  "docs/agent-plan.md",
+  ".github/pull_request_template.md"
+];
+
+function artifactsFrom(paths, lesson) {
+  return unique(paths)
+    .slice(0, 8)
+    .map((artifactPath) => asArtifact(
+      artifactPath,
+      `${artifactCatalog[artifactPath] || "Records the lesson-specific control and review evidence."} Lesson use: support "${lessonTitle(lesson)}" with evidence a reviewer can inspect.`
+    ));
+}
+
+function templateRecommendationPaths(lesson, topic) {
+  const title = lessonTitle(lesson).toLowerCase();
+  const category = topicSpecificCategory(lesson, topic);
+  const paths = [];
+
+  if (lesson.domainId === "domain-1") {
+    paths.push(...baseArtifacts, ".github/CODEOWNERS", "docs/agent-approval-gates.md", "docs/agent-handoff.md");
+    if (/step|decompos|perform/.test(title)) paths.push("docs/agent-step-map.md");
+    if (/anti-pattern|mitigate/.test(title)) paths.push("docs/agent-anti-pattern-review.md", "docs/agent-tool-permission-matrix.md");
+    if (/planning|structured plan|validate agent plans/.test(title)) paths.push("docs/agent-approval-gates.md", "docs/responsible-ai-risk-review.md");
+    if (/autonomy|guardrail|human intervention|checked and approved/.test(title)) paths.push("docs/autonomy-matrix.md", "docs/guardrails.md", "docs/approval-policy.md");
+    if (/inspectable|artifact|pull request/.test(title)) paths.push("docs/audit-trail.md", "docs/agent-trace-review.md");
+    return paths;
+  }
+
+  if (lesson.domainId === "domain-2") {
+    if (category === "MCP and tool access") {
+      paths.push(
+        "docs/mcp-tool-policy.md",
+        "docs/agent-mcp-server-review.md",
+        "docs/mcp-allowlist-decision.md",
+        "docs/agent-tool-permission-matrix.md",
+        "docs/environment-constraints.md",
+        "docs/escalation-paths.md",
+        ".github/workflows/copilot-setup-steps.yml",
+        ".github/workflows/agent-validation.yml"
       );
-    });
+      return paths;
+    }
+    if (/branch|repository scope|specific repository|pull request|autonomous pr|creating branches/.test(title)) {
+      paths.push(
+        "docs/branch-scope-control.md",
+        ".github/ISSUE_TEMPLATE/agent-task.yml",
+        ".github/CODEOWNERS",
+        ".github/pull_request_template.md",
+        "docs/environment-constraints.md",
+        "docs/agent-tool-permission-matrix.md",
+        "docs/escalation-paths.md"
+      );
+      return paths;
+    }
+    if (category === "Workflow execution") {
+      paths.push(
+        ".github/workflows/copilot-setup-steps.yml",
+        ".github/workflows/agent-validation.yml",
+        "docs/environment-constraints.md",
+        "docs/recovery-plan.md",
+        "docs/escalation-paths.md",
+        "docs/agent-trace-review.md",
+        "docs/agent-tool-permission-matrix.md"
+      );
+      return paths;
+    }
+    paths.push(
+      "docs/agent-tool-permission-matrix.md",
+      "docs/environment-constraints.md",
+      "docs/escalation-paths.md",
+      "docs/autonomy-matrix.md",
+      "docs/guardrails.md",
+      ".github/workflows/agent-validation.yml"
+    );
+    return paths;
+  }
+
+  if (lesson.domainId === "domain-3") {
+    paths.push(
+      "docs/agent-memory-policy.md",
+      "docs/agent-state.md",
+      "docs/resume-checkpoint.md",
+      "docs/stale-context-checklist.md",
+      "docs/decision-log.md",
+      "docs/context-handoff.md"
+    );
+    if (/shared|multi-agent|conflicting/.test(title)) paths.push("docs/agent-roles.md", "docs/conflict-log.md");
+    if (/workflow artifact|repository artifact|issues and pull requests/.test(title)) paths.push(".github/pull_request_template.md", ".github/workflows/agent-validation.yml");
+    return paths;
+  }
+
+  if (lesson.domainId === "domain-4") {
+    paths.push(
+      "docs/agent-evaluation-plan.md",
+      ".github/workflows/agent-validation.yml",
+      "docs/security-scan-evidence.md",
+      "docs/agent-failure-analysis.md",
+      "docs/error-analysis.md",
+      "docs/tuning-log.md",
+      "docs/regression-checklist.md"
+    );
+    if (/trace|logs|workflow artifacts/.test(title)) paths.push("docs/agent-trace-review.md");
+    if (/memory/.test(title)) paths.push("docs/agent-memory-policy.md", "docs/stale-context-checklist.md");
+    if (/tool/.test(title)) paths.push("docs/agent-tool-permission-matrix.md");
+    return paths;
+  }
+
+  if (lesson.domainId === "domain-5") {
+    paths.push(
+      "docs/agent-roles.md",
+      "docs/multi-agent-plan.md",
+      "docs/multi-agent-handoff-contract.md",
+      "docs/conflict-log.md",
+      "docs/multi-agent-arbitration-record.md",
+      "docs/duplicate-effort-checklist.md",
+      "docs/recovery-plan.md"
+    );
+    if (/replace|retire|retirement|lifecycle|add agents|reconfigure/.test(title)) paths.push("docs/agent-lifecycle-record.md");
+    if (/parallel|branch/.test(title)) paths.push("docs/branch-scope-control.md", ".github/CODEOWNERS");
+    if (/audit|post-hoc|outcomes/.test(title)) paths.push("docs/audit-trail.md", "docs/decision-log.md");
+    return paths;
+  }
+
+  if (lesson.domainId === "domain-6") {
+    paths.push(
+      "docs/autonomy-matrix.md",
+      "docs/guardrails.md",
+      "docs/approval-policy.md",
+      "docs/responsible-ai-risk-review.md",
+      "docs/least-privilege-access-review.md",
+      "docs/sensitive-action-control.md",
+      "docs/policy-violation-record.md",
+      "docs/audit-trail.md"
+    );
+    if (/permission|least-privilege|execution context/.test(title)) paths.unshift("docs/agent-tool-permission-matrix.md", "docs/environment-constraints.md");
+    if (/velocity|friction|human judgment/.test(title)) paths.push("docs/agent-approval-gates.md");
+    return paths;
+  }
+
+  return [...baseArtifacts, ...((topic.artifacts || []).map(([artifactPath]) => artifactPath))];
+}
+
+function artifactsFor(lesson, topic) {
+  return artifactsFrom(templateRecommendationPaths(lesson, topic), lesson);
 }
 
 function keyTermsFor(lesson, topic) {
@@ -540,11 +743,11 @@ function auditKindFor(lesson) {
 }
 
 function primaryArtifact(lesson, topic) {
-  return (lesson.filesToCreate || [])[0]?.path || artifactsFor(lesson, topic)[0]?.path || "docs/agent-plan.md";
+  return artifactsFor(lesson, topic)[0]?.path || "docs/agent-plan.md";
 }
 
 function secondaryArtifact(lesson, topic) {
-  return (lesson.filesToCreate || [])[1]?.path || artifactsFor(lesson, topic)[1]?.path || "docs/agent-handoff.md";
+  return artifactsFor(lesson, topic)[1]?.path || "docs/agent-handoff.md";
 }
 
 function workedQuestionFor(lesson, topic, kind) {
@@ -747,14 +950,16 @@ function uiConfigExampleFor(lesson, topic, kind) {
 }
 
 function topicSpecificCategory(lesson, topic) {
-  const value = `${lessonTitle(lesson)} ${topic.name} ${topic.teaches}`.toLowerCase();
-  if (/mcp|toolset|registry|allow list|allow-list|allowlist|remote server|local server|playwright/.test(value)) return "MCP and tool access";
-  if (/memory|state|context|stale|drift|resume|durable|checkpoint|expiry|expiration|pruning|reset/.test(value)) return "Memory and state";
-  if (/responsible ai|compliance|guardrail|autonomy|authorization|approval|least-privilege|least privilege|policy|audit|risk/.test(value) || lesson.domainId === "domain-6") return "Responsible AI and guardrails";
-  if (/multi-agent|orchestration|parallel|handoff|conflict|duplicate|contradictory|degraded|replacement|retire|retirement|lifecycle/.test(value)) return "Multi-agent coordination";
-  if (/evaluation|evaluate|signal|scan|codeql|secret|dependency|failure|root cause|tuning|regression|accessibility|trace/.test(value)) return "Evaluation and tuning";
-  if (/branch|pull request|repository|issue|codeowners|ruleset|protected|instructions/.test(value)) return "Repository and branch governance";
-  if (/workflow|actions|setup|environment|retry|rollback|traceability|execution|ci|permission/.test(value)) return "Workflow execution";
+  const title = lessonTitle(lesson).toLowerCase();
+  const value = `${title} ${topic.name} ${topic.teaches}`.toLowerCase();
+  if (/mcp|toolset|registry|allow list|allow-list|allowlist|remote server|local server|playwright/.test(title)) return "MCP and tool access";
+  if (/memory|state|context|stale|drift|resume|durable|checkpoint|expiry|expiration|pruning|reset/.test(title)) return "Memory and state";
+  if (lesson.domainId === "domain-6" || /responsible ai|compliance|guardrail|autonomy|authorization|approval|least-privilege|least privilege|policy|audit|risk|human judgment|irreversible|velocity/.test(title)) return "Responsible AI and guardrails";
+  if (lesson.domainId === "domain-5" || /multi-agent|orchestration|parallel|handoff|conflict|duplicate|contradictory|degraded|replacement|retire|retirement|lifecycle/.test(title)) return "Multi-agent coordination";
+  if (/branch|pull request|\bpr\b|repository|issue|codeowners|ruleset|protected|instructions|creating branches/.test(title)) return "Repository and branch governance";
+  if (lesson.domainId === "domain-4" || /evaluation|evaluate|signal|scan|codeql|secret scanning|dependency|failure|root cause|tuning|regression|accessibility|static analysis|overfitting/.test(title)) return "Evaluation and tuning";
+  if (/workflow|actions|setup|environment|retry|rollback|traceability|execution|ci|permission|constraints|error handling/.test(title)) return "Workflow execution";
+  if (/tool|permission|read-only|write-capable|scope|least-privilege|least privilege/.test(value)) return "MCP and tool access";
   return "Agent architecture and SDLC";
 }
 
@@ -1166,8 +1371,17 @@ function applyAuditEnhancements(lesson) {
   const topic = topicFor(lesson);
   const kind = auditKindFor(lesson);
   const uiConfigExample = uiConfigExampleFor(lesson, topic, kind);
+  const templateRecommendations = artifactsFor(lesson, topic);
   return {
     ...lesson,
+    filesToCreate: templateRecommendations,
+    templateRecommendationProfile: {
+      reviewedAt: "2026-07-09",
+      category: topicSpecificCategory(lesson, topic),
+      evidence: topic.evidence,
+      examTrapAvoided: topic.risk,
+      sourceIds: sourcePack(lesson, topic)
+    },
     plainLanguage: topicSpecificPlainLanguageFor(lesson, topic),
     core: topicSpecificCoreFor(lesson, topic),
     actionOverview: topicSpecificActionOverviewFor(lesson, topic),

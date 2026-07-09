@@ -1,12 +1,12 @@
-# Trace Review Record
+# Regression Checklist
 
 ## Purpose
 
-Capture tool calls, handoffs, guardrail trips, and evidence from an agent run.
+Verify that prompt, memory, tool, workflow, or guardrail changes did not break previously passing behavior.
 
 ## When To Use
 
-Use for debugging agent behavior and building eval cases from real failures.
+Use after tuning, root-cause fixes, scan remediation, or workflow changes.
 
 ## Owner
 
@@ -14,12 +14,13 @@ Quality, security, or release owner
 
 ## Required Fields
 
-- Expected result
-- Signal
-- Threshold
-- Failure class
-- Owner
-- Rerun evidence
+- baseline_case
+- adjacent_case
+- command
+- threshold
+- result
+- owner
+- rollback_trigger
 
 ## Evidence
 
@@ -60,20 +61,21 @@ Tests evaluation signals, error analysis, tuning, and evidence-backed release de
 
 ## Mini-example
 
-Scenario: A reviewer needs to decide whether an agent task using Trace Review Record can continue.
+Scenario: A reviewer needs to decide whether an agent task using Regression Checklist can continue.
 
-Completed example: Fill docs/agent-trace-review.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+Completed example: Fill docs/regression-checklist.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| Expected result | `{{expected_result}}` | Link or owner proving the value is current |
-| Signal | `{{signal}}` | Link or owner proving the value is current |
-| Threshold | `{{threshold}}` | Link or owner proving the value is current |
-| Failure class | `{{failure_class}}` | Link or owner proving the value is current |
-| Owner | `{{owner}}` | Link or owner proving the value is current |
-| Rerun evidence | `{{rerun_evidence}}` | Link or owner proving the value is current |
+| baseline_case | `{{baseline_case}}` | Link or owner proving the value is current |
+| adjacent_case | `{{adjacent_case}}` | Link or owner proving the value is current |
+| command | `{{command}}` | Link or owner proving the value is current |
+| threshold | `{{threshold}}` | Link or owner proving the value is current |
+| result | `{{result}}` | Link or owner proving the value is current |
+| owner | `{{owner}}` | Link or owner proving the value is current |
+| rollback_trigger | `{{rollback_trigger}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 

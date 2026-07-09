@@ -1,73 +1,84 @@
 # Agent Evaluation Plan
 
-## Goal
+## Purpose
 
-Define how an agent workflow will be evaluated before it is trusted or released.
+Define task-level, trace-level, and release-level evaluation for agent workflows.
 
-## Suggested Use
+## When To Use
 
-Use before changing prompts, model settings, tool availability, MCP configuration, handoffs, guardrails, or repository instructions.
+Use before changing prompts, tools, routing, handoffs, models, or guardrails.
 
-## Workflow Under Test
+## Owner
 
-- Workflow name: `{{workflow_name}}`
-- Owner: `{{owner}}`
-- Agent profile or model: `{{agent_profile_or_model}}`
-- Tools and MCP servers: `{{tools}}`
-- User journey or task class: `{{task_class}}`
+Quality, security, or release owner
 
-## Evaluation Questions
+## Required Fields
 
-- Did the agent choose the right tool?
-- Did the agent call tools with correct arguments?
-- Did a handoff happen only when it should?
-- Did the workflow follow domain policy and system instructions?
-- Did the output satisfy the task goal?
-- Did the workflow avoid sensitive or forbidden actions?
+- Expected result
+- Signal
+- Threshold
+- Failure class
+- Owner
+- Rerun evidence
 
-Add local questions:
+## Evidence
 
-- `{{local_eval_question}}`
+- Workflow run
+- Scan output
+- Trace review
+- Failure analysis
+- Tuning log
 
-## Dataset
+## Approval And Review
 
-| Case ID | Scenario | Expected behavior | Edge case covered |
-| --- | --- | --- | --- |
-| `{{case_id}}` | `{{scenario}}` | `{{expected_behavior}}` | `{{edge_case}}` |
+- Quality or security owner signs off before accepting residual risk or tuning changes
 
-Include:
+## Failure Modes
 
-- happy paths;
-- ambiguous requests;
-- tool failures;
-- multi-intent requests;
-- conflicting user/system instructions;
-- handoff loops;
-- long context or resumed work;
-- sensitive data or permission boundaries.
+- Agent confidence replaces evidence
+- Tuning happens before root cause
+- Regression checks are skipped
 
-## Metrics
+## Recovery Or Rollback
 
-| Metric | Target | Blocking? |
+- Restore baseline behavior, classify root cause, and rerun the original plus adjacent cases
+
+## Security And Compliance
+
+- Preserve scan findings, trace data, and accepted-risk decisions without leaking sensitive information.
+
+## GH-600 Relevance
+
+Tests evaluation signals, error analysis, tuning, and evidence-backed release decisions.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+- [Risks and mitigations for GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/risks-and-mitigations)
+- [Responsible AI for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Agent Evaluation Plan can continue.
+
+Completed example: Fill docs/agent-evaluation-plan.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
 | --- | --- | --- |
-| `{{success_rate_or_score}}` | `{{target}}` | `{{yes_no}}` |
-| `{{tool_call_accuracy}}` | `{{target}}` | `{{yes_no}}` |
-| `{{handoff_accuracy}}` | `{{target}}` | `{{yes_no}}` |
-| `{{policy_violation_rate}}` | `{{target}}` | `{{yes_no}}` |
+| Expected result | `{{expected_result}}` | Link or owner proving the value is current |
+| Signal | `{{signal}}` | Link or owner proving the value is current |
+| Threshold | `{{threshold}}` | Link or owner proving the value is current |
+| Failure class | `{{failure_class}}` | Link or owner proving the value is current |
+| Owner | `{{owner}}` | Link or owner proving the value is current |
+| Rerun evidence | `{{rerun_evidence}}` | Link or owner proving the value is current |
 
-## Grading
+## Review Checklist
 
-- Deterministic checks: `{{exact_or_schema_checks}}`
-- Model-graded checks: `{{rubric}}`
-- Human review sample: `{{sample_size_and_owner}}`
-- Calibration method: `{{how_model_grades_are_checked}}`
-
-## Release Decision
-
-```text
-Release threshold: {{threshold}}
-Latest result: {{result}}
-Decision: {{ship_block_iterate}}
-Owner: {{owner}}
-Follow-up evals: {{follow_up_cases}}
-```
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

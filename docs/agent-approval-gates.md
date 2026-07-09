@@ -1,57 +1,84 @@
 # Agent Approval Gates
 
-## Goal
+## Purpose
 
-Define where an agent must pause for human approval.
+Document which actions require human approval before the agent continues.
 
-## Suggested Use
+## When To Use
 
-Use this template for production workflows, regulated content, MCP/tool enablement, deployment changes, security-sensitive edits, or any task where agent autonomy needs explicit limits.
+Use in regulated, production, security, deployment, data, or MCP/tool-enabled workflows.
 
-## Gate Policy
+## Owner
 
-| Action | Risk tier | Agent may proceed? | Approver | Evidence required |
-| --- | --- | --- | --- | --- |
-| `{{action_type}}` | `{{low_medium_high}}` | `{{yes_no_after_approval}}` | `{{role_or_person}}` | `{{evidence}}` |
+Repository maintainer, CODEOWNER, or risk owner
 
-## Always Requires Approval
+## Required Fields
 
-- Production deployment.
-- Secret, token, credential, or permission changes.
-- Authentication or authorization behavior changes.
-- MCP server enablement or new external tool access.
-- Data deletion, migration, export, retention, or privacy behavior changes.
-- Branch protection, ruleset, CODEOWNERS, environment, or Actions permission changes.
+- Risk class
+- Approval owner
+- Blocked actions
+- Validation evidence
+- Rollback path
 
-Add local rules:
+## Evidence
 
-- `{{local_approval_rule}}`
+- CODEOWNERS review
+- Ruleset result
+- Environment approval
+- Audit note
 
-## Approval Record
+## Approval And Review
 
-Use this format in the issue, PR, or release notes:
+- Named owner approval before privileged, irreversible, production, or compliance-sensitive action
 
-```text
-Approval gate: {{gate_name}}
-Approver: {{role_or_person}}
-Decision: {{approved_rejected_needs_changes}}
-Evidence reviewed: {{evidence_links}}
-Time: {{timestamp}}
-Conditions: {{conditions_or_none}}
-```
+## Failure Modes
 
-## Bypass Policy
+- Approval is ceremonial
+- Policy violation is logged only after execution
+- Owner is not accountable
 
-Bypass is allowed only when:
+## Recovery Or Rollback
 
-- `{{emergency_condition}}`
-- `{{named_owner}}` accepts the risk;
-- the action is logged after the fact;
-- a follow-up review issue is created.
+- Block the action, preserve evidence, and route to the risk owner for a controlled path
 
-## Reviewer Checklist
+## Security And Compliance
 
-- [ ] The action is mapped to the correct risk tier.
-- [ ] The named approver has authority.
-- [ ] Evidence is available before approval.
-- [ ] The agent did not proceed before the approval record existed.
+- Apply least privilege and explicit authorization for security, privacy, compliance, and Responsible AI risk.
+
+## GH-600 Relevance
+
+Tests right-sized human intervention, guardrails, least privilege, and accountability.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [About protected branches](https://docs.github.com/en/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
+- [About rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+- [About code owners](https://docs.github.com/articles/about-code-owners)
+- [Deployments and environments](https://docs.github.com/en/actions/reference/deployments-and-environments)
+- [Reviewing deployments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments)
+- [Responsible AI Principles and Approach](https://www.microsoft.com/en-us/ai/principles-and-approach/)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Agent Approval Gates can continue.
+
+Completed example: Fill docs/agent-approval-gates.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
+| --- | --- | --- |
+| Risk class | `{{risk_class}}` | Link or owner proving the value is current |
+| Approval owner | `{{approval_owner}}` | Link or owner proving the value is current |
+| Blocked actions | `{{blocked_actions}}` | Link or owner proving the value is current |
+| Validation evidence | `{{validation_evidence}}` | Link or owner proving the value is current |
+| Rollback path | `{{rollback_path}}` | Link or owner proving the value is current |
+
+## Review Checklist
+
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

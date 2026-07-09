@@ -1,51 +1,84 @@
 # Agent Release Retrospective
 
-## Goal
+## Purpose
 
-Record what the agent-assisted release taught the team and convert those lessons into template, instruction, or eval improvements.
+Record what changed, what evidence passed, what failed, and what the next template or eval improvement should be.
 
-## Suggested Use
+## When To Use
 
-Use after releases, template-library changes, source-currentness updates, agent workflow migrations, or major PRs.
+Use after agent-assisted releases, workflow migrations, source updates, or template-library changes.
 
-## Release Summary
+## Owner
 
-- Release or PR: `{{release_or_pr}}`
-- Date: `{{date}}`
-- Owner: `{{owner}}`
-- Agent involvement: `{{agent_involvement}}`
+Workflow owner or reviewer taking over the task
 
-## What Changed
+## Required Fields
 
-- `{{change}}`
+- Current state
+- Decision
+- Assumption
+- Expiry trigger
+- Refresh source
+- Next owner
 
-## Evidence That Passed
+## Evidence
 
-| Evidence | Location | Result |
+- State file
+- Decision log
+- Checkpoint
+- Stale-context checklist
+
+## Approval And Review
+
+- Reviewer approval before reusing remembered context after source, branch, policy, or owner changes
+
+## Failure Modes
+
+- Stale memory is trusted
+- Assumptions overwrite facts
+- Handoff loses open risk
+
+## Recovery Or Rollback
+
+- Reset memory, refresh current GitHub artifacts, and append a superseding decision
+
+## Security And Compliance
+
+- Do not retain sensitive data, secrets, private context, or expired assumptions in agent memory.
+
+## GH-600 Relevance
+
+Tests memory scope, state continuity, context refresh, and durable evidence across sessions.
+
+## Sources
+
+- [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600)
+- [Foundations of Agentic AI in GitHub](https://learn.microsoft.com/en-us/training/modules/foundations-agentic-ai/)
+- [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
+- [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+
+## Mini-example
+
+Scenario: A reviewer needs to decide whether an agent task using Agent Release Retrospective can continue.
+
+Completed example: Fill docs/agent-release-retrospective.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+
+## Template
+
+| Field | Value | Evidence or owner |
 | --- | --- | --- |
-| `{{check_or_review}}` | `{{link_or_command}}` | `{{result}}` |
+| Current state | `{{current_state}}` | Link or owner proving the value is current |
+| Decision | `{{decision}}` | Link or owner proving the value is current |
+| Assumption | `{{assumption}}` | Link or owner proving the value is current |
+| Expiry trigger | `{{expiry_trigger}}` | Link or owner proving the value is current |
+| Refresh source | `{{refresh_source}}` | Link or owner proving the value is current |
+| Next owner | `{{next_owner}}` | Link or owner proving the value is current |
 
-## What Failed Or Nearly Failed
+## Review Checklist
 
-- `{{miss_or_near_miss}}`
-
-## What We Learned
-
-`{{lesson}}`
-
-## Template Updates
-
-| Template | Change needed | Owner |
-| --- | --- | --- |
-| `{{template_path}}` | `{{change_needed}}` | `{{owner}}` |
-
-## Eval Updates
-
-| Eval or test | New case | Reason |
-| --- | --- | --- |
-| `{{eval_name}}` | `{{case}}` | `{{reason}}` |
-
-## Follow-Up
-
-- [ ] `{{action}}`
-- [ ] `{{action}}`
+- [ ] The artifact names the task, owner, and approval path.
+- [ ] The evidence is linked or easy to reproduce.
+- [ ] The artifact blocks or escalates risky action before execution.
+- [ ] The rollback or recovery path is clear.
+- [ ] Source-backed assumptions were checked on 2026-07-09 or later.

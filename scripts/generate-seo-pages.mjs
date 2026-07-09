@@ -25,6 +25,7 @@ const glossary = readJson("glossary.json");
 const sources = readJson("sources.json");
 const uiWalkthroughs = readJson("uiWalkthroughs.json");
 const templateLibrary = readJson("templateLibrary.json");
+const sourceMap = new Map(sources.map((source) => [source.id, source]));
 
 function escapeHtml(value = "") {
   return String(value)
@@ -250,9 +251,15 @@ function libraryPage() {
   return pageShell(templateLibrary.title, templateLibrary.summary, body, { page: "library" });
 }
 
+function templateFieldSection(title, items, formatter = escapeHtml) {
+  return items?.length ? `<section><h2>${escapeHtml(title)}</h2>${list(items, formatter)}</section>` : "";
+}
+
 function templatePage(template) {
   const section = templateLibrary.sections.find((item) => item.id === template.sectionId);
-  const body = `<h1>${escapeHtml(template.title)}</h1><p>${escapeHtml(template.goal)}</p><p><strong>Section:</strong> ${escapeHtml(section?.title || "Template")}</p><p><strong>File path:</strong> <code>${escapeHtml(template.filePath)}</code></p><section><h2>Suggested use</h2><p>${escapeHtml(template.suggestedUse)}</p></section><section><h2>Placeholders</h2>${list(template.placeholders || [], (item) => `<code>{{${escapeHtml(item)}}}</code>`)}</section><section><h2>Expectations</h2>${list(template.expectations || [], escapeHtml)}</section>`;
+  const sourceLinks = (template.sourceIds || []).map((sourceId) => sourceMap.get(sourceId)).filter(Boolean);
+  const miniExample = template.miniExample ? `<section><h2>Mini-example</h2><p><strong>Scenario:</strong> ${escapeHtml(template.miniExample.scenario)}</p><p><strong>Completed example:</strong> ${escapeHtml(template.miniExample.completedExample)}</p></section>` : "";
+  const body = `<h1>${escapeHtml(template.title)}</h1><p>${escapeHtml(template.goal)}</p><p><strong>Section:</strong> ${escapeHtml(section?.title || "Template")}</p><p><strong>File path:</strong> <code>${escapeHtml(template.filePath)}</code></p><section><h2>Suggested use</h2><p>${escapeHtml(template.suggestedUse)}</p></section><section><h2>Owner</h2><p>${escapeHtml(template.owner || "")}</p></section><section><h2>Placeholders</h2>${list(template.placeholders || [], (item) => `<code>{{${escapeHtml(item)}}}</code>`)}</section><section><h2>Expectations</h2>${list(template.expectations || [], escapeHtml)}</section>${templateFieldSection("Required fields", template.requiredFields)}${templateFieldSection("Evidence", template.evidence)}${templateFieldSection("Approval and review", template.approvalReview)}${templateFieldSection("Failure modes", template.failureModes)}${templateFieldSection("Recovery or rollback", template.recoveryRollback)}${templateFieldSection("Security and compliance", template.securityCompliance)}${template.gh600Relevance ? `<section><h2>GH-600 relevance</h2><p>${escapeHtml(template.gh600Relevance)}</p></section>` : ""}${miniExample}${templateFieldSection("Sources", sourceLinks, (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}`;
   return pageShell(`${template.title} | Agent Documentation Template`, template.goal, body, { page: "library", id: template.id }, {
     "@context": "https://schema.org",
     "@type": "CreativeWork",

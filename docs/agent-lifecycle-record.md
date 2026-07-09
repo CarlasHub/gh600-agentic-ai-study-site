@@ -1,12 +1,12 @@
-# Agent Roles
+# Agent Lifecycle Record
 
 ## Purpose
 
-Define responsibilities, boundaries, and handoff rules for each agent role.
+Record agent addition, reconfiguration, replacement, retirement, preserved state, and audit continuity.
 
 ## When To Use
 
-Use when planner, builder, tester, reviewer, security, or release agents coordinate.
+Use when adding, updating, replacing, or retiring agents in active workflows.
 
 ## Owner
 
@@ -14,13 +14,13 @@ Agent workflow owner
 
 ## Required Fields
 
-- Objective
-- Assumptions
-- Files
-- Steps
-- Validation
-- Owner
-- Next decision
+- agent_name
+- change_type
+- reason
+- state_preserved
+- handoff
+- risk
+- owner
 
 ## Evidence
 
@@ -60,21 +60,21 @@ Tests separation of planning, execution, handoff, and reviewable evidence.
 
 ## Mini-example
 
-Scenario: A reviewer needs to decide whether an agent task using Agent Roles can continue.
+Scenario: A reviewer needs to decide whether an agent task using Agent Lifecycle Record can continue.
 
-Completed example: Fill docs/agent-roles.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
+Completed example: Fill docs/agent-lifecycle-record.md with task scope, evidence, owner, approval decision, and rollback path before the agent proceeds.
 
 ## Template
 
 | Field | Value | Evidence or owner |
 | --- | --- | --- |
-| Objective | `{{objective}}` | Link or owner proving the value is current |
-| Assumptions | `{{assumptions}}` | Link or owner proving the value is current |
-| Files | `{{files}}` | Link or owner proving the value is current |
-| Steps | `{{steps}}` | Link or owner proving the value is current |
-| Validation | `{{validation}}` | Link or owner proving the value is current |
-| Owner | `{{owner}}` | Link or owner proving the value is current |
-| Next decision | `{{next_decision}}` | Link or owner proving the value is current |
+| agent_name | `{{agent_name}}` | Link or owner proving the value is current |
+| change_type | `{{change_type}}` | Link or owner proving the value is current |
+| reason | `{{reason}}` | Link or owner proving the value is current |
+| state_preserved | `{{state_preserved}}` | Link or owner proving the value is current |
+| handoff | `{{handoff}}` | Link or owner proving the value is current |
+| risk | `{{risk}}` | Link or owner proving the value is current |
+| owner | `{{owner}}` | Link or owner proving the value is current |
 
 ## Review Checklist
 
