@@ -656,3 +656,21 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .shell:not(.page-home) .action-section{padding:.85rem}
 .shell:not(.page-home) .steps li{padding-right:.65rem}
 }
+
+/* Refined non-home readability: neutral structure, clear links, explicit answer states. */
+.shell:not(.page-home) .page-title{border-left:1px solid #30363d;box-shadow:inset 0 1px 0 #21262d}
+.shell:not(.page-home) .panel::before,.shell:not(.page-home) .card::before,.shell:not(.page-home) .question::before,.shell:not(.page-home) .guide-card::before,.shell:not(.page-home) .must-know::before,.shell:not(.page-home) .lesson-tracker::before,.shell:not(.page-home) .source-panel::before,.shell:not(.page-home) .table-wrap::before,.shell:not(.page-home) .domain-card::before,.shell:not(.page-home) .lab-card::before,.shell:not(.page-home) .stat::before,.shell:not(.page-home) .mini::before,.shell:not(.page-home) .lesson-summary-list div::before,.shell:not(.page-home) .lesson-row::before{display:none}
+.shell:not(.page-home) .panel,.shell:not(.page-home) .card,.shell:not(.page-home) .question,.shell:not(.page-home) .guide-card,.shell:not(.page-home) .must-know,.shell:not(.page-home) .source-panel,.shell:not(.page-home) .lesson-tracker,.shell:not(.page-home) .domain-card,.shell:not(.page-home) .lesson-row,.shell:not(.page-home) .flash,.shell:not(.page-home) .table-wrap,.shell:not(.page-home) .reference-aid,.shell:not(.page-home) .case-study{border-color:#30363d}
+.shell:not(.page-home) .panel h2,.shell:not(.page-home) .card h2,.shell:not(.page-home) .guide-card h2,.shell:not(.page-home) .must-know h2,.shell:not(.page-home) .source-panel h3,.shell:not(.page-home) .lesson-tracker h2,.shell:not(.page-home) .table-wrap h2,.shell:not(.page-home) .lesson-content > h2{padding-bottom:.45rem;border-bottom:1px solid #30363d}
+.shell:not(.page-home) .panel h2::before,.shell:not(.page-home) .card h2::before,.shell:not(.page-home) .guide-card h2::before,.shell:not(.page-home) .must-know h2::before,.shell:not(.page-home) .source-panel h3::before,.shell:not(.page-home) .lesson-tracker h2::before,.shell:not(.page-home) .table-wrap h2::before,.shell:not(.page-home) .lesson-content > h2::before{background:#8b949e;border-radius:2px}
+.shell:not(.page-home) a:not(.button):not(.brand){color:#79c0ff;text-decoration:underline;text-decoration-color:rgba(121,192,255,.55);text-underline-offset:.18em;text-decoration-thickness:.08em}
+.shell:not(.page-home) a:not(.button):not(.brand):hover{color:#a5d6ff;text-decoration-color:#a5d6ff}
+.shell:not(.page-home) .badge,.shell:not(.page-home) .domain-card span,.shell:not(.page-home) .mock-badges span,.shell:not(.page-home) .template-tags code,.shell:not(.page-home) .question-counter{color:#c9d1d9;border-color:#30363d;background:#0d1117}
+.shell:not(.page-home) .stat svg{color:#79c0ff}
+.shell:not(.page-home) .lesson-row{border-left:1px solid #30363d}
+.shell:not(.page-home) .lesson-row:hover,.shell:not(.page-home) .domain-card:hover,.shell:not(.page-home) .card:hover,.shell:not(.page-home) .practice-list a:hover{border-color:#6e7681;background:#1c2128}
+.shell:not(.page-home) .option.selected{background:#1f2937;border-color:#58a6ff;color:#e6f2ff}
+.shell:not(.page-home) .option.correct{background:#17301f;border-color:#3fb950;color:#dff8e6}
+.shell:not(.page-home) .option.wrong{background:#331d1d;border-color:#ff7b72;color:#ffe1df}
+.shell:not(.page-home) .option.correct .option-prefix{border-color:#3fb950;color:#dff8e6}
+.shell:not(.page-home) .option.wrong .option-prefix{border-color:#ff7b72;color:#ffe1df}
