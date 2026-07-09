@@ -11,10 +11,10 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 - Total lessons checked: 101
 - Lessons with changed recommendation paths since the previous commit: 101
 - Templates in library: 63
-- Templates added: 10
-- Existing templates improved with production fields: 53
+- Templates added: 0
+- Existing templates improved with production fields: 63
 - Lessons where issue template alone was enough: 0
-- Lessons where a different or additional artifact was required: 84
+- Lessons where a different or additional artifact was required: 97
 
 ## Lessons By Domain
 
@@ -27,27 +27,18 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 ## Recommendation Categories
 
-- Agent architecture and SDLC: 10
-- Evaluation and tuning: 14
+- Agent architecture and SDLC: 13
+- Evaluation and tuning: 13
 - MCP and tool access: 13
 - Memory and state: 14
 - Multi-agent coordination: 17
-- Repository and branch governance: 9
-- Responsible AI and guardrails: 14
-- Workflow execution: 10
+- Repository and branch governance: 7
+- Responsible AI and guardrails: 13
+- Workflow execution: 11
 
 ## Templates Added
 
-- Agent Plan Approval Record - `docs/agent-plan-approval-record.md`
-- Agentic Versus Automation Decision Table - `docs/agentic-vs-automation-decision-table.md`
-- Pull Request Evidence Table - `docs/pr-evidence-table.md`
-- Execution Context Checklist - `docs/execution-context-checklist.md`
-- Tool Risk Classification - `docs/tool-risk-classification.md`
-- Accessibility Scan Evidence - `docs/accessibility-scan-evidence.md`
-- Agent Session Log Review - `docs/agent-session-log-review.md`
-- Root Cause Classification - `docs/root-cause-classification.md`
-- Workflow Evidence Record - `docs/workflow-evidence-record.md`
-- Memory Reset Decision - `docs/memory-reset-decision.md`
+- None
 
 ## Lessons Where The Generic Issue Template Was Sufficient Alone
 

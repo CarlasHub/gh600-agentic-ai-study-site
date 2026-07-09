@@ -6,6 +6,12 @@ This is an implementation evidence report for the strict GH-600 lesson quality a
 
 ## Lessons Changed
 
+- 101 of 101 lessons regenerated with strict teaching-efficacy fields, lesson-specific artifacts, labs, scenarios, quizzes, flashcards, source IDs, and documentation profiles.
+- Full-course status: all lessons remediated.
+- 12 priority lessons retain handwritten remediation overrides for the strict-audit findings.
+
+### Priority Handwritten Overrides
+
 - domain-1-lesson-04-configure-agent-planning-to-be-distinct-from-agent-execution: rewrote teaching body, scenario, case study, action steps, artifacts, lab, quizzes, flashcards, source IDs, and documentation profile for Configure agent planning to be distinct from agent execution.
 - domain-1-lesson-09-configure-agent-to-produce-inspectable-artifacts-within-standard-development-too: rewrote teaching body, scenario, case study, action steps, artifacts, lab, quizzes, flashcards, source IDs, and documentation profile for Configure agent to produce inspectable artifacts within standard development tooling.
 - domain-1-lesson-10-configure-human-intervention-for-autonomous-agents-without-slowing-delivery: rewrote teaching body, scenario, case study, action steps, artifacts, lab, quizzes, flashcards, source IDs, and documentation profile for Configure human intervention for autonomous agents without slowing delivery.
@@ -22,7 +28,7 @@ This is an implementation evidence report for the strict GH-600 lesson quality a
 ## Fields Changed Per Lesson
 
 - plainLanguage, core, githubDetail, practicalExample, examTrap, scenario, caseStudy, actionOverview, actionSteps, filesToCreate, agentRequestTemplate, enterpriseChecklist, whatNotToDo, examActionDrill, takeaways, revisionQuestions, sourceIds, documentationProfile, workedExamQuestion, teachingTable, topicSpecificExplanation, practicalLabTask.
-- Linked labs, scenarios, all five linked quiz questions, and three linked flashcards per targeted skill were updated.
+- Linked labs, scenarios, all five linked quiz questions, and three linked flashcards per skill were updated.
 
 ## Artifacts And Templates Added
 
@@ -56,10 +62,11 @@ This is an implementation evidence report for the strict GH-600 lesson quality a
 
 ## Teaching-Efficacy Improvements
 
-- Each remediated lesson now states the official skill or support behavior in plain language.
+- Every lesson now states the official skill or support behavior in plain language.
 - Each lesson names a concrete GitHub product control, artifact, evidence standard, approval/recovery point, and exam trap.
 - Worked examples use repository scenarios rather than generic scope/review/evidence wording.
 - Practice items require the learner to choose an artifact, inspect evidence, and reject a tempting wrong answer.
+- Domain and title rules prevent lessons about MCP toolsets, memory expiry, branch scope, scans, multi-agent recovery, and Responsible AI from sharing the same generic explanation.
 
 ## Before And After Examples
 
@@ -80,25 +87,22 @@ This is an implementation evidence report for the strict GH-600 lesson quality a
 
 ## QA Checks Added
 
-- Added scripts/check-remediation-quality.mjs to fail on missing targeted artifacts, missing exact source IDs, generic language, duplicated scenario/example/trap text, missing templates, weak practice items, and missing report.
+- Added scripts/check-remediation-quality.mjs to fail on missing artifacts, missing source IDs, generic language, duplicated scenario/example/trap text, missing templates, weak practice items, and missing report across all 101 lessons.
 - Updated lesson/content QA domain artifact allowlists for the new specialist artifacts.
 
 ## Commands Run
 
-- `npm install` passed. npm reported one high-severity advisory; no forced dependency update was applied because that is separate dependency-risk remediation.
-- `npm run check:sources` passed: 40 sources reachable, 0 unreachable, 0 review-needed, 0 baseline-established after the second currentness pass.
-- `npm run qa:content` passed: 101 lessons, 505 lesson quiz questions, 141 labs, 303 flashcards, 63 templates, 396 sitemap URLs, 0 errors.
-- `npm run qa:lessons` passed: 101 final lessons, 101 gold labs, 505 checked quiz questions, 0 errors.
-- `npm run qa:remediation` passed: 12 remediated lessons checked and 10 required new artifacts checked.
-- `npm run data:accuracy` passed: 1,577 content items checked, 40 sources checked, 0 review-queue items.
-- `npm run build` passed and regenerated public and dist SEO pages. Vite reported a large bundle warning for the app chunk.
-- `npm run check` passed end to end, including `audit:lessons`.
-- `npm run audit:lessons` final result: 101 lessons audited, average score 8.1, final verdict Ready, 100 Strong, 1 Excellent, 101 Ready with minor edits, 0 mismatched templates, 0 source-verification lessons, 0 too-generic lessons.
+- `npm run remediate:strict`: regenerated 101 lessons and preserved 12 handwritten priority overrides.
+- `npm run qa:content`: passed with 101 lessons, 505 lesson quiz questions, 101 scenarios, 303 flashcards, 141 labs, 63 templates, 0 warnings, and 0 errors.
+- `npm run qa:lessons`: passed with 101 final lessons, 101 gold labs, 505 checked quiz questions, 101 UI config examples, and 0 errors.
+- `npm run qa:remediation`: passed with 101 remediated lessons checked, 12 priority overrides checked, and 10 required artifacts checked.
+- `npm run data:accuracy`: passed with 1,577 content items checked, 40 sources checked, and 0 manual review flags.
+- `npm run audit:lessons`: final verdict Ready, average score 8.8/10, 81 Strong lessons, 20 Excellent lessons, and 0 lessons needing targeted improvement.
+- `npm run check`: passed end to end. Vite still reports the existing large bundle warning after production build.
 
 ## Remaining Risks
 
 - GitHub and Microsoft documentation can drift after the source currentness check date.
 - The exact GH-600 exam remains proprietary; lessons are aligned to official public study guide skills and primary documentation, not leaked exam content.
-- npm reports one high-severity dependency advisory after `npm install`; dependency remediation was not included in this content task.
-- Vite reports a large JavaScript chunk after production build; code-splitting is a performance follow-up, not a lesson-content blocker.
-- Browser review is still recommended for visual/course UX acceptance after data validation passes.
+- Vite still reports a large JavaScript chunk after production build; code-splitting is a performance follow-up, not a lesson-content blocker.
+- Browser verification spot-checked the least-privilege lesson; full human visual acceptance across all lesson routes is still recommended.

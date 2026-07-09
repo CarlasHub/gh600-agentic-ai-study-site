@@ -364,7 +364,7 @@ function specificityValue(signalCount, genericCount) {
 function capScore(score, caps) {
   let capped = score;
   for (const cap of caps) capped = Math.min(capped, cap.value);
-  return Math.round(capped * 10) / 10;
+  return Math.round(Math.min(10, capped) * 10) / 10;
 }
 
 function verdictFor(score, mainWeakness) {
