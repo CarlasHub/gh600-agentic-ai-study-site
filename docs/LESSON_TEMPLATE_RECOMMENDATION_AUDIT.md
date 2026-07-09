@@ -11,8 +11,8 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 - Total lessons checked: 101
 - Lessons with changed recommendation paths since the previous commit: 101
 - Templates in library: 53
-- Templates added: 11
-- Existing templates improved with production fields: 42
+- Templates added: 0
+- Existing templates improved with production fields: 53
 - Lessons where issue template alone was enough: 0
 - Lessons where a different or additional artifact was required: 80
 
@@ -38,17 +38,7 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 ## Templates Added
 
-- Agent Anti-pattern Review - `docs/agent-anti-pattern-review.md`
-- Agent Step Map - `docs/agent-step-map.md`
-- Branch Scope Control - `docs/branch-scope-control.md`
-- Agent Lifecycle Record - `docs/agent-lifecycle-record.md`
-- Duplicate Effort Checklist - `docs/duplicate-effort-checklist.md`
-- Multi-agent Arbitration Record - `docs/multi-agent-arbitration-record.md`
-- Least-privilege Access Review - `docs/least-privilege-access-review.md`
-- Policy Violation Record - `docs/policy-violation-record.md`
-- Sensitive Action Control - `docs/sensitive-action-control.md`
-- MCP Allow-list Decision - `docs/mcp-allowlist-decision.md`
-- Regression Checklist - `docs/regression-checklist.md`
+- None
 
 ## Lessons Where The Generic Issue Template Was Sufficient Alone
 

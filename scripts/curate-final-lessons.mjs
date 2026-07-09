@@ -742,6 +742,32 @@ function auditKindFor(lesson) {
   return auditRecommendationKindByLesson.get(lesson.id) || "worked-scenario";
 }
 
+function scenarioIssueFor(lesson, topic, profile) {
+  const category = topicSpecificCategory(lesson, topic);
+  if (category === "Repository and branch governance") {
+    return "work only within a repository branch, allowed paths, protected checks, and reviewer-owned pull request handoff";
+  }
+  if (category === "MCP and tool access") {
+    return "use only the approved tool, MCP server, toolset, data boundary, and escalation path";
+  }
+  if (category === "Workflow execution") {
+    return "execute work through a controlled GitHub Actions environment with setup, permissions, logs, retry, and rollback evidence";
+  }
+  if (category === "Memory and state") {
+    return "resume a stateful agent task without reusing stale or conflicting context";
+  }
+  if (category === "Evaluation and tuning") {
+    return "prove agent output with checks, traces, scans, failure analysis, tuning, and regression evidence";
+  }
+  if (category === "Multi-agent coordination") {
+    return "coordinate with other agents using role boundaries, handoffs, conflict arbitration, and recovery evidence";
+  }
+  if (category === "Responsible AI and guardrails") {
+    return "apply guardrails and accountability to a compliance-sensitive agent workflow";
+  }
+  return profile.issue;
+}
+
 function primaryArtifact(lesson, topic) {
   return artifactsFor(lesson, topic)[0]?.path || "docs/agent-plan.md";
 }
@@ -752,6 +778,7 @@ function secondaryArtifact(lesson, topic) {
 
 function workedQuestionFor(lesson, topic, kind) {
   const profile = domainProfiles[lesson.domainId];
+  const scenarioIssue = scenarioIssueFor(lesson, topic, profile);
   const skill = lessonTitle(lesson);
   const artifact = primaryArtifact(lesson, topic);
   const evidenceArtifact = secondaryArtifact(lesson, topic);
@@ -767,7 +794,7 @@ function workedQuestionFor(lesson, topic, kind) {
   }[kind];
   return {
     title: "Worked exam-style question",
-    scenario: `In ${profile.repo}, an agent is asked to ${profile.issue}. The question focuses on "${skill}". The branch touches a reviewable GitHub workflow, and the team needs a decision that proves the agent stayed inside the intended boundary.`,
+    scenario: `In ${profile.repo}, an agent is asked to ${scenarioIssue}. The question focuses on "${skill}". The branch touches a reviewable GitHub workflow, and the team needs a decision that proves the agent stayed inside the intended boundary.`,
     question: `Which answer best applies "${skill}" in a GH-600 scenario?`,
     options: [
       "Let the agent continue while it is making progress, then ask it to summarize what happened at the end.",
@@ -1412,14 +1439,15 @@ function reviseLesson(lesson) {
   const skill = lessonTitle(lesson);
   const skillLower = lowerTitle(lesson);
   const artifacts = artifactsFor(lesson, topic);
-  const scenarioBody = `In the ${profile.repo} repository, a maintainer asks an agent to ${profile.issue}. The specific decision is how to apply the skill "${skill}". The repository has required checks, owner-reviewed paths, and at least one workflow or data boundary that could be unsafe if the agent continues without the right control.`;
+  const scenarioIssue = scenarioIssueFor(lesson, topic, profile);
+  const scenarioBody = `In the ${profile.repo} repository, a maintainer asks an agent to ${scenarioIssue}. The specific decision is how to apply the skill "${skill}". The repository has required checks, owner-reviewed paths, and at least one workflow or data boundary that could be unsafe if the agent continues without the right control.`;
 
   return {
     ...lesson,
     title: skill,
     qualityTier: "gold",
     sourceIds,
-    whyExam: `${examStatus} GH-600 scenario questions can ask which control, artifact, or human decision makes the skill "${skill}" safe inside ${profile.examLens}.`,
+    whyExam: `${examStatus} GH-600 scenario questions can ask which control, artifact, or human decision makes the skill "${skill}" safe in ${topic.name.toLowerCase()} decisions involving ${topic.controls}.`,
     plainLanguage: [
       `The skill "${skill}" means turning an agent instruction into a concrete GitHub workflow decision. The agent should know what it may read, what it may change, which tool or memory boundary applies, and what evidence must exist before a reviewer trusts the result.`,
       `For this lesson, do not memorize a slogan. Learn the operating pattern: define the boundary, choose the GitHub or Copilot control, make the agent produce inspectable evidence, and stop before ${topic.risk}.`
@@ -1431,8 +1459,8 @@ function reviseLesson(lesson) {
       `Strong evidence for ${skillLower} includes ${topic.evidence}. A reviewer should be able to inspect those artifacts without relying on the agent's final chat summary.`,
       `Wrong answers usually move too fast, grant broad autonomy, skip a plan or check, hide uncertainty, or postpone review until after ${topic.risk}. Choose the answer that prevents the failure before execution, not the one that explains it afterward.`
     ],
-    githubDetail: `Use ${topic.controls} to make ${skillLower} enforceable. In practice, connect the lesson to ${profile.taskObject}; then require ${topic.evidence} before merge, deployment, or broader access.`,
-    practicalExample: `A maintainer in ${profile.repo} asks an agent to ${profile.issue}. A strong implementation of the skill "${skill}" creates or updates ${artifacts.slice(0, 3).map((item) => `\`${item.path}\``).join(", ")}, runs the named validation path, and records ${topic.evidence} in the pull request before the next risky action is allowed.`,
+    githubDetail: `Use ${topic.controls} to make ${skillLower} enforceable. In practice, make the control visible through the recommended GitHub artifacts, then require ${topic.evidence} before merge, deployment, or broader access.`,
+    practicalExample: `A maintainer in ${profile.repo} asks an agent to ${scenarioIssue}. A strong implementation of the skill "${skill}" creates or updates ${artifacts.slice(0, 3).map((item) => `\`${item.path}\``).join(", ")}, runs the named validation path, and records ${topic.evidence} in the pull request before the next risky action is allowed.`,
     examTrap: `For ${skill}, choosing the option that sounds efficient but lets the agent continue before ${topic.risk}.`,
     scenario: {
       title: `${skill} in ${profile.repo}`,
