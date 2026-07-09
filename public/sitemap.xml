@@ -871,7 +871,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/agent-plan-approval-record/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/agent-roles/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/agentic-vs-automation-decision-table/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -955,6 +967,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/pr-evidence-table/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/pull-request-template/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -974,6 +992,12 @@
   </url>
   <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/environment-constraints/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/execution-context-checklist/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1003,7 +1027,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/tool-risk-classification/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/accessibility-checklist/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/accessibility-scan-evidence/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1016,6 +1052,12 @@
   </url>
   <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/failure-analysis/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/agent-session-log-review/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1051,6 +1093,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/root-cause-classification/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/security-scan-evidence/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1064,6 +1112,12 @@
   </url>
   <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/tuning-log/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/workflow-evidence-record/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1100,6 +1154,12 @@
   </url>
   <url>
     <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/memory-state-record/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://carlashub.github.io/gh600-agentic-ai-study-site/library/memory-reset-decision/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

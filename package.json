@@ -9,14 +9,16 @@
     "start": "vite --host 0.0.0.0",
     "build": "node scripts/generate-seo-pages.mjs --public-only && vite build && node scripts/generate-seo-pages.mjs --dist",
     "preview": "vite preview --host 0.0.0.0",
-    "curate:lessons": "node scripts/curate-final-lessons.mjs",
+    "curate:lessons": "node scripts/curate-final-lessons.mjs && node scripts/apply-strict-audit-remediation.mjs",
+    "remediate:strict": "node scripts/apply-strict-audit-remediation.mjs",
     "curate:templates": "node scripts/curate-template-recommendations.mjs",
     "audit:lessons": "node scripts/audit-lesson-quality.mjs",
     "qa:content": "node scripts/qa-content.mjs",
     "qa:lessons": "node scripts/check-lesson-quality.mjs",
+    "qa:remediation": "node scripts/check-remediation-quality.mjs",
     "data:accuracy": "node scripts/check-data-accuracy.mjs",
     "check:sources": "node scripts/check-source-currentness.mjs",
-    "check": "npm run build && npm run check:sources && npm run qa:content && npm run qa:lessons && npm run data:accuracy && npm run audit:lessons"
+    "check": "npm run build && npm run check:sources && npm run qa:content && npm run qa:lessons && npm run qa:remediation && npm run data:accuracy && npm run audit:lessons"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

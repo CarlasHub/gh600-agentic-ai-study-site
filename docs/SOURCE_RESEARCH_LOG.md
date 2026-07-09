@@ -218,4 +218,76 @@ Official GH-600 study guide rechecked: 2026-06-04. Microsoft Learn showed the pa
 - Date accessed: 2026-05-21
 - Why it matters for GH-600: Microsoft Learn module for tooling, MCP, and execution environments.
 - Domains supported: domain-2
-- Lessons using it: 
+- Lessons using it:
+
+<!-- strict-audit-remediation-sources:start -->
+
+## Strict Audit Remediation Exact Sources
+
+Reviewed: 2026-07-09
+
+### About code scanning
+
+- URL: https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning
+- Publisher: GitHub Docs
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact GitHub Docs support for code scanning as a repository security analysis signal and code scanning alert source.
+- Domains supported: domain-4
+
+### Code scanning with CodeQL
+
+- URL: https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql
+- Publisher: GitHub Docs
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact GitHub Docs support for CodeQL analysis, CodeQL databases, query results, and code scanning alerts.
+- Domains supported: domain-4
+
+### Secret scanning
+
+- URL: https://docs.github.com/code-security/secret-scanning/about-secret-scanning
+- Publisher: GitHub Docs
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact GitHub Docs support for secret scanning across repository history and hardcoded credential alerts.
+- Domains supported: domain-4, domain-6
+
+### Dependency review
+
+- URL: https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review
+- Publisher: GitHub Docs
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact GitHub Docs support for reviewing insecure dependency changes before they enter the environment.
+- Domains supported: domain-4
+
+### Configuring the dependency review action
+
+- URL: https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependency-review-action
+- Publisher: GitHub Docs
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact GitHub Docs support for dependency review as a GitHub Actions workflow signal and enforcement mechanism.
+- Domains supported: domain-4
+
+### Accessibility evaluation and testing
+
+- URL: https://learn.microsoft.com/en-us/training/modules/accessibility-evaluation-and-testing/
+- Publisher: Microsoft Learn
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact Microsoft Learn support for manual, automated, and user accessibility testing and interpreting accessibility results.
+- Domains supported: domain-4
+
+### Accessibility testing
+
+- URL: https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility-testing
+- Publisher: Microsoft Learn
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact Microsoft Learn support for Accessibility Insights, FastPass, assessment, and accessibility testing workflows.
+- Domains supported: domain-4
+
+### Resources for accessibility testing
+
+- URL: https://learn.microsoft.com/en-us/microsoft-edge/accessibility/test
+- Publisher: Microsoft Learn
+- Date accessed: 2026-07-09
+- Why it matters for GH-600: Exact Microsoft Edge documentation for automated accessibility reports and DevTools accessibility testing signals.
+- Domains supported: domain-4
+
+<!-- strict-audit-remediation-sources:end -->

@@ -2205,7 +2205,7 @@
   },
   {
     "id": "lab-48-agent-root-cause-classification",
-    "title": "Agent root-cause classification table",
+    "title": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues evidence lab",
     "labType": "Gold lesson lab",
     "qualityTier": "gold",
     "lessonIds": [
@@ -2216,39 +2216,41 @@
     "skillIds": [
       "d4-g2-s2"
     ],
-    "objective": "Classify a failed agent run from evidence and choose a matching repair across reasoning, tool misuse, stale context, environment, permission, instruction, and validation categories.",
+    "objective": "Create a reviewable evidence package for Classify root causes, including reasoning errors, tool misuse, and context or environment issues in security-cleanup, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "Failure-analysis table",
-      "Workflow logs",
-      "PR diff or changed-file list",
-      "Agent plan or prompt",
-      "Validation checklist"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample failed dependency update where package installation fails before tests run. Treat logs and artifacts as the source of truth.",
+    "setup": "Use security-cleanup. Assume an agent is ready to act, but it must be controlled through docs/root-cause-classification.md before the risky step.",
     "steps": [
-      "Write the expected outcome and the actual failed outcome in separate rows.",
-      "Collect evidence from workflow logs, agent plan, PR diff, check output, and source instructions.",
-      "Classify the root cause as reasoning, tool misuse, stale context, environment, permission, instruction, or validation gap.",
-      "Explain why at least two tempting alternative classifications are wrong.",
-      "Choose a repair that matches the root cause, such as setup steps for environment failure or permission changes for access failure.",
-      "Add a regression check that would catch the same failure earlier next time.",
-      "Write the handoff note with evidence, repair, owner, and remaining risk."
+      "Write the repository scenario and identify the exact GH-600 skill: Classify root causes, including reasoning errors, tool misuse, and context or environment issues.",
+      "Create docs/root-cause-classification.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-failure-analysis.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate expected result, actual result, first failing signal, workflow log, tool call, memory or context source, permission decision, rejected causes, selected repair, and regression rerun.",
+      "Add one tempting wrong action and explain why it fails: Reject tuning prompts or widening permissions before classifying the failure from evidence.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A failure-analysis table that ties the selected root cause to concrete logs and chooses a repair that addresses the actual failure instead of a guessed prompt change.",
-    "validation": "A reviewer can trace the classification to evidence and explain why the proposed repair would prevent or reveal the same failure in a future run.",
-    "commonFailure": "The learner labels every failure as prompt or reasoning failure without proving that tools, context, environment, permissions, or validation were healthy.",
-    "recovery": "Return to the evidence, classify the first failing point, rule out other causes, and choose the smallest repair that addresses that cause.",
-    "examRelevance": "Rehearses GH-600 questions about evaluation, error analysis, tuning, and evidence-based remediation of agent failures.",
+    "expectedResult": "A lesson-specific artifact package proving Classify root causes, including reasoning errors, tool misuse, and context or environment issues with docs/root-cause-classification.md, docs/agent-failure-analysis.md, expected result, actual result, first failing signal, workflow log, tool call, memory or context source, permission decision, rejected causes, selected repair, and regression rerun, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming root-cause classification, failure analysis, workflow logs, tool-call evidence, memory refresh, error analysis, and regression checklist and the artifact docs/root-cause-classification.md.",
+    "recovery": "Rewrite the lab around docs/root-cause-classification.md, add expected result, actual result, first failing signal, workflow log, tool call, memory or context source, permission decision, rejected causes, selected repair, and regression rerun, and route the risk through this recovery path: Undo mismatched fixes, return to the first failing signal, classify again, and rerun the original plus adjacent regression cases.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Classify root causes, including reasoning errors, tool misuse, and context or environment issues.",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows",
-      "gh-cloud-agent-risks",
       "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
       "gh-copilot-setup-steps",
-      "gh-copilot-memory"
+      "gh-copilot-memory",
+      "gh-mcp-toolsets",
+      "gh-code-scanning",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -2306,7 +2308,7 @@
   },
   {
     "id": "lab-50-least-privilege-agent-scope-map",
-    "title": "Least-privilege scope map for an SDK docs agent",
+    "title": "Scope permissions and execution contexts to enforce least-privilege access evidence lab",
     "labType": "Gold lesson lab",
     "qualityTier": "gold",
     "lessonIds": [
@@ -2317,42 +2319,46 @@
     "skillIds": [
       "d6-g2-s3"
     ],
-    "objective": "Create a least-privilege scope map for an SDK documentation agent across repository paths, branch scope, token permissions, MCP tools, workflow context, environment access, and approvals.",
+    "objective": "Create a reviewable evidence package for Scope permissions and execution contexts to enforce least-privilege access in regulated-api, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "Permission matrix template",
-      "Ruleset or branch protection notes",
-      "CODEOWNERS reference",
-      "MCP access policy notes",
-      "Workflow permission table"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Assume an agent must update SDK README examples and open a PR. Package publishing, release files, production telemetry, and deployment secrets are out of scope.",
+    "setup": "Use regulated-api. Assume an agent is ready to act, but it must be controlled through docs/least-privilege-access-review.md before the risky step.",
     "steps": [
-      "Write the task boundary and list the artifacts the agent must produce.",
-      "Map repository scope to read, docs-edit, branch-write, PR-create, workflow, environment, and external-system permissions.",
-      "Deny package publish secrets, deployment credentials, release-file edits, and broad external-write MCP tools.",
-      "Choose branch, ruleset, CODEOWNERS, and required-check controls for the allowed documentation change.",
-      "Define the validation evidence: changed docs, link checks, preview or rendered docs check, and PR summary.",
-      "Write the escalation request format for any needed access beyond the original scope.",
-      "Review the map and remove permissions justified only by convenience or possible future tasks."
+      "Write the repository scenario and identify the exact GH-600 skill: Scope permissions and execution contexts to enforce least-privilege access.",
+      "Create docs/least-privilege-access-review.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-tool-permission-matrix.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate access surface inventory, task need, granted level, denied level, token permission, secret decision, environment decision, MCP/tool access decision, approval owner, validation run, audit entry, and rollback path.",
+      "Add one tempting wrong action and explain why it fails: Reject broad access for convenience or speed.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A least-privilege scope map that shows exactly which permissions are allowed, denied, or escalated for the SDK docs task and why each choice is evidence-backed.",
-    "validation": "A reviewer can identify the minimum permissions needed for the documentation task and explain why secrets, workflow write, publishing, and broad MCP access are denied.",
-    "commonFailure": "The learner grants wide access because the agent will work on a branch and a human will review the PR later.",
-    "recovery": "Reduce each scope to the minimum needed for the current task, add explicit escalation, and use branch/ruleset/CODEOWNERS controls for sensitive paths.",
-    "examRelevance": "Rehearses GH-600 questions about least privilege, execution context, guardrails, approvals, and accountable agent access.",
+    "expectedResult": "A lesson-specific artifact package proving Scope permissions and execution contexts to enforce least-privilege access with docs/least-privilege-access-review.md, docs/agent-tool-permission-matrix.md, access surface inventory, task need, granted level, denied level, token permission, secret decision, environment decision, MCP/tool access decision, approval owner, validation run, audit entry, and rollback path, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming least-privilege access review, tool permission matrix, approval policy, execution-context checklist, protected environments, CODEOWNERS, rulesets, and audit trail and the artifact docs/least-privilege-access-review.md.",
+    "recovery": "Rewrite the lab around docs/least-privilege-access-review.md, add access surface inventory, task need, granted level, denied level, token permission, secret decision, environment decision, MCP/tool access decision, approval owner, validation run, audit entry, and rollback path, and route the risk through this recovery path: Revoke excess access, rerun with the minimum permission set, record denied surfaces, and require escalation for any future expansion.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Scope permissions and execution contexts to enforce least-privilege access.",
     "sourceIds": [
       "ms-gh600-guide",
+      "ms-tooling-mcp-envs",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
       "gh-cloud-agent-risks",
-      "gh-custom-agents-config",
-      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-copilot-cli-actions",
       "gh-mcp-server-access",
-      "gh-protected-branches",
-      "gh-rulesets",
+      "gh-mcp-toolsets",
+      "gh-deploy-envs",
+      "gh-review-deployments",
       "gh-codeowners",
-      "ms-responsible-ai-principles"
+      "gh-rulesets"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -2470,7 +2476,7 @@
   },
   {
     "id": "lab-53-plan-execution-separation-gate",
-    "title": "Plan-execution separation gate",
+    "title": "Configure agent planning to be distinct from agent execution evidence lab",
     "labType": "Gold lesson lab",
     "qualityTier": "gold",
     "lessonIds": [
@@ -2481,43 +2487,42 @@
     "skillIds": [
       "d1-g2-s1"
     ],
-    "objective": "Design a gate that limits an agent to planning until a reviewer approves the implementation scope and permissions.",
+    "objective": "Create a reviewable evidence package for Configure agent planning to be distinct from agent execution in checkout-platform, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "Planning template",
-      "Approval-gate checklist",
-      "PR template",
-      "Repository instructions",
-      "Markdown editor"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample login error improvement request. Write the planning gate as if the agent has not yet edited files.",
+    "setup": "Use checkout-platform. Assume an agent is ready to act, but it must be controlled through docs/agent-plan.md before the risky step.",
     "steps": [
-      "Define allowed planning activities and denied execution activities.",
-      "Write a plan template with scope, files, validation, assumptions, and approval gates.",
-      "Describe the approval criteria for moving from planning to execution.",
-      "Define execution permissions and files after approval.",
-      "Add a deviation log for new scope found during execution.",
-      "Update the PR template to require the plan link and deviations.",
-      "Review the gate and remove any wording that lets execution start automatically."
+      "Write the repository scenario and identify the exact GH-600 skill: Configure agent planning to be distinct from agent execution.",
+      "Create docs/agent-plan.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-plan-approval-record.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate approved plan URL, allowed and denied paths, approval owner, branch name, workflow run URL, changed-file list, CODEOWNERS review, and PR evidence table.",
+      "Add one tempting wrong action and explain why it fails: Reject an answer where the agent writes a plan and implementation in one unreviewed step.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A plan-execution gate that a reviewer can use to approve or reject implementation before the agent changes repository state.",
-    "validation": "Another learner can identify which activities are planning-only and which require explicit execution approval. The reviewer must be able to verify the control, evidence, owner decision, and next action without asking the agent.",
-    "commonFailure": "The gate lets the agent write a plan and immediately execute it without a separate review decision.",
-    "recovery": "Separate planning output from execution authorization and require a visible approval artifact before repository changes.",
-    "examRelevance": "Builds GH-600 judgment for choosing controls that separate agent reasoning from agent action.",
+    "expectedResult": "A lesson-specific artifact package proving Configure agent planning to be distinct from agent execution with docs/agent-plan.md, docs/agent-plan-approval-record.md, approved plan URL, allowed and denied paths, approval owner, branch name, workflow run URL, changed-file list, CODEOWNERS review, and PR evidence table, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming issue intake, docs/agent-plan.md, docs/agent-plan-approval-record.md, branch protection or rulesets, CODEOWNERS review, and the pull request template and the artifact docs/agent-plan.md.",
+    "recovery": "Rewrite the lab around docs/agent-plan.md, add approved plan URL, allowed and denied paths, approval owner, branch name, workflow run URL, changed-file list, CODEOWNERS review, and PR evidence table, and route the risk through this recovery path: If execution started without approval, stop the agent, preserve the diff, revert unapproved changes if needed, and return to plan review.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Configure agent planning to be distinct from agent execution.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
       "gh-protected-branches",
       "gh-codeowners",
       "gh-rulesets",
-      "gh-cloud-agent-risks"
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -2691,7 +2696,7 @@
   },
   {
     "id": "lab-57-inspectable-agent-artifacts",
-    "title": "Inspectable agent evidence package",
+    "title": "Configure agent to produce inspectable artifacts within standard development tooling evidence lab",
     "labType": "Gold lesson lab",
     "qualityTier": "gold",
     "lessonIds": [
@@ -2702,43 +2707,43 @@
     "skillIds": [
       "d1-g3-s2"
     ],
-    "objective": "Design an evidence package that forces an agent to produce reviewable GitHub artifacts for plan, changes, validation, approvals, and handoff.",
+    "objective": "Create a reviewable evidence package for Configure agent to produce inspectable artifacts within standard development tooling in checkout-platform, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "PR template",
-      "Workflow artifact reference",
-      "Evidence package template",
-      "Validation checklist",
-      "Markdown editor"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use an accessibility-fix task where the agent currently reports success only in chat.",
+    "setup": "Use checkout-platform. Assume an agent is ready to act, but it must be controlled through .github/pull_request_template.md before the risky step.",
     "steps": [
-      "List the current uninspectable outputs.",
-      "Define the required issue, plan, branch, PR, and validation artifacts.",
-      "Write PR template fields that force evidence links.",
-      "Define which workflow logs or reports must be preserved.",
-      "Add approval and residual-risk fields.",
-      "Write rejection criteria for chat-only evidence.",
-      "Review whether another maintainer could audit the work later."
+      "Write the repository scenario and identify the exact GH-600 skill: Configure agent to produce inspectable artifacts within standard development tooling.",
+      "Create .github/pull_request_template.md and fill the fields that define the task boundary and product control.",
+      "Create docs/pr-evidence-table.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate issue link, PR description, changed-file list, commits, workflow run URL, check summary, logs, review comments, deployment review, and rollback note.",
+      "Add one tempting wrong action and explain why it fails: Reject chat-only or local-output answers; agent work must be inspectable in standard GitHub development objects.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A complete evidence package standard that makes agent work inspectable through normal GitHub review and audit channels. The artifact must name the GitHub evidence, reviewer decision, owner, and residual risk clearly.",
-    "validation": "Another learner can use the evidence package to verify what changed, what passed, who approved, and what risk remains.",
-    "commonFailure": "The evidence package accepts a final chat answer without linked plan, PR, checks, or review decisions.",
-    "recovery": "Move claims into durable GitHub artifacts and require links from the PR before accepting the work.",
-    "examRelevance": "Builds GH-600 judgment for traceability, accountability, and standard development tooling in agent workflows.",
+    "expectedResult": "A lesson-specific artifact package proving Configure agent to produce inspectable artifacts within standard development tooling with .github/pull_request_template.md, docs/pr-evidence-table.md, issue link, PR description, changed-file list, commits, workflow run URL, check summary, logs, review comments, deployment review, and rollback note, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming pull request template, PR evidence table, workflow run, check output, CODEOWNERS review, rulesets, and audit trail and the artifact .github/pull_request_template.md.",
+    "recovery": "Rewrite the lab around .github/pull_request_template.md, add issue link, PR description, changed-file list, commits, workflow run URL, check summary, logs, review comments, deployment review, and rollback note, and route the risk through this recovery path: If evidence is missing, block merge, rerun the workflow or add the missing artifact, and keep the rejected claim in the audit trail.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Configure agent to produce inspectable artifacts within standard development tooling.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
       "ms-agent-architecture-sdlc",
       "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
       "gh-actions-workflows",
       "gh-protected-branches",
       "gh-codeowners",
       "gh-rulesets",
+      "gh-review-deployments",
       "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -2746,7 +2751,7 @@
   },
   {
     "id": "lab-58-human-intervention-without-friction",
-    "title": "Human intervention without delivery friction",
+    "title": "Configure human intervention for autonomous agents without slowing delivery evidence lab",
     "labType": "Gold lesson lab",
     "qualityTier": "gold",
     "lessonIds": [
@@ -2757,44 +2762,42 @@
     "skillIds": [
       "d1-g3-s3"
     ],
-    "objective": "Design risk-based human intervention points for an autonomous release workflow while allowing safe preparation work to continue.",
+    "objective": "Create a reviewable evidence package for Configure human intervention for autonomous agents without slowing delivery in checkout-platform, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "Human intervention policy template",
-      "CODEOWNERS reference",
-      "Ruleset or environment notes",
-      "PR template",
-      "Escalation path template"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a release workflow where an agent drafts notes, updates docs, runs checks, tags releases, publishes packages, and notifies customers.",
+    "setup": "Use checkout-platform. Assume an agent is ready to act, but it must be controlled through docs/approval-policy.md before the risky step.",
     "steps": [
-      "List all workflow actions and outputs.",
-      "Classify each action by risk, reversibility, and required human judgment.",
-      "Mark actions that can continue autonomously with evidence.",
-      "Mark actions that require human approval before execution.",
-      "Write the exact reviewer question and evidence needed for each intervention.",
-      "Define what the agent may do while waiting.",
-      "Record where the approval decision appears in GitHub."
+      "Write the repository scenario and identify the exact GH-600 skill: Configure human intervention for autonomous agents without slowing delivery.",
+      "Create docs/approval-policy.md and fill the fields that define the task boundary and product control.",
+      "Create docs/autonomy-matrix.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate risk class, autonomy level, blocked-action rule, approval owner, workflow evidence, PR review comment, environment review, and rollback path.",
+      "Add one tempting wrong action and explain why it fails: Reject both extremes: approving every step and approving nothing.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A human-intervention policy that protects sensitive release actions while avoiding unnecessary approval friction for low-risk preparation work. The artifact must name the GitHub evidence, reviewer decision, owner, and residual risk clearly.",
-    "validation": "Another learner can explain which actions continue, which actions stop, who decides, and what evidence supports each decision.",
-    "commonFailure": "The policy either blocks every action or allows every action, ignoring risk differences across the workflow.",
-    "recovery": "Split the workflow by action risk and create targeted intervention points with clear reviewer decisions.",
-    "examRelevance": "Builds GH-600 judgment for human-in-the-loop design, autonomy, delivery speed, and accountability.",
+    "expectedResult": "A lesson-specific artifact package proving Configure human intervention for autonomous agents without slowing delivery with docs/approval-policy.md, docs/autonomy-matrix.md, risk class, autonomy level, blocked-action rule, approval owner, workflow evidence, PR review comment, environment review, and rollback path, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming approval policy, autonomy matrix, sensitive-action control, CODEOWNERS review, rulesets, protected environments, and audit trail and the artifact docs/approval-policy.md.",
+    "recovery": "Rewrite the lab around docs/approval-policy.md, add risk class, autonomy level, blocked-action rule, approval owner, workflow evidence, PR review comment, environment review, and rollback path, and route the risk through this recovery path: If an action is over-approved, simplify the policy; if it is under-approved, block the path and route it to the risk owner.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Configure human intervention for autonomous agents without slowing delivery.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
       "ms-agent-architecture-sdlc",
+      "ms-responsible-ai-principles",
       "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-actions-workflows",
-      "gh-protected-branches",
+      "gh-cloud-agent-risks",
       "gh-codeowners",
       "gh-rulesets",
-      "gh-cloud-agent-risks",
-      "ms-responsible-ai-principles"
+      "gh-review-deployments"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -2813,49 +2816,40 @@
     "skillIds": [
       "domain-1-ext-agentic-workflows-versus-ordinary-automation"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates agentic workflows versus ordinary automation using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Agentic workflows versus ordinary automation in checkout-platform, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named checkout-platform. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use checkout-platform. Assume an agent is ready to act, but it must be controlled through docs/agentic-vs-automation-decision-table.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as agentic workflows versus ordinary automation.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `.github/workflows/copilot-setup-steps.yml` and tie it to the lesson source pack.",
-      "Create a second control artifact `.github/workflows/agent-validation.yml` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Agentic workflows versus ordinary automation.",
+      "Create docs/agentic-vs-automation-decision-table.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-plan.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate task pattern, deterministic trigger, uncertainty signal, tool-use need, stop condition, workflow run URL, PR evidence, and reviewer decision.",
+      "Add one tempting wrong action and explain why it fails: Reject using an agent when a deterministic workflow is enough, and reject treating uncertain tool-using work as a simple script.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves agentic workflows versus ordinary automation through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for agentic workflows versus ordinary automation.",
-    "recovery": "Rewrite the artifacts around workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, add workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply agentic workflows versus ordinary automation inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Agentic workflows versus ordinary automation with docs/agentic-vs-automation-decision-table.md, docs/agent-plan.md, task pattern, deterministic trigger, uncertainty signal, tool-use need, stop condition, workflow run URL, PR evidence, and reviewer decision, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming GitHub Actions workflow for deterministic work, agent plan for uncertain work, step map, PR evidence, and stop conditions and the artifact docs/agentic-vs-automation-decision-table.md.",
+    "recovery": "Rewrite the lab around docs/agentic-vs-automation-decision-table.md, add task pattern, deterministic trigger, uncertainty signal, tool-use need, stop condition, workflow run URL, PR evidence, and reviewer decision, and route the risk through this recovery path: If agentic controls were overused, move the task back to deterministic automation; if automation hid uncertainty, add plan and review gates.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Agentic workflows versus ordinary automation.",
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "ms-agentic-foundations",
       "ms-agent-architecture-sdlc",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
       "gh-copilot-cloud-agent",
-      "gh-repository-instructions",
-      "gh-protected-branches",
-      "gh-codeowners",
-      "gh-rulesets",
       "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -3385,54 +3379,43 @@
     "skillIds": [
       "d2-g3-s1"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates evaluate the execution context for an agent using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Evaluate the execution context for an agent in platform-tools, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named platform-tools. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use platform-tools. Assume an agent is ready to act, but it must be controlled through docs/execution-context-checklist.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as evaluate the execution context for an agent.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `.github/workflows/copilot-setup-steps.yml` and tie it to the lesson source pack.",
-      "Create a second control artifact `.github/workflows/agent-validation.yml` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Evaluate the execution context for an agent.",
+      "Create docs/execution-context-checklist.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-tool-permission-matrix.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate repository scope, branch scope, workflow run URL, setup log, GITHUB_TOKEN permissions, secret and environment decision, MCP toolset list, data boundary, and approval record.",
+      "Add one tempting wrong action and explain why it fails: Reject the assumption that available access is appropriate access.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves evaluate the execution context for an agent through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for evaluate the execution context for an agent.",
-    "recovery": "Rewrite the artifacts around workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, add workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply evaluate the execution context for an agent inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Evaluate the execution context for an agent with docs/execution-context-checklist.md, docs/agent-tool-permission-matrix.md, repository scope, branch scope, workflow run URL, setup log, GITHUB_TOKEN permissions, secret and environment decision, MCP toolset list, data boundary, and approval record, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming execution-context checklist, tool permission matrix, environment constraints, Copilot setup workflow, Actions permissions, protected environments, and MCP toolsets and the artifact docs/execution-context-checklist.md.",
+    "recovery": "Rewrite the lab around docs/execution-context-checklist.md, add repository scope, branch scope, workflow run URL, setup log, GITHUB_TOKEN permissions, secret and environment decision, MCP toolset list, data boundary, and approval record, and route the risk through this recovery path: Remove unused access, rerun setup and validation in the narrower context, and record rejected expansion requests.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Evaluate the execution context for an agent.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-tooling-mcp-envs",
       "gh-actions-workflows",
       "gh-copilot-setup-steps",
       "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
       "gh-deploy-envs",
       "gh-review-deployments",
-      "ms-agentic-foundations",
-      "gh-copilot-memory",
-      "gh-custom-instructions-support",
-      "gh-repository-instructions",
-      "ms-foundry-responsible-ai",
-      "gh-cloud-agent-risks",
-      "gh-rulesets",
-      "gh-codeowners",
-      "gh-mcp-cloud-agent",
-      "gh-mcp-server-setup",
       "gh-mcp-toolsets",
-      "gh-mcp-chat",
-      "gh-custom-agents-config"
+      "gh-mcp-server-access",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -4051,53 +4034,42 @@
     "skillIds": [
       "domain-2-ext-tool-risk-classification"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates tool risk classification using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Tool risk classification in platform-tools, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named platform-tools. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use platform-tools. Assume an agent is ready to act, but it must be controlled through docs/tool-risk-classification.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as tool risk classification.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `docs/tool-permission-matrix.md` and tie it to the lesson source pack.",
-      "Create a second control artifact `docs/environment-constraints.md` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if broad tools let the agent modify code, workflow state, or external systems without a task-specific reason.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Tool risk classification.",
+      "Create docs/tool-risk-classification.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-tool-permission-matrix.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate tool name, risk class, allowed operations, denied operations, MCP server or toolset, tool-call log, approval owner, logging requirement, and rollback or disable path.",
+      "Add one tempting wrong action and explain why it fails: Reject classifying a tool as safe only because it is useful.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves tool risk classification through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for tool risk classification.",
-    "recovery": "Rewrite the artifacts around custom-agent tool lists, MCP toolsets, repository and branch scope, workflow permissions, and escalation records, add permission matrix, allowed and denied tool list, validation result, failed-tool log, and reviewer approval for escalation, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply tool risk classification inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Tool risk classification with docs/tool-risk-classification.md, docs/agent-tool-permission-matrix.md, tool name, risk class, allowed operations, denied operations, MCP server or toolset, tool-call log, approval owner, logging requirement, and rollback or disable path, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming tool-risk classification, agent tool permission matrix, MCP tool policy, custom-agent tool list, and escalation path and the artifact docs/tool-risk-classification.md.",
+    "recovery": "Rewrite the lab around docs/tool-risk-classification.md, add tool name, risk class, allowed operations, denied operations, MCP server or toolset, tool-call log, approval owner, logging requirement, and rollback or disable path, and route the risk through this recovery path: Disable or remove over-risky tools, revoke credentials, rerun the task with the lower-risk toolset, and preserve the denied request.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Tool risk classification.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-tooling-mcp-envs",
       "gh-custom-agents-config",
       "gh-mcp-toolsets",
-      "gh-cloud-agent-risks",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "ms-responsible-ai-principles",
-      "ms-foundry-responsible-ai",
-      "gh-protected-branches",
-      "gh-rulesets",
-      "gh-codeowners",
-      "gh-deploy-envs",
-      "gh-review-deployments",
       "gh-mcp-server-access",
       "gh-mcp-cloud-agent",
-      "gh-mcp-server-setup",
-      "gh-mcp-chat",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps"
+      "gh-cloud-agent-risks",
+      "gh-copilot-cli-actions",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -4551,53 +4523,41 @@
     "skillIds": [
       "domain-2-ext-traceability-through-session-logs-and-audit-evidence"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates traceability through session logs and audit evidence using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Traceability through session logs and audit evidence in platform-tools, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named platform-tools. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use platform-tools. Assume an agent is ready to act, but it must be controlled through docs/agent-session-log-review.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as traceability through session logs and audit evidence.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `.github/workflows/copilot-setup-steps.yml` and tie it to the lesson source pack.",
-      "Create a second control artifact `.github/workflows/agent-validation.yml` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if the agent hides execution failure, retries blindly, or invokes automation with more permission than the task requires.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Traceability through session logs and audit evidence.",
+      "Create docs/agent-session-log-review.md and fill the fields that define the task boundary and product control.",
+      "Create docs/audit-trail.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate agent session log, issue timeline, PR description, commit list, workflow run URL, check output, review comments, deployment or environment approval, and rollback note.",
+      "Add one tempting wrong action and explain why it fails: Reject a final agent summary that cannot be tied to session logs and GitHub artifacts.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves traceability through session logs and audit evidence through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for traceability through session logs and audit evidence.",
-    "recovery": "Rewrite the artifacts around workflow events, jobs, steps, setup logs, `GITHUB_TOKEN` permissions, branch scope, protected environments, and trace logs, add workflow run URL, setup log, check result, retry reason, rollback decision, escalation note, and PR evidence table, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply traceability through session logs and audit evidence inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Traceability through session logs and audit evidence with docs/agent-session-log-review.md, docs/audit-trail.md, agent session log, issue timeline, PR description, commit list, workflow run URL, check output, review comments, deployment or environment approval, and rollback note, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming agent session log review, audit trail, PR evidence table, workflow evidence record, issue timeline, and review comments and the artifact docs/agent-session-log-review.md.",
+    "recovery": "Rewrite the lab around docs/agent-session-log-review.md, add agent session log, issue timeline, PR description, commit list, workflow run URL, check output, review comments, deployment or environment approval, and rollback note, and route the risk through this recovery path: If the timeline has gaps, block merge, reconstruct from commits and workflow runs, and record the missing or rejected evidence.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Traceability through session logs and audit evidence.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-tooling-mcp-envs",
-      "gh-actions-workflows",
-      "gh-copilot-setup-steps",
-      "gh-copilot-cli-actions",
-      "gh-agentic-workflows",
-      "gh-deploy-envs",
-      "gh-review-deployments",
-      "ms-responsible-ai-principles",
-      "ms-foundry-responsible-ai",
+      "gh-copilot-cloud-agent",
       "gh-cloud-agent-risks",
-      "gh-protected-branches",
+      "gh-actions-workflows",
+      "gh-review-deployments",
       "gh-rulesets",
-      "gh-codeowners",
-      "gh-mcp-server-access",
-      "gh-mcp-cloud-agent",
-      "gh-mcp-server-setup",
-      "gh-mcp-toolsets",
-      "gh-mcp-chat",
-      "gh-custom-agents-config"
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -5243,41 +5203,40 @@
     "skillIds": [
       "domain-3-ext-memory-reset-and-expiry-decisions"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates memory reset and expiry decisions using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Memory reset and expiry decisions in long-running-refactor, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named long-running-refactor. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use long-running-refactor. Assume an agent is ready to act, but it must be controlled through docs/memory-reset-decision.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as memory reset and expiry decisions.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `docs/agent-state.md` and tie it to the lesson source pack.",
-      "Create a second control artifact `docs/agent-memory-policy.md` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if old assumptions survive across sessions and conflict with current issue comments, source code, CI, or reviewer decisions.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Memory reset and expiry decisions.",
+      "Create docs/memory-reset-decision.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-memory-policy.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate memory item, current source artifact, issue and PR refresh, branch diff, latest workflow run, expiry trigger, reset reason, durable replacement artifact, and reviewer decision.",
+      "Add one tempting wrong action and explain why it fails: Reject keeping stale or sensitive context because it might be useful later.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves memory reset and expiry decisions through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for memory reset and expiry decisions.",
-    "recovery": "Rewrite the artifacts around Copilot Memory, repository instructions, decision logs, PR comments, workflow artifacts, state files, and stale-context checks, add memory policy, state checkpoint, current issue and PR review, latest branch diff, latest workflow result, and decision log, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply memory reset and expiry decisions inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Memory reset and expiry decisions with docs/memory-reset-decision.md, docs/agent-memory-policy.md, memory item, current source artifact, issue and PR refresh, branch diff, latest workflow run, expiry trigger, reset reason, durable replacement artifact, and reviewer decision, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming memory reset decision, memory policy, stale-context checklist, decision log, context handoff, and current GitHub artifacts and the artifact docs/memory-reset-decision.md.",
+    "recovery": "Rewrite the lab around docs/memory-reset-decision.md, add memory item, current source artifact, issue and PR refresh, branch diff, latest workflow run, expiry trigger, reset reason, durable replacement artifact, and reviewer decision, and route the risk through this recovery path: Reset stale or sensitive memory, refresh GitHub artifacts, and move durable facts to docs/decision-log.md or docs/context-handoff.md.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Memory reset and expiry decisions.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-agentic-foundations",
       "gh-copilot-memory",
-      "gh-custom-instructions-support",
       "gh-repository-instructions",
+      "gh-custom-instructions-support",
       "gh-actions-workflows",
-      "ms-foundry-responsible-ai",
-      "gh-copilot-cloud-agent"
+      "ms-foundry-responsible-ai"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -5806,40 +5765,43 @@
     "skillIds": [
       "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates static analysis, codeql, secret scanning, dependency checks using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Static analysis, CodeQL, secret scanning, dependency checks in security-cleanup, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named security-cleanup. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use security-cleanup. Assume an agent is ready to act, but it must be controlled through docs/security-scan-evidence.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as static analysis, codeql, secret scanning, dependency checks.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `docs/evaluation-plan.md` and tie it to the lesson source pack.",
-      "Create a second control artifact `docs/error-analysis.md` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if the agent changes instructions, memory, or tool access before the failure mode is understood and retested.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Static analysis, CodeQL, secret scanning, dependency checks.",
+      "Create docs/security-scan-evidence.md and fill the fields that define the task boundary and product control.",
+      "Create docs/regression-checklist.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate CodeQL or code scanning alert, secret scanning alert, dependency review result, workflow run URL, failed check summary, finding disposition, remediation commit, owner approval, and regression rerun.",
+      "Add one tempting wrong action and explain why it fails: Reject treating a passing or removed scan as proof without finding disposition and rerun evidence.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves static analysis, codeql, secret scanning, dependency checks through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for static analysis, codeql, secret scanning, dependency checks.",
-    "recovery": "Rewrite the artifacts around workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, add expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply static analysis, codeql, secret scanning, dependency checks inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Static analysis, CodeQL, secret scanning, dependency checks with docs/security-scan-evidence.md, docs/regression-checklist.md, CodeQL or code scanning alert, secret scanning alert, dependency review result, workflow run URL, failed check summary, finding disposition, remediation commit, owner approval, and regression rerun, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming CodeQL/code scanning, secret scanning, dependency review, dependency review action, workflow checks, security scan evidence, and regression checklist and the artifact docs/security-scan-evidence.md.",
+    "recovery": "Rewrite the lab around docs/security-scan-evidence.md, add CodeQL or code scanning alert, secret scanning alert, dependency review result, workflow run URL, failed check summary, finding disposition, remediation commit, owner approval, and regression rerun, and route the risk through this recovery path: Fix or revoke the finding, rerun the scan, preserve the original failed evidence, and block merge until disposition and regression evidence are recorded.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Static analysis, CodeQL, secret scanning, dependency checks.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-foundry-responsible-ai",
       "gh-actions-workflows",
-      "gh-cloud-agent-risks",
-      "gh-deploy-envs",
+      "gh-code-scanning",
+      "gh-codeql-code-scanning",
+      "gh-secret-scanning",
+      "gh-dependency-review",
+      "gh-dependency-review-action",
       "gh-rulesets",
       "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
@@ -5858,40 +5820,40 @@
     "skillIds": [
       "domain-4-ext-accessibility-scans-as-evaluation-signals"
     ],
-    "objective": "Create a reviewable GitHub evidence package that demonstrates accessibility scans as evaluation signals using the lesson's source-backed controls, validation path, and human decision point.",
+    "objective": "Create a reviewable evidence package for Accessibility scans as evaluation signals in security-cleanup, including the exact artifact, GitHub control, approval or recovery point, and evidence standard.",
     "requiredTools": [
-      "GitHub issue or task contract",
-      "Markdown editor",
-      "Pull request template",
-      "Workflow or validation evidence",
-      "Source links from the lesson"
+      "GitHub issue or PR",
+      "Markdown template",
+      "Workflow or scan evidence",
+      "Review or approval record",
+      "Official source links"
     ],
-    "setup": "Use a sample repository named security-cleanup. Work as if a GitHub agent will perform the task after your plan is approved.",
+    "setup": "Use security-cleanup. Assume an agent is ready to act, but it must be controlled through docs/accessibility-scan-evidence.md before the risky step.",
     "steps": [
-      "Write the task request and mark the target skill as accessibility scans as evaluation signals.",
-      "List the allowed inputs, editable files or paths, denied scope, and required evidence.",
-      "Create the primary artifact `docs/evaluation-plan.md` and tie it to the lesson source pack.",
-      "Create a second control artifact `docs/error-analysis.md` that names the approval or stop condition.",
-      "Define the validation route using checks, workflow logs, scan output, review notes, or state evidence as appropriate.",
-      "Add a failure case: what the agent must do if the agent changes instructions, memory, or tool access before the failure mode is understood and retested.",
-      "Write the PR handoff: changed artifacts, evidence, source links, open risks, and next human decision."
+      "Write the repository scenario and identify the exact GH-600 skill: Accessibility scans as evaluation signals.",
+      "Create docs/accessibility-scan-evidence.md and fill the fields that define the task boundary and product control.",
+      "Create docs/agent-evaluation-plan.md and record the approval, evidence, rejected scope, or recovery point.",
+      "Attach or simulate accessibility scan run, tool and version, findings, affected component, manual keyboard check, screen-reader or accessible-name review, limitation note, owner decision, PR evidence, and regression rerun.",
+      "Add one tempting wrong action and explain why it fails: Reject treating an automated accessibility scan as complete proof of accessibility.",
+      "Write the reviewer decision: approve, reject, escalate, rollback, or request revision.",
+      "Check the source pack and note which official source supports the product behavior."
     ],
-    "expectedResult": "A lesson-specific evidence package that proves accessibility scans as evaluation signals through concrete GitHub artifacts, validation evidence, source links, and a clear approval or stop decision.",
-    "validation": "A reviewer can inspect only the created artifacts and answer what the agent may do, what it may not do, which evidence proves success, and who owns the next decision.",
-    "commonFailure": "The lab stays generic and describes responsible agent use without naming the GitHub control, evidence, or approval path for accessibility scans as evaluation signals.",
-    "recovery": "Rewrite the artifacts around workflow checks, scan outputs, logs, traces, evaluation plans, tuning logs, regression checks, rulesets, and reviewer notes, add expected-versus-actual table, check logs, scan evidence, root-cause label, tuning change, regression rerun, and accepted-risk note, and require a reviewer decision before the agent continues.",
-    "examRelevance": "Rehearses GH-600 questions that ask how to apply accessibility scans as evaluation signals inside production SDLC workflows with GitHub as the control plane.",
+    "expectedResult": "A lesson-specific artifact package proving Accessibility scans as evaluation signals with docs/accessibility-scan-evidence.md, docs/agent-evaluation-plan.md, accessibility scan run, tool and version, findings, affected component, manual keyboard check, screen-reader or accessible-name review, limitation note, owner decision, PR evidence, and regression rerun, and a clear reviewer decision.",
+    "validation": "A reviewer can inspect the artifacts and answer what the agent may do, what is denied, what evidence proves success, and who owns approval or recovery.",
+    "commonFailure": "The learner writes generic governance language instead of naming accessibility scan evidence, evaluation plan, workflow or DevTools report, manual review checklist, PR evidence table, and regression checklist and the artifact docs/accessibility-scan-evidence.md.",
+    "recovery": "Rewrite the lab around docs/accessibility-scan-evidence.md, add accessibility scan run, tool and version, findings, affected component, manual keyboard check, screen-reader or accessible-name review, limitation note, owner decision, PR evidence, and regression rerun, and route the risk through this recovery path: Reopen unresolved findings, add manual checks, rerun scans, and block merge until limitations and owner disposition are recorded.",
+    "examRelevance": "Rehearses GH-600 scenario questions that test exact GitHub controls, artifacts, evidence, approval gates, and traps for Accessibility scans as evaluation signals.",
     "sourceIds": [
       "ms-gh600-guide",
       "ms-foundry-responsible-ai",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing",
       "gh-actions-workflows",
-      "gh-cloud-agent-risks",
-      "gh-deploy-envs",
-      "gh-rulesets",
       "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-07-08",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true

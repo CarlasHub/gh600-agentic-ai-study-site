@@ -233,6 +233,106 @@ const newTemplates = [
     suggestedUse: "Use when adding, updating, replacing, or retiring agents in active workflows.",
     placeholders: ["agent_name", "change_type", "reason", "state_preserved", "handoff", "risk", "owner"],
     expectations: ["State survives lifecycle change.", "Replacement does not disrupt active work.", "Audit trail remains continuous."]
+  },
+  {
+    id: "agent-plan-approval-record",
+    sectionId: "planning-handoffs",
+    title: "Agent Plan Approval Record",
+    filePath: "docs/agent-plan-approval-record.md",
+    goal: "Record the human or policy gate that approves an agent plan before write-capable execution starts.",
+    suggestedUse: "Use when planning and execution must be separated for code, workflow, permission, or PR actions.",
+    placeholders: ["plan_url", "approved_scope", "denied_scope", "approval_owner", "approval_time", "execution_start_condition", "evidence_required"],
+    expectations: ["Plan approval happens before execution.", "Denied actions are explicit.", "The execution start condition is inspectable."]
+  },
+  {
+    id: "pr-evidence-table",
+    sectionId: "review-approval",
+    title: "Pull Request Evidence Table",
+    filePath: "docs/pr-evidence-table.md",
+    goal: "Make pull request evidence reviewable by tying each claim to a GitHub artifact, check, owner, and residual risk.",
+    suggestedUse: "Use when an agent must produce standard development artifacts that reviewers can inspect without trusting chat history.",
+    placeholders: ["claim", "github_artifact", "evidence_link", "owner", "status", "residual_risk", "next_decision"],
+    expectations: ["Every claim has evidence.", "Evidence links survive outside chat.", "Residual risk and next decision are visible."]
+  },
+  {
+    id: "workflow-evidence-record",
+    sectionId: "evaluation-observability",
+    title: "Workflow Evidence Record",
+    filePath: "docs/workflow-evidence-record.md",
+    goal: "Record GitHub Actions run evidence, check summaries, failed steps, retries, and recovery decisions for agent work.",
+    suggestedUse: "Use when workflow runs, setup steps, checks, scans, retries, or rollbacks are part of the lesson evidence.",
+    placeholders: ["workflow_name", "run_url", "trigger", "permissions", "check_summary", "failed_step", "retry_reason", "recovery_decision", "owner"],
+    expectations: ["Workflow evidence names the run URL.", "Retries and failures have reasons.", "Recovery has an owner."]
+  },
+  {
+    id: "agentic-vs-automation-decision-table",
+    sectionId: "planning-handoffs",
+    title: "Agentic Versus Automation Decision Table",
+    filePath: "docs/agentic-vs-automation-decision-table.md",
+    goal: "Choose ordinary automation or agentic workflow controls based on determinism, uncertainty, tools, evidence, and stop conditions.",
+    suggestedUse: "Use when a lesson asks whether a deterministic workflow is enough or an agent needs planning, tool, and review controls.",
+    placeholders: ["task_pattern", "deterministic_fit", "agentic_signal", "required_control", "evidence", "stop_condition"],
+    expectations: ["Automation and agentic workflow are contrasted.", "Uncertainty triggers controls.", "Stop conditions are named."]
+  },
+  {
+    id: "execution-context-checklist",
+    sectionId: "tools-mcp",
+    title: "Execution Context Checklist",
+    filePath: "docs/execution-context-checklist.md",
+    goal: "Evaluate repository, branch, runner, token, secret, environment, MCP/tool, data, and approval boundaries before agent execution.",
+    suggestedUse: "Use before an agent acts in a GitHub workflow, Copilot cloud agent environment, MCP-backed tool path, or protected environment.",
+    placeholders: ["repository_scope", "branch_scope", "runner_context", "token_permissions", "secret_access", "environment_access", "tool_access", "data_boundary", "approval_point"],
+    expectations: ["Every context surface is classified.", "Access is tied to task need.", "Approval happens before boundary expansion."]
+  },
+  {
+    id: "tool-risk-classification",
+    sectionId: "tools-mcp",
+    title: "Tool Risk Classification",
+    filePath: "docs/tool-risk-classification.md",
+    goal: "Classify agent tools by read-only, write-capable, privileged, external-data, secret, production, and irreversible risk.",
+    suggestedUse: "Use before approving MCP tools, custom-agent tools, workflow actions, deployment tools, or external integrations.",
+    placeholders: ["tool_name", "risk_class", "allowed_operations", "denied_operations", "approval_required", "logging_required", "rollback_path"],
+    expectations: ["Tool class changes approval.", "Logging requirements are explicit.", "Rollback path matches the tool risk."]
+  },
+  {
+    id: "agent-session-log-review",
+    sectionId: "evaluation-observability",
+    title: "Agent Session Log Review",
+    filePath: "docs/agent-session-log-review.md",
+    goal: "Review agent session logs against issue, PR, commit, workflow, approval, and rollback evidence.",
+    suggestedUse: "Use when traceability depends on reconstructing what the agent saw, decided, called, changed, and escalated.",
+    placeholders: ["session_id", "issue_timeline", "tool_calls", "commits", "workflow_runs", "approvals", "rollback_note", "gaps"],
+    expectations: ["Session logs are connected to GitHub artifacts.", "Evidence gaps are recorded.", "Rollback or escalation is visible."]
+  },
+  {
+    id: "memory-reset-decision",
+    sectionId: "memory-release",
+    title: "Memory Reset Decision",
+    filePath: "docs/memory-reset-decision.md",
+    goal: "Decide whether agent memory should be preserved, pruned, expired, reset, or replaced with durable repository state.",
+    suggestedUse: "Use before reusing memory after source, branch, issue, PR, policy, owner, or secret-context changes.",
+    placeholders: ["memory_item", "current_source", "reuse_decision", "expiry_trigger", "reset_reason", "durable_artifact", "reviewer"],
+    expectations: ["Reuse has a current source.", "Sensitive or stale memory is reset.", "Durable artifacts replace hidden memory when needed."]
+  },
+  {
+    id: "root-cause-classification",
+    sectionId: "evaluation-observability",
+    title: "Root Cause Classification",
+    filePath: "docs/root-cause-classification.md",
+    goal: "Classify agent failures before tuning prompts, changing tools, widening permissions, or adjusting workflows.",
+    suggestedUse: "Use when an agent output fails and the learner must distinguish reasoning, instruction, context, tool, permission, environment, workflow, or threshold causes.",
+    placeholders: ["expected_result", "actual_result", "first_failing_signal", "root_cause_class", "evidence", "rejected_causes", "repair", "regression_case"],
+    expectations: ["Classification comes before repair.", "Rejected causes are explained.", "Regression case matches the root cause."]
+  },
+  {
+    id: "accessibility-scan-evidence",
+    sectionId: "evaluation-observability",
+    title: "Accessibility Scan Evidence",
+    filePath: "docs/accessibility-scan-evidence.md",
+    goal: "Record automated and manual accessibility evaluation evidence without overstating what a scan proves.",
+    suggestedUse: "Use when an accessibility scan is an evaluation signal for an agent-created UI or documentation change.",
+    placeholders: ["page_or_component", "tool", "scan_run", "findings", "manual_checks", "limitations", "owner_decision", "pr_evidence"],
+    expectations: ["Scan evidence is treated as a signal.", "Manual review is named.", "Limitations and owner decision are recorded."]
   }
 ];
 const newTemplateIds = new Set(newTemplates.map((template) => template.id));
@@ -310,6 +410,136 @@ const specificDetails = {
     miniExample: {
       scenario: "An agent attempts to expose customer data in a test fixture.",
       completedExample: "Record the privacy policy violation, deny the action, assign the data owner, require sanitized fixtures, and link the corrective PR evidence."
+    }
+  },
+  "agent-plan-approval-record": {
+    sourceIds: ["ms-gh600-guide", "ms-agent-architecture-sdlc", "gh-copilot-cloud-agent", "gh-cloud-agent-risks", "gh-protected-branches", "gh-codeowners"],
+    evidence: ["Approved plan link", "Approval owner", "Approved scope", "Denied write-capable actions", "Execution start condition", "Validation evidence required"],
+    approvalReview: ["Named reviewer approval is required before the agent edits files, calls write-capable tools, opens a pull request, or touches protected paths"],
+    failureModes: ["The agent plans and executes in the same unreviewed step", "Approval is recorded after edits begin", "The plan omits denied scope or validation"],
+    recoveryRollback: ["Stop execution, revert unapproved edits if any exist, return to the planning state, and require a fresh approval record"],
+    securityCompliance: ["Use the approval record for sensitive paths, workflow files, secrets, production data, policy files, and other controlled surfaces"],
+    gh600Relevance: "Teaches that planning is not a control unless execution is gated before write-capable action.",
+    miniExample: {
+      scenario: "A cloud agent proposes an auth change plan and says it will edit files immediately.",
+      completedExample: "Link docs/agent-plan.md, approve only `/src/auth/errors.ts`, deny workflow and secret changes, require `npm test -- auth`, name `@security-owner`, and state that execution starts only after approval."
+    }
+  },
+  "pr-evidence-table": {
+    sourceIds: ["ms-gh600-guide", "gh-actions-workflows", "gh-protected-branches", "gh-rulesets", "gh-codeowners", "gh-review-deployments"],
+    evidence: ["Issue URL", "Changed-file list", "Workflow run URL", "Check summary", "Review comments", "Deployment or environment approval", "Rollback note"],
+    approvalReview: ["Reviewer approval uses the evidence table to decide whether the pull request can merge, needs revision, or must be blocked"],
+    failureModes: ["PR summary makes claims without links", "A check result is missing or stale", "Residual risk is not assigned to an owner"],
+    recoveryRollback: ["Fill missing evidence, rerun checks, request the right owner review, or close the PR if evidence cannot be produced"],
+    securityCompliance: ["Security, deployment, workflow, and policy changes must show owner review and unresolved-risk disposition"],
+    gh600Relevance: "Teaches how agent output becomes inspectable inside ordinary GitHub pull request review.",
+    miniExample: {
+      scenario: "An agent fixed a checkout bug but the reviewer cannot see which checks ran.",
+      completedExample: "Add rows for issue URL, branch diff, workflow run, failing-to-passing test, CODEOWNERS approval, residual risk, and rollback note before requesting merge."
+    }
+  },
+  "workflow-evidence-record": {
+    sourceIds: ["ms-gh600-guide", "gh-actions-workflows", "gh-copilot-setup-steps", "gh-copilot-cli-actions", "gh-code-scanning", "gh-dependency-review-action"],
+    evidence: ["Workflow name", "Run URL", "Trigger", "Job permissions", "Setup log", "Check output", "Failed-step reason", "Retry or rollback decision"],
+    approvalReview: ["Quality or security owner reviews failed checks, retries, scan findings, and recovery evidence before accepting the run"],
+    failureModes: ["A green check hides broader token permissions", "Retry reason is missing", "Scan output is not linked to the PR"],
+    recoveryRollback: ["Rerun with corrected permissions or setup, preserve the failed run, and record the owner-approved recovery decision"],
+    securityCompliance: ["Workflow permissions, secret exposure, CodeQL, dependency, and scan results must be visible before approval"],
+    gh600Relevance: "Teaches that workflow success must be interpreted with setup, permission, failure, retry, and scan context.",
+    miniExample: {
+      scenario: "An agent reruns a failed validation workflow after widening permissions.",
+      completedExample: "Record the original run URL, the widened permission request, owner decision, rerun URL, check summary, and rollback trigger if the wider permission remains unjustified."
+    }
+  },
+  "agentic-vs-automation-decision-table": {
+    sourceIds: ["ms-gh600-guide", "ms-agentic-foundations", "ms-agent-architecture-sdlc", "gh-agentic-workflows", "gh-actions-workflows", "gh-cloud-agent-risks"],
+    evidence: ["Task pattern", "Deterministic trigger", "Uncertainty signal", "Tool-use need", "Review artifact", "Stop condition"],
+    approvalReview: ["Workflow owner approves agentic execution when uncertainty, tool choice, or broad context requires planning and evidence"],
+    failureModes: ["A deterministic CI task is overbuilt as agentic", "An uncertain tool-using task is treated like a simple script", "Stop conditions are omitted"],
+    recoveryRollback: ["Move deterministic work back to automation, or add plan, tool, evidence, and approval controls when agentic uncertainty is real"],
+    securityCompliance: ["Agentic workflows need tighter controls when tools, secrets, protected paths, or production-impacting actions are possible"],
+    gh600Relevance: "Teaches the exam distinction between ordinary automation and agentic workflows with planning, uncertainty, tools, and review evidence.",
+    miniExample: {
+      scenario: "A repo labels stale issues nightly and also asks an agent to choose fixes for flaky tests.",
+      completedExample: "Classify stale labeling as deterministic automation; classify flaky-test repair as agentic because it needs diagnosis, tool use, evidence, and reviewer stop conditions."
+    }
+  },
+  "execution-context-checklist": {
+    sourceIds: ["ms-gh600-guide", "ms-tooling-mcp-envs", "gh-actions-workflows", "gh-copilot-setup-steps", "gh-copilot-cli-actions", "gh-deploy-envs", "gh-review-deployments", "gh-mcp-toolsets"],
+    evidence: ["Repository scope", "Branch scope", "Runner context", "GITHUB_TOKEN permissions", "Secret access", "Environment access", "MCP/tool access", "Data boundary", "Approval point"],
+    approvalReview: ["Owner approval is required before expanding repository, token, secret, environment, MCP/tool, or data access beyond the task need"],
+    failureModes: ["The agent uses inherited access just because it exists", "Secret or environment access is not documented", "MCP access is approved without toolset narrowing"],
+    recoveryRollback: ["Remove unused access, rerun validation in the narrowed context, and document any rejected expansion request"],
+    securityCompliance: ["Treat execution context as the union of repo, branch, runner, token, secret, environment, MCP/tool, and data boundaries"],
+    gh600Relevance: "Teaches that execution context is an access boundary decision, not a vague environment description.",
+    miniExample: {
+      scenario: "A docs agent runs in a workflow that can write packages and read deployment secrets.",
+      completedExample: "Grant docs-path branch write, deny package publish and secrets, set read-only MCP tools, record token permissions, and require escalation for protected environments."
+    }
+  },
+  "tool-risk-classification": {
+    sourceIds: ["ms-gh600-guide", "ms-tooling-mcp-envs", "gh-custom-agents-config", "gh-mcp-toolsets", "gh-mcp-server-access", "gh-cloud-agent-risks", "gh-copilot-cli-actions"],
+    evidence: ["Tool name", "Risk class", "Allowed operations", "Denied operations", "Approval requirement", "Tool-call log", "Rollback or disable path"],
+    approvalReview: ["Platform owner approval is required for write-capable, privileged, secret-accessing, production-impacting, or irreversible tools"],
+    failureModes: ["Tool is marked safe because it is useful", "Read and write operations are not separated", "Rollback is impossible or unnamed"],
+    recoveryRollback: ["Disable or remove the tool, revoke credentials, rerun with the lowest-risk toolset, and preserve the denied request"],
+    securityCompliance: ["External-data, secret, production, and irreversible tools require explicit controls, logs, and owner decisions"],
+    gh600Relevance: "Teaches how tool class changes approval, logging, and rollback requirements in GH-600 scenarios.",
+    miniExample: {
+      scenario: "An agent needs issue search but asks for repository write and deployment tools.",
+      completedExample: "Classify issue search as read-only, repository write as write-capable, deployment as production-impacting, deny deployment, log the tool call, and require owner approval for write access."
+    }
+  },
+  "agent-session-log-review": {
+    sourceIds: ["ms-gh600-guide", "gh-copilot-cloud-agent", "gh-cloud-agent-risks", "gh-actions-workflows", "gh-review-deployments", "gh-rulesets"],
+    evidence: ["Session log", "Issue timeline", "PR description", "Commits", "Workflow run", "Check output", "Review comments", "Environment approval", "Rollback note"],
+    approvalReview: ["Reviewer compares the session log with GitHub artifacts before accepting that the agent stayed inside the approved path"],
+    failureModes: ["Session log cannot be tied to commits", "Tool calls are not linked to approval", "Rollback or escalation is missing from the timeline"],
+    recoveryRollback: ["Block merge, reconstruct the timeline from GitHub artifacts, add missing evidence, and require owner review before continuing"],
+    securityCompliance: ["Preserve trace evidence without exposing secrets or private data in logs, PR comments, or public artifacts"],
+    gh600Relevance: "Teaches traceability as a reconstruction task across session logs and GitHub evidence.",
+    miniExample: {
+      scenario: "An agent claims it only changed docs, but the branch includes a workflow edit.",
+      completedExample: "Compare session log, issue timeline, commit list, workflow run, PR evidence table, reviewer comments, and rollback note before deciding whether to block or approve."
+    }
+  },
+  "memory-reset-decision": {
+    sourceIds: ["ms-gh600-guide", "ms-agentic-foundations", "gh-copilot-memory", "gh-repository-instructions", "gh-actions-workflows", "ms-foundry-responsible-ai"],
+    evidence: ["Memory item", "Current source artifact", "Reuse decision", "Expiry trigger", "Reset reason", "Durable replacement artifact", "Reviewer"],
+    approvalReview: ["Reviewer approval is required before reusing memory after branch, policy, source, issue, PR, owner, or sensitive-data changes"],
+    failureModes: ["Stale context is kept because it may be useful", "Sensitive information remains in memory", "A hidden memory item replaces a repository artifact"],
+    recoveryRollback: ["Reset unsafe memory, refresh current GitHub artifacts, move durable facts to repository state, and record the superseding decision"],
+    securityCompliance: ["Do not retain secrets, private data, obsolete policy, or unreviewed assumptions in reusable memory"],
+    gh600Relevance: "Teaches preserve, prune, expire, reset, and durable-state replacement decisions for agent memory.",
+    miniExample: {
+      scenario: "An agent remembers an old API contract after the PR changed the endpoint.",
+      completedExample: "Expire the remembered contract, refresh from the current PR and docs, write the new fact to docs/decision-log.md, and require reviewer approval before continuing."
+    }
+  },
+  "root-cause-classification": {
+    sourceIds: ["ms-gh600-guide", "ms-foundry-responsible-ai", "gh-actions-workflows", "gh-copilot-setup-steps", "gh-copilot-memory", "gh-mcp-toolsets", "gh-code-scanning"],
+    evidence: ["Expected result", "Actual result", "First failing signal", "Root-cause class", "Evidence", "Rejected causes", "Repair", "Regression case"],
+    approvalReview: ["Quality owner reviews the classification before prompts, tools, permissions, memory, or workflows are changed"],
+    failureModes: ["Prompt is tuned before the failure is classified", "Tool misuse is mistaken for reasoning failure", "Environment or permission evidence is ignored"],
+    recoveryRollback: ["Return to the first failing signal, classify again, undo mismatched changes, and add a regression case that catches the real cause"],
+    securityCompliance: ["Do not widen permissions or tool access as a repair unless evidence proves permission was the root cause"],
+    gh600Relevance: "Teaches error analysis before tuning, permission changes, tool changes, or workflow edits.",
+    miniExample: {
+      scenario: "An agent fails tests after calling the wrong package manager and then proposes a prompt rewrite.",
+      completedExample: "Classify the first failure as tool misuse or environment mismatch, reject reasoning failure, fix setup/tool selection, and rerun regression checks."
+    }
+  },
+  "accessibility-scan-evidence": {
+    sourceIds: ["ms-gh600-guide", "ms-foundry-responsible-ai", "ms-accessibility-evaluation-testing", "ms-accessibility-testing", "ms-edge-accessibility-testing", "gh-actions-workflows"],
+    evidence: ["Accessibility scan run", "Tool and version", "Findings", "Manual keyboard or assistive-technology checks", "Known limitations", "Owner decision", "PR evidence"],
+    approvalReview: ["Accessibility or quality owner reviews automated findings plus manual checks before accepting residual accessibility risk"],
+    failureModes: ["Automated scan is treated as complete proof", "Manual keyboard or screen-reader review is skipped", "Findings lack owner disposition"],
+    recoveryRollback: ["Reopen unresolved findings, rerun the scan, add manual checks, and block merge until owner disposition is recorded"],
+    securityCompliance: ["Accessibility evidence should not expose private user data in screenshots, logs, or public artifacts"],
+    gh600Relevance: "Teaches accessibility scans as evaluation signals with limitations, not generic quality checks.",
+    miniExample: {
+      scenario: "An agent changes checkout form markup and a Lighthouse run passes.",
+      completedExample: "Record the scan run, findings, keyboard path, label/name checks, limitations, reviewer decision, and PR evidence instead of treating the pass as the whole verdict."
     }
   },
   "multi-agent-arbitration-record": {

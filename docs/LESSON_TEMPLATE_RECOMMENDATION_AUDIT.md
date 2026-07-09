@@ -10,11 +10,11 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 - Total lessons checked: 101
 - Lessons with changed recommendation paths since the previous commit: 101
-- Templates in library: 53
-- Templates added: 0
+- Templates in library: 63
+- Templates added: 10
 - Existing templates improved with production fields: 53
 - Lessons where issue template alone was enough: 0
-- Lessons where a different or additional artifact was required: 80
+- Lessons where a different or additional artifact was required: 84
 
 ## Lessons By Domain
 
@@ -27,18 +27,27 @@ The lesson recommendations now use source-backed GitHub artifacts by domain and 
 
 ## Recommendation Categories
 
-- Agent architecture and SDLC: 8
+- Agent architecture and SDLC: 10
 - Evaluation and tuning: 14
-- MCP and tool access: 14
-- Memory and state: 15
+- MCP and tool access: 13
+- Memory and state: 14
 - Multi-agent coordination: 17
-- Repository and branch governance: 8
-- Responsible AI and guardrails: 15
+- Repository and branch governance: 9
+- Responsible AI and guardrails: 14
 - Workflow execution: 10
 
 ## Templates Added
 
-- None
+- Agent Plan Approval Record - `docs/agent-plan-approval-record.md`
+- Agentic Versus Automation Decision Table - `docs/agentic-vs-automation-decision-table.md`
+- Pull Request Evidence Table - `docs/pr-evidence-table.md`
+- Execution Context Checklist - `docs/execution-context-checklist.md`
+- Tool Risk Classification - `docs/tool-risk-classification.md`
+- Accessibility Scan Evidence - `docs/accessibility-scan-evidence.md`
+- Agent Session Log Review - `docs/agent-session-log-review.md`
+- Root Cause Classification - `docs/root-cause-classification.md`
+- Workflow Evidence Record - `docs/workflow-evidence-record.md`
+- Memory Reset Decision - `docs/memory-reset-decision.md`
 
 ## Lessons Where The Generic Issue Template Was Sufficient Alone
 
@@ -88,6 +97,14 @@ None. The issue template is useful intake, but every final lesson needs at least
 - [Using Copilot CLI in GitHub Actions with GITHUB_TOKEN](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-in-actions)
 - [About GitHub Agentic Workflows](https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows)
 - [About GitHub Copilot Memory](https://docs.github.com/en/copilot/concepts/agents/copilot-memory)
+- [About code scanning](https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning)
+- [Code scanning with CodeQL](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
+- [Secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
+- [Dependency review](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review)
+- [Configuring the dependency review action](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configure-dependency-review-action)
+- [Accessibility evaluation and testing](https://learn.microsoft.com/en-us/training/modules/accessibility-evaluation-and-testing/)
+- [Accessibility testing](https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility-testing)
+- [Resources for accessibility testing](https://learn.microsoft.com/en-us/microsoft-edge/accessibility/test)
 
 ## QA Rules Added
 

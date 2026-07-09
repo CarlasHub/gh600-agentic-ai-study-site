@@ -213,19 +213,26 @@
       "masteredDays": 14
     },
     "id": "fc-10",
-    "front": "Configure agent planning to be distinct from agent execution",
-    "back": "In GH-600 terms: GH-600 tests whether you can turn intent into a reviewable plan before execution inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Configure agent planning to be distinct from agent execution, what is the first learner action?",
+    "back": "Create or inspect docs/agent-plan.md and use it to apply issue intake, docs/agent-plan.md, docs/agent-plan-approval-record.md, branch protection or rulesets, CODEOWNERS review, and the pull request template before the agent reaches the risky step.",
     "domainId": "domain-1",
     "skillId": "d1-g2-s1",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -236,19 +243,26 @@
       "masteredDays": 14
     },
     "id": "fc-11",
-    "front": "Exam trap for Configure agent planning to be distinct from agent execution",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Configure agent planning to be distinct from agent execution?",
+    "back": "The reviewer should inspect docs/agent-plan.md with approved plan URL, allowed and denied paths, approval owner, branch name, workflow run URL, changed-file list, CODEOWNERS review, and PR evidence table; a final agent summary is not enough.",
     "domainId": "domain-1",
     "skillId": "d1-g2-s1",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -259,19 +273,26 @@
       "masteredDays": 14
     },
     "id": "fc-12",
-    "front": "Evidence for Configure agent planning to be distinct from agent execution",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Configure agent planning to be distinct from agent execution?",
+    "back": "Reject an answer where the agent writes a plan and implementation in one unreviewed step. The safer answer names docs/agent-plan.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-1",
     "skillId": "d1-g2-s1",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -558,19 +579,27 @@
       "masteredDays": 14
     },
     "id": "fc-25",
-    "front": "Configure agent to produce inspectable artifacts within standard development tooling",
-    "back": "In GH-600 terms: GH-600 tests whether you can choose and constrain tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Configure agent to produce inspectable artifacts within standard development tooling, what is the first learner action?",
+    "back": "Create or inspect .github/pull_request_template.md and use it to apply pull request template, PR evidence table, workflow run, check output, CODEOWNERS review, rulesets, and audit trail before the agent reaches the risky step.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s2",
     "difficulty": "Advanced",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -581,19 +610,27 @@
       "masteredDays": 14
     },
     "id": "fc-26",
-    "front": "Exam trap for Configure agent to produce inspectable artifacts within standard development tooling",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Configure agent to produce inspectable artifacts within standard development tooling?",
+    "back": "The reviewer should inspect .github/pull_request_template.md with issue link, PR description, changed-file list, commits, workflow run URL, check summary, logs, review comments, deployment review, and rollback note; a final agent summary is not enough.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s2",
     "difficulty": "Advanced",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -604,19 +641,27 @@
       "masteredDays": 14
     },
     "id": "fc-27",
-    "front": "Evidence for Configure agent to produce inspectable artifacts within standard development tooling",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Configure agent to produce inspectable artifacts within standard development tooling?",
+    "back": "Reject chat-only or local-output answers; agent work must be inspectable in standard GitHub development objects. The safer answer names .github/pull_request_template.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s2",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-actions-workflows",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -627,19 +672,26 @@
       "masteredDays": 14
     },
     "id": "fc-28",
-    "front": "Configure human intervention for autonomous agents without slowing delivery",
-    "back": "In GH-600 terms: GH-600 tests whether you can place human judgement at the points where it reduces real risk inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Configure human intervention for autonomous agents without slowing delivery, what is the first learner action?",
+    "back": "Create or inspect docs/approval-policy.md and use it to apply approval policy, autonomy matrix, sensitive-action control, CODEOWNERS review, rulesets, protected environments, and audit trail before the agent reaches the risky step.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s3",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "ms-responsible-ai-principles",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -650,19 +702,26 @@
       "masteredDays": 14
     },
     "id": "fc-29",
-    "front": "Exam trap for Configure human intervention for autonomous agents without slowing delivery",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Configure human intervention for autonomous agents without slowing delivery?",
+    "back": "The reviewer should inspect docs/approval-policy.md with risk class, autonomy level, blocked-action rule, approval owner, workflow evidence, PR review comment, environment review, and rollback path; a final agent summary is not enough.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s3",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "ms-responsible-ai-principles",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -673,19 +732,26 @@
       "masteredDays": 14
     },
     "id": "fc-30",
-    "front": "Evidence for Configure human intervention for autonomous agents without slowing delivery",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Configure human intervention for autonomous agents without slowing delivery?",
+    "back": "Reject both extremes: approving every step and approving nothing. The safer answer names docs/approval-policy.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-1",
     "skillId": "d1-g3-s3",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "ms-responsible-ai-principles",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-codeowners",
+      "gh-rulesets",
+      "gh-review-deployments"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -696,19 +762,24 @@
       "masteredDays": 14
     },
     "id": "fc-31",
-    "front": "Agentic workflows versus ordinary automation",
-    "back": "In GH-600 terms: GH-600 tests whether you can apply the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Agentic workflows versus ordinary automation, what is the first learner action?",
+    "back": "Create or inspect docs/agentic-vs-automation-decision-table.md and use it to apply GitHub Actions workflow for deterministic work, agent plan for uncertain work, step map, PR evidence, and stop conditions before the agent reaches the risky step.",
     "domainId": "domain-1",
     "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -719,19 +790,24 @@
       "masteredDays": 14
     },
     "id": "fc-32",
-    "front": "Exam trap for Agentic workflows versus ordinary automation",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Agentic workflows versus ordinary automation?",
+    "back": "The reviewer should inspect docs/agentic-vs-automation-decision-table.md with task pattern, deterministic trigger, uncertainty signal, tool-use need, stop condition, workflow run URL, PR evidence, and reviewer decision; a final agent summary is not enough.",
     "domainId": "domain-1",
     "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -742,19 +818,24 @@
       "masteredDays": 14
     },
     "id": "fc-33",
-    "front": "Evidence for Agentic workflows versus ordinary automation",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Agentic workflows versus ordinary automation?",
+    "back": "Reject using an agent when a deterministic workflow is enough, and reject treating uncertain tool-using work as a simple script. The safer answer names docs/agentic-vs-automation-decision-table.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-1",
     "skillId": "domain-1-ext-agentic-workflows-versus-ordinary-automation",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "ms-agent-architecture-sdlc",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -1593,19 +1674,27 @@
       "masteredDays": 14
     },
     "id": "fc-70",
-    "front": "Evaluate the execution context for an agent",
-    "back": "In GH-600 terms: GH-600 tests whether you can keep context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Evaluate the execution context for an agent, what is the first learner action?",
+    "back": "Create or inspect docs/execution-context-checklist.md and use it to apply execution-context checklist, tool permission matrix, environment constraints, Copilot setup workflow, Actions permissions, protected environments, and MCP toolsets before the agent reaches the risky step.",
     "domainId": "domain-2",
     "skillId": "d2-g3-s1",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -1616,19 +1705,27 @@
       "masteredDays": 14
     },
     "id": "fc-71",
-    "front": "Exam trap for Evaluate the execution context for an agent",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Evaluate the execution context for an agent?",
+    "back": "The reviewer should inspect docs/execution-context-checklist.md with repository scope, branch scope, workflow run URL, setup log, GITHUB_TOKEN permissions, secret and environment decision, MCP toolset list, data boundary, and approval record; a final agent summary is not enough.",
     "domainId": "domain-2",
     "skillId": "d2-g3-s1",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -1639,19 +1736,27 @@
       "masteredDays": 14
     },
     "id": "fc-72",
-    "front": "Evidence for Evaluate the execution context for an agent",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Evaluate the execution context for an agent?",
+    "back": "Reject the assumption that available access is appropriate access. The safer answer names docs/execution-context-checklist.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-2",
     "skillId": "d2-g3-s1",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-cli-actions",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -2421,19 +2526,26 @@
       "masteredDays": 14
     },
     "id": "fc-106",
-    "front": "Tool risk classification",
-    "back": "In GH-600 terms: GH-600 tests whether you can choose and constrain tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Tool risk classification, what is the first learner action?",
+    "back": "Create or inspect docs/tool-risk-classification.md and use it to apply tool-risk classification, agent tool permission matrix, MCP tool policy, custom-agent tool list, and escalation path before the agent reaches the risky step.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-tool-risk-classification",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-custom-agents-config",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-mcp-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-copilot-cli-actions",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -2444,19 +2556,26 @@
       "masteredDays": 14
     },
     "id": "fc-107",
-    "front": "Exam trap for Tool risk classification",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Tool risk classification?",
+    "back": "The reviewer should inspect docs/tool-risk-classification.md with tool name, risk class, allowed operations, denied operations, MCP server or toolset, tool-call log, approval owner, logging requirement, and rollback or disable path; a final agent summary is not enough.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-tool-risk-classification",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-custom-agents-config",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-mcp-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-copilot-cli-actions",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -2467,19 +2586,26 @@
       "masteredDays": 14
     },
     "id": "fc-108",
-    "front": "Evidence for Tool risk classification",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Tool risk classification?",
+    "back": "Reject classifying a tool as safe only because it is useful. The safer answer names docs/tool-risk-classification.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-tool-risk-classification",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-custom-agents-config",
+      "gh-mcp-toolsets",
+      "gh-mcp-server-access",
+      "gh-mcp-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-copilot-cli-actions",
+      "gh-actions-workflows"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -2973,19 +3099,25 @@
       "masteredDays": 14
     },
     "id": "fc-130",
-    "front": "Traceability through session logs and audit evidence",
-    "back": "In GH-600 terms: GH-600 tests whether you can make agent work inspectable through standard GitHub evidence inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Traceability through session logs and audit evidence, what is the first learner action?",
+    "back": "Create or inspect docs/agent-session-log-review.md and use it to apply agent session log review, audit trail, PR evidence table, workflow evidence record, issue timeline, and review comments before the agent reaches the risky step.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-review-deployments",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -2996,19 +3128,25 @@
       "masteredDays": 14
     },
     "id": "fc-131",
-    "front": "Exam trap for Traceability through session logs and audit evidence",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Traceability through session logs and audit evidence?",
+    "back": "The reviewer should inspect docs/agent-session-log-review.md with agent session log, issue timeline, PR description, commit list, workflow run URL, check output, review comments, deployment or environment approval, and rollback note; a final agent summary is not enough.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-review-deployments",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -3019,19 +3157,25 @@
       "masteredDays": 14
     },
     "id": "fc-132",
-    "front": "Evidence for Traceability through session logs and audit evidence",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Traceability through session logs and audit evidence?",
+    "back": "Reject a final agent summary that cannot be tied to session logs and GitHub artifacts. The safer answer names docs/agent-session-log-review.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-2",
     "skillId": "domain-2-ext-traceability-through-session-logs-and-audit-evidence",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-mcp-cloud-agent"
+      "ms-tooling-mcp-envs",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-review-deployments",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -3870,19 +4014,24 @@
       "masteredDays": 14
     },
     "id": "fc-169",
-    "front": "Memory reset and expiry decisions",
-    "back": "In GH-600 terms: GH-600 tests whether you can keep context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Memory reset and expiry decisions, what is the first learner action?",
+    "back": "Create or inspect docs/memory-reset-decision.md and use it to apply memory reset decision, memory policy, stale-context checklist, decision log, context handoff, and current GitHub artifacts before the agent reaches the risky step.",
     "domainId": "domain-3",
     "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-repository-instructions",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -3893,19 +4042,24 @@
       "masteredDays": 14
     },
     "id": "fc-170",
-    "front": "Exam trap for Memory reset and expiry decisions",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Memory reset and expiry decisions?",
+    "back": "The reviewer should inspect docs/memory-reset-decision.md with memory item, current source artifact, issue and PR refresh, branch diff, latest workflow run, expiry trigger, reset reason, durable replacement artifact, and reviewer decision; a final agent summary is not enough.",
     "domainId": "domain-3",
     "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-repository-instructions",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -3916,19 +4070,24 @@
       "masteredDays": 14
     },
     "id": "fc-171",
-    "front": "Evidence for Memory reset and expiry decisions",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Memory reset and expiry decisions?",
+    "back": "Reject keeping stale or sensitive context because it might be useful later. The safer answer names docs/memory-reset-decision.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-3",
     "skillId": "domain-3-ext-memory-reset-and-expiry-decisions",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-copilot-cloud-agent"
+      "ms-agentic-foundations",
+      "gh-copilot-memory",
+      "gh-repository-instructions",
+      "gh-custom-instructions-support",
+      "gh-actions-workflows",
+      "ms-foundry-responsible-ai"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4353,19 +4512,25 @@
       "masteredDays": 14
     },
     "id": "fc-190",
-    "front": "Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
-    "back": "In GH-600 terms: GH-600 tests whether you can choose and constrain tools from the task, risk, and evidence required inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Classify root causes, including reasoning errors, tool misuse, and context or environment issues, what is the first learner action?",
+    "back": "Create or inspect docs/root-cause-classification.md and use it to apply root-cause classification, failure analysis, workflow logs, tool-call evidence, memory refresh, error analysis, and regression checklist before the agent reaches the risky step.",
     "domainId": "domain-4",
     "skillId": "d4-g2-s2",
     "difficulty": "Advanced",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-memory",
+      "gh-mcp-toolsets",
+      "gh-code-scanning",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4376,19 +4541,25 @@
       "masteredDays": 14
     },
     "id": "fc-191",
-    "front": "Exam trap for Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Classify root causes, including reasoning errors, tool misuse, and context or environment issues?",
+    "back": "The reviewer should inspect docs/root-cause-classification.md with expected result, actual result, first failing signal, workflow log, tool call, memory or context source, permission decision, rejected causes, selected repair, and regression rerun; a final agent summary is not enough.",
     "domainId": "domain-4",
     "skillId": "d4-g2-s2",
     "difficulty": "Advanced",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-memory",
+      "gh-mcp-toolsets",
+      "gh-code-scanning",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4399,19 +4570,25 @@
       "masteredDays": 14
     },
     "id": "fc-192",
-    "front": "Evidence for Classify root causes, including reasoning errors, tool misuse, and context or environment issues",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Classify root causes, including reasoning errors, tool misuse, and context or environment issues?",
+    "back": "Reject tuning prompts or widening permissions before classifying the failure from evidence. The safer answer names docs/root-cause-classification.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-4",
     "skillId": "d4-g2-s2",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-copilot-setup-steps",
+      "gh-copilot-memory",
+      "gh-mcp-toolsets",
+      "gh-code-scanning",
+      "gh-cloud-agent-risks"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4629,19 +4806,27 @@
       "masteredDays": 14
     },
     "id": "fc-202",
-    "front": "Static analysis, CodeQL, secret scanning, dependency checks",
-    "back": "In GH-600 terms: GH-600 tests whether you can apply the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Static analysis, CodeQL, secret scanning, dependency checks, what is the first learner action?",
+    "back": "Create or inspect docs/security-scan-evidence.md and use it to apply CodeQL/code scanning, secret scanning, dependency review, dependency review action, workflow checks, security scan evidence, and regression checklist before the agent reaches the risky step.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-code-scanning",
+      "gh-codeql-code-scanning",
+      "gh-secret-scanning",
+      "gh-dependency-review",
+      "gh-dependency-review-action",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4652,19 +4837,27 @@
       "masteredDays": 14
     },
     "id": "fc-203",
-    "front": "Exam trap for Static analysis, CodeQL, secret scanning, dependency checks",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Static analysis, CodeQL, secret scanning, dependency checks?",
+    "back": "The reviewer should inspect docs/security-scan-evidence.md with CodeQL or code scanning alert, secret scanning alert, dependency review result, workflow run URL, failed check summary, finding disposition, remediation commit, owner approval, and regression rerun; a final agent summary is not enough.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
     "difficulty": "Foundation",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-code-scanning",
+      "gh-codeql-code-scanning",
+      "gh-secret-scanning",
+      "gh-dependency-review",
+      "gh-dependency-review-action",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4675,19 +4868,27 @@
       "masteredDays": 14
     },
     "id": "fc-204",
-    "front": "Evidence for Static analysis, CodeQL, secret scanning, dependency checks",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Static analysis, CodeQL, secret scanning, dependency checks?",
+    "back": "Reject treating a passing or removed scan as proof without finding disposition and rerun evidence. The safer answer names docs/security-scan-evidence.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-static-analysis-codeql-secret-scanning-dependency-checks",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "gh-actions-workflows",
+      "gh-code-scanning",
+      "gh-codeql-code-scanning",
+      "gh-secret-scanning",
+      "gh-dependency-review",
+      "gh-dependency-review-action",
+      "gh-rulesets",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4698,19 +4899,24 @@
       "masteredDays": 14
     },
     "id": "fc-205",
-    "front": "Accessibility scans as evaluation signals",
-    "back": "In GH-600 terms: GH-600 tests whether you can apply the skill to a realistic GitHub agent workflow inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Accessibility scans as evaluation signals, what is the first learner action?",
+    "back": "Create or inspect docs/accessibility-scan-evidence.md and use it to apply accessibility scan evidence, evaluation plan, workflow or DevTools report, manual review checklist, PR evidence table, and regression checklist before the agent reaches the risky step.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing",
+      "gh-actions-workflows",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4721,19 +4927,24 @@
       "masteredDays": 14
     },
     "id": "fc-206",
-    "front": "Exam trap for Accessibility scans as evaluation signals",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Accessibility scans as evaluation signals?",
+    "back": "The reviewer should inspect docs/accessibility-scan-evidence.md with accessibility scan run, tool and version, findings, affected component, manual keyboard check, screen-reader or accessible-name review, limitation note, owner decision, PR evidence, and regression rerun; a final agent summary is not enough.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing",
+      "gh-actions-workflows",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -4744,19 +4955,24 @@
       "masteredDays": 14
     },
     "id": "fc-207",
-    "front": "Evidence for Accessibility scans as evaluation signals",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Accessibility scans as evaluation signals?",
+    "back": "Reject treating an automated accessibility scan as complete proof of accessibility. The safer answer names docs/accessibility-scan-evidence.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-4",
     "skillId": "domain-4-ext-accessibility-scans-as-evaluation-signals",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "gh-actions-workflows"
+      "ms-foundry-responsible-ai",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing",
+      "gh-actions-workflows",
+      "gh-codeowners"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -6423,19 +6639,30 @@
       "masteredDays": 14
     },
     "id": "fc-280",
-    "front": "Scope permissions and execution contexts to enforce least-privilege access",
-    "back": "In GH-600 terms: GH-600 tests whether you can keep context current, scoped, durable, and safe to reuse inside production-grade SDLC workflows, using GitHub controls instead of informal trust.",
+    "front": "For Scope permissions and execution contexts to enforce least-privilege access, what is the first learner action?",
+    "back": "Create or inspect docs/least-privilege-access-review.md and use it to apply least-privilege access review, tool permission matrix, approval policy, execution-context checklist, protected environments, CODEOWNERS, rulesets, and audit trail before the agent reaches the risky step.",
     "domainId": "domain-6",
     "skillId": "d6-g2-s3",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai-principles"
+      "ms-tooling-mcp-envs",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-copilot-cli-actions",
+      "gh-mcp-server-access",
+      "gh-mcp-toolsets",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-codeowners",
+      "gh-rulesets"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -6446,19 +6673,30 @@
       "masteredDays": 14
     },
     "id": "fc-281",
-    "front": "Exam trap for Scope permissions and execution contexts to enforce least-privilege access",
-    "back": "The common trap is choosing the answer that gives the agent broad freedom because it sounds faster. GH-600 usually rewards the answer that keeps the task reviewable, scoped, and evidence-driven.",
+    "front": "What evidence standard proves Scope permissions and execution contexts to enforce least-privilege access?",
+    "back": "The reviewer should inspect docs/least-privilege-access-review.md with access surface inventory, task need, granted level, denied level, token permission, secret decision, environment decision, MCP/tool access decision, approval owner, validation run, audit entry, and rollback path; a final agent summary is not enough.",
     "domainId": "domain-6",
     "skillId": "d6-g2-s3",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai-principles"
+      "ms-tooling-mcp-envs",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-copilot-cli-actions",
+      "gh-mcp-server-access",
+      "gh-mcp-toolsets",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-codeowners",
+      "gh-rulesets"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },
@@ -6469,19 +6707,30 @@
       "masteredDays": 14
     },
     "id": "fc-282",
-    "front": "Evidence for Scope permissions and execution contexts to enforce least-privilege access",
-    "back": "Look for PRs, checks, logs, artifacts, decision records, and approvals that prove the agent stayed in scope.",
+    "front": "Which exam trap should you reject for Scope permissions and execution contexts to enforce least-privilege access?",
+    "back": "Reject broad access for convenience or speed. The safer answer names docs/least-privilege-access-review.md, evidence, approval or recovery point, and GitHub product behavior.",
     "domainId": "domain-6",
     "skillId": "d6-g2-s3",
     "difficulty": "Applied",
     "sourceIds": [
       "ms-gh600-guide",
-      "ms-responsible-ai-principles"
+      "ms-tooling-mcp-envs",
+      "ms-responsible-ai-principles",
+      "ms-foundry-responsible-ai",
+      "gh-cloud-agent-risks",
+      "gh-actions-workflows",
+      "gh-copilot-cli-actions",
+      "gh-mcp-server-access",
+      "gh-mcp-toolsets",
+      "gh-deploy-envs",
+      "gh-review-deployments",
+      "gh-codeowners",
+      "gh-rulesets"
     ],
     "accuracy": {
-      "reviewedAt": "2026-06-11",
+      "reviewedAt": "2026-07-09",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
-      "verification": "source-mapped",
+      "verification": "human-reviewed",
       "reviewRequiredOnSourceChange": true
     }
   },

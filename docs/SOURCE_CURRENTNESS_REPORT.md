@@ -1,9 +1,9 @@
 # Source Currentness Check
 
-Checked: 2026-07-09T08:35:25.828Z
+Checked: 2026-07-09T09:50:35.173Z
 
-Sources checked: 32
-Reachable: 32
+Sources checked: 40
+Reachable: 40
 Unreachable: 0
 Review needed: 0
 Baseline established: 0
@@ -42,6 +42,14 @@ Configure the development environment for Copilot cloud agent | reachable | curr
 Using Copilot CLI in GitHub Actions with GITHUB_TOKEN | reachable | current | 200 |  |  |  | OK
 About GitHub Agentic Workflows | reachable | current | 200 |  |  |  | OK
 About GitHub Copilot Memory | reachable | current | 200 |  |  |  | OK
+About code scanning | reachable | current | 200 |  |  |  | OK
+Code scanning with CodeQL | reachable | current | 200 |  |  |  | OK
+Secret scanning | reachable | current | 200 |  |  |  | OK
+Dependency review | reachable | current | 200 |  |  |  | OK
+Configuring the dependency review action | reachable | current | 200 |  |  |  | OK
+Accessibility evaluation and testing | reachable | current | 200 | Mon, 03 Nov 2025 17:07:42 GMT | `"bMenkqIG5tOV6LQ8lsJr9jLFMyQ="` |  | OK
+Accessibility testing | reachable | current | 200 | Fri, 03 Jul 2026 05:01:55 GMT | `"7vSaAPtOID8pFYRXrZrOA3tw7Rw="` |  | OK
+Resources for accessibility testing | reachable | current | 200 | Fri, 12 Jun 2026 15:30:51 GMT | `"Ag5tOfr2mQL8233S9TNQvyeqtVk="` |  | OK
 
 ## Maintainer Instructions
 
