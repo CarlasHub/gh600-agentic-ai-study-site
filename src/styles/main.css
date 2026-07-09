@@ -350,9 +350,9 @@ h3{color:#b9c1c9;font-weight:540}
 .primary-nav a{min-height:2.85rem;padding:.7rem .75rem}
 }
 
-/* Wide viewport container system: use available space up to 1600px. */
-.shell,.footer-inner{width:min(1600px,calc(100% - 2rem))}
-.page-home,.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:1600px}
+/* Wide viewport container system: use available space up to 1450px. */
+.shell,.footer-inner{width:min(1450px,calc(100% - 2rem))}
+.page-home,.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:1450px}
 .content-stack,.lesson-content{max-width:none}
 .lesson-rail{width:auto}
 .primary-nav{width:min(100%,1120px)}
@@ -364,7 +364,7 @@ h3{color:#b9c1c9;font-weight:540}
 .primary-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
 }
 @media(max-width:760px){
-.shell,.footer-inner{width:min(100% - 1rem,1600px)}
+.shell,.footer-inner{width:min(100% - 1rem,1450px)}
 .page-home,.page-lessons,.page-labs,.page-walkthroughs,.page-glossary,.page-flashcards{max-width:none}
 }
 
@@ -384,46 +384,49 @@ h3{color:#b9c1c9;font-weight:540}
 .primary-nav a:hover,.primary-nav a:focus-visible,.home-capability:hover,.home-capability:focus-visible,.home-op:hover,.home-op:focus-visible,.domain-card:hover,.lesson-row:hover,.lesson-row:focus-within,.card:hover,.button:hover,.flash .actions button:hover{border-color:var(--border-neutral-strong)}
 .badge,.domain-card span,.mock-badges span,.key-terms a,.template-tags code,.action-steps span,.home-flow-step span{border-color:var(--border-neutral)}
 
-/* High-contrast Microsoft-style visual finish: neutral structure, solid Fluent-inspired variants. */
-:root{--bg:#11100f;--surface:#201f1e;--surface-2:#292827;--surface-3:#161514;--text:#f3f2f1;--muted:#c8c6c4;--line:#3b3a39;--line-soft:#323130;--brand:#2899f5;--brand-2:#13a10e;--danger:#ffb3b6;--success:#9fd89f;--warn:#ffd679;--border-neutral:#3b3a39;--border-neutral-strong:#605e5c;--surface-neutral:#201f1e;--surface-neutral-alt:#292827;color-scheme:dark}
+/* High-contrast visual finish: neutral structure, clear text, restrained blue interaction. */
+:root{--bg:#0f1115;--surface:#1a1e24;--surface-2:#252b33;--surface-3:#14171c;--text:#f6f8fb;--muted:#c5ced8;--line:#3b434e;--line-soft:#2b323c;--brand:#9ed8ff;--brand-2:#9ad8b5;--danger:#ffb2ad;--success:#9ad8a6;--warn:#f1d38b;--border-neutral:#3b434e;--border-neutral-strong:#596574;--surface-neutral:#1a1e24;--surface-neutral-alt:#20262e;color-scheme:dark}
 body{background:var(--bg);color:var(--text)}
-h1,h2,h3,.brand strong,.card h2,.panel h2,.lab-card h2,.question h2,.home-hero-copy h1,.home-capability strong,.home-flow-step strong,.home-op strong{color:#faf9f8}
+h1,h2,h3,.brand strong,.card h2,.panel h2,.lab-card h2,.question h2,.home-hero-copy h1,.home-capability strong,.home-flow-step strong,.home-op strong{color:#f7f9fc}
 .page-title p:not(.eyebrow),.lesson-row p,.domain-card p,.card p,.panel p,.muted,.home-lede,.home-section-heading p:not(.eyebrow),.home-capability span,.home-flow-step p,.home-op span,.home-op small,.source-panel span,.reference-aid li{color:var(--muted)}
-.eyebrow,.lab-notes dt,.tracker-label,.flash button:first-child span{color:#deecf9}
+.eyebrow,.lab-notes dt,.tracker-label,.flash button:first-child span{color:#d9e6f2}
 a,.sources-inline a,.breadcrumbs a,.template-card h3 a,.key-terms a{color:var(--brand)}
-a:hover,.sources-inline a:hover,.breadcrumbs a:hover,.template-card h3 a:hover,.key-terms a:hover{color:#76b9ed}
-.topbar{background:#11100f;border-bottom-color:var(--line)}
+a:hover,.sources-inline a:hover,.breadcrumbs a:hover,.template-card h3 a:hover,.key-terms a:hover{color:#d8efff}
+.topbar{background:rgba(15,17,21,.97);border-bottom-color:var(--line)}
 .skip-link{background:var(--surface-2);border-color:var(--border-neutral-strong);color:var(--text)}
 .brand{color:var(--text)}
 .panel,.card,.question,.source-panel,.scenario-card,.domain-card,.lesson-row,.flash,.guide-card,.must-know,.lesson-tracker,.table-wrap,.reference-aid,.avoid-section,.artifact-list div,.lab-notes div,.practice-list,.case-study,.home-hero-copy,.home-status-panel,.home-capability,.home-flow,.home-domain-readiness,.home-op,.primary-nav,.primary-nav a{background:var(--surface);border-color:var(--border-neutral)}
-.home-hero-copy,.home-status-panel{background:#292827}
+.home-hero-copy,.home-status-panel{background:#202733}
 .home-metrics .stat:nth-child(n),.home-capability:nth-child(n),.home-op:nth-child(n),.mini,.practice-grid div,.practice-link,.prompt-box,.worked-options li{background:var(--surface)}
-.button,.flash .actions button,.footer-links a{background:var(--surface-2);border-color:var(--border-neutral);color:#deecf9}
-.button:hover,.flash .actions button:hover,.footer-links a:hover,.primary-nav a:hover,.primary-nav a:focus-visible,.home-capability:hover,.home-capability:focus-visible,.home-op:hover,.home-op:focus-visible,.domain-card:hover,.lesson-row:hover,.lesson-row:focus-within,.card:hover{background:#323130;border-color:var(--border-neutral-strong);color:#fff}
-.button.primary{background:#0078d4;border-color:#0078d4;color:#fff}
-.button.primary:hover{background:#005a9e;border-color:#005a9e;color:#fff}
-.nav-toggle{background:#0078d4;border-color:#0078d4;color:#fff}
-.nav-toggle svg{color:#fff}
-.nav-toggle:hover,.nav-toggle:focus-visible,.nav-open .nav-toggle{background:#005a9e;border-color:#005a9e;color:#fff}
-.primary-nav a.active,.primary-nav a[aria-current="page"]{background:#004578;border-color:#106ebe;color:#fff}
-.primary-nav a.active svg,.primary-nav a[aria-current="page"] svg,.primary-nav a svg,.home-capability svg,.stat svg{color:#76b9ed}
-.badge,.domain-card span,.mock-badges span,.template-tags code,.action-steps span,.home-flow-step span,.question-counter{background:#243a50;border-color:var(--border-neutral);color:#deecf9}
-.score{background:#292827;border-color:var(--border-neutral);color:var(--text)}
-input,select,.search{background:#161514;border-color:var(--border-neutral);color:var(--text)}
-.option,button.option{background:#292827;border-color:#605e5c;color:#faf9f8}
-.option-prefix{background:#161514;border-color:#605e5c;color:#faf9f8}
-.option.correct{background:#0f2f17;color:#dff6dd;border-color:#13a10e}
-.option.wrong{background:#3b1518;color:#fde7e9;border-color:#d13438}
-:focus-visible{outline-color:#2899f5}
+.button,.flash .actions button,.footer-links a{background:var(--surface-2);border-color:var(--border-neutral);color:#eef5fb}
+.button:hover,.flash .actions button:hover,.footer-links a:hover,.primary-nav a:hover,.primary-nav a:focus-visible,.home-capability:hover,.home-capability:focus-visible,.home-op:hover,.home-op:focus-visible,.domain-card:hover,.lesson-row:hover,.lesson-row:focus-within,.card:hover{background:#2c333d;border-color:var(--border-neutral-strong);color:#fff}
+.button.primary{background:#f2f5f8;border-color:#f2f5f8;color:#101318}
+.button.primary:hover{background:#ffffff;border-color:#ffffff;color:#101318}
+.nav-toggle{background:#f2f5f8;border-color:#f2f5f8;color:#101318}
+.nav-toggle svg{color:#101318}
+.nav-toggle:hover,.nav-toggle:focus-visible,.nav-open .nav-toggle{background:#ffffff;border-color:#ffffff;color:#101318}
+.primary-nav a.active,.primary-nav a[aria-current="page"]{background:#303843;border-color:var(--border-neutral-strong);color:#fff}
+.primary-nav a.active svg,.primary-nav a[aria-current="page"] svg,.primary-nav a svg,.home-capability svg,.stat svg{color:#d8e7f2}
+.badge,.domain-card span,.mock-badges span,.template-tags code,.action-steps span,.home-flow-step span,.question-counter{background:#252b33;border-color:var(--border-neutral);color:#eef5fb}
+.score{background:#20252c;border-color:var(--border-neutral);color:var(--text)}
+input,select,.search{background:#15191f;border-color:var(--border-neutral);color:var(--text)}
+.option,button.option{background:#242a32;border-color:#4b5562;color:#f4f7fa}
+.option-prefix{background:#15191f;border-color:#4b5562;color:#f4f7fa}
+.option.correct{background:#17311f;color:#eefbf1;border-color:#5e9f6d}
+.option.wrong{background:#351d1f;color:#fff1ef;border-color:#b96f68}
+:focus-visible{outline-color:#9ed8ff}
 
-/* Solid Microsoft-style variants: distinct section groups without gradients. */
-.topbar{background:#11100f}
-.home-hero-copy,.guide-card,.case-study{background:#10243a}
-.home-status-panel{background:#103033}
-.home-flow,.must-know{background:#172b1a}
-.home-domain-readiness{background:#241f3a}
-.home-capability:nth-child(4n+1),.home-metrics .stat:nth-child(4n+1),.home-op:nth-child(4n+1){background:#10243a}
-.home-capability:nth-child(4n+2),.home-metrics .stat:nth-child(4n+2),.home-op:nth-child(4n+2){background:#103033}
-.home-capability:nth-child(4n+3),.home-metrics .stat:nth-child(4n+3),.home-op:nth-child(4n+3){background:#172b1a}
-.home-capability:nth-child(4n),.home-metrics .stat:nth-child(4n),.home-op:nth-child(4n){background:#241f3a}
-.scenario-card{background:#35171a}
+/* Solid color finish: distinct surfaces without gradients or translucent fills. */
+.topbar{background:#0f1115}
+.home-hero-copy{background:#202733}
+.home-status-panel{background:#1c2929}
+.home-flow{background:#1d2821}
+.home-domain-readiness{background:#1d2632}
+.home-capability:nth-child(4n+1),.home-metrics .stat:nth-child(4n+1),.home-op:nth-child(4n+1){background:#202733}
+.home-capability:nth-child(4n+2),.home-metrics .stat:nth-child(4n+2),.home-op:nth-child(4n+2){background:#1c2929}
+.home-capability:nth-child(4n+3),.home-metrics .stat:nth-child(4n+3),.home-op:nth-child(4n+3){background:#1f2921}
+.home-capability:nth-child(4n),.home-metrics .stat:nth-child(4n),.home-op:nth-child(4n){background:#252335}
+.guide-card{background:#1c2530}
+.must-know{background:#1e2a22}
+.scenario-card{background:#2a221e}
+.case-study{background:#1d2733}
