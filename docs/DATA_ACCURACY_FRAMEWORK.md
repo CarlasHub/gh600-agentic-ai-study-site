@@ -22,6 +22,7 @@ The goal is not to claim permanent correctness. GH-600, GitHub Copilot, MCP, Git
 4. Source currentness monitor: `npm run check:sources`
    - Fetches official source URLs.
    - Tracks HTTP status, redirects, `Last-Modified`, `ETag`, content hash, page title, and source keywords.
+   - Records raw hash drift but only blocks release review when semantic source keywords also indicate objective-level drift.
    - Writes `docs/SOURCE_CURRENTNESS_REPORT.md` and updates `src/data/sourceStatus.json`.
 
 5. Release check: `npm run check`

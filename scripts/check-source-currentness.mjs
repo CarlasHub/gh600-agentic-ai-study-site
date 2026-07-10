@@ -93,13 +93,28 @@ function comparablePrevious(previous) {
   return Boolean(previous?.contentHash || previous?.etag || previous?.lastModified);
 }
 
+function keywordOverlap(previous, result) {
+  const previousKeywords = new Set((previous?.contentKeywords || []).map((term) => String(term).toLowerCase()));
+  const currentKeywords = new Set((result?.contentKeywords || []).map((term) => String(term).toLowerCase()));
+  if (!previousKeywords.size || !currentKeywords.size) return 0;
+  const shared = [...previousKeywords].filter((term) => currentKeywords.has(term)).length;
+  return shared / Math.min(previousKeywords.size, currentKeywords.size);
+}
+
 function changeReviewState(previous, result) {
   if (result.status !== "reachable") return "unreachable";
   if (!previous || !comparablePrevious(previous)) return "baseline-established";
 
   const changedSignals = [];
   if (previous.contentHash && result.contentHash && previous.contentHash !== result.contentHash) {
-    changedSignals.push("content hash");
+    const overlap = keywordOverlap(previous, result);
+    result.semanticKeywordOverlap = Number(overlap.toFixed(2));
+    if (overlap >= 0.7) {
+      changedSignals.push("content hash with stable keywords");
+      result.note = `Content hash changed, but source keyword overlap remained ${(overlap * 100).toFixed(0)}%; no objective-level drift signal.`;
+    } else {
+      changedSignals.push("content hash");
+    }
   }
   if (!previous.contentHash && previous.etag && result.etag && previous.etag !== result.etag) {
     changedSignals.push("ETag");
@@ -112,7 +127,8 @@ function changeReviewState(previous, result) {
   }
 
   result.changedSignals = changedSignals;
-  return changedSignals.length ? "source-review-needed" : "current";
+  const blockingSignals = changedSignals.filter((signal) => signal !== "content hash with stable keywords");
+  return blockingSignals.length ? "source-review-needed" : "current";
 }
 
 async function fetchSource(source) {
