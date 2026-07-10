@@ -11,7 +11,8 @@ This project teaches agentic SDLC workflows using GitHub as the system of record
 - 505 quiz questions
 - 5 scenario-based exam simulator forms
 - 300 simulator questions aligned to the official domain weighting
-- 6 advanced case-study drills, one for each official exam domain
+- 18 advanced case-study drills, three for each official exam domain
+- 72 source-grounded expert-calibrated lesson questions
 - 303 flashcards with spaced repetition progress
 - 141 hands-on labs, including 101 gold lesson labs and capstone workflows
 - 12 GitHub UI workflow walkthroughs
@@ -43,6 +44,8 @@ Data accuracy framework: [docs/DATA_ACCURACY_FRAMEWORK.md](docs/DATA_ACCURACY_FR
 Latest data accuracy report: [docs/DATA_ACCURACY_REPORT.md](docs/DATA_ACCURACY_REPORT.md).
 
 Exam-hardness standard: [docs/GH600_EXAM_HARD_STANDARD.md](docs/GH600_EXAM_HARD_STANDARD.md).
+
+Practice assessment calibration record: [docs/GH600_PRACTICE_ASSESSMENT_CALIBRATION.md](docs/GH600_PRACTICE_ASSESSMENT_CALIBRATION.md).
 
 Agent documentation template library: [docs/TEMPLATE_LIBRARY.md](docs/TEMPLATE_LIBRARY.md).
 
@@ -84,7 +87,7 @@ Run the assessment difficulty gate separately:
 npm run qa:exam-hard
 ```
 
-This checks scenario depth, correct-answer distribution, longest-answer bias, wrong-answer rationales, official-source grounding, simulator form weights, and the domain case-study set.
+This checks scenario depth, correct-answer distribution, longest-answer bias, wrong-answer rationales, official-source grounding, simulator form weights, the source-grounded expert-calibrated lesson set, and the domain case-study set.
 
 Run the semantic evidence and metadata scan separately:
 

@@ -1,9 +1,9 @@
 # Source Currentness Check
 
-Checked: 2026-07-10T09:54:52.086Z
+Checked: 2026-07-10T10:20:56.194Z
 
-Sources checked: 40
-Reachable: 40
+Sources checked: 41
+Reachable: 41
 Unreachable: 0
 Review needed: 0
 Baseline established: 0
@@ -50,6 +50,7 @@ Configuring the dependency review action | reachable | current | 200 |  |  |  | 
 Accessibility evaluation and testing | reachable | current | 200 | Mon, 03 Nov 2025 17:07:42 GMT | `"odJwcUORon8Zp68KlzydN5W49sM="` |  | OK
 Accessibility testing | reachable | current | 200 | Fri, 03 Jul 2026 05:01:55 GMT | `"ncBKUCjhjVi7wEWusS8t472tByc="` |  | OK
 Resources for accessibility testing | reachable | current | 200 | Fri, 12 Jun 2026 15:30:51 GMT | `"XjLYCcIOa9SwKN77w3VO2u7AJjQ="` |  | OK
+Practice Assessments for Microsoft Certifications | reachable | current | 200 | Tue, 30 Jun 2026 23:45:37 GMT | `"nJvTYqc/ytys+JF+0DLY9b+d9lY="` |  | OK
 
 ## Maintainer Instructions
 

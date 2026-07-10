@@ -34,7 +34,15 @@
           "Start with code changes because the final pull request review and CI checks will reveal whether the agent was successful."
         ],
         "correctIndex": 0,
-        "rationale": "GH-600 scenario answers favor explicit SDLC controls before autonomous work: a scoped issue, plan approval, evidence expectations, and review gates."
+        "rationale": "GH-600 scenario answers favor explicit SDLC controls before autonomous work: a scoped issue, plan approval, evidence expectations, and review gates.",
+        "productBehavior": "GitHub Copilot cloud agent works from an assigned task, researches the repository, creates a plan, changes a branch, and leaves reviewable pull request evidence instead of bypassing issue scope.",
+        "whyTempting": "The shortcut looks faster because it lets the agent begin work immediately, but it removes the issue, plan, branch, and reviewer evidence that makes agentic SDLC work auditable.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agent-architecture-sdlc",
+          "gh-copilot-cloud-agent"
+        ]
       },
       {
         "id": "case-domain-1-q2",
@@ -47,7 +55,15 @@
           "A product manager comment saying the deadline required fast execution."
         ],
         "correctIndex": 1,
-        "rationale": "The correct evidence is durable in GitHub and connects scope, changed files, validation, and reviewer decision."
+        "rationale": "The correct evidence is durable in GitHub and connects scope, changed files, validation, and reviewer decision.",
+        "productBehavior": "GitHub Copilot cloud agent works from an assigned task, researches the repository, creates a plan, changes a branch, and leaves reviewable pull request evidence instead of bypassing issue scope.",
+        "whyTempting": "The shortcut looks faster because it lets the agent begin work immediately, but it removes the issue, plan, branch, and reviewer evidence that makes agentic SDLC work auditable.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agent-architecture-sdlc",
+          "gh-copilot-cloud-agent"
+        ]
       },
       {
         "id": "case-domain-1-q3",
@@ -60,7 +76,15 @@
           "Blocking sensitive payment files until the right reviewer approves."
         ],
         "correctIndex": 0,
-        "rationale": "Vague tasking before execution is the trap. The other options create the evidence and control GH-600 expects."
+        "rationale": "Vague tasking before execution is the trap. The other options create the evidence and control GH-600 expects.",
+        "productBehavior": "GitHub Copilot cloud agent works from an assigned task, researches the repository, creates a plan, changes a branch, and leaves reviewable pull request evidence instead of bypassing issue scope.",
+        "whyTempting": "The shortcut looks faster because it lets the agent begin work immediately, but it removes the issue, plan, branch, and reviewer evidence that makes agentic SDLC work auditable.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agent-architecture-sdlc",
+          "gh-copilot-cloud-agent"
+        ]
       },
       {
         "id": "case-domain-1-q4",
@@ -73,7 +97,15 @@
           "Ask the agent to avoid the files without recording the restriction in GitHub."
         ],
         "correctIndex": 1,
-        "rationale": "Sensitive areas need enforceable GitHub controls and review evidence, not a private instruction or after-the-fact note."
+        "rationale": "Sensitive areas need enforceable GitHub controls and review evidence, not a private instruction or after-the-fact note.",
+        "productBehavior": "GitHub Copilot cloud agent works from an assigned task, researches the repository, creates a plan, changes a branch, and leaves reviewable pull request evidence instead of bypassing issue scope.",
+        "whyTempting": "The shortcut looks faster because it lets the agent begin work immediately, but it removes the issue, plan, branch, and reviewer evidence that makes agentic SDLC work auditable.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agent-architecture-sdlc",
+          "gh-copilot-cloud-agent"
+        ]
       }
     ],
     "sourceIds": [
@@ -82,13 +114,19 @@
       "gh-copilot-cloud-agent",
       "gh-repository-instructions",
       "gh-protected-branches",
-      "gh-codeowners"
+      "gh-codeowners",
+      "ms-practice-assessments"
     ],
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "source-mapped",
       "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
     }
   },
   {
@@ -126,7 +164,15 @@
           "Disable the MCP server and ask the agent to infer failures from repository files only."
         ],
         "correctIndex": 1,
-        "rationale": "Trusted server ownership does not justify broad tools. GH-600 favors task-specific toolset narrowing and audit evidence."
+        "rationale": "Trusted server ownership does not justify broad tools. GH-600 favors task-specific toolset narrowing and audit evidence.",
+        "productBehavior": "GitHub MCP server and GitHub-hosted agent workflows expose different tool capabilities, so teams must choose read-only or write-capable toolsets, allow-list servers, and bind execution to the task context.",
+        "whyTempting": "The broad-tool answer looks productive because it gives the agent more capability, but GH-600 expects the smallest tool and environment scope that can complete the task with evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-tooling-mcp-envs",
+          "gh-mcp-server-setup"
+        ]
       },
       {
         "id": "case-domain-2-q2",
@@ -139,7 +185,15 @@
           "Reading repository metadata needed to link the failure."
         ],
         "correctIndex": 2,
-        "rationale": "Secret lookup is not required for the stated task and creates a high-risk capability that must stay denied."
+        "rationale": "Secret lookup is not required for the stated task and creates a high-risk capability that must stay denied.",
+        "productBehavior": "GitHub MCP server and GitHub-hosted agent workflows expose different tool capabilities, so teams must choose read-only or write-capable toolsets, allow-list servers, and bind execution to the task context.",
+        "whyTempting": "The broad-tool answer looks productive because it gives the agent more capability, but GH-600 expects the smallest tool and environment scope that can complete the task with evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-tooling-mcp-envs",
+          "gh-mcp-server-setup"
+        ]
       },
       {
         "id": "case-domain-2-q3",
@@ -152,7 +206,15 @@
           "The fact that the server appears in the enterprise registry."
         ],
         "correctIndex": 1,
-        "rationale": "The exam looks for tool-call evidence, not trust by name. The log proves allowed tools and actual use."
+        "rationale": "The exam looks for tool-call evidence, not trust by name. The log proves allowed tools and actual use.",
+        "productBehavior": "GitHub MCP server and GitHub-hosted agent workflows expose different tool capabilities, so teams must choose read-only or write-capable toolsets, allow-list servers, and bind execution to the task context.",
+        "whyTempting": "The broad-tool answer looks productive because it gives the agent more capability, but GH-600 expects the smallest tool and environment scope that can complete the task with evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-tooling-mcp-envs",
+          "gh-mcp-server-setup"
+        ]
       },
       {
         "id": "case-domain-2-q4",
@@ -165,7 +227,15 @@
           "Move the diagnostic task to a different branch without changing permissions."
         ],
         "correctIndex": 1,
-        "rationale": "A new high-risk capability needs a new authorization decision; branch movement alone does not control tool power."
+        "rationale": "A new high-risk capability needs a new authorization decision; branch movement alone does not control tool power.",
+        "productBehavior": "GitHub MCP server and GitHub-hosted agent workflows expose different tool capabilities, so teams must choose read-only or write-capable toolsets, allow-list servers, and bind execution to the task context.",
+        "whyTempting": "The broad-tool answer looks productive because it gives the agent more capability, but GH-600 expects the smallest tool and environment scope that can complete the task with evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-tooling-mcp-envs",
+          "gh-mcp-server-setup"
+        ]
       }
     ],
     "sourceIds": [
@@ -174,13 +244,19 @@
       "gh-mcp-server-setup",
       "gh-mcp-toolsets",
       "gh-mcp-management",
-      "gh-mcp-allowlist-enforcement"
+      "gh-mcp-allowlist-enforcement",
+      "ms-practice-assessments"
     ],
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "source-mapped",
       "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
     }
   },
   {
@@ -218,7 +294,15 @@
           "Delete all repository state so the agent starts with no context."
         ],
         "correctIndex": 1,
-        "rationale": "Stale context must be actively handled. GH-600 expects memory expiry, reset evidence, and durable state tied to the current source of truth."
+        "rationale": "Stale context must be actively handled. GH-600 expects memory expiry, reset evidence, and durable state tied to the current source of truth.",
+        "productBehavior": "GitHub repository artifacts, Copilot memory, workflow records, and pull request notes serve different state roles; stale or conflicting state must be expired, reset, or linked to a current decision record.",
+        "whyTempting": "Keeping all context looks helpful because the agent has more history, but stale memory can override current repository evidence and create hidden, unauditable behavior.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-copilot-memory",
+          "gh-custom-instructions-support"
+        ]
       },
       {
         "id": "case-domain-3-q2",
@@ -231,7 +315,15 @@
           "A deleted memory file with no reason recorded."
         ],
         "correctIndex": 0,
-        "rationale": "The strongest evidence connects the reset, the new source, and the implementation record. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+        "rationale": "The strongest evidence connects the reset, the new source, and the implementation record. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action.",
+        "productBehavior": "GitHub repository artifacts, Copilot memory, workflow records, and pull request notes serve different state roles; stale or conflicting state must be expired, reset, or linked to a current decision record.",
+        "whyTempting": "Keeping all context looks helpful because the agent has more history, but stale memory can override current repository evidence and create hidden, unauditable behavior.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-copilot-memory",
+          "gh-custom-instructions-support"
+        ]
       },
       {
         "id": "case-domain-3-q3",
@@ -244,7 +336,15 @@
           "It prevents the agent from reading repository files."
         ],
         "correctIndex": 1,
-        "rationale": "The problem is contradictory state and hidden selection, not token cost. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+        "rationale": "The problem is contradictory state and hidden selection, not token cost. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action.",
+        "productBehavior": "GitHub repository artifacts, Copilot memory, workflow records, and pull request notes serve different state roles; stale or conflicting state must be expired, reset, or linked to a current decision record.",
+        "whyTempting": "Keeping all context looks helpful because the agent has more history, but stale memory can override current repository evidence and create hidden, unauditable behavior.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-copilot-memory",
+          "gh-custom-instructions-support"
+        ]
       },
       {
         "id": "case-domain-3-q4",
@@ -257,7 +357,15 @@
           "A request for broad memory access to prevent future confusion."
         ],
         "correctIndex": 1,
-        "rationale": "A checkpoint should make state explicit enough for safe continuation, review, or handoff. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+        "rationale": "A checkpoint should make state explicit enough for safe continuation, review, or handoff. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action.",
+        "productBehavior": "GitHub repository artifacts, Copilot memory, workflow records, and pull request notes serve different state roles; stale or conflicting state must be expired, reset, or linked to a current decision record.",
+        "whyTempting": "Keeping all context looks helpful because the agent has more history, but stale memory can override current repository evidence and create hidden, unauditable behavior.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-copilot-memory",
+          "gh-custom-instructions-support"
+        ]
       }
     ],
     "sourceIds": [
@@ -265,13 +373,19 @@
       "gh-copilot-memory",
       "gh-custom-instructions-support",
       "gh-repository-instructions",
-      "ms-agentic-foundations"
+      "ms-agentic-foundations",
+      "ms-practice-assessments"
     ],
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "source-mapped",
       "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
     }
   },
   {
@@ -309,7 +423,15 @@
           "A reviewer preference issue because accessibility labels are subjective."
         ],
         "correctIndex": 1,
-        "rationale": "The evidence points to missing evaluation coverage and instruction adherence, not reviewer taste or deployment mechanics."
+        "rationale": "The evidence points to missing evaluation coverage and instruction adherence, not reviewer taste or deployment mechanics.",
+        "productBehavior": "GitHub Actions logs, CodeQL/code scanning, secret scanning, dependency review, accessibility checks, traces, and tuning records create measurable signals for evaluating agent output.",
+        "whyTempting": "A green or convenient signal looks sufficient, but GH-600 expects the signal to match the failure mode and to include threshold, trace, classification, and regression evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-actions-workflows",
+          "gh-code-scanning"
+        ]
       },
       {
         "id": "case-domain-4-q2",
@@ -322,7 +444,15 @@
           "Disable the accessibility scan until the prompt tuning work is complete."
         ],
         "correctIndex": 1,
-        "rationale": "Release readiness requires the failed signal to pass with evidence. Tuning later does not excuse the current failure."
+        "rationale": "Release readiness requires the failed signal to pass with evidence. Tuning later does not excuse the current failure.",
+        "productBehavior": "GitHub Actions logs, CodeQL/code scanning, secret scanning, dependency review, accessibility checks, traces, and tuning records create measurable signals for evaluating agent output.",
+        "whyTempting": "A green or convenient signal looks sufficient, but GH-600 expects the signal to match the failure mode and to include threshold, trace, classification, and regression evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-actions-workflows",
+          "gh-code-scanning"
+        ]
       },
       {
         "id": "case-domain-4-q3",
@@ -335,7 +465,15 @@
           "A larger model setting with no evaluation comparison."
         ],
         "correctIndex": 0,
-        "rationale": "Tuning must be tied to before/after evidence and regression protection, not only a stronger-sounding configuration."
+        "rationale": "Tuning must be tied to before/after evidence and regression protection, not only a stronger-sounding configuration.",
+        "productBehavior": "GitHub Actions logs, CodeQL/code scanning, secret scanning, dependency review, accessibility checks, traces, and tuning records create measurable signals for evaluating agent output.",
+        "whyTempting": "A green or convenient signal looks sufficient, but GH-600 expects the signal to match the failure mode and to include threshold, trace, classification, and regression evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-actions-workflows",
+          "gh-code-scanning"
+        ]
       },
       {
         "id": "case-domain-4-q4",
@@ -348,7 +486,15 @@
           "The number of branches created during the task."
         ],
         "correctIndex": 1,
-        "rationale": "The evaluation plan needs a measurable signal, threshold, and evidence path for the actual failure mode."
+        "rationale": "The evaluation plan needs a measurable signal, threshold, and evidence path for the actual failure mode.",
+        "productBehavior": "GitHub Actions logs, CodeQL/code scanning, secret scanning, dependency review, accessibility checks, traces, and tuning records create measurable signals for evaluating agent output.",
+        "whyTempting": "A green or convenient signal looks sufficient, but GH-600 expects the signal to match the failure mode and to include threshold, trace, classification, and regression evidence.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-actions-workflows",
+          "gh-code-scanning"
+        ]
       }
     ],
     "sourceIds": [
@@ -357,13 +503,19 @@
       "gh-code-scanning",
       "ms-accessibility-evaluation-testing",
       "ms-accessibility-testing",
-      "ms-edge-accessibility-testing"
+      "ms-edge-accessibility-testing",
+      "ms-practice-assessments"
     ],
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "source-mapped",
       "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
     }
   },
   {
@@ -401,7 +553,15 @@
           "Ask the planner agent to summarize the situation without changing the coordination artifacts."
         ],
         "correctIndex": 1,
-        "rationale": "Multi-agent work needs explicit roles, ownership, handoff, arbitration, and evidence before continuing."
+        "rationale": "Multi-agent work needs explicit roles, ownership, handoff, arbitration, and evidence before continuing.",
+        "productBehavior": "Multi-agent work on GitHub needs named roles, branch or file ownership, handoff records, conflict logs, arbitration decisions, and recovery evidence because several agents can affect the same workflow.",
+        "whyTempting": "Parallelizing everything looks efficient, but without ownership and handoff artifacts agents can duplicate work, hide conflicts, and leave no accountable reviewer path.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agentic-foundations",
+          "gh-agentic-workflows"
+        ]
       },
       {
         "id": "case-domain-5-q2",
@@ -414,7 +574,15 @@
           "The planner agent has too much information."
         ],
         "correctIndex": 1,
-        "rationale": "The risk is unowned evidence and hidden assumptions, which GH-600 treats as a coordination failure."
+        "rationale": "The risk is unowned evidence and hidden assumptions, which GH-600 treats as a coordination failure.",
+        "productBehavior": "Multi-agent work on GitHub needs named roles, branch or file ownership, handoff records, conflict logs, arbitration decisions, and recovery evidence because several agents can affect the same workflow.",
+        "whyTempting": "Parallelizing everything looks efficient, but without ownership and handoff artifacts agents can duplicate work, hide conflicts, and leave no accountable reviewer path.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agentic-foundations",
+          "gh-agentic-workflows"
+        ]
       },
       {
         "id": "case-domain-5-q3",
@@ -427,7 +595,15 @@
           "A final release note with no link to the conflict."
         ],
         "correctIndex": 0,
-        "rationale": "Conflict resolution must be reviewable and connected to validation evidence. The evidence must make ownership, conflict resolution, accepted changes, and validation visible outside private agent context."
+        "rationale": "Conflict resolution must be reviewable and connected to validation evidence. The evidence must make ownership, conflict resolution, accepted changes, and validation visible outside private agent context.",
+        "productBehavior": "Multi-agent work on GitHub needs named roles, branch or file ownership, handoff records, conflict logs, arbitration decisions, and recovery evidence because several agents can affect the same workflow.",
+        "whyTempting": "Parallelizing everything looks efficient, but without ownership and handoff artifacts agents can duplicate work, hide conflicts, and leave no accountable reviewer path.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agentic-foundations",
+          "gh-agentic-workflows"
+        ]
       },
       {
         "id": "case-domain-5-q4",
@@ -440,7 +616,15 @@
           "No artifacts, because planning agents should be stateless."
         ],
         "correctIndex": 1,
-        "rationale": "The planner's value is coordination and dependency evidence, not taking over every execution role."
+        "rationale": "The planner's value is coordination and dependency evidence, not taking over every execution role.",
+        "productBehavior": "Multi-agent work on GitHub needs named roles, branch or file ownership, handoff records, conflict logs, arbitration decisions, and recovery evidence because several agents can affect the same workflow.",
+        "whyTempting": "Parallelizing everything looks efficient, but without ownership and handoff artifacts agents can duplicate work, hide conflicts, and leave no accountable reviewer path.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "ms-agentic-foundations",
+          "gh-agentic-workflows"
+        ]
       }
     ],
     "sourceIds": [
@@ -448,13 +632,19 @@
       "ms-agentic-foundations",
       "gh-agentic-workflows",
       "gh-actions-workflows",
-      "gh-repository-instructions"
+      "gh-repository-instructions",
+      "ms-practice-assessments"
     ],
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",
       "verification": "source-mapped",
       "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
     }
   },
   {
@@ -492,7 +682,15 @@
           "Ask the agent to make the change and explain it afterward in the release notes."
         ],
         "correctIndex": 1,
-        "rationale": "Sensitive production changes require human judgment and environment approval; passing code checks does not authorize the agent to self-approve production impact."
+        "rationale": "Sensitive production changes require human judgment and environment approval; passing code checks does not authorize the agent to self-approve production impact.",
+        "productBehavior": "GitHub environments, required reviewers, branch protection, rulesets, CODEOWNERS, policy records, and audit trails enforce least privilege and human approval for sensitive or irreversible actions.",
+        "whyTempting": "Letting the agent complete the sensitive step looks efficient, but passing checks does not authorize production, compliance, security, or policy-impacting actions without a human decision record.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-deploy-envs",
+          "gh-managing-envs"
+        ]
       },
       {
         "id": "case-domain-6-q2",
@@ -505,7 +703,15 @@
           "The action is low risk because it does not create a pull request."
         ],
         "correctIndex": 0,
-        "rationale": "The risk is production impact and auditability outside the ordinary code review path. The evidence must identify the human owner, policy gate, production impact, and audit record for the sensitive action."
+        "rationale": "The risk is production impact and auditability outside the ordinary code review path. The evidence must identify the human owner, policy gate, production impact, and audit record for the sensitive action.",
+        "productBehavior": "GitHub environments, required reviewers, branch protection, rulesets, CODEOWNERS, policy records, and audit trails enforce least privilege and human approval for sensitive or irreversible actions.",
+        "whyTempting": "Letting the agent complete the sensitive step looks efficient, but passing checks does not authorize production, compliance, security, or policy-impacting actions without a human decision record.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-deploy-envs",
+          "gh-managing-envs"
+        ]
       },
       {
         "id": "case-domain-6-q3",
@@ -518,7 +724,15 @@
           "A branch name that includes the word production."
         ],
         "correctIndex": 1,
-        "rationale": "Accountability needs a human decision, linked artifact, validation, and audit trail for the sensitive action."
+        "rationale": "Accountability needs a human decision, linked artifact, validation, and audit trail for the sensitive action.",
+        "productBehavior": "GitHub environments, required reviewers, branch protection, rulesets, CODEOWNERS, policy records, and audit trails enforce least privilege and human approval for sensitive or irreversible actions.",
+        "whyTempting": "Letting the agent complete the sensitive step looks efficient, but passing checks does not authorize production, compliance, security, or policy-impacting actions without a human decision record.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-deploy-envs",
+          "gh-managing-envs"
+        ]
       },
       {
         "id": "case-domain-6-q4",
@@ -531,7 +745,15 @@
           "Broaden the agent permission so the gate no longer applies."
         ],
         "correctIndex": 0,
-        "rationale": "A bypass attempt is an accountability event. The correct control stops the action and preserves evidence."
+        "rationale": "A bypass attempt is an accountability event. The correct control stops the action and preserves evidence.",
+        "productBehavior": "GitHub environments, required reviewers, branch protection, rulesets, CODEOWNERS, policy records, and audit trails enforce least privilege and human approval for sensitive or irreversible actions.",
+        "whyTempting": "Letting the agent complete the sensitive step looks efficient, but passing checks does not authorize production, compliance, security, or policy-impacting actions without a human decision record.",
+        "sourceFocus": [
+          "ms-gh600-guide",
+          "ms-practice-assessments",
+          "gh-deploy-envs",
+          "gh-managing-envs"
+        ]
       }
     ],
     "sourceIds": [
@@ -541,8 +763,1270 @@
       "gh-review-deployments",
       "gh-protected-branches",
       "gh-codeowners",
+      "ms-responsible-ai-principles",
+      "ms-practice-assessments"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    },
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    }
+  },
+  {
+    "id": "case-domain-1-issue-assignment-to-cloud-agent",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "title": "GitHub issue assignment becomes a cloud-agent task",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "A service team assigns a vague GitHub issue to Copilot cloud agent: improve API error handling before an incident-review meeting. The issue has no acceptance criteria, the repository has custom instructions, and the agent can create a branch and propose a pull request. A lead suggests letting the agent research, edit, and open the pull request immediately because Copilot can work in the background while the team is in meetings.",
+    "learnerTask": "Decide how to convert an assigned GitHub issue into an agent-ready task without losing SDLC control.",
+    "constraints": [
+      "The issue must define observable success before code changes start.",
+      "Repository custom instructions must be treated as governance, not optional reading.",
+      "The agent-created branch must remain reviewable before pull request merge.",
+      "The incident-review team needs evidence of what changed and why."
+    ],
+    "evidenceArtifacts": [
+      "Issue task contract",
+      "Agent plan comment",
+      "Branch name and changed-file list",
+      "Pull request diff",
+      "Workflow run URL",
+      "Reviewer decision record"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-copilot-cloud-agent",
+      "gh-cloud-agent-risks",
+      "gh-repository-instructions",
+      "gh-actions-workflows"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-1-agent-issue-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen before the issue is treated as ready for Copilot cloud agent execution?",
+        "options": [
+          "Add acceptance criteria, forbidden areas, required evidence, and a plan approval point to the GitHub issue before the agent edits the branch.",
+          "Let the agent open the pull request first, then ask reviewers to infer the acceptance criteria from the diff.",
+          "Move the conversation to chat so the issue does not slow down the background agent session.",
+          "Give the agent repository-wide freedom because Copilot cloud agent can research the codebase before it acts."
+        ],
+        "correctIndex": 0,
+        "rationale": "The issue becomes the durable task contract. GH-600 expects the agent plan, branch work, checks, and pull request evidence to trace back to the approved issue boundary.",
+        "productBehavior": "Copilot cloud agent can research, plan, make changes on a branch, and later create or update a pull request; the issue must define the work before that branch activity becomes trusted.",
+        "whyTempting": "Opening the pull request first looks efficient, but it makes reviewers reconstruct scope after the agent has already acted."
+      },
+      {
+        "id": "case-domain-1-agent-issue-q2",
+        "questionType": "product-behavior",
+        "question": "Which GitHub behavior matters most when the agent creates implementation work in the background?",
+        "options": [
+          "The branch and pull request must preserve a reviewable path from issue scope to changed files and checks.",
+          "The agent branch can replace issue acceptance criteria because the branch name proves intent.",
+          "The final summary is enough because Copilot cloud agent already researched the repository.",
+          "The repository instructions matter only if the agent mentions them in the final answer."
+        ],
+        "correctIndex": 0,
+        "rationale": "Background execution is acceptable only when the GitHub artifacts preserve scope, evidence, and reviewer control.",
+        "productBehavior": "Copilot cloud agent work is represented through GitHub branches, commits, pull requests, and reviewable diffs, not private reasoning.",
+        "whyTempting": "The final-summary answer is tempting because it sounds lightweight, but summaries cannot prove branch scope or instruction compliance."
+      },
+      {
+        "id": "case-domain-1-agent-issue-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence package is strongest for the incident-review meeting?",
+        "options": [
+          "Issue scope, approved plan, branch diff, workflow run, pull request comments, and a short note mapping each acceptance criterion to evidence.",
+          "A chat transcript where the agent says the API error handling is improved.",
+          "Only a passing test run, because tests are the authoritative SDLC artifact.",
+          "A screenshot of the agent session without links to issue, branch, or pull request evidence."
+        ],
+        "correctIndex": 0,
+        "rationale": "The strongest package ties the issue contract to branch changes, validation, and human review evidence.",
+        "productBehavior": "GitHub issue comments, pull requests, workflow runs, and reviews are durable artifacts that can be audited after the agent session ends.",
+        "whyTempting": "A passing test run feels objective, but it does not prove the agent met scope or followed the required review path."
+      },
+      {
+        "id": "case-domain-1-agent-issue-q4",
+        "questionType": "risk-classification",
+        "question": "What is the main risk of assigning the vague issue directly to the agent?",
+        "options": [
+          "The agent can optimize for a plausible code change while the team lacks a shared definition of success and acceptable risk.",
+          "The agent will be unable to create a branch on GitHub.",
+          "The pull request will necessarily fail because cloud agents cannot run checks.",
+          "Repository custom instructions are never used by Copilot cloud agent."
+        ],
+        "correctIndex": 0,
+        "rationale": "The risk is not that the product cannot act; it is that autonomous action begins before the team has defined success, limits, and evidence.",
+        "productBehavior": "Copilot cloud agent can act on GitHub tasks, so the control point is the task contract and review gate before implementation evidence is accepted.",
+        "whyTempting": "Assuming product capability equals readiness is tempting, but GH-600 separates agent capability from governed execution."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-1-repository-instructions-conflict",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "title": "Repository instructions conflict with a delivery shortcut",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A repository has custom instructions requiring security tests and CODEOWNERS review for authentication changes. A product owner asks the agent to make a quick sign-in wording change and skip the security workflow because the change appears cosmetic. The file sits beside authentication logic, and prior incidents show wording changes have affected auth error handling. The team must decide what the agent should do before editing.",
+    "learnerTask": "Decide whether repository instructions, issue scope, and review gates can be narrowed for a seemingly small request.",
+    "constraints": [
+      "Repository instructions are part of the agent governance context.",
+      "The file location creates a security-adjacent review requirement.",
+      "CODEOWNERS review may be required even for small changes.",
+      "The agent must not silently skip a documented workflow."
+    ],
+    "evidenceArtifacts": [
+      "Repository custom instructions reference",
+      "Issue scope note",
+      "CODEOWNERS review request",
+      "Security workflow result",
+      "Pull request evidence table"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-repository-instructions",
+      "gh-custom-instructions-support",
+      "gh-codeowners",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-1-instructions-q1",
+        "questionType": "control-selection",
+        "question": "What is the correct way to handle the product owner shortcut?",
+        "options": [
+          "Keep the repository instruction requirement unless a reviewer explicitly records a narrower approved path with evidence.",
+          "Let the product owner override repository instructions in chat because the request sounds cosmetic.",
+          "Ask the agent to avoid mentioning the security workflow so the pull request stays small.",
+          "Delete the instruction temporarily and restore it after the wording change merges."
+        ],
+        "correctIndex": 0,
+        "rationale": "Repository instructions are governance inputs for the agent; exceptions need explicit review evidence, not private convenience.",
+        "productBehavior": "GitHub repository custom instructions guide Copilot behavior for that repository and should be treated as part of the task context.",
+        "whyTempting": "The chat override is tempting because it is faster, but it is not a durable GitHub policy exception."
+      },
+      {
+        "id": "case-domain-1-instructions-q2",
+        "questionType": "evidence-selection",
+        "question": "Which artifact proves the agent respected the instruction file?",
+        "options": [
+          "A pull request note linking the instruction requirement to the security workflow result and CODEOWNERS review.",
+          "A final sentence saying no security impact was found.",
+          "A product owner approval with no reference to the repository instruction.",
+          "A smaller diff that reviewers can visually inspect without checks."
+        ],
+        "correctIndex": 0,
+        "rationale": "The evidence must connect the instruction, the workflow, and the reviewer decision in GitHub artifacts.",
+        "productBehavior": "Pull requests can carry links to checks, reviews, and source files, making instruction compliance inspectable.",
+        "whyTempting": "The tempting answer usually optimizes for speed or a final summary, but it fails because the reviewer cannot prove the plan, scope, approval, workflow evidence, and ownership were present before the agent acted. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-1-instructions-q3",
+        "questionType": "risk-classification",
+        "question": "Why is the request not automatically low risk?",
+        "options": [
+          "The file location and prior incidents make authentication behavior a plausible impact area, so the documented review path still matters.",
+          "All wording changes are high risk and must be blocked permanently.",
+          "CODEOWNERS applies only to generated files, so it is irrelevant.",
+          "Security workflows should run only after production deployment."
+        ],
+        "correctIndex": 0,
+        "rationale": "Risk classification depends on context, file ownership, and incident history, not only the apparent size of the change. The stronger answer creates reviewer-visible control evidence: The evidence should include the issue contract, structured plan, branch, changed-file list, workflow run, PR review, and handoff note.",
+        "productBehavior": "CODEOWNERS and workflow checks are GitHub controls that map file areas to review and validation responsibilities.",
+        "whyTempting": "Calling the change cosmetic is tempting because it reduces process friction, but GH-600 rewards context-aware risk sizing."
+      },
+      {
+        "id": "case-domain-1-instructions-q4",
+        "questionType": "exam-trap",
+        "question": "Which answer pattern should be rejected on the exam?",
+        "options": [
+          "Treating a stakeholder request as enough authority to bypass repository-level agent instructions.",
+          "Linking the pull request to the repository instruction and required checks.",
+          "Requesting CODEOWNERS review for a security-adjacent file.",
+          "Recording an explicit exception before narrowing the review path."
+        ],
+        "correctIndex": 0,
+        "rationale": "GH-600 wrong answers often sound practical but remove durable governance evidence from GitHub.",
+        "productBehavior": "Repository instructions, checks, and CODEOWNERS are designed to be visible and repeatable controls, not hidden preferences.",
+        "whyTempting": "Stakeholder authority sounds decisive, but exam answers require the right control owner and evidence trail."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-2-readonly-mcp-toolset",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "title": "Remote MCP toolset must be read-only for triage",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "A developer connects Copilot Chat to the GitHub MCP server to triage failed nightly workflows. The task is to list failed runs, inspect logs, and create a summary issue. The available MCP configuration can expose repository, pull request, issue, workflow, and write-capable tools. The team has an enterprise allow-list and a policy that triage agents must not mutate repository state except for creating the approved issue.",
+    "learnerTask": "Choose the MCP toolset and permission path that fits the triage task.",
+    "constraints": [
+      "The task needs workflow and issue context.",
+      "Repository writes are not needed except the approved diagnostic issue.",
+      "The server must be allowed by enterprise policy.",
+      "Tool calls must be reviewable after the session."
+    ],
+    "evidenceArtifacts": [
+      "MCP allow-list decision",
+      "Read-only toolset selection",
+      "Approved issue-create exception",
+      "Tool-call session log",
+      "Diagnostic issue link"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-management",
+      "gh-mcp-allowlist-enforcement",
+      "gh-mcp-chat"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-2-readonly-mcp-q1",
+        "questionType": "control-selection",
+        "question": "Which MCP configuration best matches the triage task?",
+        "options": [
+          "Use read-only workflow/repository tools and a narrowly approved issue-create path, with the server recorded in the allow-list.",
+          "Expose every MCP tool because the agent may discover a better remediation while reading logs.",
+          "Disable MCP and ask the agent to infer failures from source files only.",
+          "Let the agent choose read/write tools but review the session at the end of the week."
+        ],
+        "correctIndex": 0,
+        "rationale": "The task needs evidence gathering, not broad mutation. The exception for creating a diagnostic issue must be explicit and logged.",
+        "productBehavior": "GitHub MCP server toolsets can be narrowed, including read-only capability patterns, and enterprise policy can govern which servers are available.",
+        "whyTempting": "The tempting answer grants broad tool access or lets the agent discover permissions while working, but it fails because the reviewer cannot prove which tool, token, branch, workflow, or execution context was authorized. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-2-readonly-mcp-q2",
+        "questionType": "product-behavior",
+        "question": "What product behavior must the learner recognize about MCP toolsets?",
+        "options": [
+          "Toolsets determine which groups of GitHub capabilities the agent can call, so selecting them is a security and execution-context decision.",
+          "Toolsets are only labels for documentation and do not affect agent capabilities.",
+          "A remote MCP server automatically has safer permissions than a local MCP server.",
+          "Read-only mode is unnecessary when the agent promises not to write."
+        ],
+        "correctIndex": 0,
+        "rationale": "Toolsets shape available tool calls. The exam will prefer explicit capability control over promises or broad trust.",
+        "productBehavior": "GitHub MCP documentation describes configuring toolsets and using MCP from Copilot Chat to interact with repositories, issues, pull requests, and workflows.",
+        "whyTempting": "Trusting the agent promise is tempting because it sounds cooperative, but permission design must enforce the boundary."
+      },
+      {
+        "id": "case-domain-2-readonly-mcp-q3",
+        "questionType": "evidence-selection",
+        "question": "Which record should reviewers inspect after the triage session?",
+        "options": [
+          "The MCP session log showing allowed tools, actual tool calls, timestamps, and the created diagnostic issue.",
+          "Only the issue title, because the issue proves the task completed.",
+          "The enterprise server name, because allow-listing the server proves safe use.",
+          "The developer chat message saying the task was read-only."
+        ],
+        "correctIndex": 0,
+        "rationale": "The session log proves both configuration and behavior; an allow-listed server alone does not prove least-privilege tool use.",
+        "productBehavior": "GitHub and MCP tool behavior should be governed through explicit server configuration, selected toolsets, allowlists, token or repository scope, workflow context, setup-step output, retry records, and rollback evidence. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The diagnostic issue feels like a deliverable, but it does not show which tools were used to produce it."
+      },
+      {
+        "id": "case-domain-2-readonly-mcp-q4",
+        "questionType": "exam-trap",
+        "question": "Which option is the most dangerous shortcut?",
+        "options": [
+          "Allowing write-capable workflow and repository tools just in case the agent wants to fix the failure during triage.",
+          "Approving a single issue-create exception with a session log.",
+          "Using read-only log inspection tools.",
+          "Recording the enterprise allow-list decision before the session."
+        ],
+        "correctIndex": 0,
+        "rationale": "It combines scope creep with expanded tool permissions. GH-600 expects triage and remediation to be separate authorization decisions.",
+        "productBehavior": "Read/write capability and workflow mutation are materially different from inspecting logs and opening a diagnostic issue.",
+        "whyTempting": "Fixing immediately sounds useful, but it changes the task from triage to remediation without a new boundary."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-2-copilot-setup-steps-runner",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "title": "Copilot setup steps need constrained workflow context",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 19,
+    "scenario": "A repository uses a setup workflow to prepare dependencies for Copilot cloud agent work. A developer wants to add deployment credentials and broad package registry access to setup steps so the agent can solve any future issue. The current issue only needs test dependencies and a feature flag file. The repository also uses GitHub Actions with GITHUB_TOKEN permissions configured per workflow.",
+    "learnerTask": "Decide how setup steps and workflow permissions should be scoped for agent execution.",
+    "constraints": [
+      "Setup steps must prepare only the required development environment.",
+      "Deployment credentials are not required for the current issue.",
+      "GITHUB_TOKEN permissions must match the workflow need.",
+      "The setup workflow itself is evidence of the agent environment."
+    ],
+    "evidenceArtifacts": [
+      "copilot-setup-steps workflow",
+      "Workflow permissions block",
+      "Setup log",
+      "Feature flag fixture",
+      "Pull request evidence"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-copilot-setup-steps",
+      "gh-actions-workflows",
+      "gh-copilot-cli-actions",
+      "gh-cloud-agent-risks"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-2-setup-q1",
+        "questionType": "control-selection",
+        "question": "What should the setup workflow include for this issue?",
+        "options": [
+          "Only the dependencies and fixtures needed for tests, with workflow permissions limited to the current task.",
+          "Deployment credentials, broad registry access, and write permissions so the agent is ready for future tasks.",
+          "No setup steps, because the agent should install whatever it needs interactively.",
+          "All organization secrets, but only in branches created by the agent."
+        ],
+        "correctIndex": 0,
+        "rationale": "Setup steps are part of the execution context. They should be sufficient for the task without granting unrelated deployment or secret access. The stronger answer creates reviewer-visible control evidence: The evidence should include MCP configuration, toolset or allowlist decision, permission scope, workflow log, setup-step output, retry record, rollback plan, and escalation owner.",
+        "productBehavior": "GitHub supports configuring development environment setup for Copilot cloud agent and setting workflow permissions for GitHub Actions.",
+        "whyTempting": "Future-proofing setup looks convenient, but it expands the execution context beyond the approved issue."
+      },
+      {
+        "id": "case-domain-2-setup-q2",
+        "questionType": "risk-classification",
+        "question": "Why are deployment credentials inappropriate here?",
+        "options": [
+          "They introduce production-impact capability that is not needed for dependency installation or test execution.",
+          "They make GitHub Actions unable to start.",
+          "They are required for all Copilot cloud agent sessions.",
+          "They are harmless because setup logs are visible."
+        ],
+        "correctIndex": 0,
+        "rationale": "The risk is unnecessary sensitive capability in the agent environment. Visible logs do not remove least-privilege requirements. The stronger answer creates reviewer-visible control evidence: The evidence should include MCP configuration, toolset or allowlist decision, permission scope, workflow log, setup-step output, retry record, rollback plan, and escalation owner.",
+        "productBehavior": "Actions workflows and setup steps can expose permissions and credentials; GH-600 expects environment-specific constraints to be right-sized.",
+        "whyTempting": "Visible logs are tempting as a compensating control, but logging does not justify unnecessary secret access."
+      },
+      {
+        "id": "case-domain-2-setup-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best proves the setup context was safe?",
+        "options": [
+          "The setup workflow file, explicit permissions block, setup log, and pull request note explaining why deployment access was excluded.",
+          "A statement that no deployment happened.",
+          "A passing test result with no workflow-permission details.",
+          "A private message from the developer who added the setup file."
+        ],
+        "correctIndex": 0,
+        "rationale": "The evidence must show both what the setup did and what it deliberately did not allow. The stronger answer creates reviewer-visible control evidence: The evidence should include MCP configuration, toolset or allowlist decision, permission scope, workflow log, setup-step output, retry record, rollback plan, and escalation owner.",
+        "productBehavior": "Workflow YAML, run logs, and pull request notes are inspectable GitHub artifacts for agent environment configuration.",
+        "whyTempting": "The tempting answer grants broad tool access or lets the agent discover permissions while working, but it fails because the reviewer cannot prove which tool, token, branch, workflow, or execution context was authorized. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-2-setup-q4",
+        "questionType": "best-next-action",
+        "question": "If a later issue needs deployment access, what should happen?",
+        "options": [
+          "Create a new task-specific approval and workflow-permission change for that later issue.",
+          "Leave deployment credentials in setup permanently after this issue.",
+          "Ask the agent to reuse the old setup because it once passed checks.",
+          "Move the deployment secret into repository instructions."
+        ],
+        "correctIndex": 0,
+        "rationale": "A new capability needs a new authorization decision tied to a specific task and evidence path.",
+        "productBehavior": "GitHub workflow permissions and environment credentials should be scoped per workflow need, not kept broadly available for agents.",
+        "whyTempting": "The tempting answer grants broad tool access or lets the agent discover permissions while working, but it fails because the reviewer cannot prove which tool, token, branch, workflow, or execution context was authorized. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-3-copilot-memory-policy",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "title": "Copilot memory conflicts with repository state",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A developer enabled Copilot memory for reusable preferences. The agent remembers that the team prefers direct commits to main for documentation fixes. The repository has since added branch protection and pull request review requirements after a compliance incident. A documentation issue asks the agent to update API examples, and the agent proposes using the remembered direct-commit preference.",
+    "learnerTask": "Choose how memory should be reconciled with current repository state and branch rules.",
+    "constraints": [
+      "Memory is reusable context, not the source of truth for current repository policy.",
+      "Branch protection and pull request rules are current controls.",
+      "The agent should not directly commit to main.",
+      "The memory policy needs a reset or correction record."
+    ],
+    "evidenceArtifacts": [
+      "Memory reset decision",
+      "Branch protection reference",
+      "Pull request link",
+      "Decision log",
+      "Updated memory policy note"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-copilot-memory",
+      "gh-protected-branches",
+      "gh-repository-instructions",
+      "gh-rulesets"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-3-memory-policy-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen when memory conflicts with branch protection?",
+        "options": [
+          "Treat branch protection and repository policy as authoritative, reset or correct the stale memory, and require a pull request.",
+          "Let memory override branch rules because it captures team preference.",
+          "Direct-commit only documentation files because they are lower risk.",
+          "Ask the agent to decide based on which path is faster."
+        ],
+        "correctIndex": 0,
+        "rationale": "Current GitHub controls outrank stale memory. The remediation must update memory/state evidence and use the required pull request path.",
+        "productBehavior": "Copilot memory can store preferences, while branch protection and rulesets enforce current repository workflow controls.",
+        "whyTempting": "Team preference memory sounds personalized and useful, but it can become stale after governance changes."
+      },
+      {
+        "id": "case-domain-3-memory-policy-q2",
+        "questionType": "product-behavior",
+        "question": "In Copilot memory conflicts with repository state, Which distinction is most important? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Memory can guide context, but branch protection and pull request requirements govern execution.",
+          "Memory automatically updates when branch protection changes.",
+          "Branch protection applies only to code files, not documentation.",
+          "Pull requests are optional if the agent records a decision log."
+        ],
+        "correctIndex": 0,
+        "rationale": "The exam expects learners to separate contextual memory from enforceable repository state.",
+        "productBehavior": "GitHub branch protection and rulesets are repository controls; Copilot memory is contextual assistance and needs governance.",
+        "whyTempting": "Assuming memory auto-updates is tempting because it would be convenient, but stale context is a core GH-600 risk."
+      },
+      {
+        "id": "case-domain-3-memory-policy-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence proves the conflict was corrected?",
+        "options": [
+          "A reset decision showing the stale memory, current branch rule, new pull request path, and reviewer acknowledgement.",
+          "A direct commit with a good commit message.",
+          "A chat note saying the memory was probably old.",
+          "A deleted memory entry with no reference to the current rule."
+        ],
+        "correctIndex": 0,
+        "rationale": "The evidence must show the old context, the current control, and the approved execution path.",
+        "productBehavior": "Decision logs and pull requests can preserve why memory was reset and which current GitHub control governs the task.",
+        "whyTempting": "Deleting stale memory feels like cleanup, but without a reason it does not teach future agents or reviewers."
+      },
+      {
+        "id": "case-domain-3-memory-policy-q4",
+        "questionType": "exam-trap",
+        "question": "Which answer pattern should be rejected?",
+        "options": [
+          "Using remembered preference as permission to bypass current repository controls.",
+          "Opening a pull request under branch protection.",
+          "Recording the memory reset.",
+          "Citing the current ruleset before execution."
+        ],
+        "correctIndex": 0,
+        "rationale": "GH-600 tests whether learners can prevent stale context from overriding durable control-plane evidence.",
+        "productBehavior": "Agent memory and state should be separated into scoped memory, durable GitHub artifacts, checkpoints, reset rules, stale-context checks, and conflict-resolution records so resumed work follows the accepted source of truth. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer keeps all context or trusts the chat transcript because it feels convenient, but it fails because stale or conflicting memory can drive the agent away from the approved state and hide review risk. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-3-workflow-state-checkpoint",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "title": "Workflow artifact becomes the resume checkpoint",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "An agent updates a build script, runs a workflow, and is interrupted before fixing the last failure. The next session sees a stale comment from the first run saying tests passed, but the latest workflow artifact shows an integration failure. The team wants the agent to resume without repeating all work or following stale state.",
+    "learnerTask": "Decide how to resume agent work from durable workflow state.",
+    "constraints": [
+      "The newest workflow artifact conflicts with an older comment.",
+      "The resume checkpoint must identify completed and failed steps.",
+      "The next agent should not repeat successful work.",
+      "The pull request must preserve the reason for the next action."
+    ],
+    "evidenceArtifacts": [
+      "Workflow artifact",
+      "Resume checkpoint",
+      "Pull request comment",
+      "Decision log",
+      "Failed test log"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-actions-workflows",
+      "gh-copilot-memory",
+      "gh-repository-instructions",
+      "gh-agentic-workflows"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-3-workflow-state-q1",
+        "questionType": "best-next-action",
+        "question": "What should the next agent use as the authoritative resume point?",
+        "options": [
+          "The latest workflow artifact and failed test log, summarized into a resume checkpoint before continuing.",
+          "The older comment saying tests passed, because it is easier to read.",
+          "The agent should restart the entire task and ignore prior state.",
+          "The next agent should choose whichever state supports faster completion."
+        ],
+        "correctIndex": 0,
+        "rationale": "Durable, recent workflow evidence should drive continuation. The checkpoint prevents repeated work and stale-state drift.",
+        "productBehavior": "Agent memory and state should be separated into scoped memory, durable GitHub artifacts, checkpoints, reset rules, stale-context checks, and conflict-resolution records so resumed work follows the accepted source of truth. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer keeps all context or trusts the chat transcript because it feels convenient, but it fails because stale or conflicting memory can drive the agent away from the approved state and hide review risk. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-3-workflow-state-q2",
+        "questionType": "evidence-selection",
+        "question": "In Workflow artifact becomes the resume checkpoint, What belongs in the resume checkpoint? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Latest workflow run, failed job link, completed changes, next allowed fix, validation required, and reviewer owner.",
+          "Only the last command from the previous agent.",
+          "A broad summary that the build is mostly fixed.",
+          "The previous agent memory without links to workflow evidence."
+        ],
+        "correctIndex": 0,
+        "rationale": "The checkpoint must make state explicit enough for safe continuation and review. The stronger answer creates reviewer-visible control evidence: The evidence should include the memory policy, state checkpoint, resume note, decision log, pruning or reset record, stale-context finding, and conflict-resolution artifact.",
+        "productBehavior": "Agent memory and state should be separated into scoped memory, durable GitHub artifacts, checkpoints, reset rules, stale-context checks, and conflict-resolution records so resumed work follows the accepted source of truth. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer keeps all context or trusts the chat transcript because it feels convenient, but it fails because stale or conflicting memory can drive the agent away from the approved state and hide review risk. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-3-workflow-state-q3",
+        "questionType": "risk-classification",
+        "question": "What is the risk of following the stale passing comment?",
+        "options": [
+          "The agent may skip the real failing integration path and produce a false readiness signal.",
+          "The workflow artifact will disappear immediately.",
+          "The pull request cannot contain comments.",
+          "The agent will be unable to read repository files."
+        ],
+        "correctIndex": 0,
+        "rationale": "The failure is state drift: an older human-readable note conflicts with newer machine evidence.",
+        "productBehavior": "GitHub workflow artifacts and logs provide chronological execution evidence that can supersede stale comments.",
+        "whyTempting": "The tempting answer keeps all context or trusts the chat transcript because it feels convenient, but it fails because stale or conflicting memory can drive the agent away from the approved state and hide review risk. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-3-workflow-state-q4",
+        "questionType": "control-selection",
+        "question": "In Workflow artifact becomes the resume checkpoint, How should repeated work be avoided? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Record completed steps and remaining failed checks in the checkpoint, then scope the next agent to the failed integration path.",
+          "Tell the next agent to read every file from scratch.",
+          "Delete the old workflow runs to reduce confusion.",
+          "Ask the next agent to rely only on memory from the prior session."
+        ],
+        "correctIndex": 0,
+        "rationale": "A scoped checkpoint preserves progress while preventing drift and unnecessary repetition. The stronger answer creates reviewer-visible control evidence: The evidence should include the memory policy, state checkpoint, resume note, decision log, pruning or reset record, stale-context finding, and conflict-resolution artifact.",
+        "productBehavior": "Pull request comments and workflow evidence can create a durable state handoff between agent sessions.",
+        "whyTempting": "The tempting answer keeps all context or trusts the chat transcript because it feels convenient, but it fails because stale or conflicting memory can drive the agent away from the approved state and hide review risk. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-4-secret-scanning-evaluation",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "title": "Secret scanning alert after agent-generated config",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "An agent generates a sample deployment configuration for a tutorial. Unit tests pass, but GitHub secret scanning flags a token-like string in the pull request. The agent says the value is fake and asks to dismiss the alert. The team must classify the failure, decide whether the pull request is ready, and update future agent instructions so examples do not trigger secret scanning.",
+    "learnerTask": "Use scanning evidence to evaluate output and tune future agent behavior.",
+    "constraints": [
+      "Secret scanning is a release-relevant signal.",
+      "The token-like value may be fake but still trains a bad pattern.",
+      "The alert disposition must be recorded.",
+      "Future generated examples need a regression rule."
+    ],
+    "evidenceArtifacts": [
+      "Secret scanning alert",
+      "Pull request diff",
+      "Alert disposition",
+      "Tuning log",
+      "Regression checklist"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-secret-scanning",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-foundry-responsible-ai"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-4-secret-q1",
+        "questionType": "risk-classification",
+        "question": "In Secret scanning alert after agent-generated config, How should the failure be classified? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "A security-signal failure and instruction-quality issue, even if the sample secret is not real.",
+          "A harmless style issue because unit tests passed.",
+          "A deployment failure because the tutorial has deployment configuration.",
+          "A false positive that should always be ignored for documentation changes."
+        ],
+        "correctIndex": 0,
+        "rationale": "Secret scanning is an evaluation signal. The agent output created a pattern that requires alert handling and tuning. The stronger answer creates reviewer-visible control evidence: The evidence should include evaluation criteria, code scanning or secret scanning output, dependency or accessibility result, trace log, root-cause classification, tuning note, and regression check.",
+        "productBehavior": "GitHub secret scanning detects secret-like values in repository content and pull requests, creating alerts that need review.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-secret-q2",
+        "questionType": "best-next-action",
+        "question": "In Secret scanning alert after agent-generated config, What should happen before merge? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Replace the token-like value, record the alert disposition, rerun checks, and update instructions or regression examples.",
+          "Dismiss the alert because the agent says the value is fake.",
+          "Merge now because no unit tests failed.",
+          "Move the sample token into a comment so scanning is less visible."
+        ],
+        "correctIndex": 0,
+        "rationale": "The pull request is not ready until the scan signal is resolved and future behavior is protected. The stronger answer creates reviewer-visible control evidence: The evidence should include evaluation criteria, code scanning or secret scanning output, dependency or accessibility result, trace log, root-cause classification, tuning note, and regression check.",
+        "productBehavior": "Secret scanning alerts and pull request checks are GitHub evaluation artifacts for agent-generated changes.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-secret-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best supports the tuning change?",
+        "options": [
+          "Before/after prompt or instruction update, resolved alert, changed sample value, and a regression checklist item for generated configs.",
+          "A note saying fake secrets are allowed in tutorials.",
+          "The agent final answer with no alert link.",
+          "A screenshot of the green unit test job."
+        ],
+        "correctIndex": 0,
+        "rationale": "Tuning needs before/after evidence and regression protection tied to the observed failure.",
+        "productBehavior": "GitHub scan alerts, workflow checks, and pull request records can prove both remediation and prevention.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-secret-q4",
+        "questionType": "exam-trap",
+        "question": "Which answer is the classic wrong pattern?",
+        "options": [
+          "Treating a passing unit test as enough evidence when the failure mode is security scanning.",
+          "Classifying the alert and updating the regression checklist.",
+          "Resolving the alert before merge.",
+          "Changing generated examples to avoid secret-like values."
+        ],
+        "correctIndex": 0,
+        "rationale": "The wrong answer uses the wrong signal for the failure. GH-600 expects evaluation criteria aligned with the development intent and risk. The stronger answer creates reviewer-visible control evidence: The evidence should include evaluation criteria, code scanning or secret scanning output, dependency or accessibility result, trace log, root-cause classification, tuning note, and regression check.",
+        "productBehavior": "Evaluation should use workflow artifacts, scans, traces, logs, root-cause records, and tuning evidence so agent output is judged by repeatable signals instead of confidence or a single passing check. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-4-accessibility-trace-tuning",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "title": "Accessibility scan contradicts agent trace",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "An agent updates a settings page and says it followed design-system accessibility rules. The accessibility scan fails because an icon-only button has no accessible name. The trace shows the agent read the design-system instruction but skipped the component checklist. A reviewer wants to know whether this is a prompt failure, tool failure, or validation failure.",
+    "learnerTask": "Classify the failure and choose a tuning plan tied to scan and trace evidence.",
+    "constraints": [
+      "The scan result is objective evidence of the UI issue.",
+      "The trace shows instruction awareness but incomplete checklist use.",
+      "The fix must be validated before merge.",
+      "The tuning change must prevent recurrence."
+    ],
+    "evidenceArtifacts": [
+      "Accessibility scan report",
+      "Agent trace review",
+      "Failure classification",
+      "Instruction update",
+      "Regression example"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing",
+      "gh-actions-workflows"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-4-a11y-q1",
+        "questionType": "risk-classification",
+        "question": "What is the best failure classification?",
+        "options": [
+          "Instruction-following failure with an accessibility evaluation failure, supported by trace and scan evidence.",
+          "Tool outage, because the agent had access to the repository.",
+          "No failure, because the agent said it followed the design system.",
+          "Deployment failure, because the settings page will eventually ship."
+        ],
+        "correctIndex": 0,
+        "rationale": "The trace and scan together show the agent saw the rule but did not apply the checklist; the signal is accessibility-specific.",
+        "productBehavior": "Evaluation should use workflow artifacts, scans, traces, logs, root-cause records, and tuning evidence so agent output is judged by repeatable signals instead of confidence or a single passing check. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-a11y-q2",
+        "questionType": "best-next-action",
+        "question": "What should happen before the pull request is approved?",
+        "options": [
+          "Fix the accessible name, rerun the scan, attach trace evidence, and update the instruction or checklist for future icon-only controls.",
+          "Approve and open a follow-up issue because the diff is small.",
+          "Disable the scan for icon-only buttons.",
+          "Ask the agent to write a longer explanation of why the button is accessible."
+        ],
+        "correctIndex": 0,
+        "rationale": "The failed signal must be resolved and the tuning must target the observed recurrence risk. The stronger answer creates reviewer-visible control evidence: The evidence should include evaluation criteria, code scanning or secret scanning output, dependency or accessibility result, trace log, root-cause classification, tuning note, and regression check.",
+        "productBehavior": "Evaluation should use workflow artifacts, scans, traces, logs, root-cause records, and tuning evidence so agent output is judged by repeatable signals instead of confidence or a single passing check. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-a11y-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence proves the tuning worked?",
+        "options": [
+          "A regression case where an icon-only button gets an accessible name and the scan passes after the instruction update.",
+          "A comment saying the agent now understands accessibility.",
+          "A larger model configuration with no comparison run.",
+          "A screenshot where the button looks clear visually."
+        ],
+        "correctIndex": 0,
+        "rationale": "The best evidence compares behavior before and after tuning against the same failure pattern.",
+        "productBehavior": "Evaluation should use workflow artifacts, scans, traces, logs, root-cause records, and tuning evidence so agent output is judged by repeatable signals instead of confidence or a single passing check. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-4-a11y-q4",
+        "questionType": "control-selection",
+        "question": "Which evaluation criterion should be added?",
+        "options": [
+          "All icon-only controls must have accessible names, with scan evidence linked before merge.",
+          "The agent should keep button labels concise.",
+          "The page should look visually balanced in screenshots.",
+          "The final answer should mention accessibility."
+        ],
+        "correctIndex": 0,
+        "rationale": "The criterion is specific, measurable, and tied to evidence. The others are too subjective or indirect.",
+        "productBehavior": "Microsoft accessibility testing guidance and GitHub workflow checks support concrete pass/fail signals.",
+        "whyTempting": "The tempting answer accepts a green build, agent confidence, or one manual observation, but it fails because it does not connect the failure signal, control, evidence, root cause, tuning change, and regression result. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-5-parallel-agent-branches",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "title": "Planner and tester agents collide on branch ownership",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 19,
+    "scenario": "A planner agent decomposes a checkout reliability project into API, frontend, and workflow tasks. A builder agent starts on the API branch while a tester agent creates workflow test fixtures. Both agents edit the same fixture file and each assumes the other will update rollback notes. The pull request queue shows two branches with conflicting fixtures and no arbitration owner.",
+    "learnerTask": "Choose the multi-agent coordination control that preserves branch ownership and reviewability.",
+    "constraints": [
+      "Agents need branch or file ownership boundaries.",
+      "Rollback notes need a named owner.",
+      "Fixture conflict must be arbitrated before merge.",
+      "The planner should keep dependencies visible."
+    ],
+    "evidenceArtifacts": [
+      "Multi-agent plan",
+      "Branch ownership table",
+      "Handoff contract",
+      "Conflict log",
+      "Arbitration record",
+      "Rollback owner note"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-repository-instructions",
+      "gh-protected-branches"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-5-parallel-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen when the fixture conflict appears?",
+        "options": [
+          "Pause the conflicting branches, record ownership, assign rollback-note responsibility, and create an arbitration decision before merge.",
+          "Let both agents continue because parallel work is the goal.",
+          "Ask the planner to summarize after the branches merge.",
+          "Delete the tester branch and rely on API unit tests."
+        ],
+        "correctIndex": 0,
+        "rationale": "Multi-agent coordination requires explicit ownership, handoff, conflict arbitration, and recovery evidence.",
+        "productBehavior": "GitHub branches, pull requests, workflow checks, and review records expose multi-agent work boundaries.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-5-parallel-q2",
+        "questionType": "product-behavior",
+        "question": "Which GitHub behavior supports safe parallel execution?",
+        "options": [
+          "Separate branches and pull requests can isolate work when ownership and handoff contracts are documented.",
+          "Parallel branches automatically prevent file conflicts.",
+          "A planner summary replaces branch ownership rules.",
+          "Workflow tests decide which agent owns rollback notes."
+        ],
+        "correctIndex": 0,
+        "rationale": "GitHub branches isolate work mechanically, but process artifacts still need to define ownership and handoff.",
+        "productBehavior": "Branches and pull requests provide isolation and review surfaces, but they do not automatically resolve semantic ownership conflicts.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-5-parallel-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best resolves the rollback-note gap?",
+        "options": [
+          "A handoff contract and arbitration record naming the rollback owner, accepted fixture change, rejected change, and validation run.",
+          "A chat message where both agents say rollback is probably handled.",
+          "The number of commits on each branch.",
+          "A final release note with no link to the conflict."
+        ],
+        "correctIndex": 0,
+        "rationale": "The evidence must identify owner, decision, validation, and rejected path so reviewers can audit coordination.",
+        "productBehavior": "Pull request comments and repository docs can preserve multi-agent handoffs and arbitration decisions.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-5-parallel-q4",
+        "questionType": "exam-trap",
+        "question": "In Planner and tester agents collide on branch ownership, Which answer pattern is weakest? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Assuming more agents reduce risk without defining ownership and conflict paths.",
+          "Naming a branch owner before parallel execution.",
+          "Creating a conflict log when two agents edit the same file.",
+          "Assigning rollback evidence to a specific agent."
+        ],
+        "correctIndex": 0,
+        "rationale": "More agents can increase coordination risk. GH-600 expects orchestration controls tied to branch ownership, conflict-log evidence, workflow artifacts, reviewer handoff, and rollback ownership before parallel execution continues.",
+        "productBehavior": "Multi-agent work should use isolated branches or workspaces, explicit roles, handoff records, workflow artifacts, conflict logs, arbitration decisions, recovery plans, and lifecycle audit notes. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-5-agent-replacement-audit",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "title": "Replacing a stalled documentation agent without losing auditability",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A documentation agent stalls halfway through release notes for a multi-agent feature. A reviewer wants to replace it with a faster agent. The stalled agent already gathered decisions from planner, builder, and security agents, but those decisions live in scattered comments. The release manager needs continuity without accepting incomplete or contradictory notes.",
+    "learnerTask": "Plan replacement of a stalled agent while preserving decisions, handoffs, and auditability.",
+    "constraints": [
+      "The replacement agent needs current decisions and open gaps.",
+      "Scattered comments must become a durable handoff.",
+      "Contradictions must be resolved before release notes are finalized.",
+      "The stalled agent history must remain auditable."
+    ],
+    "evidenceArtifacts": [
+      "Lifecycle record",
+      "Context handoff",
+      "Decision log",
+      "Open-gap checklist",
+      "Replacement approval",
+      "Final review record"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-agentic-workflows",
+      "gh-repository-instructions",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-5-replace-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen before assigning the replacement agent?",
+        "options": [
+          "Create a context handoff with accepted decisions, unresolved conflicts, evidence links, and replacement approval.",
+          "Delete stalled-agent comments to reduce confusion.",
+          "Let the new agent infer prior decisions from the repository.",
+          "Ask the stalled agent for a final summary and skip reviewer approval."
+        ],
+        "correctIndex": 0,
+        "rationale": "Replacement is safe only when state, gaps, and authorization are durable and reviewable. The stronger answer creates reviewer-visible control evidence: The evidence should include role assignments, per-agent branch or workspace, handoff contract, duplicate-effort check, conflict log, arbitration record, recovery plan, and post-hoc review.",
+        "productBehavior": "Multi-agent work should use isolated branches or workspaces, explicit roles, handoff records, workflow artifacts, conflict logs, arbitration decisions, recovery plans, and lifecycle audit notes. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-5-replace-q2",
+        "questionType": "risk-classification",
+        "question": "What is the key risk of replacing the agent without a lifecycle record?",
+        "options": [
+          "The new agent may repeat work, contradict prior decisions, or omit security-approved language without an audit trail.",
+          "The new agent cannot create files.",
+          "Release notes never require review.",
+          "The stalled agent history becomes automatically invalid."
+        ],
+        "correctIndex": 0,
+        "rationale": "The risk is coordination continuity, not product incapability. The stronger answer creates reviewer-visible control evidence: The evidence should include role assignments, per-agent branch or workspace, handoff contract, duplicate-effort check, conflict log, arbitration record, recovery plan, and post-hoc review.",
+        "productBehavior": "Multi-agent work should use isolated branches or workspaces, explicit roles, handoff records, workflow artifacts, conflict logs, arbitration decisions, recovery plans, and lifecycle audit notes. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "A faster replacement sounds like a simple resource change, but multi-agent state must survive the swap."
+      },
+      {
+        "id": "case-domain-5-replace-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence should the final reviewer require?",
+        "options": [
+          "Decision log, replacement approval, unresolved-gap checklist, final release-note diff, and links to planner/builder/security decisions.",
+          "Only the final release-note text.",
+          "The new agent name and completion timestamp.",
+          "A private message saying the replacement was faster."
+        ],
+        "correctIndex": 0,
+        "rationale": "The evidence must connect final content to multi-agent decisions and replacement authorization.",
+        "productBehavior": "Multi-agent work should use isolated branches or workspaces, explicit roles, handoff records, workflow artifacts, conflict logs, arbitration decisions, recovery plans, and lifecycle audit notes. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-5-replace-q4",
+        "questionType": "control-selection",
+        "question": "How should contradictory comments be handled?",
+        "options": [
+          "Record the conflict, assign an owner to arbitrate, document the accepted decision, and link the final note to that decision.",
+          "Let the replacement agent choose whichever comment is most recent.",
+          "Publish both comments in the release note.",
+          "Ignore contradictions if checks pass."
+        ],
+        "correctIndex": 0,
+        "rationale": "Contradictions require explicit arbitration and evidence, especially when agents are replaced mid-workflow.",
+        "productBehavior": "Multi-agent work should use isolated branches or workspaces, explicit roles, handoff records, workflow artifacts, conflict logs, arbitration decisions, recovery plans, and lifecycle audit notes. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer lets agents coordinate informally or merges the fastest output, but it fails because duplicated effort, overlapping changes, contradictory decisions, and replacement history are not reviewable. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-6-environment-reviewer-gate",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "title": "Environment reviewer gate blocks autonomous deployment",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "An agent fixes a production bug and asks to deploy through a GitHub environment. The environment requires reviewers, and branch protection requires passing checks. All checks pass, but the deployment would change customer-facing behavior during a compliance freeze. The agent proposes approving the deployment itself because the pull request is small and the tests are green.",
+    "learnerTask": "Decide how to handle deployment approval, environment review, and audit evidence.",
+    "constraints": [
+      "Environment reviewers are required for production deployment.",
+      "Passing checks does not authorize compliance-freeze exceptions.",
+      "The agent can propose but not self-approve the sensitive action.",
+      "The deployment decision must be auditable."
+    ],
+    "evidenceArtifacts": [
+      "Environment approval record",
+      "Compliance-freeze exception",
+      "Pull request checks",
+      "Reviewer decision",
+      "Deployment log",
+      "Audit trail"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-deploy-envs",
+      "gh-managing-envs",
+      "gh-review-deployments",
+      "gh-protected-branches",
       "ms-responsible-ai-principles"
     ],
+    "questions": [
+      {
+        "id": "case-domain-6-env-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen when the agent requests production deployment?",
+        "options": [
+          "Require the configured environment reviewer and compliance exception record before deployment proceeds.",
+          "Allow deployment because checks passed and the diff is small.",
+          "Let the agent approve the environment gate and add a note afterward.",
+          "Disable the environment gate during the compliance freeze to unblock urgent fixes."
+        ],
+        "correctIndex": 0,
+        "rationale": "Environment review and compliance exception evidence are the control path for sensitive deployment. The agent cannot self-approve.",
+        "productBehavior": "GitHub environments can require reviewers before deployments, and deployment reviews create auditable approval evidence.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-6-env-q2",
+        "questionType": "product-behavior",
+        "question": "Which GitHub feature directly enforces the human decision point?",
+        "options": [
+          "Required reviewers on the protected deployment environment.",
+          "The agent final summary.",
+          "The branch name.",
+          "The number of files changed."
+        ],
+        "correctIndex": 0,
+        "rationale": "Environment reviewers are a GitHub control for deployment approval, whereas summaries and branch names are only context.",
+        "productBehavior": "GitHub deployment environments can be configured with required reviewers who approve or reject deployments.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-6-env-q3",
+        "questionType": "evidence-selection",
+        "question": "In Environment reviewer gate blocks autonomous deployment, Which evidence proves accountability? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Linked pull request, passing checks, environment reviewer approval, compliance exception, deployment log, and audit trail.",
+          "Passing checks only.",
+          "A message from the agent saying deployment is safe.",
+          "A screenshot of the production page after deployment."
+        ],
+        "correctIndex": 0,
+        "rationale": "Accountability requires a human decision and a deployment trail connected to the code evidence.",
+        "productBehavior": "GitHub pull requests, checks, environment reviews, and deployment logs provide separate evidence surfaces.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-6-env-q4",
+        "questionType": "exam-trap",
+        "question": "In Environment reviewer gate blocks autonomous deployment, Which exam answer should be rejected? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "Letting the agent self-approve production deployment because automated checks passed.",
+          "Requiring the environment reviewer.",
+          "Recording the compliance exception.",
+          "Linking deployment logs to the pull request."
+        ],
+        "correctIndex": 0,
+        "rationale": "Automated checks support validation; they do not replace human approval for sensitive or compliance-bound actions.",
+        "productBehavior": "GitHub checks and deployment environment reviews are complementary controls with different purposes.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-6-policy-blocking-secret-exposure",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "title": "Policy blocks agent-created secret exposure",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 20,
+    "scenario": "An agent adds a troubleshooting script that prints environment variables during CI to debug a flaky integration test. The workflow would reveal sensitive values in logs. Secret scanning and repository rules are enabled, and the security team has a policy blocking logs that expose credentials. The agent argues the output is temporary and will be removed after debugging.",
+    "learnerTask": "Apply policy blocking, least privilege, and audit evidence to an agent-created security risk.",
+    "constraints": [
+      "Sensitive values must not be printed to logs.",
+      "Temporary exposure is still exposure.",
+      "The agent needs a safe debugging alternative.",
+      "The policy-block decision must be reviewable."
+    ],
+    "evidenceArtifacts": [
+      "Policy violation record",
+      "Redacted debugging plan",
+      "Secret scanning result",
+      "Workflow log review",
+      "Security approval",
+      "Audit trail"
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-practice-assessments",
+      "gh-secret-scanning",
+      "gh-actions-workflows",
+      "gh-cloud-agent-risks",
+      "ms-responsible-ai-principles"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-6-policy-q1",
+        "questionType": "control-selection",
+        "question": "What should happen to the proposed troubleshooting script?",
+        "options": [
+          "Block the log-exposure behavior, record a policy violation, and require a redacted debugging plan.",
+          "Allow it temporarily because the agent will remove it later.",
+          "Run it only once on the default branch.",
+          "Print the variables but hide the workflow log after completion."
+        ],
+        "correctIndex": 0,
+        "rationale": "Policy blocking must stop sensitive exposure before it happens and preserve a reviewable decision record.",
+        "productBehavior": "GitHub Actions logs and secret scanning/security controls are part of the evidence path for CI risks.",
+        "whyTempting": "Temporary debugging is tempting because it solves the immediate issue, but it still creates credential exposure."
+      },
+      {
+        "id": "case-domain-6-policy-q2",
+        "questionType": "risk-classification",
+        "question": "In Policy blocks agent-created secret exposure, Why is the agent proposal high risk? Which decision best fits the GitHub product behavior and evidence requirement?",
+        "options": [
+          "It can expose secrets in workflow logs, creating a compliance and security incident even if the code is later removed.",
+          "It changes only a script, so it is low risk.",
+          "It is safe because CI logs are never visible to reviewers.",
+          "It is safe because secret scanning replaces all human review."
+        ],
+        "correctIndex": 0,
+        "rationale": "The harm can occur during execution, not only after merge. The policy must prevent the unsafe action.",
+        "productBehavior": "Workflow logs can reveal runtime output; security controls and review policy must handle secret exposure risks.",
+        "whyTempting": "Focusing only on code diff is tempting, but agent actions can create runtime evidence and runtime harm."
+      },
+      {
+        "id": "case-domain-6-policy-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence proves the guardrail worked?",
+        "options": [
+          "Policy violation record, blocked workflow/log path, redacted debugging alternative, and security reviewer approval.",
+          "A promise that the agent will delete the script after use.",
+          "A passing integration test after printing variables.",
+          "A private chat with the security team."
+        ],
+        "correctIndex": 0,
+        "rationale": "The guardrail evidence must show the unsafe action was blocked and replaced with an approved safe path.",
+        "productBehavior": "Guardrails should enforce least privilege, autonomy classification, environment reviewers, branch or policy controls, explicit authorization, Responsible AI review, and audit logs for high-risk agent actions. In this case, the product behavior being tested is whether the learner can tie the decision to the right GitHub artifact, control, and reviewer-visible outcome.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      },
+      {
+        "id": "case-domain-6-policy-q4",
+        "questionType": "best-next-action",
+        "question": "What safe alternative should be requested?",
+        "options": [
+          "Use redacted logs, scoped test fixtures, or approved debug outputs that do not reveal secret values.",
+          "Print all variables and trust masking to catch everything.",
+          "Disable secret scanning until the flaky test is fixed.",
+          "Give the agent broader secrets access so it can identify the issue faster."
+        ],
+        "correctIndex": 0,
+        "rationale": "The safe path preserves debugging value while enforcing least privilege and non-disclosure. The stronger answer creates reviewer-visible control evidence: The evidence should include autonomy level, risk classification, permission review, environment approval, policy decision, blocked-action record, audit log, Responsible AI review, and reviewer rationale.",
+        "productBehavior": "GitHub security controls reduce risk, but teams still need explicit safe debugging patterns and review evidence.",
+        "whyTempting": "The tempting answer treats approval as bureaucracy or lets the agent self-authorize under delivery pressure, but it fails because policy violations, irreversible changes, and Responsible AI risks need reviewer-visible control evidence. In this case, reject the option unless it leaves evidence another reviewer can audit after the agent acts."
+      }
+    ],
+    "calibrationProfile": {
+      "microsoftPracticeStyle": "Scenario judgement with plausible distractors, knowledge-gap feedback, and source-grounded rationales.",
+      "cognitiveLevel": "analyze",
+      "evidenceExpectation": "Learner must identify the GitHub product behavior, artifact, reviewer decision, and missing control."
+    },
     "accuracy": {
       "reviewedAt": "2026-07-10",
       "sourceSnapshot": "gh600-source-baseline-2026-06-11",

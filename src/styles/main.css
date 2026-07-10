@@ -827,6 +827,12 @@ body{background:var(--gh-bg);color:var(--gh-text)}
 .case-options li p{margin:0;color:#e1e8f0;line-height:1.58}
 .case-options .correct-option{background:#17301f;border-color:#3fb950}
 .case-options .correct-option span{border-color:#3fb950;color:#dff8e6}
+.case-feedback{display:grid;gap:.65rem}
+.case-feedback p{margin:0}
+.case-product-behavior,.case-tempting{padding:.75rem .85rem;border-radius:8px;line-height:1.65}
+.case-product-behavior{background:#10243a;color:#d8ecff}
+.case-tempting{background:#2b2112;color:#ffe8bf}
+.case-product-behavior strong,.case-tempting strong{color:#f0f6fc}
 @media(max-width:760px){
 .case-study-meta{grid-template-columns:1fr}
 .case-options li{grid-template-columns:1fr}

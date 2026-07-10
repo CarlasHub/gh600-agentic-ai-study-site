@@ -18,6 +18,7 @@ const sources = readJson("sources.json");
 
 const errors = [];
 const warnings = [];
+const minimumExpertReviewedQuizzes = 60;
 const domainIds = blueprint.domains.map((domain) => domain.id);
 const domainSet = new Set(domainIds);
 const lessonMap = new Map(lessons.map((lesson) => [lesson.id, lesson]));
@@ -180,11 +181,40 @@ function checkLessonQuizLinks() {
   }
 }
 
-function checkCaseStudies() {
-  if (caseStudies.length < 6) fail(`caseStudies.json must include at least 6 case studies; found ${caseStudies.length}`);
-  const coveredDomains = new Set(caseStudies.map((study) => study.domainId));
+function checkExpertReviewedQuizCalibration() {
+  const expertReviewed = quizzes.filter((question) => question.expertReview?.method === "source-grounded expert-style calibration");
+  if (expertReviewed.length < minimumExpertReviewedQuizzes) {
+    fail(`lesson quizzes need at least ${minimumExpertReviewedQuizzes} source-grounded expert-calibrated questions; found ${expertReviewed.length}`);
+  }
+
+  for (const question of expertReviewed) {
+    const context = `expert-calibrated quiz ${question.id}`;
+    requireArray(question.expertReview.sourceBasis, context, "expertReview.sourceBasis", 2);
+    if (!question.expertReview.sourceBasis?.includes("ms-gh600-guide")) fail(`${context} must include ms-gh600-guide in expertReview.sourceBasis`);
+    if (!question.expertReview.sourceBasis?.includes("ms-practice-assessments")) fail(`${context} must include ms-practice-assessments in expertReview.sourceBasis`);
+    requireText(question.expertReview.officialSkill, context, "expertReview.officialSkill", 10);
+    requireText(question.expertReview.productBehavior, context, "expertReview.productBehavior", 120);
+    requireText(question.expertReview.temptingDistractorPattern, context, "expertReview.temptingDistractorPattern", 120);
+    requireText(question.expertReview.expectedEvidence, context, "expertReview.expectedEvidence", 120);
+    requireText(question.expertReview.calibrationLimits, context, "expertReview.calibrationLimits", 80);
+    if (!question.sourceIds?.includes("ms-practice-assessments")) fail(`${context} must cite ms-practice-assessments`);
+  }
+
+  const byDomain = new Map();
+  for (const question of expertReviewed) {
+    byDomain.set(question.domainId, (byDomain.get(question.domainId) || 0) + 1);
+  }
   for (const domainId of domainIds) {
-    if (!coveredDomains.has(domainId)) fail(`caseStudies.json is missing a case study for ${domainId}`);
+    if ((byDomain.get(domainId) || 0) < 8) fail(`expert-calibrated lesson quizzes need at least 8 questions for ${domainId}; found ${byDomain.get(domainId) || 0}`);
+  }
+}
+
+function checkCaseStudies() {
+  if (caseStudies.length < 18) fail(`caseStudies.json must include at least 18 case studies; found ${caseStudies.length}`);
+  const domainCounts = new Map();
+  for (const study of caseStudies) domainCounts.set(study.domainId, (domainCounts.get(study.domainId) || 0) + 1);
+  for (const domainId of domainIds) {
+    if ((domainCounts.get(domainId) || 0) < 3) fail(`caseStudies.json needs at least 3 case studies for ${domainId}; found ${domainCounts.get(domainId) || 0}`);
   }
   const seen = new Set();
   for (const study of caseStudies) {
@@ -199,6 +229,10 @@ function checkCaseStudies() {
     requireArray(study.evidenceArtifacts, context, "evidenceArtifacts", 4);
     requireArray(study.questions, context, "questions", 4);
     checkSourceIds(study.sourceIds, context, 5);
+    if (!study.sourceIds?.includes("ms-practice-assessments")) fail(`${context} must cite ms-practice-assessments`);
+    requireText(study.calibrationProfile?.microsoftPracticeStyle, context, "calibrationProfile.microsoftPracticeStyle", 80);
+    requireText(study.calibrationProfile?.cognitiveLevel, context, "calibrationProfile.cognitiveLevel", 5);
+    requireText(study.calibrationProfile?.evidenceExpectation, context, "calibrationProfile.evidenceExpectation", 80);
     for (const [index, question] of (study.questions || []).entries()) {
       requireText(question.id, `${context} question ${index + 1}`, "id", 8);
       requireText(question.questionType, `${context} question ${question.id}`, "questionType", 6);
@@ -212,12 +246,15 @@ function checkCaseStudies() {
       if (!evidenceWords.test(question.rationale || "")) {
         fail(`${context} question ${question.id} rationale must name evidence, controls, or review risk`);
       }
+      requireText(question.productBehavior, `${context} question ${question.id}`, "productBehavior", 100);
+      requireText(question.whyTempting, `${context} question ${question.id}`, "whyTempting", 100);
     }
   }
 }
 
 checkQuestionBank(quizzes, "lesson quiz", 80);
 checkLessonQuizLinks();
+checkExpertReviewedQuizCalibration();
 checkSimulator();
 checkCaseStudies();
 
@@ -231,5 +268,6 @@ if (errors.length) {
 
 console.log("Exam-hardness QA passed");
 console.log(`- Lesson quiz questions: ${quizzes.length}; positions ${distribution(quizzes, "lesson quiz summary", 2).join("/")}; longest-correct ${(longestCorrectRate(quizzes) * 100).toFixed(1)}%`);
+console.log(`- Expert-calibrated lesson questions: ${quizzes.filter((question) => question.expertReview?.method === "source-grounded expert-style calibration").length}`);
 console.log(`- Simulator questions: ${simulator.length}; forms ${new Set(simulator.map((question) => question.form)).size}; longest-correct ${(longestCorrectRate(simulator) * 100).toFixed(1)}%`);
-console.log(`- Case studies: ${caseStudies.length}; domains ${[...new Set(caseStudies.map((study) => study.domainId))].sort().join(", ")}`);
+console.log(`- Case studies: ${caseStudies.length}; per domain ${domainIds.map((domainId) => `${domainId}:${caseStudies.filter((study) => study.domainId === domainId).length}`).join(", ")}`);

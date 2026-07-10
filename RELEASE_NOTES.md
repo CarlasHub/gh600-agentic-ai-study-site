@@ -9,6 +9,11 @@
 - Added six advanced domain case-study drills for Microsoft-style scenario practice.
 - Added exam-hardness QA to the weekly source-currentness workflow and the full `npm run check` release path.
 - Documented the assessment difficulty gate in the README and data accuracy framework.
+- Expanded advanced case-study drills from 6 to 18, with three case studies per official exam domain.
+- Added product-behavior and tempting-distractor teaching notes to every case-study question.
+- Added 72 source-grounded expert-calibrated lesson questions, balanced at 12 per domain.
+- Added Microsoft Practice Assessments as an official calibration source and documented the calibration limits.
+- Hardened `npm run qa:exam-hard` so release now fails if case studies or calibrated lesson questions fall below the new bar.
 
 ## 2026-06-11
 

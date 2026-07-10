@@ -1,12 +1,12 @@
 # Data Accuracy Report
 
-Checked: 2026-07-10T09:54:55.725Z
+Checked: 2026-07-10T10:20:59.802Z
 
 Status: passed
 Framework version: 2026.06.11
 Source snapshot: gh600-source-baseline-2026-06-11
 Source metadata last checked: 2026-07-10
-Report hash: 680100ec6ebfa27f9fe3f703d09a0229a7ed8c8ccb2bb200aee3c4bb33bf4e93
+Report hash: 1ffed827a989412e8b14904060d5071a2251e0dc2376ddef9123a01b11d681da
 
 ## Scope
 
@@ -24,7 +24,7 @@ Labs | 141
 Flashcards | 303
 Glossary terms | 58
 Scenarios | 101
-Case studies | 6
+Case studies | 18
 Coverage rows | 65
 
 ## Automated Checks

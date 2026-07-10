@@ -479,5 +479,21 @@
       "domain-4"
     ],
     "why": "Exact Microsoft Edge documentation for automated accessibility reports and DevTools accessibility testing signals."
+  },
+  {
+    "id": "ms-practice-assessments",
+    "title": "Practice Assessments for Microsoft Certifications",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+    "publisher": "Microsoft Learn",
+    "accessed": "2026-07-10",
+    "domains": [
+      "domain-1",
+      "domain-2",
+      "domain-3",
+      "domain-4",
+      "domain-5",
+      "domain-6"
+    ],
+    "why": "Official Microsoft Learn description of practice assessments as a way to assess knowledge, identify gaps, and prepare for certification exam style."
   }
 ]

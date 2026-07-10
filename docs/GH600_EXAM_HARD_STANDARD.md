@@ -10,6 +10,8 @@ The primary source of truth is the official Microsoft GH-600 study guide. Suppor
 
 Every assessment item must cite `ms-gh600-guide` plus topic-specific sources that support the product behavior being tested.
 
+Microsoft's Practice Assessments guidance is also part of the calibration standard. It says practice assessments are meant to show the style, wording, and difficulty learners are likely to experience, while also making clear they are examples rather than live exam items. The platform uses that guidance to raise scenario difficulty without copying or implying access to real exam questions.
+
 ## Required Question Shape
 
 Every quiz and simulator question must include:
@@ -32,6 +34,15 @@ Assessment content must avoid shallow recall as the default. The bank should inc
 - Readiness or case-study judgment questions.
 
 Scenario questions should make the learner decide among tradeoffs such as speed versus reviewability, tool power versus least privilege, memory usefulness versus stale state, or autonomy versus human approval.
+
+At least 60 lesson quiz questions must have source-grounded expert-style calibration metadata. Each calibrated question must include:
+
+- The official GH-600 skill being tested.
+- The GitHub or Microsoft product behavior the answer depends on.
+- The tempting distractor pattern that could mislead a learner.
+- The expected evidence artifact or reviewer-visible control.
+- `ms-gh600-guide` and `ms-practice-assessments` in the calibration source basis.
+- A calibration limit statement that makes clear the item is source-grounded preparation, not a copied or guaranteed live exam item.
 
 ## Bias Controls
 
@@ -70,7 +81,7 @@ Each form must keep answer positions balanced and must include scenario, officia
 
 ## Case-Study Standard
 
-The platform must include at least one advanced case-study drill for each official exam domain.
+The platform must include at least 18 advanced case-study drills, with at least three case studies for each official exam domain.
 
 Each case study must include:
 
@@ -79,7 +90,12 @@ Each case study must include:
 - Four or more expected evidence artifacts.
 - Four or more case questions.
 - Rationales that teach the relevant control, evidence, approval, policy, trace, memory, tool, or handoff concept.
-- `ms-gh600-guide` and at least four supporting sources.
+- `ms-gh600-guide`, `ms-practice-assessments`, and at least four supporting sources.
+- A calibration profile naming the Microsoft-practice style, cognitive level, and evidence expectation.
+- Product-behavior notes for each question.
+- Tempting-distractor notes for each question.
+
+The case-study page must render the product behavior and tempting-answer analysis so learners can inspect the reasoning, not only the answer key.
 
 ## Release Evidence
 
@@ -89,4 +105,4 @@ Every release that changes assessment content should record:
 - Which QA commands ran.
 - Whether answer positions and longest-answer bias stayed within limits.
 - Which source links support the changed content.
-- Remaining risks, especially areas that still need human editorial review against current Microsoft practice assessment behavior.
+- Remaining risks, especially areas where official source drift or future exam changes could require another source-grounded review.
