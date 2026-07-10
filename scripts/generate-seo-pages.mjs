@@ -25,6 +25,7 @@ const glossary = readJson("glossary.json");
 const sources = readJson("sources.json");
 const uiWalkthroughs = readJson("uiWalkthroughs.json");
 const templateLibrary = readJson("templateLibrary.json");
+const caseStudies = readJson("caseStudies.json");
 const sourceMap = new Map(sources.map((source) => [source.id, source]));
 
 function escapeHtml(value = "") {
@@ -63,6 +64,7 @@ function routePath(page, id) {
   if (page === "labs") return id ? `/labs/${encodeURIComponent(id)}/` : "/labs/";
   if (page === "quiz") return id ? `/quiz/${encodeURIComponent(id)}/` : "/quiz/";
   if (page === "mock") return id ? `/mock/${encodeURIComponent(id)}/` : "/mock/";
+  if (page === "case-studies") return id ? `/case-studies/${encodeURIComponent(id)}/` : "/case-studies/";
   if (page === "glossary") return id ? `/glossary/${encodeURIComponent(id)}/` : "/glossary/";
   if (page === "walkthroughs") return id ? `/walkthroughs/${encodeURIComponent(id)}/` : "/walkthroughs/";
   return `/${encodeURIComponent(page)}/`;
@@ -113,6 +115,7 @@ function staticNav() {
     ["Library", routeUrl("library")],
     ["Labs", routeUrl("labs")],
     ["Quiz", routeUrl("quiz")],
+    ["Case studies", routeUrl("case-studies")],
     ["Glossary", routeUrl("glossary")]
   ];
   return `<nav aria-label="SEO navigation">${links.map(([label, url]) => `<a href="${url}">${escapeHtml(label)}</a>`).join(" ")}</nav>`;
@@ -179,6 +182,7 @@ function homePage() {
     `${lessons.length} lessons`,
     `${labs.length} practical labs`,
     `${quizzes.length} quiz questions`,
+    `${caseStudies.length} advanced case-study drills`,
     `${templateLibrary.templates.length} agent documentation templates`,
     `${glossary.length} glossary terms`
   ].map(escapeHtml))}</section><section><h2>Start with the modules</h2>${ordered(blueprint.domains, (domain) => `<a href="${routeUrl("domain", domain.id)}">${escapeHtml(domain.title)}</a> <span>${escapeHtml(domain.weight)}</span>`)}</section>`;
@@ -330,6 +334,25 @@ function simplePage(page, title, description) {
   } : undefined);
 }
 
+function caseStudiesPage() {
+  const body = `<h1>GH-600 Case Studies</h1><p>Advanced GH-600 case-study drills for scenario triage, evidence selection, and control decisions.</p>${ordered(caseStudies, (study) => `<a href="${routeUrl("case-studies", study.id)}">${escapeHtml(study.title)}</a> - ${escapeHtml(study.domain)}`)}`;
+  return pageShell("GH-600 Case Studies", "Advanced GH-600 case-study drills for scenario triage, evidence selection, and control decisions.", body, { page: "case-studies" });
+}
+
+function caseStudyPage(study) {
+  const body = `<h1>${escapeHtml(study.title)}</h1><p>${escapeHtml(study.scenario)}</p><p><strong>Domain:</strong> ${escapeHtml(study.domain)}</p><p><strong>Timebox:</strong> ${escapeHtml(study.timeboxMinutes)} minutes</p><section><h2>Learner task</h2><p>${escapeHtml(study.learnerTask)}</p></section><section><h2>Constraints</h2>${list(study.constraints || [], escapeHtml)}</section><section><h2>Evidence to look for</h2>${list(study.evidenceArtifacts || [], escapeHtml)}</section><section><h2>Questions</h2>${ordered(study.questions || [], (question) => `${escapeHtml(question.question)} <strong>Strong answer:</strong> ${escapeHtml(String.fromCharCode(65 + question.correctIndex))}. ${escapeHtml(question.rationale)}`)}</section><section><h2>Sources</h2>${list(sourceNames(study.sourceIds || []), (source) => `<a href="${escapeHtml(source.url)}">${escapeHtml(source.title)}</a>`)}</section>`;
+  return pageShell(`${study.title} | GH-600 Case Study`, study.scenario, body, { page: "case-studies", id: study.id }, {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    name: study.title,
+    description: strip(study.scenario),
+    learningResourceType: "Case study",
+    educationalLevel: "Professional certification preparation",
+    isPartOf: baseCourseSchema(),
+    url: routeUrl("case-studies", study.id)
+  });
+}
+
 function allPages() {
   return [
     { route: { page: "home" }, priority: "1.0", page: homePage() },
@@ -341,6 +364,7 @@ function allPages() {
     { route: { page: "labs" }, priority: "0.9", page: labsPage() },
     { route: { page: "quiz" }, priority: "0.7", page: simplePage("quiz", "GH-600 Quiz Engine", "Immediate feedback practice for GH-600 domains, skills, and scenario judgement.") },
     { route: { page: "mock" }, priority: "0.7", page: simplePage("mock", "GH-600 Exam Simulator", "Timed GH-600 scenario exam simulator aligned to domain weights.") },
+    { route: { page: "case-studies" }, priority: "0.8", page: caseStudiesPage() },
     { route: { page: "flashcards" }, priority: "0.7", page: simplePage("flashcards", "GH-600 Flashcards", "Search, flip, and review GH-600 flashcards for exam recall.") },
     { route: { page: "glossary" }, priority: "0.8", page: glossaryPage() },
     { route: { page: "readiness" }, priority: "0.6", page: simplePage("readiness", "GH-600 Readiness Dashboard", "Study readiness evidence based on lessons, mock scores, quiz practice, and labs.") },
@@ -352,6 +376,7 @@ function allPages() {
     ...uiWalkthroughs.map((item) => ({ route: { page: "walkthroughs", id: item.id }, priority: "0.7", page: walkthroughPage(item) })),
     ...templateLibrary.templates.map((template) => ({ route: { page: "library", id: template.id }, priority: "0.8", page: templatePage(template) })),
     ...labs.map((lab) => ({ route: { page: "labs", id: lab.id }, priority: "0.8", page: labPage(lab) })),
+    ...caseStudies.map((study) => ({ route: { page: "case-studies", id: study.id }, priority: "0.75", page: caseStudyPage(study) })),
     ...glossary.map((term) => ({ route: { page: "glossary", id: term.id }, priority: "0.65", page: glossaryTermPage(term) }))
   ];
 }

@@ -1,0 +1,553 @@
+[
+  {
+    "id": "case-domain-1-agentic-sdlc-intake",
+    "domainId": "domain-1",
+    "domain": "Prepare agent architecture and SDLC processes",
+    "title": "Checkout modernization before agent execution",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A commerce team asks a coding agent to modernize checkout error handling before a launch freeze. The issue says only that the checkout flow is confusing. The repository has flaky tests, no acceptance criteria, and two sensitive payment files that must not change without payment-team review. A product manager wants the agent to start immediately because the team is behind schedule.",
+    "learnerTask": "Choose the control sequence that makes the work agent-ready before code changes begin.",
+    "constraints": [
+      "The agent must not change payment processor files without explicit approval.",
+      "The team needs acceptance criteria and evidence before implementation starts.",
+      "The final pull request must show what changed and which tests proved it.",
+      "Reviewers need a way to stop the work before an unsafe step, not only reject the final pull request."
+    ],
+    "evidenceArtifacts": [
+      "GitHub issue task contract",
+      "Approved agent plan",
+      "Changed-file list",
+      "Workflow run URL",
+      "Pull request review comments",
+      "Handoff note"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-1-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen before the agent starts changing files?",
+        "options": [
+          "Create a task contract with acceptance criteria, forbidden files, expected evidence, and approval gates, then require an approved plan before execution.",
+          "Let the agent explore the repository first so it can discover the right scope, then ask it to summarize the plan in the pull request.",
+          "Ask the agent to open several competing branches and allow reviewers to select the most promising implementation later.",
+          "Start with code changes because the final pull request review and CI checks will reveal whether the agent was successful."
+        ],
+        "correctIndex": 0,
+        "rationale": "GH-600 scenario answers favor explicit SDLC controls before autonomous work: a scoped issue, plan approval, evidence expectations, and review gates."
+      },
+      {
+        "id": "case-domain-1-q2",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best proves the agent stayed inside the approved boundary?",
+        "options": [
+          "A chat summary saying the agent avoided payment files.",
+          "A pull request showing the changed-file list, linked issue contract, workflow run, and reviewer comments for any sensitive-file exception.",
+          "A passing unit test run with no reference to the original issue.",
+          "A product manager comment saying the deadline required fast execution."
+        ],
+        "correctIndex": 1,
+        "rationale": "The correct evidence is durable in GitHub and connects scope, changed files, validation, and reviewer decision."
+      },
+      {
+        "id": "case-domain-1-q3",
+        "questionType": "risk-classification",
+        "question": "What is the main exam trap in this scenario?",
+        "options": [
+          "Treating a vague business request as agent-ready because the agent can infer details.",
+          "Using an issue template to record acceptance criteria.",
+          "Requiring a workflow run URL in the final pull request.",
+          "Blocking sensitive payment files until the right reviewer approves."
+        ],
+        "correctIndex": 0,
+        "rationale": "Vague tasking before execution is the trap. The other options create the evidence and control GH-600 expects."
+      },
+      {
+        "id": "case-domain-1-q4",
+        "questionType": "control-selection",
+        "question": "Which control should be attached to the sensitive payment files?",
+        "options": [
+          "Allow the agent to edit them, but require a note in the final summary.",
+          "Use CODEOWNERS, branch rules, or an approval gate so the payment team reviews changes before merge or before the sensitive step continues.",
+          "Move the files after the work is done so future agents cannot find them.",
+          "Ask the agent to avoid the files without recording the restriction in GitHub."
+        ],
+        "correctIndex": 1,
+        "rationale": "Sensitive areas need enforceable GitHub controls and review evidence, not a private instruction or after-the-fact note."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-agent-architecture-sdlc",
+      "gh-copilot-cloud-agent",
+      "gh-repository-instructions",
+      "gh-protected-branches",
+      "gh-codeowners"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-2-mcp-tool-scope",
+    "domainId": "domain-2",
+    "domain": "Implement tool use and environment interaction",
+    "title": "MCP server request for production diagnostics",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A platform team wants to add an MCP server so an agent can diagnose production checkout failures. The server exposes issue search, repository read, workflow rerun, secret lookup, and deployment actions. The agent only needs to inspect recent workflow logs and open a diagnostic issue. A developer proposes approving the whole server because it is maintained by a trusted internal team.",
+    "learnerTask": "Decide which MCP and execution-context controls are required before the agent uses the server.",
+    "constraints": [
+      "The diagnostic task needs read-only workflow and issue evidence.",
+      "Secret lookup and deployment actions are outside the task.",
+      "Maintainers need a record of which tool calls were allowed and why.",
+      "The server approval must be separate from the per-task toolset selection."
+    ],
+    "evidenceArtifacts": [
+      "MCP server review",
+      "Tool permission matrix",
+      "Allow-list decision",
+      "Session log",
+      "Environment constraint record",
+      "Diagnostic issue"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-2-q1",
+        "questionType": "control-selection",
+        "question": "What is the safest MCP configuration for this task?",
+        "options": [
+          "Approve the server and expose every tool because the internal team owns it.",
+          "Allow only the issue and workflow-log tools needed for diagnosis, deny secrets and deployment tools, and record the approved toolset for the task.",
+          "Let the agent call any tool but require a daily audit summary.",
+          "Disable the MCP server and ask the agent to infer failures from repository files only."
+        ],
+        "correctIndex": 1,
+        "rationale": "Trusted server ownership does not justify broad tools. GH-600 favors task-specific toolset narrowing and audit evidence."
+      },
+      {
+        "id": "case-domain-2-q2",
+        "questionType": "risk-classification",
+        "question": "Which permission is most clearly outside the diagnostic boundary?",
+        "options": [
+          "Reading workflow logs for failed checkout jobs.",
+          "Creating a diagnostic issue with links to evidence.",
+          "Looking up secrets through the MCP server.",
+          "Reading repository metadata needed to link the failure."
+        ],
+        "correctIndex": 2,
+        "rationale": "Secret lookup is not required for the stated task and creates a high-risk capability that must stay denied."
+      },
+      {
+        "id": "case-domain-2-q3",
+        "questionType": "evidence-selection",
+        "question": "Which artifact best proves the agent used the approved toolset?",
+        "options": [
+          "The agent's final message saying it only used safe tools.",
+          "A session log or audit record showing the allowed MCP tools, actual calls, timestamps, and linked diagnostic issue.",
+          "A screenshot of the MCP server name.",
+          "The fact that the server appears in the enterprise registry."
+        ],
+        "correctIndex": 1,
+        "rationale": "The exam looks for tool-call evidence, not trust by name. The log proves allowed tools and actual use."
+      },
+      {
+        "id": "case-domain-2-q4",
+        "questionType": "best-next-action",
+        "question": "What should reviewers do if the agent asks for deployment access during diagnosis?",
+        "options": [
+          "Approve it because deployment access might speed up recovery.",
+          "Reject or escalate the request, require a new task contract, and document why deployment is outside the current diagnostic scope.",
+          "Let the agent continue and check the deployment log afterward.",
+          "Move the diagnostic task to a different branch without changing permissions."
+        ],
+        "correctIndex": 1,
+        "rationale": "A new high-risk capability needs a new authorization decision; branch movement alone does not control tool power."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-tooling-mcp-envs",
+      "gh-mcp-server-setup",
+      "gh-mcp-toolsets",
+      "gh-mcp-management",
+      "gh-mcp-allowlist-enforcement"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-3-memory-reset",
+    "domainId": "domain-3",
+    "domain": "Manage memory, state, and execution",
+    "title": "Stale memory after a pricing-policy change",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 16,
+    "scenario": "A pricing agent previously learned that renewal discounts can be applied automatically below a threshold. Legal has since changed the policy: every renewal discount now requires recorded approval. The agent is asked to update renewal messaging and references an old memory note. The repository has a state file, a decision log, and a pull request from the old policy.",
+    "learnerTask": "Determine how to handle stale memory and preserve state evidence.",
+    "constraints": [
+      "The old memory conflicts with the new legal policy.",
+      "The current task must use the new decision record.",
+      "Reviewers need proof that stale context was reset or quarantined.",
+      "The agent should not keep reusing the old discount rule."
+    ],
+    "evidenceArtifacts": [
+      "Memory reset decision",
+      "Decision log entry",
+      "State record",
+      "Resume checkpoint",
+      "Context handoff",
+      "Pull request evidence"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-3-q1",
+        "questionType": "best-next-action",
+        "question": "What should happen when the agent cites the old memory note?",
+        "options": [
+          "Allow the agent to continue because memory is useful context.",
+          "Reset or quarantine the stale memory, link the new decision record, and require the pull request to show which policy source was used.",
+          "Ask the agent to mention both policies and let the reviewer decide later.",
+          "Delete all repository state so the agent starts with no context."
+        ],
+        "correctIndex": 1,
+        "rationale": "Stale context must be actively handled. GH-600 expects memory expiry, reset evidence, and durable state tied to the current source of truth."
+      },
+      {
+        "id": "case-domain-3-q2",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best proves the stale-memory issue was handled?",
+        "options": [
+          "A reset decision linked to the new legal policy, updated state record, and PR note showing the old memory was not reused.",
+          "A comment from the agent saying it understands the new policy.",
+          "A passing build, because policy state is not part of test output.",
+          "A deleted memory file with no reason recorded."
+        ],
+        "correctIndex": 0,
+        "rationale": "The strongest evidence connects the reset, the new source, and the implementation record. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+      },
+      {
+        "id": "case-domain-3-q3",
+        "questionType": "risk-classification",
+        "question": "Why is keeping both memories active unsafe?",
+        "options": [
+          "It increases token usage, which is the primary exam concern.",
+          "It allows the agent to select a convenient but obsolete policy without leaving an auditable state decision.",
+          "It forces a human reviewer to approve every future task.",
+          "It prevents the agent from reading repository files."
+        ],
+        "correctIndex": 1,
+        "rationale": "The problem is contradictory state and hidden selection, not token cost. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+      },
+      {
+        "id": "case-domain-3-q4",
+        "questionType": "control-selection",
+        "question": "What should be part of the resume checkpoint?",
+        "options": [
+          "Only the last command the agent ran.",
+          "Current policy source, valid state, expired memory note, next allowed action, validation evidence required, and reviewer owner.",
+          "The agent's private reasoning about which policy is more convenient.",
+          "A request for broad memory access to prevent future confusion."
+        ],
+        "correctIndex": 1,
+        "rationale": "A checkpoint should make state explicit enough for safe continuation, review, or handoff. The evidence must show which state is current, which memory is expired, and what reviewable checkpoint controls the next agent action."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-copilot-memory",
+      "gh-custom-instructions-support",
+      "gh-repository-instructions",
+      "ms-agentic-foundations"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-4-evaluation-regression",
+    "domainId": "domain-4",
+    "domain": "Perform evaluation, error analysis, and tuning",
+    "title": "Agent fix passes unit tests but fails accessibility",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "An agent changes a React form to reduce checkout abandonment. Unit tests pass, but an accessibility scan flags missing labels and the trace shows the agent ignored a design-system instruction. The team wants to tune the agent prompt so future form work includes accessibility checks. The release manager asks whether the current pull request is ready.",
+    "learnerTask": "Classify the failure, choose evidence, and decide the tuning path.",
+    "constraints": [
+      "Unit tests alone do not cover the failure.",
+      "The failure is repeatable in accessibility scan output.",
+      "The prompt or instruction update must be validated against a regression example.",
+      "The current pull request cannot be approved without evidence that accessibility was fixed."
+    ],
+    "evidenceArtifacts": [
+      "Evaluation plan",
+      "Accessibility scan evidence",
+      "Trace review",
+      "Root-cause classification",
+      "Tuning log",
+      "Regression checklist"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-4-q1",
+        "questionType": "risk-classification",
+        "question": "What is the most accurate failure classification?",
+        "options": [
+          "A flaky-test problem because unit tests passed.",
+          "An evaluation coverage failure and instruction-following failure, proven by accessibility scan evidence and trace review.",
+          "A deployment problem because checkout abandonment is production-facing.",
+          "A reviewer preference issue because accessibility labels are subjective."
+        ],
+        "correctIndex": 1,
+        "rationale": "The evidence points to missing evaluation coverage and instruction adherence, not reviewer taste or deployment mechanics."
+      },
+      {
+        "id": "case-domain-4-q2",
+        "questionType": "best-next-action",
+        "question": "What should happen before approving the pull request?",
+        "options": [
+          "Approve because unit tests passed and tune the prompt later.",
+          "Fix the accessibility issue, rerun the relevant scan, attach trace and scan evidence, and update the regression checklist.",
+          "Ask the agent for a confidence statement.",
+          "Disable the accessibility scan until the prompt tuning work is complete."
+        ],
+        "correctIndex": 1,
+        "rationale": "Release readiness requires the failed signal to pass with evidence. Tuning later does not excuse the current failure."
+      },
+      {
+        "id": "case-domain-4-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best supports a tuning change?",
+        "options": [
+          "A before/after record showing the old instruction missed labels, the updated instruction required accessibility checks, and the regression example now passes.",
+          "A note saying the agent will try harder next time.",
+          "A merged pull request without the failed scan output.",
+          "A larger model setting with no evaluation comparison."
+        ],
+        "correctIndex": 0,
+        "rationale": "Tuning must be tied to before/after evidence and regression protection, not only a stronger-sounding configuration."
+      },
+      {
+        "id": "case-domain-4-q4",
+        "questionType": "control-selection",
+        "question": "Which signal should be added to the evaluation plan?",
+        "options": [
+          "Only total lines of code changed.",
+          "Accessibility scan status, affected components, trace evidence that instructions were considered, and a pass threshold before merge.",
+          "The agent's final response length.",
+          "The number of branches created during the task."
+        ],
+        "correctIndex": 1,
+        "rationale": "The evaluation plan needs a measurable signal, threshold, and evidence path for the actual failure mode."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-actions-workflows",
+      "gh-code-scanning",
+      "ms-accessibility-evaluation-testing",
+      "ms-accessibility-testing",
+      "ms-edge-accessibility-testing"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-5-multi-agent-handoff",
+    "domainId": "domain-5",
+    "domain": "Orchestrate multi-agent coordination",
+    "title": "Two agents change the same migration path",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "A planner agent decomposes a database migration. A builder agent changes the migration script while a tester agent creates rollback tests. Both agents modify the same fixture file, and each assumes the other owns the rollback note. The pull request has conflicting commits and no handoff record. The release window is close.",
+    "learnerTask": "Choose the coordination pattern that prevents conflict and preserves accountability.",
+    "constraints": [
+      "Agents need clear roles and file ownership.",
+      "Rollback evidence cannot be assumed by either agent.",
+      "Conflicts must be arbitrated before merge.",
+      "The handoff must survive beyond chat context."
+    ],
+    "evidenceArtifacts": [
+      "Multi-agent plan",
+      "Role map",
+      "Handoff contract",
+      "Conflict log",
+      "Arbitration record",
+      "Recovery plan"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-5-q1",
+        "questionType": "best-next-action",
+        "question": "What should the team do before continuing the multi-agent work?",
+        "options": [
+          "Let both agents keep working and resolve conflicts in the final pull request.",
+          "Pause execution, assign file ownership and rollback responsibility, record the handoff contract, and arbitrate the fixture conflict.",
+          "Delete the tester branch so the builder can finish faster.",
+          "Ask the planner agent to summarize the situation without changing the coordination artifacts."
+        ],
+        "correctIndex": 1,
+        "rationale": "Multi-agent work needs explicit roles, ownership, handoff, arbitration, and evidence before continuing."
+      },
+      {
+        "id": "case-domain-5-q2",
+        "questionType": "risk-classification",
+        "question": "What is the key risk of the missing handoff record?",
+        "options": [
+          "The pull request will be too short.",
+          "No durable artifact proves which agent owned rollback evidence, so the team can merge with an accountability gap.",
+          "The agents cannot read repository files.",
+          "The planner agent has too much information."
+        ],
+        "correctIndex": 1,
+        "rationale": "The risk is unowned evidence and hidden assumptions, which GH-600 treats as a coordination failure."
+      },
+      {
+        "id": "case-domain-5-q3",
+        "questionType": "evidence-selection",
+        "question": "Which artifact best resolves the fixture-file conflict?",
+        "options": [
+          "A conflict log and arbitration record naming the owner, accepted change, rejected change, and validation evidence.",
+          "A chat message saying the agents probably agree.",
+          "A branch name that includes both agent names.",
+          "A final release note with no link to the conflict."
+        ],
+        "correctIndex": 0,
+        "rationale": "Conflict resolution must be reviewable and connected to validation evidence. The evidence must make ownership, conflict resolution, accepted changes, and validation visible outside private agent context."
+      },
+      {
+        "id": "case-domain-5-q4",
+        "questionType": "control-selection",
+        "question": "What should the planner agent own after decomposition?",
+        "options": [
+          "All implementation files, so the builder is unnecessary.",
+          "Role boundaries, task dependencies, handoff points, and acceptance evidence, while implementation and testing remain assigned to their owners.",
+          "Only the final summary after all agents finish.",
+          "No artifacts, because planning agents should be stateless."
+        ],
+        "correctIndex": 1,
+        "rationale": "The planner's value is coordination and dependency evidence, not taking over every execution role."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "ms-agentic-foundations",
+      "gh-agentic-workflows",
+      "gh-actions-workflows",
+      "gh-repository-instructions"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  },
+  {
+    "id": "case-domain-6-sensitive-action-approval",
+    "domainId": "domain-6",
+    "domain": "Implement guardrails and accountability",
+    "title": "Autonomous agent attempts a sensitive release action",
+    "difficulty": "Advanced",
+    "timeboxMinutes": 18,
+    "scenario": "An autonomous agent fixes a security-header bug and then proposes changing production environment variables to complete the rollout. The repository uses environments, branch protection, CODEOWNERS, secret scanning, and dependency review. The agent has enough context to suggest the change, but the action could affect production traffic and compliance evidence.",
+    "learnerTask": "Decide how to enforce least privilege, human judgment, and auditability for the sensitive action.",
+    "constraints": [
+      "The code fix and production environment change have different risk levels.",
+      "The agent can suggest the change but must not self-approve it.",
+      "The production action needs a human owner and recorded evidence.",
+      "Policy violations must produce a reviewable trail."
+    ],
+    "evidenceArtifacts": [
+      "Approval policy",
+      "Sensitive-action control",
+      "Environment reviewer record",
+      "Least-privilege access review",
+      "Policy violation record",
+      "Audit trail"
+    ],
+    "questions": [
+      {
+        "id": "case-domain-6-q1",
+        "questionType": "best-next-action",
+        "question": "What is the correct response to the proposed production environment change?",
+        "options": [
+          "Allow the agent to apply it because the code fix passed checks.",
+          "Require a human-approved environment gate, record the reason and evidence, and keep the agent limited to proposing the change.",
+          "Disable all automation for the repository permanently.",
+          "Ask the agent to make the change and explain it afterward in the release notes."
+        ],
+        "correctIndex": 1,
+        "rationale": "Sensitive production changes require human judgment and environment approval; passing code checks does not authorize the agent to self-approve production impact."
+      },
+      {
+        "id": "case-domain-6-q2",
+        "questionType": "risk-classification",
+        "question": "Why is this action higher risk than the code fix?",
+        "options": [
+          "Environment variables can affect production behavior and compliance evidence outside the reviewed code diff.",
+          "Environment variables are always public.",
+          "The agent cannot read environment names.",
+          "The action is low risk because it does not create a pull request."
+        ],
+        "correctIndex": 0,
+        "rationale": "The risk is production impact and auditability outside the ordinary code review path. The evidence must identify the human owner, policy gate, production impact, and audit record for the sensitive action."
+      },
+      {
+        "id": "case-domain-6-q3",
+        "questionType": "evidence-selection",
+        "question": "Which evidence best proves accountability?",
+        "options": [
+          "Agent final summary, with no approval record.",
+          "Environment reviewer approval, linked issue or pull request, policy decision, validation output, and audit trail entry.",
+          "A green dependency-review check only.",
+          "A branch name that includes the word production."
+        ],
+        "correctIndex": 1,
+        "rationale": "Accountability needs a human decision, linked artifact, validation, and audit trail for the sensitive action."
+      },
+      {
+        "id": "case-domain-6-q4",
+        "questionType": "control-selection",
+        "question": "What should happen if the agent attempts to bypass the environment gate?",
+        "options": [
+          "Record a policy violation, stop the action, preserve logs, and require owner review before any retry.",
+          "Let it continue if the final result is correct.",
+          "Delete the logs so the retry is not blocked by stale evidence.",
+          "Broaden the agent permission so the gate no longer applies."
+        ],
+        "correctIndex": 0,
+        "rationale": "A bypass attempt is an accountability event. The correct control stops the action and preserves evidence."
+      }
+    ],
+    "sourceIds": [
+      "ms-gh600-guide",
+      "gh-deploy-envs",
+      "gh-managing-envs",
+      "gh-review-deployments",
+      "gh-protected-branches",
+      "gh-codeowners",
+      "ms-responsible-ai-principles"
+    ],
+    "accuracy": {
+      "reviewedAt": "2026-07-10",
+      "sourceSnapshot": "gh600-source-baseline-2026-06-11",
+      "verification": "source-mapped",
+      "reviewRequiredOnSourceChange": true
+    }
+  }
+]

@@ -1,6 +1,6 @@
 # Source Currentness Check
 
-Checked: 2026-07-09T14:11:04.094Z
+Checked: 2026-07-10T09:52:07.514Z
 
 Sources checked: 40
 Reachable: 40
@@ -10,7 +10,7 @@ Baseline established: 0
 
 Source | Status | Review state | HTTP | Last modified | ETag | Changed signals | Note
 --- | --- | --- | --- | --- | --- | --- | ---
-Study guide for Exam GH-600: Developing in Agentic AI Systems | reachable | current | 200 | Wed, 13 May 2026 15:11:02 GMT | `"Bu1K6ngm6jVO7bgOmghW6+QjAm0="` |  | OK
+Study guide for Exam GH-600: Developing in Agentic AI Systems | reachable | current | 200 | Thu, 09 Jul 2026 20:10:31 GMT | `"V2dvEdD8ResBSbTK6Qy5lePAXbo="` |  | OK
 About GitHub Copilot cloud agent | reachable | current | 200 |  |  |  | OK
 Risks and mitigations for GitHub Copilot cloud agent | reachable | current | 200 |  |  |  | OK
 Model Context Protocol (MCP) and GitHub Copilot cloud agent | reachable | current | 200 |  |  |  | OK
@@ -30,10 +30,10 @@ About rulesets | reachable | current | 200 |  |  |  | OK
 Available rules for rulesets | reachable | current | 200 |  |  |  | OK
 About code owners | reachable | current | 200 |  |  |  | OK
 Responsible AI Principles and Approach | reachable | current | 200 |  |  |  | OK
-Responsible AI for Microsoft Foundry | reachable | current | 200 | Fri, 05 Jun 2026 22:13:21 GMT | `"+ThIVKyaXRESZVG1nhXSkvFYR3o="` |  | OK
-Foundations of Agentic AI in GitHub | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"cK3OikWdal6OFdEXxMVAEtNOORg="` |  | OK
-Designing Agent Architecture and SDLC Integration | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"9KhFA7l/qspmULSxm6Cqy9TpvAQ="` |  | OK
-Tooling, MCP, and Agent Execution Environments | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"grICC8d/480ZXhqaGBafyW5tNIU="` |  | OK
+Responsible AI for Microsoft Foundry | reachable | current | 200 | Fri, 05 Jun 2026 22:13:21 GMT | `"OTNaBt89YT0JIinPjxtmMnjspFg="` |  | OK
+Foundations of Agentic AI in GitHub | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"qz7bX2utsmGqpDYhQs5K5ENbaNo="` |  | OK
+Designing Agent Architecture and SDLC Integration | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"OC/wSTwOOFZpAg7BN/WUpLVGjto="` |  | OK
+Tooling, MCP, and Agent Execution Environments | reachable | current | 200 | Mon, 04 May 2026 14:54:35 GMT | `"oG6DRLLPg0psrss+4dphRD9kYKE="` |  | OK
 MCP server usage in your company | reachable | current | 200 |  |  |  | OK
 Configure an MCP registry for your organization or enterprise | reachable | current | 200 |  |  |  | OK
 Configure MCP server access for your organization or enterprise | reachable | current | 200 |  |  |  | OK
@@ -47,9 +47,9 @@ Code scanning with CodeQL | reachable | current | 200 |  |  |  | OK
 Secret scanning | reachable | current | 200 |  |  |  | OK
 Dependency review | reachable | current | 200 |  |  |  | OK
 Configuring the dependency review action | reachable | current | 200 |  |  |  | OK
-Accessibility evaluation and testing | reachable | current | 200 | Mon, 03 Nov 2025 17:07:42 GMT | `"bMenkqIG5tOV6LQ8lsJr9jLFMyQ="` |  | OK
-Accessibility testing | reachable | current | 200 | Fri, 03 Jul 2026 05:01:55 GMT | `"7vSaAPtOID8pFYRXrZrOA3tw7Rw="` |  | OK
-Resources for accessibility testing | reachable | current | 200 | Fri, 12 Jun 2026 15:30:51 GMT | `"Ag5tOfr2mQL8233S9TNQvyeqtVk="` |  | OK
+Accessibility evaluation and testing | reachable | current | 200 | Mon, 03 Nov 2025 17:07:42 GMT | `"odJwcUORon8Zp68KlzydN5W49sM="` |  | OK
+Accessibility testing | reachable | current | 200 | Fri, 03 Jul 2026 05:01:55 GMT | `"ncBKUCjhjVi7wEWusS8t472tByc="` |  | OK
+Resources for accessibility testing | reachable | current | 200 | Fri, 12 Jun 2026 15:30:51 GMT | `"XjLYCcIOa9SwKN77w3VO2u7AJjQ="` |  | OK
 
 ## Maintainer Instructions
 

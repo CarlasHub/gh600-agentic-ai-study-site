@@ -16,7 +16,9 @@
 - [x] Original GitHub UI workflow walkthroughs added and routed.
 - [x] Data accuracy framework documented and linked.
 - [x] `npm run data:accuracy` added to the release check path.
+- [x] `npm run qa:exam-hard` added to the release check path.
 - [x] Source fingerprint monitoring added to weekly currentness workflow.
 - [x] Content drift issue form added for learners and instructors.
+- [ ] Before each release, run `npm run qa:exam-hard` and confirm assessment difficulty, answer balance, simulator form weights, and case studies pass.
 - [ ] Before each release, confirm `docs/DATA_ACCURACY_REPORT.md` has no unresolved high-severity review item.
 - [ ] Before each release, record any source drift or content correction decision in `docs/DATA_ACCURACY_ACTION_LOG.md`.

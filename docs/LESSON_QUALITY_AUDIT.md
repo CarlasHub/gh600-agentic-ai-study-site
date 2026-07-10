@@ -1,6 +1,6 @@
 # GH-600 Strict Lesson Quality Re-audit
 
-Generated: 2026-07-09
+Generated: 2026-07-10
 
 ## Strict Final Verdict
 
@@ -12,7 +12,7 @@ This stricter re-audit does not treat structural completeness as excellence. The
 
 - Primary exam blueprint: [Study guide for Exam GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/gh-600).
 - Supporting source confidence is based on current `src/data/sourceStatus.json`, lesson source IDs, and exact-topic source rules for GitHub Copilot, MCP, Actions, branch controls, CODEOWNERS, environments, Microsoft Responsible AI, and Microsoft Learn modules.
-- Source currentness was refreshed on 2026-07-09; all 32 tracked official sources are reachable according to `npm run check:sources`.
+- Source currentness was refreshed on 2026-07-10; all 32 tracked official sources are reachable according to `npm run check:sources`.
 
 ## Scoring Rules Used
 

@@ -23,6 +23,8 @@ jobs:
         run: npm ci
       - name: Run content QA
         run: npm run qa:content
+      - name: Run exam-hardness QA
+        run: npm run qa:exam-hard
       - name: Check source currentness
         run: npm run check:sources
       - name: Run data accuracy scan

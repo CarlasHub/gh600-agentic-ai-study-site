@@ -15,13 +15,17 @@ The goal is not to claim permanent correctness. GH-600, GitHub Copilot, MCP, Git
    - Flags low source evidence, thin rationales, stale source status, and drift review triggers.
    - Writes `docs/DATA_ACCURACY_REPORT.md` and `src/data/accuracyStatus.json`.
 
-3. Source currentness monitor: `npm run check:sources`
+3. Exam-hardness scan: `npm run qa:exam-hard`
+   - Checks assessment difficulty, scenario depth, official-source grounding, correct-answer distribution, longest-answer bias, wrong-answer rationale depth, simulator form weights, and domain case-study coverage.
+   - Enforces the standard in `docs/GH600_EXAM_HARD_STANDARD.md`.
+
+4. Source currentness monitor: `npm run check:sources`
    - Fetches official source URLs.
    - Tracks HTTP status, redirects, `Last-Modified`, `ETag`, content hash, page title, and source keywords.
    - Writes `docs/SOURCE_CURRENTNESS_REPORT.md` and updates `src/data/sourceStatus.json`.
 
-4. Release check: `npm run check`
-   - Runs content QA, data accuracy scanning, and production build.
+5. Release check: `npm run check`
+   - Runs production build, source currentness, content QA, exam-hardness QA, lesson quality QA, remediation QA, data accuracy scanning, and lesson audit.
 
 ## Human Review Rules
 
